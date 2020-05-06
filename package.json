@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A repo for all my portfolio iterations.",
+  "main": "assets/index.html",
+  "scripts": {
+    "start": "parcel serve assets/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamilah/portfolio.git"
+  },
+  "author": "Yamilah Atallah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yamilah/portfolio/issues"
+  },
+  "homepage": "https://github.com/yamilah/portfolio#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
