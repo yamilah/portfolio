@@ -1,9 +1,10 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
+import Test from "./components/test"
 
 class Root extends React.Component {
   render() {
-    return <div>angusss</div>
+    return <div><Test /></div>
   }
 }
 
