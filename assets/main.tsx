@@ -1,10 +1,15 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-import Test from "./components/test"
+import {BrowserRouter as Router, Route} from "react-router-dom"
+import About from "./components/pages/about"
+import Main from "./components/pages/main"
 
 class Root extends React.Component {
   render() {
-    return <div><Test /></div>
+    return <Router>
+      <Route exact={true} path="/" component={Main}></Route>
+      <Route exact={true} path="/about" component={About}></Route>
+    </Router>
   }
 }
 
