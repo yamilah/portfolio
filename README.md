@@ -1,5 +1,5 @@
 # Portfolio
-A repo for all my portfolio iterations. Check it out at yamilah.com.
+A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).
 
 ## Setup instructions
 Use `npm install`.
