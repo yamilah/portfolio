@@ -4,7 +4,8 @@
   "description": "A repo for all my portfolio iterations.",
   "main": "assets/index.html",
   "scripts": {
-    "start": "parcel serve assets/index.html"
+    "start": "parcel serve -d build/dev assets/index.html",
+    "build": "parcel build -d build/prod assets/index.html"
   },
   "repository": {
     "type": "git",
