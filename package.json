@@ -5,7 +5,8 @@
   "main": "assets/index.html",
   "scripts": {
     "start": "parcel serve -d build/dev assets/index.html",
-    "build": "parcel build -d build/prod assets/index.html"
+    "build": "parcel build -d build/prod assets/index.html",
+    "staging": "bash scripts/deploy_staging.sh"
   },
   "repository": {
     "type": "git",
