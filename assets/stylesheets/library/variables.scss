@@ -1,6 +1,5 @@
 // Typefaces
-$font-stack-primary: "neue-haas-unica", $font-stack-helvetica;
-$font-stack-secondary: "freight-display-pro", $font-stack-georgia;
+$font-stack-primary: "NN Forever Grotesk", $font-stack-helvetica;
 
 // Font weights
 $font-weight-bold: 600;
@@ -8,3 +7,39 @@ $font-weight-heavy: 700;
 $font-weight-light: 300;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
+
+// Colors
+$pure-white: #ffffff;
+$woodsmoke-black: #121316;
+
+// Spacings
+$sp-base-unit: 1rem;
+$sp-base-ratio: 0.5;
+$sp-unit-1: $sp-base-unit * $sp-base-ratio;
+$sp-unit-2: $sp-base-unit * ($sp-base-ratio * 2);
+$sp-unit-3: $sp-base-unit * ($sp-base-ratio * 3);
+$sp-unit-4: $sp-base-unit * ($sp-base-ratio * 4);
+$sp-unit-5: $sp-base-unit * ($sp-base-ratio * 5);
+$sp-unit-6: $sp-base-unit * ($sp-base-ratio * 6);
+$sp-unit-7: $sp-base-unit * ($sp-base-ratio * 7);
+$sp-unit-8: $sp-base-unit * ($sp-base-ratio * 8);
+$sp-unit-9: $sp-base-unit * ($sp-base-ratio * 9);
+$sp-unit-10: $sp-base-unit * ($sp-base-ratio * 10);
+
+// Font body sizes
+$font-body-size: 1rem;
+$font-body-ratio: 0.2;
+$font-body-1: $font-body-size * ($font-body-ratio * 10);
+$font-body-2: $font-body-size * ($font-body-ratio * 11);
+$font-body-3: $font-body-size * ($font-body-ratio * 12);
+$font-body-4: $font-body-size * ($font-body-ratio * 13);
+$font-body-5: $font-body-size * ($font-body-ratio * 14);
+$font-body-6: $font-body-size * ($font-body-ratio * 15);
+
+// Border sizes
+$border-base-unit: 0.1rem;
+$border-unit-1: $border-base-unit;
+$border-unit-2: $border-base-unit * 2;
+$border-unit-3: $border-base-unit * 3;
+$border-unit-4: $border-base-unit * 4;
+$border-unit-5: $border-base-unit * 5;

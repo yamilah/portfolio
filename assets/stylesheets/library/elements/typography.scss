@@ -1,9 +1,11 @@
 html {
+  color: $pure-white;
   font-family: $font-stack-primary;
+  font-size: 62.5%;
 }
 
-html {
-  font-size: 62.5%;
+a {
+  color: inherit;
 }
 
 h1,
