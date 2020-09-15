@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/yamilah/portfolio#readme",
   "dependencies": {
-    "@types/react": "^16.9.46",
+    "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
     "bourbon": "^7.0.0",
