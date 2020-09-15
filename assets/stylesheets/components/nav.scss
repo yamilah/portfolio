@@ -9,19 +9,17 @@
 .nav-list {
   column-gap: $sp-unit-4 * 3;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr repeat(2, max-content);
+}
+
+.nav-list-item-guide {
+  color: $silver-chalice-grey;
+  font-size: $sp-unit-3;
+  font-style: italic;
+  padding-left: $sp-unit-4;
 }
 
 .nav-list-item-link {
   font-size: $font-body-5;
   text-decoration: none;
-}
-
-.nav-list-item--first {
-  grid-column: 3;
-  justify-self: end;
-}
-
-.nav-list-item--last {
-  grid-column: 4;
 }

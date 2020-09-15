@@ -5,3 +5,12 @@
   font-weight: $font-weight-regular;
   src: font-url("NNForeverGrotesk-Normal.woff2") format("woff2");
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: font-url("NNForeverGrotesk-NormalDiagonal.woff2") format("woff2");
+}
+

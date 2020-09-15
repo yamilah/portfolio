@@ -12,9 +12,12 @@ export default class Nav extends React.Component {
               to="/"
             >
               Yamilah Atallah
+              <span className="nav-list-item-guide">
+                jah • mee • lah
+              </span>
             </Link>
           </li>
-          <li className="nav-list-item nav-list-item--first">
+          <li className="nav-list-item">
             <Link
               className="nav-list-item-link"
               to="/"
@@ -22,7 +25,7 @@ export default class Nav extends React.Component {
               Work
             </Link>
           </li>
-          <li className="nav-list-item nav-list-item--last">
+          <li className="nav-list-item">
             <Link
               className="nav-list-item-link"
               to="/about"
