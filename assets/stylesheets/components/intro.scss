@@ -1,14 +1,39 @@
 .intro {
   background-color: $woodsmoke-black;
+  border-radius: $border-unit-4;
   padding: $sp-unit-3 * 4;
+
+  @include respond-above(large) {
+    @include margin(null ($sp-unit-3 * 3));
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b c";
+  }
 }
 
-.intro-heading {
+.intro-contact {
+  @include respond-above(large) {
+    grid-column: b;
+  }
+}
+
+.intro-contact,
+.intro-heading,
+.intro-work {
   font-size: $font-heading-10;
   font-weight: $font-weight-regular;
 }
 
 .intro-heading-emphasis {
-  color: $woodsmoke-black;
   -webkit-text-stroke: $border-unit-1 $pure-white;
+  color: $woodsmoke-black;
+}
+
+.intro-work {
+  white-space: nowrap;
+
+  @include respond-above(large) {
+    grid-column: c;
+  }
 }

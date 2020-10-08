@@ -6,9 +6,6 @@ export default class Main extends React.Component {
     return (
       <div className="main">
         <Intro />
-        <section>
-          body
-        </section>
       </div>
     )
   }

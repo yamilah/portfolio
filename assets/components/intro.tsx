@@ -10,6 +10,12 @@ export default class Intro extends React.Component {
             is a designer and developer in the SF Bay Area.
           </span>
         </h1>
+        <p className='intro-contact'>
+          Let’s talk.
+        </p>
+        <p className='intro-work'>
+          Work ↓
+        </p>
       </section>
     )
   }
