@@ -1,11 +1,12 @@
 .intro {
   background-color: $woodsmoke-black;
   border-radius: $border-unit-4;
+  box-shadow: 0 $sh-unit-3 $sh-unit-3 $pure-black-15;
   padding: $sp-unit-3 * 4;
 
   @include respond-above(large) {
-    @include margin(null ($sp-unit-3 * 3));
     display: grid;
+    grid-column: 2/span 18;
     grid-template-areas:
       "a a"
       "b c";
@@ -23,6 +24,10 @@
 .intro-work {
   font-size: $font-heading-10;
   font-weight: $font-weight-regular;
+}
+
+.intro-heading {
+  line-height: $leading-unit-2;
 }
 
 .intro-heading-emphasis {

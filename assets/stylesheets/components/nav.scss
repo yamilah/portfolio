@@ -1,11 +1,6 @@
 .nav {
   @include padding($sp-unit-3 null);
-  position: sticky;
-  top: 0;
-
-  @include respond-above(large) {
-    @include margin(null ($sp-unit-3 * 3));
-  }
+  @include position(sticky, 0 null null null);
 }
 
 .nav-list {

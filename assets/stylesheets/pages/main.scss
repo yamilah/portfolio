@@ -1,0 +1,8 @@
+.main {
+  column-gap: $sp-unit-8;
+  display: grid;
+
+  @include respond-above(large) {
+    grid-template-columns: repeat(20, 1fr);
+  }
+}

@@ -9,10 +9,12 @@ $font-weight-medium: 500;
 $font-weight-regular: 400;
 
 // Colors
+$pure-black: #000000;
+$pure-black-15: rgba($pure-black, 0.15);
 $pure-white: #ffffff;
+$shark-black: #1c1e22;
 $silver-chalice-grey: #a6a6a6;
 $woodsmoke-black: #121316;
-$shark-black: #1c1e22;
 
 // Spacings
 $sp-base-unit: 1rem;
@@ -53,6 +55,15 @@ $font-heading-9: $font-heading-size * ($font-heading-ratio * 18);
 $font-heading-10: $font-heading-size * ($font-heading-ratio * 19);
 $font-heading-11: $font-heading-size * ($font-heading-ratio * 20);
 
+// Line heights
+$leading-base-unit: 1;
+$leading-base-ratio: 0.1;
+$leading-unit-1: $leading-base-unit;
+$leading-unit-2: $leading-base-unit + ($leading-base-ratio * 1);
+$leading-unit-3: $leading-base-unit + ($leading-base-ratio * 2);
+$leading-unit-4: $leading-base-unit + ($leading-base-ratio * 3);
+$leading-unit-5: $leading-base-unit + ($leading-base-ratio * 4);
+
 // Border sizes
 $border-base-unit: 0.1rem;
 $border-unit-1: $border-base-unit;
@@ -60,3 +71,12 @@ $border-unit-2: $border-base-unit * 2;
 $border-unit-3: $border-base-unit * 3;
 $border-unit-4: $border-base-unit * 4;
 $border-unit-5: $border-base-unit * 5;
+
+// Shadows
+$sh-base-unit: 1rem;
+$sh-base-ratio: 0.2;
+$sh-unit-1: $sh-base-unit * ($sh-base-ratio * 20);
+$sh-unit-2: $sh-base-unit * ($sh-base-ratio * 21);
+$sh-unit-3: $sh-base-unit * ($sh-base-ratio * 22);
+$sh-unit-4: $sh-base-unit * ($sh-base-ratio * 23);
+$sh-unit-5: $sh-base-unit * ($sh-base-ratio * 24);
