@@ -12,6 +12,7 @@ $font-weight-regular: 400;
 $pure-white: #ffffff;
 $silver-chalice-grey: #a6a6a6;
 $woodsmoke-black: #121316;
+$shark-black: #1c1e22;
 
 // Spacings
 $sp-base-unit: 1rem;
@@ -36,6 +37,21 @@ $font-body-3: $font-body-size * ($font-body-ratio * 12);
 $font-body-4: $font-body-size * ($font-body-ratio * 13);
 $font-body-5: $font-body-size * ($font-body-ratio * 14);
 $font-body-6: $font-body-size * ($font-body-ratio * 15);
+
+// Font heading sizes
+$font-heading-size: 1rem;
+$font-heading-ratio: 0.5;
+$font-heading-1: $font-heading-size * ($font-heading-ratio * 10);
+$font-heading-2: $font-heading-size * ($font-heading-ratio * 11);
+$font-heading-3: $font-heading-size * ($font-heading-ratio * 12);
+$font-heading-4: $font-heading-size * ($font-heading-ratio * 13);
+$font-heading-5: $font-heading-size * ($font-heading-ratio * 14);
+$font-heading-6: $font-heading-size * ($font-heading-ratio * 15);
+$font-heading-7: $font-heading-size * ($font-heading-ratio * 16);
+$font-heading-8: $font-heading-size * ($font-heading-ratio * 17);
+$font-heading-9: $font-heading-size * ($font-heading-ratio * 18);
+$font-heading-10: $font-heading-size * ($font-heading-ratio * 19);
+$font-heading-11: $font-heading-size * ($font-heading-ratio * 20);
 
 // Border sizes
 $border-base-unit: 0.1rem;

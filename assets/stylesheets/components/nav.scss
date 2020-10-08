@@ -1,7 +1,5 @@
 .nav {
-  @include padding($sp-unit-6 null $sp-unit-4 null);
-  background-color: $woodsmoke-black;
-  border-bottom: $pure-white solid $border-unit-4;
+  @include padding($sp-unit-3 null);
   position: sticky;
   top: 0;
 }

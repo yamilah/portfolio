@@ -1,12 +1,11 @@
 import * as React from "react"
+import Intro from "../intro"
 
 export default class Main extends React.Component {
   render() {
     return (
-      <div>
-        <section>
-          heading
-        </section>
+      <div className="main">
+        <Intro />
         <section>
           body
         </section>
