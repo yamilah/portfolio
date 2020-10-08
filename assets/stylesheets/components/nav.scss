@@ -9,9 +9,9 @@
   grid-template-columns: 1fr repeat(2, max-content);
 }
 
-.nav-list-item-guide {
+.nav-list-item-subtext {
   color: $silver-chalice-grey;
-  font-size: $sp-unit-3;
+  font-size: $font-subtitle-3;
   font-style: italic;
   padding-left: $sp-unit-4;
 }

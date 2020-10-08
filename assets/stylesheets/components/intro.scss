@@ -2,32 +2,32 @@
   background-color: $woodsmoke-black;
   border-radius: $border-unit-4;
   box-shadow: 0 $sh-unit-3 $sh-unit-3 $pure-black-15;
-  padding: $sp-unit-3 * 4;
+  display: grid;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   @include respond-above(large) {
-    display: grid;
-    grid-column: 2/span 18;
     grid-template-areas:
-      "a a"
-      "b c";
+    "a a"
+    "b b"
+    "c d";
+    padding: $sp-unit-4 * 3;
   }
 }
 
-.intro-contact {
-  @include respond-above(large) {
-    grid-column: b;
-  }
-}
-
-.intro-contact,
 .intro-heading,
-.intro-work {
+.intro-link--left,
+.intro-link--right {
   font-size: $font-heading-10;
   font-weight: $font-weight-regular;
 }
 
 .intro-heading {
   line-height: $leading-unit-2;
+
+  @include respond-above(large) {
+    grid-column: a;
+  }
 }
 
 .intro-heading-emphasis {
@@ -35,10 +35,50 @@
   color: $woodsmoke-black;
 }
 
-.intro-work {
-  white-space: nowrap;
-
+.intro-link--left {
   @include respond-above(large) {
     grid-column: c;
   }
+}
+
+.intro-link--right {
+  white-space: nowrap;
+
+  @include respond-above(large) {
+    grid-column: d;
+  }
+}
+
+.intro-text-list {
+  animation-duration: $timing-unit-5 * 30;
+  animation-iteration-count: infinite;
+  animation-name: roll;
+  animation-timing-function: linear;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+
+  @keyframes roll {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @include respond-above(large) {
+    grid-column: b;
+  }
+}
+
+.intro-text-list-item {
+  font-size: $font-subtitle-4;
+  font-weight: $font-weight-regular;
+  letter-spacing: $kerning-unit-5;
+  text-transform: uppercase;
+}
+
+.intro-text-list-item--left {
+  padding-left: $sp-unit-5;
 }

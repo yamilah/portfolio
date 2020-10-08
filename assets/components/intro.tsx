@@ -10,10 +10,27 @@ export default class Intro extends React.Component {
             is a designer and developer in the SF Bay Area.
           </span>
         </h1>
-        <p className='intro-contact'>
+        <ul className="intro-text-list">
+          <li className="intro-text-list-item">
+            it’s pronounced jah • mee • lah btw
+          </li>
+          <li className="intro-text-list-item intro-text-list-item--left">
+            it’s pronounced jah • mee • lah btw
+          </li>
+          <li className="intro-text-list-item intro-text-list-item--left">
+            it’s pronounced jah • mee • lah btw
+          </li>
+          <li className="intro-text-list-item intro-text-list-item--left">
+            it’s pronounced jah • mee • lah btw
+          </li>
+          <li className="intro-text-list-item intro-text-list-item--left">
+            it’s pronounced jah • mee • lah btw
+          </li>
+        </ul>
+        <p className='intro-link--left'>
           Let’s talk.
         </p>
-        <p className='intro-work'>
+        <p className='intro-link--right'>
           Work ↓
         </p>
       </section>

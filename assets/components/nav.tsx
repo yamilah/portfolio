@@ -12,7 +12,7 @@ export default class Nav extends React.Component {
               to="/"
             >
               Yamilah Atallah
-              <span className="nav-list-item-guide">
+              <span className="nav-list-item-subtext">
                 jah • mee • lah
               </span>
             </Link>

@@ -24,11 +24,15 @@ $sp-unit-2: $sp-base-unit * ($sp-base-ratio * 2);
 $sp-unit-3: $sp-base-unit * ($sp-base-ratio * 3);
 $sp-unit-4: $sp-base-unit * ($sp-base-ratio * 4);
 $sp-unit-5: $sp-base-unit * ($sp-base-ratio * 5);
-$sp-unit-6: $sp-base-unit * ($sp-base-ratio * 6);
-$sp-unit-7: $sp-base-unit * ($sp-base-ratio * 7);
-$sp-unit-8: $sp-base-unit * ($sp-base-ratio * 8);
-$sp-unit-9: $sp-base-unit * ($sp-base-ratio * 9);
-$sp-unit-10: $sp-base-unit * ($sp-base-ratio * 10);
+
+// Font subtitles sizes
+$font-subtitle-unit: 1rem;
+$font-subtitle-ratio: 0.2;
+$font-subtitle-1: $font-subtitle-unit;
+$font-subtitle-2: $font-subtitle-unit + ($font-subtitle-ratio * 1);
+$font-subtitle-3: $font-subtitle-unit + ($font-subtitle-ratio * 2);
+$font-subtitle-4: $font-subtitle-unit + ($font-subtitle-ratio * 3);
+$font-subtitle-5: $font-subtitle-unit + ($font-subtitle-ratio * 4);
 
 // Font body sizes
 $font-body-size: 1rem;
@@ -64,6 +68,14 @@ $leading-unit-3: $leading-base-unit + ($leading-base-ratio * 2);
 $leading-unit-4: $leading-base-unit + ($leading-base-ratio * 3);
 $leading-unit-5: $leading-base-unit + ($leading-base-ratio * 4);
 
+// Letter spacings
+$kerning-base-unit: 0.02rem;
+$kerning-unit-1: $kerning-base-unit;
+$kerning-unit-2: $kerning-base-unit * 2;
+$kerning-unit-3: $kerning-base-unit * 3;
+$kerning-unit-4: $kerning-base-unit * 4;
+$kerning-unit-5: $kerning-base-unit * 5;
+
 // Border sizes
 $border-base-unit: 0.1rem;
 $border-unit-1: $border-base-unit;
@@ -80,3 +92,12 @@ $sh-unit-2: $sh-base-unit * ($sh-base-ratio * 21);
 $sh-unit-3: $sh-base-unit * ($sh-base-ratio * 22);
 $sh-unit-4: $sh-base-unit * ($sh-base-ratio * 23);
 $sh-unit-5: $sh-base-unit * ($sh-base-ratio * 24);
+
+
+// Animation timings
+$timing-base-unit: 0.1s;
+$timing-unit-1: $timing-base-unit;
+$timing-unit-2: $timing-base-unit * 2;
+$timing-unit-3: $timing-base-unit * 3;
+$timing-unit-4: $timing-base-unit * 4;
+$timing-unit-5: $timing-base-unit * 5;
