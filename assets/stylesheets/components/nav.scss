@@ -1,6 +1,10 @@
 .nav {
-  @include padding($sp-unit-3 null);
   @include position(sticky, 0 null null null);
+  background-color: $shark-black;
+
+  @include respond-above(large) {
+    padding: $sp-unit-5 ($sp-unit-4 * 3);
+  }
 }
 
 .nav-list {
