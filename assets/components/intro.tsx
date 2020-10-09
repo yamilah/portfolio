@@ -27,9 +27,10 @@ export default class Intro extends React.Component {
             it’s pronounced jah • mee • lah btw
           </li>
         </ul>
-        <p className='intro-link--left'>
+        <a href="mailto:info@yamilah.com" className='intro-link--left'>
           Let’s talk.
-        </p>
+        </a>
+
         <p className='intro-link--right'>
           Work ↓
         </p>
