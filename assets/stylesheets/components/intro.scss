@@ -93,6 +93,7 @@
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
   grid-auto-rows: min-content;
+  user-select: none;
 
   @include respond-above(large) {
     grid-area: d;

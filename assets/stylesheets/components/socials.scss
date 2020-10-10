@@ -1,0 +1,20 @@
+.socials {
+  @include position(fixed, 0 null);
+  align-content: end;
+  display: grid;
+  display: grid;
+  grid-auto-rows: min-content;
+  padding: $sp-unit-2;
+  position: fixed;
+  row-gap: $sp-unit-2;
+  z-index: 2;
+}
+
+.socials-link {
+  cursor: crosshair;
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+}

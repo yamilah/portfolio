@@ -67,6 +67,7 @@
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
   grid-auto-rows: min-content;
+  user-select: none;
 
   @include respond-above(large) {
     grid-area: b;
@@ -125,7 +126,8 @@
   text-decoration: none;
 
   &:hover {
-    background-color: $pure-white;
+    background-color: $pure-black;
+    color: $pure-white;
   }
 
   @include respond-above(large) {
