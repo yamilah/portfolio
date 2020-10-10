@@ -1,4 +1,5 @@
 import * as React from "react"
+import Footer from "../footer"
 import Intro from "../intro"
 
 export default class About extends React.Component {
@@ -6,6 +7,7 @@ export default class About extends React.Component {
     return (
       <section className="about">
         <Intro />
+        <Footer />
       </section>
     )
   }
