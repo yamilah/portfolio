@@ -35,7 +35,7 @@ export default class ProjectOne extends React.Component {
           className="one-link"
           to="/houseparty"
         >
-          case study→→→→→→→
+          case study→→→→
         </Link>
       </section>
     )

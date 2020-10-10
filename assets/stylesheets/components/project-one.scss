@@ -3,6 +3,15 @@
   background-image: url(../images/lines.svg);
   background-repeat: no-repeat;
   display: grid;
+  grid-template-areas:
+    "a a a a"
+    ". . c c"
+    "d d d d"
+    "b . e e"
+    "b f f f"
+    ". . . g"
+    "h h h h";
+  grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(large) {
     background-position-y: 45%;
@@ -33,9 +42,13 @@
 .one-text-5,
 .one-text-6,
 .one-link {
-  font-size: $font-heading-7;
+  font-size: $font-heading-1;
   font-weight: $font-weight-light;
-  line-height: $leading-unit-2;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
 
   @include respond-above(large) {
     font-size: $font-heading-9;
@@ -67,10 +80,10 @@
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
+  grid-area: b;
   grid-auto-rows: min-content;
 
   @include respond-above(large) {
-    grid-area: b;
     font-size: $font-body-4;
   }
 
@@ -84,53 +97,37 @@
 }
 
 .one-text-1 {
-  @include respond-above(large) {
-    grid-area: a;
-  }
+  grid-area: a;
 }
 
 .one-text-2 {
-  @include respond-above(large) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
 
 .one-text-3 {
-  @include respond-above(large) {
-    grid-area: d;
-  }
+  grid-area: d;
 }
 
 .one-text-4 {
-  @include respond-above(large) {
-    grid-area: e;
-  }
+  grid-area: e;
 }
 
 .one-text-5 {
+  grid-area: f;
   text-align: end;
-
-  @include respond-above(large) {
-    grid-area: f;
-  }
 }
 
 .one-text-6 {
-  @include respond-above(large) {
-    grid-area: g;
-  }
+  grid-area: g;
 }
 
 .one-link {
   cursor: crosshair;
+  grid-area: h;
   text-decoration: none;
 
   &:hover {
     background-color: $woodsmoke-black;
     color: $hint-of-red;
-  }
-
-  @include respond-above(large) {
-    grid-area: h;
   }
 }
