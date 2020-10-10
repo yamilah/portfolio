@@ -7,29 +7,29 @@ export default class ProjectTwo extends React.Component {
       <section className="two">
         <p className="two-subtext">
           <span>
-            Where the
+            pull the
           </span>
           <span>
-            party at?
+            stops
+          </span>
+          <span>
+            with us
           </span>
         </p>
         <p className="two-text-1">
-          Houseparty
+          Hall of famer
         </p>
         <p className="two-text-2">
-          2019
+          2018—2019
         </p>
         <p className="two-text-3">
-          social media
+          prediction—
         </p>
         <p className="two-text-4">
-          & video
+          based
         </p>
         <p className="two-text-5">
-          chatting web—
-        </p>
-        <p className="two-text-6">
-          app
+          sports app
         </p>
         <Link to="/" className="two-link">
           case study→→→→→→→

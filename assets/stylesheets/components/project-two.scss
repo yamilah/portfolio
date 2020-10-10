@@ -8,12 +8,11 @@
     background-position-y: 44%;
     grid-template-areas:
       ". a a a a a a a a a a a"
-      "b b . . . c c c c c c c"
-      "b b . . . . d d d d d d"
-      ". . . e e e e e e e e e"
-      ". . . . f f f f f f f f"
-      ". . . . . . . . g g g g"
-      "h h h h h h h h h h h h";
+      ". b b . . c c c c c c c"
+      ". b b . . . d d d d d d"
+      ". . . . . e e e e e e e"
+      ". . f f f f f f f f f f"
+      "g g g g g g g g g g g g";
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -31,7 +30,6 @@
 .two-text-3,
 .two-text-4,
 .two-text-5,
-.two-text-6,
 .two-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
@@ -55,7 +53,6 @@
 .two-text-3,
 .two-text-4,
 .two-text-5,
-.two-text-6,
 .two-link {
   text-transform: capitalize;
   user-select: none;
@@ -96,6 +93,8 @@
 }
 
 .two-text-3 {
+  text-align: end;
+
   @include respond-above(large) {
     grid-area: d;
   }
@@ -108,16 +107,8 @@
 }
 
 .two-text-5 {
-  text-align: end;
-
   @include respond-above(large) {
     grid-area: f;
-  }
-}
-
-.two-text-6 {
-  @include respond-above(large) {
-    grid-area: g;
   }
 }
 
@@ -131,6 +122,6 @@
   }
 
   @include respond-above(large) {
-    grid-area: h;
+    grid-area: g;
   }
 }
