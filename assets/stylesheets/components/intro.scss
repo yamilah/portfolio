@@ -1,11 +1,11 @@
 .intro {
   @include padding(null $sp-unit-2);
   background-image: url(../images/lines.svg);
-  background-position-y: 62%;
   background-repeat: no-repeat;
   display: grid;
 
   @include respond-above(large) {
+    background-position-y: 70%;
     grid-template-areas:
       ". . . . . . . . . . . a"
       "b b b b b b b b b b b a"
