@@ -1,7 +1,7 @@
 .intro {
   @include padding(null $sp-unit-2);
   background-image: url(../images/line.svg);
-  background-position-y: 54%;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
@@ -16,6 +16,10 @@
     "j j j j"
     "h h h h";
   grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(small) {
+    background-position-y: 54%;
+  }
 
   @include respond-above(medium) {
     background-position-y: 35%;
@@ -74,16 +78,20 @@
   font-weight: $font-weight-light;
   line-height: $leading-unit-1;
 
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
   @include respond-above(large) {
-    font-size: $font-heading-3;
+    font-size: $font-heading-9;
   }
 
   @include respond-above(xlarge) {
-    font-size: $font-heading-6;
+    font-size: $font-heading-12;
   }
 
   @include respond-above(xxlarge) {
-    font-size: $font-heading-9;
+    font-size: $font-heading-15;
   }
 }
 

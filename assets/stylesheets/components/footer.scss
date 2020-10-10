@@ -46,12 +46,12 @@
 .footer-text-1,
 .footer-text-2,
 .footer-text-3 {
-  font-size: $font-heading-1;
+  font-size: $font-heading-7;
   font-weight: $font-weight-light;
   line-height: $leading-unit-2;
 
   @include respond-above(large) {
-    font-size: $font-heading-3;
+    font-size: $font-heading-9;
   }
 
   @include respond-above(xlarge) {
@@ -59,7 +59,7 @@
   }
 
   @include respond-above(xxlarge) {
-    font-size: $font-heading-9;
+    font-size: $font-heading-15;
   }
 }
 

@@ -33,20 +33,20 @@
 .one-text-5,
 .one-text-6,
 .one-link {
-  font-size: $font-heading-1;
+  font-size: $font-heading-7;
   font-weight: $font-weight-light;
   line-height: $leading-unit-2;
 
   @include respond-above(large) {
-    font-size: $font-heading-3;
+    font-size: $font-heading-9;
   }
 
   @include respond-above(xlarge) {
-    font-size: $font-heading-6;
+    font-size: $font-heading-12;
   }
 
   @include respond-above(xxlarge) {
-    font-size: $font-heading-9;
+    font-size: $font-heading-15;
   }
 }
 .one-subtext,
