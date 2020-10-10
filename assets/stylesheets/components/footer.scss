@@ -1,11 +1,30 @@
 .footer {
   @include padding(null $sp-unit-2);
-  background-image: url(../images/lines.svg);
+  background-image: url(../images/line.svg);
+  background-position-y: 23%;
   background-repeat: no-repeat;
   display: grid;
+  grid-template-areas:
+    "a a a a"
+    ". b b b"
+    ". . c h"
+    "d d . h"
+    ". e e h"
+    ". . f f"
+    ". g g .";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(small) {
+    background-position-y: 30%;
+  }
+
+  @include respond-above(medium) {
+    background-position-y: 20%;
+  }
 
   @include respond-above(large) {
-    background-position-y: 50%;
+    background-image: url(../images/lines.svg);
+    background-position-y: 25%;
     grid-template-areas:
       ". a a a a a a a a a a a"
       ". . . b b b b b b b b h"
@@ -46,16 +65,20 @@
 .footer-text-1,
 .footer-text-2,
 .footer-text-3 {
-  font-size: $font-heading-7;
+  font-size: $font-heading-1;
   font-weight: $font-weight-light;
-  line-height: $leading-unit-2;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
 
   @include respond-above(large) {
     font-size: $font-heading-9;
   }
 
   @include respond-above(xlarge) {
-    font-size: $font-heading-6;
+    font-size: $font-heading-12;
   }
 
   @include respond-above(xxlarge) {
@@ -77,27 +100,19 @@
 }
 
 .footer-link-1 {
-  @include respond-above(large) {
-    grid-area: d;
-  }
+  grid-area: d;
 }
 
 .footer-link-2 {
-  @include respond-above(large) {
-    grid-area: e;
-  }
+  grid-area: e;
 }
 
 .footer-link-3 {
-  @include respond-above(large) {
-    grid-area: f;
-  }
+  grid-area: f;
 }
 
 .footer-link-4 {
-  @include respond-above(large) {
-    grid-area: g;
-  }
+  grid-area: g;
 }
 
 .footer-subtext {
@@ -105,11 +120,11 @@
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
+  grid-area: h;
   grid-auto-rows: min-content;
   transform: rotate(90deg);
 
   @include respond-above(large) {
-    grid-area: h;
     font-size: $font-body-4;
   }
 
@@ -123,19 +138,13 @@
 }
 
 .footer-text-1 {
-  @include respond-above(large) {
-    grid-area: a;
-  }
+  grid-area: a;
 }
 
 .footer-text-2 {
-  @include respond-above(large) {
-    grid-area: b;
-  }
+  grid-area: b;
 }
 
 .footer-text-3 {
-  @include respond-above(large) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
