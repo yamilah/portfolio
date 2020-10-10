@@ -22,7 +22,7 @@ export default class Nav extends React.Component {
               className="nav-link"
               href="https://bit.ly/atallah-cv"
             >
-              CV
+              CV↗
             </a>
           </li>
           <li className="nav-list-item">

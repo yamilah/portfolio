@@ -1,0 +1,127 @@
+.footer {
+  @include padding(null $sp-unit-2);
+  background-image: url(../images/lines.svg);
+  background-repeat: no-repeat;
+  display: grid;
+
+  @include respond-above(large) {
+    background-position-y: 58%;
+    grid-template-areas:
+      ". a a a a a a a a a a a"
+      ". . . b b b b b b b b b"
+      ". . . . c c c c c c h h"
+      ". . . . . d d d d d h h"
+      ". . e e e e e e e e e e"
+      ". . . . f f f f f f f f"
+      ". . . . . . . g g g g g";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(xlarge) {
+    background-position-y: 48%;
+  }
+
+  @include respond-above(xxlarge) {
+    background-position-y: 43%;
+  }
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4,
+.footer-text-1,
+.footer-text-2,
+.footer-text-3 {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+  line-height: $leading-unit-2;
+
+  @include respond-above(large) {
+    font-size: $font-heading-3;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-6;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-9;
+  }
+}
+
+.footer-link-1 {
+  @include respond-above(large) {
+    grid-area: d;
+  }
+}
+
+.footer-link-2 {
+  @include respond-above(large) {
+    grid-area: e;
+  }
+}
+
+.footer-link-3 {
+  @include respond-above(large) {
+    grid-area: f;
+  }
+}
+
+.footer-link-4 {
+  @include respond-above(large) {
+    grid-area: g;
+  }
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4,
+.footer-subtext,
+.footer-text-1,
+.footer-text-2,
+.footer-text-3 {
+  text-transform: capitalize;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.footer-subtext {
+  align-self: center;
+  display: grid;
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  grid-auto-rows: min-content;
+
+  @include respond-above(large) {
+    grid-area: h;
+    font-size: $font-body-4;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-body-8;
+  }
+}
+
+.footer-text-1 {
+  @include respond-above(large) {
+    grid-area: a;
+  }
+}
+
+.footer-text-2 {
+  @include respond-above(large) {
+    grid-area: b;
+  }
+}
+
+.footer-text-3 {
+  @include respond-above(large) {
+    grid-area: c;
+  }
+}
