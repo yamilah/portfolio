@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Link} from "react-router-dom"
 
 export default class ProjectOne extends React.Component {
   render() {
@@ -30,9 +31,9 @@ export default class ProjectOne extends React.Component {
         <p className="one-text-6">
           app
         </p>
-        <p className="one-text-7">
+        <Link to="/" className="one-link">
           case study→→→→→→→
-        </p>
+        </Link>
       </section>
     )
   }
