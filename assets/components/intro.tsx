@@ -15,19 +15,17 @@ export default class Intro extends React.Component {
             20
           </span>
         </p>
-        <div className="intro-subtext-wrapper">
-          <p className="intro-subtext">
-            <span>
-              Currently:
-            </span>
-            <span>
-              designer,
-            </span>
-            <span>
-              Disney+
-            </span>
-          </p>
-        </div>
+        <p className="intro-subtext">
+          <span>
+            Currently:
+          </span>
+          <span>
+            designer,
+          </span>
+          <span>
+            Disney+
+          </span>
+        </p>
         <p className="intro-text-1">
           Yamilah Atallah
         </p>

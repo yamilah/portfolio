@@ -12,7 +12,8 @@
       ". . . . . . . g g g g g"
       "h . . . . . . g g g g g"
       "h . . i i i i i . . . ."
-      "h . . . . . j j j j j j";
+      "h . . . . . j j j j j j"
+      "h . . . . . . . . . . .";
       grid-template-columns: repeat(12, 1fr);
   }
 }
@@ -67,11 +68,11 @@
   display: grid;
   font-size: $font-body-2 * 2;
   font-weight: $font-weight-regular;
-}
+  grid-auto-rows: min-content;
 
-.intro-subtext-wrapper {
   @include respond-above(large) {
     grid-area: d;
+    transform: rotate(90deg);
   }
 }
 
