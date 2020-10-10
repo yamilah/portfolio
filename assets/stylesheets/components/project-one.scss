@@ -13,7 +13,7 @@
       ". . . e e e e e e e e e"
       ". . . . f f f f f f f f"
       ". . . . . . . . g g g g"
-      "h h h h h h h h h h h .";
+      "h h h h h h h h h h h h";
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -125,7 +125,7 @@
   text-decoration: none;
 
   &:hover {
-    color: $tangerine-orange;
+    background-color: $pure-yellow;
   }
 
   @include respond-above(large) {
