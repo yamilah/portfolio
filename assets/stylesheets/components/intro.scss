@@ -17,9 +17,8 @@
     "h h h h";
   grid-template-columns: repeat(4, 1fr);
 
-  @include respond-above(large) {
-    background-image: url(../images/lines.svg);
-    background-position-y: 70%;
+  @include respond-above(medium) {
+    background-position-y: 35%;
     grid-template-areas:
       ". . . . . . . . . . . a"
       "b b b b b b b b b b b a"
@@ -32,6 +31,11 @@
       "h . . . . . j j j j j j"
       "h . . . . . . . . . . .";
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    background-image: url(../images/lines.svg);
+    background-position-y: 70%;
   }
 
   @include respond-above(xlarge) {
@@ -85,20 +89,24 @@
 
 .intro-date-1,
 .intro-date-2 {
-  @include respond-above(large) {
+  @include respond-above(medium) {
     display: grid;
-    text-align: right;
   }
 }
 
 .intro-date-1 {
   grid-area: a;
+
+  @include respond-above(small) {
+    text-align: right;
+  }
 }
 
 .intro-date-2 {
   grid-area: h;
 
-  @include respond-above(large) {
+  @include respond-above(medium) {
+    text-align: right;
     transform: scale(-1);
   }
 }
@@ -111,7 +119,7 @@
   grid-auto-rows: min-content;
   user-select: none;
 
-  @include respond-above(large) {
+  @include respond-above(medium) {
     font-size: $font-body-4;
     transform: rotate(90deg);
   }
