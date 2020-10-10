@@ -1,3 +1,5 @@
 .main {
-  @include contain(xxlarge);
+@include contain(xxlarge);
+  display: grid;
+  row-gap: $sp-unit-3 * 10;
 }
