@@ -1,3 +1,34 @@
-.nav-list {
+.nav {
+  @include position(sticky, 0 null null null);
+  background-color: $hint-of-red;
+  padding: $sp-unit-5;
+  z-index: $z-nav;
+  border-bottom: $border-unit-2 solid $woodsmoke-black;
+}
+
+.nav-link {
+  cursor: crosshair;
+  font-size: $font-body-4;
+  font-weight: $font-weight-regular;
+  text-decoration: none;
+  user-select: none;
+}
+
+.nav-link--first {
+  align-items: baseline;
+  column-gap: $sp-unit-3;
   display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+}
+
+.nav-link-subtext {
+  font-size: $font-body-2;
+  font-style: italic;
+}
+
+.nav-list {
+  column-gap: $sp-unit-5;
+  display: grid;
+  grid-template-columns: 1fr repeat(2,max-content);
 }

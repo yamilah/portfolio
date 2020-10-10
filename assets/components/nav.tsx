@@ -8,26 +8,26 @@ export default class Nav extends React.Component {
         <ul className="nav-list">
           <li className="nav-list-item">
             <Link
-              className="nav-list-item-link"
+              className="nav-link nav-link--first"
               to="/"
             >
               Yamilah Atallah
-              <span className="nav-list-item-subtext">
+              <span className="nav-link-subtext">
                 jah • mee • lah
               </span>
             </Link>
           </li>
           <li className="nav-list-item">
-            <Link
-              className="nav-list-item-link"
-              to="/"
+            <a
+              className="nav-link"
+              href="https://bit.ly/atallah-cv"
             >
-              Work
-            </Link>
+              CV
+            </a>
           </li>
           <li className="nav-list-item">
             <Link
-              className="nav-list-item-link"
+              className="nav-link"
               to="/about"
             >
               About

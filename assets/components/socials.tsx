@@ -4,16 +4,28 @@ export default class Socials extends React.Component {
   render() {
     return (
       <aside className="socials">
-        <a href="https://linkedin.com/in/yamilah" className="socials-link">
+        <a
+          className="socials-link"
+          href="https://linkedin.com/in/yamilah"
+        >
           lnkd↗
         </a>
-        <a href="https://dribbble.com/yamilah" className="socials-link">
+        <a
+          className="socials-link"
+          href="https://dribbble.com/yamilah"
+        >
           drbb↗
         </a>
-        <a href="https://github.com/yamilah" className="socials-link">
+        <a
+          className="socials-link"
+          href="https://github.com/yamilah"
+        >
           gthb↗
         </a>
-        <a href="mailto:info@yamilah.com" className="socials-link">
+        <a
+          className="socials-link"
+          href="mailto:info@yamilah.com"
+        >
           mail↗
         </a>
       </aside>
