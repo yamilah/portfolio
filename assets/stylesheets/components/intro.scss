@@ -17,7 +17,7 @@
       "h . . i i i i i i i i i"
       "h . . . . . j j j j j j"
       "h . . . . . . . . . . .";
-      grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
   }
 
   @include respond-above(xlarge) {

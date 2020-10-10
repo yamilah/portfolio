@@ -1,24 +1,31 @@
 .one {
+  @include padding(null $sp-unit-2);
+  background-image: url(../images/lines.svg);
+  background-repeat: no-repeat;
   display: grid;
 
   @include respond-above(large) {
+    background-position-y: 44%;
     grid-template-areas:
-      ". . . . . . . . . . . a"
-      "b b b b b b b b b b b a"
-      ". . . . . c c c c c c a"
-      "d . . . . . . . e e e e"
-      "d . . . . f f f f f f f"
-      ". . . . . . . g g g g g"
-      "h . . . . . . g g g g g"
-      "h . . i i i i i i i i i"
-      "h . . . . . j j j j j j"
-      "h . . . . . . . . . . .";
-      grid-template-columns: repeat(12, 1fr);
+      ". a a a a a a a a a a a"
+      "b b . . . c c c c c c c"
+      "b b . . . . d d d d d d"
+      ". . . e e e e e e e e e"
+      ". . . . . f f f f f f f"
+      ". . . . . . . . g g g g"
+      "h h h h h h h h h h h h";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(xlarge) {
+    background-position-y: 39%;
+  }
+
+  @include respond-above(xxlarge) {
+    background-position-y: 36%;
   }
 }
 
-.one-date-1,
-.one-date-2,
 .one-text-1,
 .one-text-2,
 .one-text-3,
@@ -28,7 +35,7 @@
 .one-text-7 {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
-  line-height: $leading-unit-1;
+  line-height: $leading-unit-2;
 
   @include respond-above(large) {
     font-size: $font-heading-3;
@@ -42,13 +49,11 @@
     font-size: $font-heading-9;
   }
 }
-
-.one-date-1,
-.one-date-2,
 .one-subtext,
 .one-text-1,
 .one-text-2,
 .one-text-3,
+.one-text-4,
 .one-text-5,
 .one-text-6,
 .one-text-7 {
@@ -56,36 +61,16 @@
   white-space: nowrap;
 }
 
-.one-date-1,
-.one-date-2 {
-  display: grid;
-  text-align: right;
-}
-
-.one-date-1 {
-  @include respond-above(large) {
-    grid-area: a;
-  }
-}
-
-.one-date-2 {
-  transform: scale(-1);
-
-  @include respond-above(large) {
-    grid-area: h;
-  }
-}
-
 .one-subtext {
+  align-self: center;
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
   grid-auto-rows: min-content;
 
   @include respond-above(large) {
-    grid-area: d;
+    grid-area: b;
     font-size: $font-body-4;
-    transform: rotate(90deg);
   }
 
   @include respond-above(xlarge) {
@@ -99,7 +84,7 @@
 
 .one-text-1 {
   @include respond-above(large) {
-    grid-area: b;
+    grid-area: a;
   }
 }
 
@@ -109,37 +94,34 @@
   }
 }
 
-.one-text-3,
-.one-text-7 {
-  text-align: end;
-}
-
 .one-text-3 {
   @include respond-above(large) {
-    grid-area: e;
+    grid-area: d;
   }
 }
 
 .one-text-4 {
   @include respond-above(large) {
-    grid-area: f;
+    grid-area: e;
   }
 }
 
 .one-text-5 {
+  text-align: end;
+
   @include respond-above(large) {
-    grid-area: g;
+    grid-area: f;
   }
 }
 
 .one-text-6 {
   @include respond-above(large) {
-    grid-area: i;
+    grid-area: g;
   }
 }
 
 .one-text-7 {
   @include respond-above(large) {
-    grid-area: j;
+    grid-area: h;
   }
 }

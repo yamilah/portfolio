@@ -4,26 +4,12 @@ export default class ProjectOne extends React.Component {
   render() {
     return (
       <section className="one">
-        <p className="one-date-1">
-          <span>
-            08
-          </span>
-          <span>
-            09
-          </span>
-          <span>
-            20
-          </span>
-        </p>
         <p className="one-subtext">
           <span>
-            Currently:
+            Where the
           </span>
           <span>
-            designer,
-          </span>
-          <span>
-            Disney+
+            party at?
           </span>
         </p>
         <p className="one-text-1">
@@ -45,18 +31,7 @@ export default class ProjectOne extends React.Component {
           app
         </p>
         <p className="one-text-7">
-          2015—2020
-        </p>
-        <p className="one-date-2">
-          <span>
-            08
-          </span>
-          <span>
-            09
-          </span>
-          <span>
-            20
-          </span>
+          case study→→→→→→→
         </p>
       </section>
     )
