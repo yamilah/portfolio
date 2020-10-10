@@ -5,12 +5,12 @@
   display: grid;
 
   @include respond-above(large) {
-    background-position-y: 58%;
+    background-position-y: 50%;
     grid-template-areas:
       ". a a a a a a a a a a a"
-      ". . . b b b b b b b b b"
-      ". . . . c c c c c c h h"
-      ". . . . . d d d d d h h"
+      ". . . b b b b b b b b h"
+      ". . . . c c c c c c c h"
+      ". . . . . d d d d d d h"
       ". . e e e e e e e e e e"
       ". . . . f f f f f f f f"
       ". . . . . . . g g g g g";
@@ -18,12 +18,25 @@
   }
 
   @include respond-above(xlarge) {
-    background-position-y: 48%;
+    background-position-y: 45%;
   }
 
   @include respond-above(xxlarge) {
-    background-position-y: 43%;
+    background-position-y: 41%;
   }
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4,
+.footer-subtext,
+.footer-text-1,
+.footer-text-2,
+.footer-text-3 {
+  text-transform: capitalize;
+  user-select: none;
+  white-space: nowrap;
 }
 
 .footer-link-1,
@@ -47,6 +60,18 @@
 
   @include respond-above(xxlarge) {
     font-size: $font-heading-9;
+  }
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4 {
+  text-decoration: none;
+
+  &:hover {
+    background-color: $woodsmoke-black;
+    color: $hint-of-red;
   }
 }
 
@@ -74,25 +99,13 @@
   }
 }
 
-.footer-link-1,
-.footer-link-2,
-.footer-link-3,
-.footer-link-4,
-.footer-subtext,
-.footer-text-1,
-.footer-text-2,
-.footer-text-3 {
-  text-transform: capitalize;
-  user-select: none;
-  white-space: nowrap;
-}
-
 .footer-subtext {
   align-self: center;
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
   grid-auto-rows: min-content;
+  transform: rotate(90deg);
 
   @include respond-above(large) {
     grid-area: h;
