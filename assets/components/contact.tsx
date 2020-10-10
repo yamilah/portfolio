@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
         <ul className="contact-socials">
           <li>
             <a href="https://google.com">
-              lnkdn
+              lnkd
             </a>
           </li>
           <li>
@@ -22,7 +22,7 @@ export default class Contact extends React.Component {
           </li>
           <li>
             <a href="https://google.com">
-              email
+              mail
             </a>
           </li>
         </ul>

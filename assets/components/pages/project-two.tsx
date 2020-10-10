@@ -4,8 +4,8 @@ import {Link} from "react-router-dom"
 export default class ProjectTwo extends React.Component {
   render() {
     return (
-      <section className="one">
-        <p className="one-subtext">
+      <section className="two">
+        <p className="two-subtext">
           <span>
             Where the
           </span>
@@ -13,25 +13,25 @@ export default class ProjectTwo extends React.Component {
             party at?
           </span>
         </p>
-        <p className="one-text-1">
+        <p className="two-text-1">
           Houseparty
         </p>
-        <p className="one-text-2">
+        <p className="two-text-2">
           2019
         </p>
-        <p className="one-text-3">
+        <p className="two-text-3">
           social media
         </p>
-        <p className="one-text-4">
+        <p className="two-text-4">
           & video
         </p>
-        <p className="one-text-5">
+        <p className="two-text-5">
           chatting web—
         </p>
-        <p className="one-text-6">
+        <p className="two-text-6">
           app
         </p>
-        <Link to="/" className="one-link">
+        <Link to="/" className="two-link">
           case study→→→→→→→
         </Link>
       </section>

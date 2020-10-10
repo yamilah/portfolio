@@ -1,4 +1,4 @@
-.one {
+.two {
   @include padding(null $sp-unit-2);
   background-image: url(../images/lines.svg);
   background-repeat: no-repeat;
@@ -26,13 +26,13 @@
   }
 }
 
-.one-text-1,
-.one-text-2,
-.one-text-3,
-.one-text-4,
-.one-text-5,
-.one-text-6,
-.one-link {
+.two-text-1,
+.two-text-2,
+.two-text-3,
+.two-text-4,
+.two-text-5,
+.two-text-6,
+.two-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
   line-height: $leading-unit-2;
@@ -49,19 +49,19 @@
     font-size: $font-heading-9;
   }
 }
-.one-subtext,
-.one-text-1,
-.one-text-2,
-.one-text-3,
-.one-text-4,
-.one-text-5,
-.one-text-6,
-.one-link {
+.two-subtext,
+.two-text-1,
+.two-text-2,
+.two-text-3,
+.two-text-4,
+.two-text-5,
+.two-text-6,
+.two-link {
   text-transform: capitalize;
   white-space: nowrap;
 }
 
-.one-subtext {
+.two-subtext {
   align-self: center;
   display: grid;
   font-size: $font-body-3;
@@ -82,31 +82,31 @@
   }
 }
 
-.one-text-1 {
+.two-text-1 {
   @include respond-above(large) {
     grid-area: a;
   }
 }
 
-.one-text-2 {
+.two-text-2 {
   @include respond-above(large) {
     grid-area: c;
   }
 }
 
-.one-text-3 {
+.two-text-3 {
   @include respond-above(large) {
     grid-area: d;
   }
 }
 
-.one-text-4 {
+.two-text-4 {
   @include respond-above(large) {
     grid-area: e;
   }
 }
 
-.one-text-5 {
+.two-text-5 {
   text-align: end;
 
   @include respond-above(large) {
@@ -114,13 +114,13 @@
   }
 }
 
-.one-text-6 {
+.two-text-6 {
   @include respond-above(large) {
     grid-area: g;
   }
 }
 
-.one-link {
+.two-link {
   cursor: crosshair;
   text-decoration: none;
 
