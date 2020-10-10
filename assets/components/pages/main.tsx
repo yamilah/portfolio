@@ -1,6 +1,7 @@
 import * as React from "react"
 import Intro from "../intro"
 import ProjectOne from "../project-one"
+import ProjectTwo from "./project-two"
 
 export default class Main extends React.Component {
   render() {
@@ -8,6 +9,7 @@ export default class Main extends React.Component {
       <div className="main">
         <Intro />
         <ProjectOne />
+        <ProjectTwo />
       </div>
     )
   }
