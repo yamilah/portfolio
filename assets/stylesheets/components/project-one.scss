@@ -1,6 +1,7 @@
 .one {
   @include padding(null $sp-unit-2);
-  background-image: url(../images/lines.svg);
+  background-image: url(../images/line.svg);
+  background-position-y: 40%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
@@ -8,22 +9,30 @@
     ". . c c"
     "d d d d"
     "b . e e"
-    "b f f f"
+    "f f f f"
     ". . . g"
     "h h h h";
   grid-template-columns: repeat(4, 1fr);
 
-  @include respond-above(large) {
+  @include respond-above(small) {
+    background-position-y: 43%;
+  }
+
+  @include respond-above(medium) {
     background-position-y: 45%;
     grid-template-areas:
       ". a a a a a a a a a a a"
       "b b . . . c c c c c c c"
-      "b b . . . . d d d d d d"
-      ". . . e e e e e e e e e"
-      ". . . . f f f f f f f f"
-      ". . . . . . . . g g g g"
+      "b b . . d d d d d d d d"
+      ". . e e e e e e e e e e"
+      ". . . f f f f f f f f f"
+      ". . . . . . . g g g g g"
       "h h h h h h h h h h h h";
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    background-image: url(../images/lines.svg);
   }
 
   @include respond-above(xlarge) {
@@ -129,5 +138,13 @@
   &:hover {
     background-color: $woodsmoke-black;
     color: $hint-of-red;
+  }
+}
+
+.one-link-icons {
+  display: none;
+
+  @include respond-above(large) {
+    display: inline;
   }
 }
