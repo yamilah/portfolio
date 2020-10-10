@@ -35,12 +35,16 @@ $font-body-8: $font-body-unit * ($font-body-ratio * 13);
 
 // Font heading sizes
 $font-heading-size: 1rem;
-$font-heading-ratio: 2;
-$font-heading-1: $font-heading-size * ($font-heading-ratio * 2);
-$font-heading-2: $font-heading-size * ($font-heading-ratio * 4);
-$font-heading-3: $font-heading-size * ($font-heading-ratio * 5);
-$font-heading-4: $font-heading-size * ($font-heading-ratio * 6);
-$font-heading-5: $font-heading-size * ($font-heading-ratio * 7);
+$font-heading-ratio: 0.5;
+$font-heading-1: $font-heading-size * ($font-heading-ratio * 16);
+$font-heading-2: $font-heading-size * ($font-heading-ratio * 17);
+$font-heading-3: $font-heading-size * ($font-heading-ratio * 18);
+$font-heading-4: $font-heading-size * ($font-heading-ratio * 19);
+$font-heading-5: $font-heading-size * ($font-heading-ratio * 20);
+$font-heading-6: $font-heading-size * ($font-heading-ratio * 21);
+$font-heading-7: $font-heading-size * ($font-heading-ratio * 22);
+$font-heading-8: $font-heading-size * ($font-heading-ratio * 23);
+$font-heading-9: $font-heading-size * ($font-heading-ratio * 24);
 
 // Line heights
 $leading-base-unit: 1;
