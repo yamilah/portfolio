@@ -31,7 +31,7 @@ export default class ProjectTwo extends React.Component {
         <p className="two-text-5">
           sports app
         </p>
-        <Link to="/" className="two-link">
+        <Link to="/hofr" className="two-link">
           case study→→→→→→→
         </Link>
       </section>
