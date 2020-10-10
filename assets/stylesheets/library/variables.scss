@@ -10,6 +10,7 @@ $font-weight-regular: 400;
 
 // Colors
 $hint-of-red: #f8f5f4;
+$woodsmoke-black: #121316;
 
 // Spacings
 $sp-base-unit: 1rem;
@@ -24,29 +25,31 @@ $sp-unit-5: $sp-base-unit * ($sp-base-ratio * 5);
 $font-body-unit: 1rem;
 $font-body-ratio: 0.2;
 $font-body-1: $font-body-unit;
-$font-body-2: $font-body-unit + ($font-body-ratio * 1);
-$font-body-3: $font-body-unit + ($font-body-ratio * 2);
-$font-body-4: $font-body-unit + ($font-body-ratio * 3);
-$font-body-5: $font-body-unit + ($font-body-ratio * 4);
+$font-body-2: $font-body-unit * ($font-body-ratio * 7);
+$font-body-3: $font-body-unit * ($font-body-ratio * 8);
+$font-body-4: $font-body-unit * ($font-body-ratio * 9);
+$font-body-5: $font-body-unit * ($font-body-ratio * 10);
+$font-body-6: $font-body-unit * ($font-body-ratio * 11);
+$font-body-7: $font-body-unit * ($font-body-ratio * 12);
+$font-body-8: $font-body-unit * ($font-body-ratio * 13);
 
 // Font heading sizes
 $font-heading-size: 1rem;
-$font-heading-ratio: 0.2;
-$font-heading-1: $font-heading-size * ($font-heading-ratio * 60);
-$font-heading-2: $font-heading-size * ($font-heading-ratio * 61);
-$font-heading-3: $font-heading-size * ($font-heading-ratio * 62);
-$font-heading-4: $font-heading-size * ($font-heading-ratio * 63);
-$font-heading-5: $font-heading-size * ($font-heading-ratio * 64);
-$font-heading-6: $font-heading-size * ($font-heading-ratio * 65);
+$font-heading-ratio: 2;
+$font-heading-1: $font-heading-size * ($font-heading-ratio * 2);
+$font-heading-2: $font-heading-size * ($font-heading-ratio * 4);
+$font-heading-3: $font-heading-size * ($font-heading-ratio * 5);
+$font-heading-4: $font-heading-size * ($font-heading-ratio * 6);
+$font-heading-5: $font-heading-size * ($font-heading-ratio * 7);
 
 // Line heights
 $leading-base-unit: 1;
 $leading-base-ratio: 0.2;
 $leading-unit-1: $leading-base-unit * ($leading-base-ratio * 4);
-$leading-unit-2: $leading-base-unit * ($leading-base-ratio * 4);
-$leading-unit-3: $leading-base-unit * ($leading-base-ratio * 4);
-$leading-unit-4: $leading-base-unit * ($leading-base-ratio * 4);
-$leading-unit-5: $leading-base-unit * ($leading-base-ratio * 4);
+$leading-unit-2: $leading-base-unit * ($leading-base-ratio * 5);
+$leading-unit-3: $leading-base-unit * ($leading-base-ratio * 6);
+$leading-unit-4: $leading-base-unit * ($leading-base-ratio * 7);
+$leading-unit-5: $leading-base-unit * ($leading-base-ratio * 8);
 
 // Letter spacings
 $kerning-base-unit: 0.02rem;

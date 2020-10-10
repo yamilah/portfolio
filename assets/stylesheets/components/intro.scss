@@ -5,13 +5,13 @@
   @include respond-above(large) {
     grid-template-areas:
       ". . . . . . . . . . . a"
-      "b b b b b b b . . . . a"
-      ". . . . . c c c c . . a"
+      "b b b b b b b b b b b a"
+      ". . . . . c c c c c c a"
       "d . . . . . . . e e e e"
-      "d . . f f f f . . . . ."
+      "d . . . . f f f f f f f"
       ". . . . . . . g g g g g"
       "h . . . . . . g g g g g"
-      "h . . i i i i i . . . ."
+      "h . . i i i i i i i i i"
       "h . . . . . j j j j j j"
       "h . . . . . . . . . . .";
       grid-template-columns: repeat(12, 1fr);
@@ -30,6 +30,18 @@
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
   line-height: $leading-unit-1;
+
+  @include respond-above(large) {
+    font-size: $font-heading-2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-3;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-4;
+  }
 }
 
 .intro-date-1,
@@ -42,6 +54,7 @@
 .intro-text-6,
 .intro-text-7 {
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .intro-date-1,
@@ -66,13 +79,22 @@
 
 .intro-subtext {
   display: grid;
-  font-size: $font-body-2 * 2;
+  font-size: $font-body-3;
   font-weight: $font-weight-regular;
   grid-auto-rows: min-content;
 
   @include respond-above(large) {
     grid-area: d;
+    font-size: $font-body-4;
     transform: rotate(90deg);
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-body-8;
   }
 }
 

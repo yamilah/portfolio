@@ -2,3 +2,8 @@ body,
 html {
   background-color: $hint-of-red;
 }
+
+body {
+  display: grid;
+  justify-content: center;
+}
