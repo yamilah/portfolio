@@ -1,13 +1,16 @@
 .socials {
   @include position(fixed, 0 null 0 0);
   align-content: end;
-  display: grid;
-  display: grid;
+  display: none;
   grid-auto-rows: min-content;
   padding: $sp-unit-2;
   position: fixed;
   row-gap: $sp-unit-2;
   z-index: $z-socials;
+
+  @include respond-above(medium) {
+    display: grid;
+  }
 }
 
 .socials-link {
