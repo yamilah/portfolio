@@ -1,0 +1,9 @@
+.about {
+  display: grid;
+  padding-top: $sp-unit-2;
+  row-gap: $sp-unit-5 * 3;
+
+  @include respond-above(large) {
+    row-gap: $sp-unit-3 * 10;
+  }
+}

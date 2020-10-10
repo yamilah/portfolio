@@ -104,17 +104,13 @@
 
 .intro-date-1 {
   grid-area: a;
-
-  @include respond-above(small) {
-    text-align: right;
-  }
+  text-align: right;
 }
 
 .intro-date-2 {
   grid-area: h;
 
   @include respond-above(medium) {
-    text-align: right;
     transform: scale(-1);
   }
 }
