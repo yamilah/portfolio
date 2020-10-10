@@ -6,7 +6,7 @@ export default class Intro extends React.Component {
       <section className="intro">
         <p className="intro-date-1">
           <span>
-            10
+            08
           </span>
           <span>
             09
@@ -49,7 +49,7 @@ export default class Intro extends React.Component {
         </p>
         <p className="intro-date-2">
           <span>
-            10
+            08
           </span>
           <span>
             09
