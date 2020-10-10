@@ -1,10 +1,24 @@
 .intro {
   @include padding(null $sp-unit-2);
-  background-image: url(../images/lines.svg);
+  background-image: url(../images/line.svg);
+  background-position-y: 54%;
   background-repeat: no-repeat;
   display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    ". e e e"
+    "f f f f"
+    ". . . d"
+    "g g g d"
+    "i i i i"
+    "j j j j"
+    "h h h h";
+  grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(large) {
+    background-image: url(../images/lines.svg);
     background-position-y: 70%;
     grid-template-areas:
       ". . . . . . . . . . . a"
@@ -27,6 +41,20 @@
   @include respond-above(xxlarge) {
       background-position-y: 57%;
   }
+}
+
+.intro-date-1,
+.intro-date-2,
+.intro-subtext,
+.intro-text-1,
+.intro-text-2,
+.intro-text-3,
+.intro-text-5,
+.intro-text-6,
+.intro-text-7 {
+  text-transform: capitalize;
+  user-select: none;
+  white-space: nowrap;
 }
 
 .intro-date-1,
@@ -56,36 +84,22 @@
 }
 
 .intro-date-1,
-.intro-date-2,
-.intro-subtext,
-.intro-text-1,
-.intro-text-2,
-.intro-text-3,
-.intro-text-5,
-.intro-text-6,
-.intro-text-7 {
-  text-transform: capitalize;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.intro-date-1,
 .intro-date-2 {
-  display: grid;
-  text-align: right;
-}
-
-.intro-date-1 {
   @include respond-above(large) {
-    grid-area: a;
+    display: grid;
+    text-align: right;
   }
 }
 
+.intro-date-1 {
+  grid-area: a;
+}
+
 .intro-date-2 {
-  transform: scale(-1);
+  grid-area: h;
 
   @include respond-above(large) {
-    grid-area: h;
+    transform: scale(-1);
   }
 }
 
@@ -93,11 +107,11 @@
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
+  grid-area: d;
   grid-auto-rows: min-content;
   user-select: none;
 
   @include respond-above(large) {
-    grid-area: d;
     font-size: $font-body-4;
     transform: rotate(90deg);
   }
@@ -112,15 +126,11 @@
 }
 
 .intro-text-1 {
-  @include respond-above(large) {
-    grid-area: b;
-  }
+  grid-area: b;
 }
 
 .intro-text-2 {
-  @include respond-above(large) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
 
 .intro-text-3,
@@ -129,31 +139,21 @@
 }
 
 .intro-text-3 {
-  @include respond-above(large) {
-    grid-area: e;
-  }
+  grid-area: e;
 }
 
 .intro-text-4 {
-  @include respond-above(large) {
-    grid-area: f;
-  }
+  grid-area: f;
 }
 
 .intro-text-5 {
-  @include respond-above(large) {
-    grid-area: g;
-  }
+  grid-area: g;
 }
 
 .intro-text-6 {
-  @include respond-above(large) {
-    grid-area: i;
-  }
+  grid-area: i;
 }
 
 .intro-text-7 {
-  @include respond-above(large) {
-    grid-area: j;
-  }
+  grid-area: j;
 }
