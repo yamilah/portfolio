@@ -7,22 +7,22 @@ export default class Contact extends React.Component {
         <ul className="contact-socials">
           <li>
             <a href="https://google.com">
-              icon
+              lnkdn
             </a>
           </li>
           <li>
             <a href="https://google.com">
-              icon
+              drbb
             </a>
           </li>
           <li>
             <a href="https://google.com">
-              icon
+              gthb
             </a>
           </li>
           <li>
             <a href="https://google.com">
-              icon
+              email
             </a>
           </li>
         </ul>

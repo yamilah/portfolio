@@ -14,3 +14,18 @@
   src: font-url("NNForeverGrotesk-NormalDiagonal.woff2") format("woff2");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: font-url("NNForeverGrotesk-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: italic;
+  font-weight: $font-weight-light;
+  src: font-url("NNForeverGrotesk-LightDiagonal.woff2") format("woff2");
+}

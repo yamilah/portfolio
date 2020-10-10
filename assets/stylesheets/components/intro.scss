@@ -1,0 +1,118 @@
+.intro {
+  display: grid;
+  padding: $sp-unit-2;
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". . . . . . . . . . . a"
+      "b b b b b b b . . . . a"
+      ". . . . . c c c c . . a"
+      "d . . . . . . . e e e e"
+      "d . . f f f f . . . . ."
+      ". . . . . . . g g g g g"
+      "h . . . . . . g g g g g"
+      "h . . i i i i i . . . ."
+      "h . . . . . j j j j j j";
+      grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.intro-date-1,
+.intro-date-2,
+.intro-text-1,
+.intro-text-2,
+.intro-text-3,
+.intro-text-4,
+.intro-text-5,
+.intro-text-6,
+.intro-text-7 {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+  line-height: $leading-unit-1;
+}
+
+.intro-date-1,
+.intro-date-2,
+.intro-subtext,
+.intro-text-1,
+.intro-text-2,
+.intro-text-3,
+.intro-text-5,
+.intro-text-6,
+.intro-text-7 {
+  text-transform: capitalize;
+}
+
+.intro-date-1,
+.intro-date-2 {
+  display: grid;
+  text-align: right;
+}
+
+.intro-date-1 {
+  @include respond-above(large) {
+    grid-area: a;
+  }
+}
+
+.intro-date-2 {
+  transform: scale(-1);
+
+  @include respond-above(large) {
+    grid-area: h;
+  }
+}
+
+.intro-subtext {
+  display: grid;
+  font-size: $font-body-2 * 2;
+  font-weight: $font-weight-regular;
+}
+
+.intro-subtext-wrapper {
+  @include respond-above(large) {
+    grid-area: d;
+  }
+}
+
+.intro-text-1 {
+  @include respond-above(large) {
+    grid-area: b;
+  }
+}
+
+.intro-text-2 {
+  @include respond-above(large) {
+    grid-area: c;
+  }
+}
+
+.intro-text-3 {
+  @include respond-above(large) {
+    grid-area: e;
+  }
+}
+
+.intro-text-4 {
+  @include respond-above(large) {
+    grid-area: f;
+  }
+}
+
+.intro-text-5 {
+  @include respond-above(large) {
+    grid-area: g;
+  }
+}
+
+.intro-text-6 {
+  @include respond-above(large) {
+    grid-area: i;
+  }
+}
+
+.intro-text-7 {
+  @include respond-above(large) {
+    grid-area: j;
+  }
+}

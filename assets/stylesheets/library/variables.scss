@@ -10,7 +10,6 @@ $font-weight-regular: 400;
 
 // Colors
 $hint-of-red: #f8f5f4;
-$pure-black: #000000;
 
 // Spacings
 $sp-base-unit: 1rem;
@@ -21,48 +20,33 @@ $sp-unit-3: $sp-base-unit * ($sp-base-ratio * 3);
 $sp-unit-4: $sp-base-unit * ($sp-base-ratio * 4);
 $sp-unit-5: $sp-base-unit * ($sp-base-ratio * 5);
 
-// Font subtitles sizes
-$font-subtitle-unit: 1rem;
-$font-subtitle-ratio: 0.2;
-$font-subtitle-1: $font-subtitle-unit;
-$font-subtitle-2: $font-subtitle-unit + ($font-subtitle-ratio * 1);
-$font-subtitle-3: $font-subtitle-unit + ($font-subtitle-ratio * 2);
-$font-subtitle-4: $font-subtitle-unit + ($font-subtitle-ratio * 3);
-$font-subtitle-5: $font-subtitle-unit + ($font-subtitle-ratio * 4);
-
 // Font body sizes
-$font-body-size: 1rem;
+$font-body-unit: 1rem;
 $font-body-ratio: 0.2;
-$font-body-1: $font-body-size * ($font-body-ratio * 10);
-$font-body-2: $font-body-size * ($font-body-ratio * 11);
-$font-body-3: $font-body-size * ($font-body-ratio * 12);
-$font-body-4: $font-body-size * ($font-body-ratio * 13);
-$font-body-5: $font-body-size * ($font-body-ratio * 14);
-$font-body-6: $font-body-size * ($font-body-ratio * 15);
+$font-body-1: $font-body-unit;
+$font-body-2: $font-body-unit + ($font-body-ratio * 1);
+$font-body-3: $font-body-unit + ($font-body-ratio * 2);
+$font-body-4: $font-body-unit + ($font-body-ratio * 3);
+$font-body-5: $font-body-unit + ($font-body-ratio * 4);
 
 // Font heading sizes
 $font-heading-size: 1rem;
-$font-heading-ratio: 0.5;
-$font-heading-1: $font-heading-size * ($font-heading-ratio * 10);
-$font-heading-2: $font-heading-size * ($font-heading-ratio * 11);
-$font-heading-3: $font-heading-size * ($font-heading-ratio * 12);
-$font-heading-4: $font-heading-size * ($font-heading-ratio * 13);
-$font-heading-5: $font-heading-size * ($font-heading-ratio * 14);
-$font-heading-6: $font-heading-size * ($font-heading-ratio * 15);
-$font-heading-7: $font-heading-size * ($font-heading-ratio * 16);
-$font-heading-8: $font-heading-size * ($font-heading-ratio * 17);
-$font-heading-9: $font-heading-size * ($font-heading-ratio * 18);
-$font-heading-10: $font-heading-size * ($font-heading-ratio * 19);
-$font-heading-11: $font-heading-size * ($font-heading-ratio * 20);
+$font-heading-ratio: 0.2;
+$font-heading-1: $font-heading-size * ($font-heading-ratio * 60);
+$font-heading-2: $font-heading-size * ($font-heading-ratio * 61);
+$font-heading-3: $font-heading-size * ($font-heading-ratio * 62);
+$font-heading-4: $font-heading-size * ($font-heading-ratio * 63);
+$font-heading-5: $font-heading-size * ($font-heading-ratio * 64);
+$font-heading-6: $font-heading-size * ($font-heading-ratio * 65);
 
 // Line heights
 $leading-base-unit: 1;
-$leading-base-ratio: 0.1;
-$leading-unit-1: $leading-base-unit;
-$leading-unit-2: $leading-base-unit + ($leading-base-ratio * 1);
-$leading-unit-3: $leading-base-unit + ($leading-base-ratio * 2);
-$leading-unit-4: $leading-base-unit + ($leading-base-ratio * 3);
-$leading-unit-5: $leading-base-unit + ($leading-base-ratio * 4);
+$leading-base-ratio: 0.2;
+$leading-unit-1: $leading-base-unit * ($leading-base-ratio * 4);
+$leading-unit-2: $leading-base-unit * ($leading-base-ratio * 4);
+$leading-unit-3: $leading-base-unit * ($leading-base-ratio * 4);
+$leading-unit-4: $leading-base-unit * ($leading-base-ratio * 4);
+$leading-unit-5: $leading-base-unit * ($leading-base-ratio * 4);
 
 // Letter spacings
 $kerning-base-unit: 0.02rem;
@@ -88,7 +72,6 @@ $sh-unit-2: $sh-base-unit * ($sh-base-ratio * 21);
 $sh-unit-3: $sh-base-unit * ($sh-base-ratio * 22);
 $sh-unit-4: $sh-base-unit * ($sh-base-ratio * 23);
 $sh-unit-5: $sh-base-unit * ($sh-base-ratio * 24);
-
 
 // Animation timings
 $timing-base-unit: 0.1s;
