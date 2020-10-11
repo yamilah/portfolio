@@ -19,12 +19,12 @@
   }
 
   @include respond-above(medium) {
-    background-position-y: 45%;
+    background-position-y: 50%;
     grid-template-areas:
       ". a a a a a a a a a a a"
-      "b b . . . c c c c c c c"
+      ". . . . . c c c c c c c"
       "b b . . d d d d d d d d"
-      ". . e e e e e e e e e e"
+      "b b e e e e e e e e e e"
       ". . . f f f f f f f f f"
       ". . . . . . . g g g g g"
       "h h h h h h h h h h h h";

@@ -1,7 +1,7 @@
 .footer {
   @include padding(null $sp-unit-2);
   background-image: url(../images/line.svg);
-  background-position-y: 23%;
+  background-position-y: 32%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
@@ -15,16 +15,16 @@
   grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(small) {
-    background-position-y: 30%;
+    background-position-y: 36%;
   }
 
   @include respond-above(medium) {
-    background-position-y: 20%;
+    background-position-y: 36%;
   }
 
   @include respond-above(large) {
     background-image: url(../images/lines.svg);
-    background-position-y: 25%;
+    background-position-y: 57%;
     grid-template-areas:
       ". a a a a a a a a a a a"
       ". . . b b b b b b b b h"
@@ -37,11 +37,11 @@
   }
 
   @include respond-above(xlarge) {
-    background-position-y: 45%;
+    background-position-y: 49%;
   }
 
   @include respond-above(xxlarge) {
-    background-position-y: 41%;
+    background-position-y: 43%;
   }
 }
 
@@ -122,10 +122,10 @@
   font-weight: $font-weight-regular;
   grid-area: h;
   grid-auto-rows: min-content;
-  transform: rotate(90deg);
 
   @include respond-above(large) {
     font-size: $font-body-4;
+    transform: rotate(90deg);
   }
 
   @include respond-above(xlarge) {
