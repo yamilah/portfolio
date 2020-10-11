@@ -10,7 +10,7 @@ export default class Main extends React.Component {
       <div className="main">
         <Intro />
         <ProjectOne />
-        {/* <ProjectTwo /> */}
+        <ProjectTwo />
         <Footer />
       </div>
     )

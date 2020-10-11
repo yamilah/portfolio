@@ -1,11 +1,29 @@
 .two {
   @include padding(null $sp-unit-2);
-  background-image: url(../images/lines.svg);
+  background-image: url(../images/line.svg);
+  background-position-y: 83%;
   background-repeat: no-repeat;
   display: grid;
+  grid-template-areas:
+    ". a a a"
+    "c c c c"
+    "d d d d"
+    "e e e b"
+    "f f f b"
+    "g g g g";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(small) {
+    background-position-y: 77%;
+  }
+
+  @include respond-above(medium) {
+    background-position-y: 57%;
+  }
 
   @include respond-above(large) {
-    background-position-y: 58%;
+    background-image: url(../images/lines.svg);
+    background-position-y: 78%;
     grid-template-areas:
       ". a a a a a a a a a a a"
       ". b b . . c c c c c c c"
@@ -17,11 +35,11 @@
   }
 
   @include respond-above(xlarge) {
-    background-position-y: 48%;
+    background-position-y: 57%;
   }
 
   @include respond-above(xxlarge) {
-    background-position-y: 43%;
+    background-position-y: 47%;
   }
 }
 
@@ -33,18 +51,22 @@
 .two-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
-  line-height: $leading-unit-2;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
 
   @include respond-above(large) {
-    font-size: $font-heading-3;
+    font-size: $font-heading-9;
   }
 
   @include respond-above(xlarge) {
-    font-size: $font-heading-6;
+    font-size: $font-heading-12;
   }
 
   @include respond-above(xxlarge) {
-    font-size: $font-heading-9;
+    font-size: $font-heading-15;
   }
 }
 .two-subtext,
@@ -64,10 +86,10 @@
   display: grid;
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
+  grid-area: b;
   grid-auto-rows: min-content;
 
   @include respond-above(large) {
-    grid-area: b;
     font-size: $font-body-4;
   }
 
@@ -81,47 +103,41 @@
 }
 
 .two-text-1 {
-  @include respond-above(large) {
-    grid-area: a;
-  }
+  grid-area: a;
 }
 
 .two-text-2 {
-  @include respond-above(large) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
 
 .two-text-3 {
+  grid-area: d;
   text-align: end;
-
-  @include respond-above(large) {
-    grid-area: d;
-  }
 }
 
 .two-text-4 {
-  @include respond-above(large) {
-    grid-area: e;
-  }
+  grid-area: e;
 }
 
 .two-text-5 {
-  @include respond-above(large) {
-    grid-area: f;
-  }
+  grid-area: f;
 }
 
 .two-link {
   cursor: crosshair;
+  grid-area: g;
   text-decoration: none;
 
   &:hover {
     background-color: $woodsmoke-black;
     color: $hint-of-red;
   }
+}
+
+.two-link-icons {
+  display: none;
 
   @include respond-above(large) {
-    grid-area: g;
+    display: inline;
   }
 }

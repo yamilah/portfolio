@@ -35,7 +35,10 @@ export default class ProjectTwo extends React.Component {
           className="two-link"
           to="/hofr"
         >
-          case study→→→→→→→
+          case study→→
+          <span className="two-link-icons">
+            →→→→→
+          </span>
         </Link>
       </section>
     )
