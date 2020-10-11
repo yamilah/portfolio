@@ -131,10 +131,6 @@
   @include respond-above(xlarge) {
     font-size: $font-body-6;
   }
-
-  @include respond-above(xxlarge) {
-    font-size: $font-body-8;
-  }
 }
 
 .intro-text-1 {

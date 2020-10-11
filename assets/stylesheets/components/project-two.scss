@@ -39,7 +39,7 @@
   }
 
   @include respond-above(xxlarge) {
-    background-position-y: 47%;
+    background-position-y: 48%;
   }
 }
 
@@ -95,10 +95,6 @@
 
   @include respond-above(xlarge) {
     font-size: $font-body-6;
-  }
-
-  @include respond-above(xxlarge) {
-    font-size: $font-body-8;
   }
 }
 

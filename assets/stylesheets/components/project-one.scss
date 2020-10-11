@@ -19,12 +19,12 @@
   }
 
   @include respond-above(medium) {
-    background-position-y: 50%;
+    background-position-y: 36%;
     grid-template-areas:
       ". a a a a a a a a a a a"
-      ". . . . . c c c c c c c"
+      "b b . . . c c c c c c c"
       "b b . . d d d d d d d d"
-      "b b e e e e e e e e e e"
+      ". . e e e e e e e e e e"
       ". . . f f f f f f f f f"
       ". . . . . . . g g g g g"
       "h h h h h h h h h h h h";
@@ -33,6 +33,7 @@
 
   @include respond-above(large) {
     background-image: url(../images/lines.svg);
+    background-position-y: 53%;
   }
 
   @include respond-above(xlarge) {
@@ -40,7 +41,7 @@
   }
 
   @include respond-above(xxlarge) {
-    background-position-y: 36%;
+    background-position-y: 39%;
   }
 }
 
@@ -98,10 +99,6 @@
 
   @include respond-above(xlarge) {
     font-size: $font-body-6;
-  }
-
-  @include respond-above(xxlarge) {
-    font-size: $font-body-8;
   }
 }
 
