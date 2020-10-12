@@ -18,6 +18,18 @@
     "h h h h";
   grid-template-columns: repeat(4, 1fr);
 
+  @include respond-above(small) {
+    grid-template-areas:
+      "a a a a"
+      ". b b b"
+      ". d d d"
+      ". . e e"
+      "f f f f"
+      ". c c c"
+      ". g g g"
+      ". h h h";
+  }
+
   @include respond-above(medium) {
     grid-template-areas:
       ". . a a a a a a a a a a"
@@ -116,7 +128,7 @@
 .about-body-bottom-text-2 {
   grid-area: g;
 
-  @include respond-below(small) {
+  @include respond-below(medium) {
     @include padding($sp-unit-4 null);
   }
 }
