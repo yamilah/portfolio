@@ -31,3 +31,19 @@
   display: grid;
   grid-template-columns: 1fr repeat(2,max-content);
 }
+
+.nav-list-link {
+  display: none;
+
+  @include respond-above(small) {
+    display: list-item;
+  }
+}
+
+.nav-list-menu {
+  display: none;
+
+  @include respond-below(small) {
+    display: list-item;
+  }
+}

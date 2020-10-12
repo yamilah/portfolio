@@ -2,5 +2,9 @@
 @include contain(xxlarge);
   display: grid;
   padding-top: $sp-unit-2;
-  row-gap: $sp-unit-3 * 10;
+  row-gap: $sp-unit-5 * 4;
+
+  @include respond-above(small) {
+    row-gap: $sp-unit-3 * 10;
+  }
 }

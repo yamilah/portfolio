@@ -17,7 +17,7 @@ export default class Nav extends React.Component {
               </span>
             </Link>
           </li>
-          <li className="nav-list-item">
+          <li className="nav-list-item nav-list-link">
             <a
               className="nav-link"
               href="https://bit.ly/atallah-cv"
@@ -25,13 +25,16 @@ export default class Nav extends React.Component {
               CV↗
             </a>
           </li>
-          <li className="nav-list-item">
+          <li className="nav-list-item nav-list-link">
             <Link
               className="nav-link"
               to="/about"
             >
               About
             </Link>
+          </li>
+          <li className="nav-list-item nav-list-menu">
+            menu
           </li>
         </ul>
       </nav>
