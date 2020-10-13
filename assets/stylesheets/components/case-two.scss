@@ -1,4 +1,4 @@
-.two {
+.case-two {
   @include padding(null $sp-unit-2);
   background-image: url(../images/line.svg);
   background-position-y: 83%;
@@ -43,12 +43,12 @@
   }
 }
 
-.two-text-1,
-.two-text-2,
-.two-text-3,
-.two-text-4,
-.two-text-5,
-.two-link {
+.case-two-text-1,
+.case-two-text-2,
+.case-two-text-3,
+.case-two-text-4,
+.case-two-text-5,
+.case-two-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
   line-height: $leading-unit-1;
@@ -69,19 +69,19 @@
     font-size: $font-heading-15;
   }
 }
-.two-subtext,
-.two-text-1,
-.two-text-2,
-.two-text-3,
-.two-text-4,
-.two-text-5,
-.two-link {
+.case-two-subtext,
+.case-two-text-1,
+.case-two-text-2,
+.case-two-text-3,
+.case-two-text-4,
+.case-two-text-5,
+.case-two-link {
   text-transform: capitalize;
   user-select: none;
   white-space: nowrap;
 }
 
-.two-subtext {
+.case-two-subtext {
   align-self: center;
   display: grid;
   font-size: $font-body-3;
@@ -98,28 +98,28 @@
   }
 }
 
-.two-text-1 {
+.case-two-text-1 {
   grid-area: a;
 }
 
-.two-text-2 {
+.case-two-text-2 {
   grid-area: c;
 }
 
-.two-text-3 {
+.case-two-text-3 {
   grid-area: d;
   text-align: end;
 }
 
-.two-text-4 {
+.case-two-text-4 {
   grid-area: e;
 }
 
-.two-text-5 {
+.case-two-text-5 {
   grid-area: f;
 }
 
-.two-link {
+.case-two-link {
   grid-area: g;
   text-decoration: none;
 
@@ -129,7 +129,7 @@
   }
 }
 
-.two-link-icons {
+.case-two-link-icons {
   display: none;
 
   @include respond-above(large) {

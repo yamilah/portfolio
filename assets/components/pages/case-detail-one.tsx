@@ -1,9 +1,9 @@
 import * as React from "react"
 
-export default class CaseOne extends React.Component {
+export default class CaseDetailOne extends React.Component {
   render() {
     return (
-      <section className="case-one">
+      <section className="case-detail-one">
         <p>
           houseparty
         </p>

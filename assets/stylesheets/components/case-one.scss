@@ -1,4 +1,4 @@
-.one {
+.case-one {
   @include padding(null $sp-unit-2);
   background-image: url(../images/line.svg);
   background-position-y: 40%;
@@ -45,13 +45,13 @@
   }
 }
 
-.one-text-1,
-.one-text-2,
-.one-text-3,
-.one-text-4,
-.one-text-5,
-.one-text-6,
-.one-link {
+.case-one-text-1,
+.case-one-text-2,
+.case-one-text-3,
+.case-one-text-4,
+.case-one-text-5,
+.case-one-text-6,
+.case-one-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
   line-height: $leading-unit-1;
@@ -72,20 +72,20 @@
     font-size: $font-heading-15;
   }
 }
-.one-subtext,
-.one-text-1,
-.one-text-2,
-.one-text-3,
-.one-text-4,
-.one-text-5,
-.one-text-6,
-.one-link {
+.case-one-subtext,
+.case-one-text-1,
+.case-one-text-2,
+.case-one-text-3,
+.case-one-text-4,
+.case-one-text-5,
+.case-one-text-6,
+.case-one-link {
   text-transform: capitalize;
   user-select: none;
   white-space: nowrap;
 }
 
-.one-subtext {
+.case-one-subtext {
   align-self: center;
   display: grid;
   font-size: $font-body-3;
@@ -102,32 +102,32 @@
   }
 }
 
-.one-text-1 {
+.case-one-text-1 {
   grid-area: a;
 }
 
-.one-text-2 {
+.case-one-text-2 {
   grid-area: c;
 }
 
-.one-text-3 {
+.case-one-text-3 {
   grid-area: d;
 }
 
-.one-text-4 {
+.case-one-text-4 {
   grid-area: e;
 }
 
-.one-text-5 {
+.case-one-text-5 {
   grid-area: f;
   text-align: end;
 }
 
-.one-text-6 {
+.case-one-text-6 {
   grid-area: g;
 }
 
-.one-link {
+.case-one-link {
   grid-area: h;
   text-decoration: none;
 
@@ -137,7 +137,7 @@
   }
 }
 
-.one-link-icons {
+.case-one-link-icons {
   display: none;
 
   @include respond-above(large) {

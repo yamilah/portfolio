@@ -1,11 +1,11 @@
 import * as React from "react"
 import {Link} from "react-router-dom"
 
-export default class ProjectOne extends React.Component {
+export default class CaseOne extends React.Component {
   render() {
     return (
-      <section className="one">
-        <p className="one-subtext">
+      <section className="case-one">
+        <p className="case-one-subtext">
           <span>
             Where the
           </span>
@@ -13,30 +13,30 @@ export default class ProjectOne extends React.Component {
             party at?
           </span>
         </p>
-        <p className="one-text-1">
+        <p className="case-one-text-1">
           Houseparty
         </p>
-        <p className="one-text-2">
+        <p className="case-one-text-2">
           2019
         </p>
-        <p className="one-text-3">
+        <p className="case-one-text-3">
           social media
         </p>
-        <p className="one-text-4">
+        <p className="case-one-text-4">
           & video
         </p>
-        <p className="one-text-5">
+        <p className="case-one-text-5">
           chatting web—
         </p>
-        <p className="one-text-6">
+        <p className="case-one-text-6">
           app
         </p>
         <Link
-          className="one-link"
+          className="case-one-link"
           to="/houseparty"
         >
           case study→→
-          <span className="one-link-icons">
+          <span className="case-one-link-icons">
             →→→→→
           </span>
         </Link>
