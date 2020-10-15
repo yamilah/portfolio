@@ -1,0 +1,16 @@
+.detail-one-desc {
+  display: grid;
+
+  @include respond-above(medium) {
+    grid-template-areas: ". . . . a a b b b . . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.detail-one-highlights {
+  grid-area: a;
+}
+
+.detail-one-text-wrapper {
+  grid-area: b;
+}
