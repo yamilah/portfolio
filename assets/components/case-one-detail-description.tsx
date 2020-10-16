@@ -15,20 +15,6 @@ export default class DetailOneDescription extends React.Component {
           </div>
           <div className="detail-one-highlight">
             <h1 className="detail-one-highlight-heading">
-              Team
-            </h1>
-            <p className="detail-one-highlight-text">
-              Me (sole designer & front-end dev)
-            </p>
-            <p className="detail-one-highlight-text">
-              2 developers
-            </p>
-            <p className="detail-one-highlight-text">
-              CTO & PM
-            </p>
-          </div>
-          <div className="detail-one-highlight">
-            <h1 className="detail-one-highlight-heading">
               Challenges
             </h1>
             <p className="detail-one-highlight-text">
@@ -39,6 +25,20 @@ export default class DetailOneDescription extends React.Component {
             </p>
             <p className="detail-one-highlight-text">
               New product
+            </p>
+          </div>
+          <div className="detail-one-highlight">
+            <h1 className="detail-one-highlight-heading">
+              Team
+            </h1>
+            <p className="detail-one-highlight-text">
+              Me (sole designer & front-end dev)
+            </p>
+            <p className="detail-one-highlight-text">
+              2 developers
+            </p>
+            <p className="detail-one-highlight-text">
+              CTO & PM
             </p>
           </div>
           <div className="detail-one-highlight">
