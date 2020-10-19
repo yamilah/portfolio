@@ -1,0 +1,4 @@
+.case-detail-one {
+  @include contain(xxlarge);
+  @include margin(null auto);
+}

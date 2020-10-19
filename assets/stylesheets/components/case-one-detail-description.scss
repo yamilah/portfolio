@@ -1,5 +1,4 @@
 .detail-one-desc {
-  @include contain(xxlarge);
   @include padding(null $sp-unit-4 * 3);
   display: grid;
   grid-template-areas:

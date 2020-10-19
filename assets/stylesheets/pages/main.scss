@@ -1,5 +1,6 @@
 .main {
-@include contain(xxlarge);
+  @include contain(xxlarge);
+  @include margin(null auto);
   display: grid;
   padding-top: $sp-unit-2;
   row-gap: $sp-unit-5 * 4;
