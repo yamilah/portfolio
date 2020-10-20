@@ -53,20 +53,6 @@
 
 .intro-date-1,
 .intro-date-2,
-.intro-subtext,
-.intro-text-1,
-.intro-text-2,
-.intro-text-3,
-.intro-text-5,
-.intro-text-6,
-.intro-text-7 {
-  text-transform: capitalize;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.intro-date-1,
-.intro-date-2,
 .intro-text-1,
 .intro-text-2,
 .intro-text-3,
@@ -93,6 +79,32 @@
   @include respond-above(xxlarge) {
     font-size: $font-heading-15;
   }
+}
+
+.intro-date-1,
+.intro-date-2,
+.intro-subtext,
+.intro-text-1,
+.intro-text-2,
+.intro-text-3,
+.intro-text-5,
+.intro-text-6,
+.intro-text-7 {
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.intro-date-1,
+.intro-date-2,
+.intro-subtext,
+.intro-text-1,
+.intro-text-2,
+.intro-text-3,
+.intro-text-4,
+.intro-text-5,
+.intro-text-6,
+.intro-text-7 {
+  user-select: none;
 }
 
 .intro-date-1,
