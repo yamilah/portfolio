@@ -1,5 +1,7 @@
 import * as React from "react"
 import vidOne from "../images/houseparty/houseparty-prototype.mp4"
+import vidOneFallback from "../images/houseparty/houseparty-prototype.webm"
+import vidOnePoster from "../images/houseparty/houseparty-prototype-poster.jpg"
 
 export default class DetailOneImplementation extends React.Component {
   render() {
@@ -19,10 +21,15 @@ export default class DetailOneImplementation extends React.Component {
             className="detail-one-implementation-prototype-video dropshadow"
             loop
             muted
+            poster={vidOnePoster}
           >
             <source
               src={vidOne}
               type="video/mp4"
+            />
+            <source
+              src={vidOneFallback}
+              type="video/webm"
             />
           </video>
           <p className="detail-one-implementation-prototype-text">
