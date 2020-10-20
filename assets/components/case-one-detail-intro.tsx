@@ -4,35 +4,50 @@ export default class DetailOneIntro extends React.Component {
   render() {
     return (
       <section className="detail-one-intro">
-        <p>
-          2019
+        <p className="detail-one-intro-date-1">
+          <span>
+            20
+          </span>
+          <span>
+            19
+          </span>
         </p>
-        <p>
+        <p className="detail-one-intro-text-1">
           Houseparty
         </p>
-        <p>
+        <p className="detail-one-intro-text-2">
           Be
         </p>
-        <p>
+        <p className="detail-one-intro-text-3">
           You
         </p>
-        <p>
+        <p className="detail-one-intro-text-4">
           Be
         </p>
-        <p>
+        <p className="detail-one-intro-text-5">
           There
         </p>
-        <p>
+        <p className="detail-one-intro-text-6">
           Be
         </p>
-        <p>
+        <p className="detail-one-intro-text-7">
           Together
         </p>
-        <p>
-          Where the party at?
+        <p className="detail-one-intro-subtext">
+          <span>
+            Where the
+          </span>
+          <span>
+            party at?
+          </span>
         </p>
-        <p>
-          2019
+        <p className="detail-one-intro-date-2">
+          <span>
+            20
+          </span>
+          <span>
+            19
+          </span>
         </p>
       </section>
     )
