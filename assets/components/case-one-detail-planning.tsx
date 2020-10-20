@@ -38,6 +38,17 @@ export default class DetailOnePlanning extends React.Component {
             </p>
           </figure>
         </div>
+        <div className="detail-one-planning-text-wrapper">
+          <p className="detail-one-planning-text-1">
+            From this, we learned that there could be an opportunity for a web experience for Houseparty.
+          </p>
+          <p className="detail-one-planning-text-2">
+            I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards.
+          </p>
+          <p className="detail-one-planning-text-3">
+            So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
+          </p>
+        </div>
       </section>
     )
   }

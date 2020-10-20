@@ -50,28 +50,34 @@
 }
 
 .detail-one-planning-figures {
-  align-self: center;
+  @include padding(null $sp-unit-4);
   display: grid;
   grid-auto-rows: min-content;
-  row-gap: $sp-unit-5 * 2;
-
-  @include respond-below(medium) {
-    @include padding(null $sp-unit-4 * 3);
-  }
+  grid-template-columns: repeat(2, 1fr);
 
   @include respond-above(medium) {
-    row-gap: unset;
+    @include padding(unset);
+    grid-template-areas:
+      ". . a a a b b b c c c .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
     grid-template-areas:
       ". . a a . b b . c c . .";
-    grid-template-columns: repeat(12, 1fr);
   }
 }
 
 .detail-one-planning-separator {
+  @include padding(null $sp-unit-4);
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(12, 1fr);
+
+  @include respond-above(medium) {
+    @include padding(unset);
+  }
 }
 
 .detail-one-planning-separator-number,
@@ -121,5 +127,46 @@
 
   @include respond-above(xlarge) {
     font-size: $font-body-6;
+  }
+}
+
+.detail-one-planning-text-1,
+.detail-one-planning-text-2,
+.detail-one-planning-text-3 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-one-planning-text-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-planning-text-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-planning-text-3 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-planning-text-wrapper {
+  @include padding(null $sp-unit-4);
+  display: grid;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    grid-template-areas:
+      ". . a a a . . . . . . ."
+      ". . . . b b b . . . . ."
+      ". . . . . . . c c c . .";
+    grid-template-columns: repeat(12, 1fr);
   }
 }
