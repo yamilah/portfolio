@@ -55,6 +55,25 @@ export default class DetailOnePlanning extends React.Component {
             src="http://placekitten.com/2000/1000"
           />
         </div>
+        <div className="detail-one-planning-sprints">
+          <div className="detail-one-planning-sprint-top">
+            <p className="detail-one-planning-sprint-top-text-1">
+              Anything but! Making this translate to the web was a huge challenge. We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch.
+            </p>
+            <p className="detail-one-planning-sprint-top-text-2">
+              To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
+            </p>
+            <img
+              className="detail-one-planning-sprint-top-img"
+              src="http://placekitten.com/2000/1500"
+            />
+          </div>
+          <div className="detail-one-planning-sprint-bottom">
+            <p>
+              Anything but! Making this translate to the web was a huge challenge. We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch.
+            </p>
+          </div>
+        </div>
       </section>
     )
   }

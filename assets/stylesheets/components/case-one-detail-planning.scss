@@ -194,3 +194,46 @@
       ". . . . . . . c c c . .";
   }
 }
+
+.detail-one-planning-sprint-top {
+  @include padding(null $sp-unit-4);
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
+    grid-template-areas:
+      ". . . . . . c c c c c ."
+      ". . a a a . c c c c c ."
+      ". . . b b b c c c c c ."
+      ". . . . . . c c c c c .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.detail-one-planning-sprint-top-img {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-planning-sprint-top-text-1,
+.detail-one-planning-sprint-top-text-2 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-one-planning-sprint-top-text-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-planning-sprint-top-text-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
