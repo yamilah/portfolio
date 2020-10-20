@@ -1,4 +1,5 @@
 .detail-one-intro {
+  @include padding($sp-unit-2 $sp-unit-2 null $sp-unit-2);
   background-image: url(../images/line.svg);
   background-position-y: 47%;
   background-repeat: no-repeat;
@@ -13,7 +14,6 @@
     ". j j j"
     "h h h h";
   grid-template-columns: repeat(4, 1fr);
-  padding: $sp-unit-2;
 
   @include respond-above(small) {
     background-position-y: 48%;

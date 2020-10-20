@@ -1,6 +1,11 @@
 .detail-one-planning {
   border-top: $border-unit-2 solid $woodsmoke-black;
   display: grid;
+  row-gap: $sp-unit-2 * 10;
+
+  @include respond-above(medium) {
+    row-gap: $sp-unit-3 * 10;
+  }
 }
 
 .detail-one-planning-figure-1 {
@@ -52,6 +57,7 @@
 .detail-one-planning-figures {
   @include padding(null $sp-unit-4);
   display: grid;
+  gap: $sp-unit-4 * 2;
   grid-auto-rows: min-content;
   grid-template-columns: repeat(2, 1fr);
 
@@ -63,8 +69,10 @@
   }
 
   @include respond-above(large) {
+    gap: unset;
     grid-template-areas:
       ". . a a . b b . c c . .";
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -130,43 +138,59 @@
   }
 }
 
-.detail-one-planning-text-1,
-.detail-one-planning-text-2,
-.detail-one-planning-text-3 {
+.detail-one-planning-solution {
+  @include padding(null $sp-unit-4);
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    row-gap: $sp-unit-4 * 3;
+  }
+}
+
+.detail-one-planning-solution-text-1,
+.detail-one-planning-solution-text-2,
+.detail-one-planning-solution-text-3 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
   text-align: justify;
 }
 
-.detail-one-planning-text-1 {
+.detail-one-planning-solution-text-1 {
   @include respond-above(medium) {
     grid-area: a;
   }
 }
 
-.detail-one-planning-text-2 {
+.detail-one-planning-solution-text-2 {
   @include respond-above(medium) {
     grid-area: b;
   }
 }
 
-.detail-one-planning-text-3 {
+.detail-one-planning-solution-text-3 {
   @include respond-above(medium) {
     grid-area: c;
   }
 }
 
-.detail-one-planning-text-wrapper {
-  @include padding(null $sp-unit-4);
+.detail-one-planning-solution-text-wrapper {
   display: grid;
 
   @include respond-above(medium) {
-    @include padding(unset);
+    grid-template-areas:
+      ". . a a a a . . . . . ."
+      ". . . . b b b b . . . ."
+      ". . . . . . . c c c c .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
     grid-template-areas:
       ". . a a a . . . . . . ."
       ". . . . b b b . . . . ."
       ". . . . . . . c c c . .";
-    grid-template-columns: repeat(12, 1fr);
   }
 }
