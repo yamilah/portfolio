@@ -120,12 +120,14 @@
 }
 
 .case-two-link {
+  background-color: $woodsmoke-black;
+  color: $hint-of-red;
   grid-area: g;
   text-decoration: none;
 
   &:hover {
-    background-color: $woodsmoke-black;
-    color: $hint-of-red;
+    background-color: $pure-white;
+    color: $woodsmoke-black;
   }
 }
 
