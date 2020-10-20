@@ -1,4 +1,7 @@
 import * as React from "react"
+import imgOne from "../images/houseparty/houseparty-planning-1.jpg"
+import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
+import imgThree from "../images/houseparty/houseparty-planning-3.jpg"
 
 export default class DetailOnePlanning extends React.Component {
   render() {
@@ -65,20 +68,20 @@ export default class DetailOnePlanning extends React.Component {
             </p>
             <img
               className="detail-one-planning-sprint-top-img"
-              src="http://placekitten.com/2000/1500"
+              src={imgOne}
             />
           </div>
           <div className="detail-one-planning-sprint-bottom">
             <img
               className="detail-one-planning-sprint-bottom-img-1"
-              src="http://placekitten.com/2000/1500"
+              src={imgTwo}
             />
             <p className="detail-one-planning-sprint-bottom-text">
               So what you’re seeing here are the pictures I took while leading the team through a design sprint, which involved a week of exercises like setting up a problem statement; interviewing employees and users alike to deeply understand Houseparty, its business, and its users; listing out our assumptions and how we might test them; user journeying; How Might Weing; and so on and so forth.
             </p>
             <img
               className="detail-one-planning-sprint-bottom-img-2"
-              src="http://placekitten.com/2000/1500"
+              src={imgThree}
             />
           </div>
         </div>
