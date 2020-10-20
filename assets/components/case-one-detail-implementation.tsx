@@ -36,7 +36,7 @@ export default class DetailOneImplementation extends React.Component {
             />
           </video>
           <p className="detail-one-implementation-prototype-text">
-            From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing here. Here were some key findings from this testing:
+            From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing above. Here were some key findings from this testing:
           </p>
         </div>
         <div className="detail-one-implementation-figures">
@@ -91,7 +91,7 @@ export default class DetailOneImplementation extends React.Component {
             />
           </video>
           <p className="detail-one-implementation-progress-text-1">
-            With these results in mind, we felt good about the scope we selected for our MVP and got started. Being the sole designer, I focused on bringing the agreed upon feature set from sketches, to lofi prototypes, testing those with users, and bringing them to hifi.
+            With these results in mind, we felt good about the scope we selected for our MVP and got started. Being the sole designer, I focused on bringing the agreed upon feature set from sketches, to lofi prototypes, testing those with users, and bringing them to hifi—which is what you’re seeing here.
           </p>
           <p className="detail-one-implementation-progress-text-2">
             While doing this, I was also implementing designs and components on the front-end in storybook, and then having devs pick up those storybook components up, hooking those up to data from Houseparty’s API. I certainly had my hands full! We all did.
