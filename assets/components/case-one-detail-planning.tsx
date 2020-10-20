@@ -69,9 +69,17 @@ export default class DetailOnePlanning extends React.Component {
             />
           </div>
           <div className="detail-one-planning-sprint-bottom">
-            <p>
-              Anything but! Making this translate to the web was a huge challenge. We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch.
+            <img
+              className="detail-one-planning-sprint-bottom-img-1"
+              src="http://placekitten.com/2000/1500"
+            />
+            <p className="detail-one-planning-sprint-bottom-text">
+              So what you’re seeing here are the pictures I took while leading the team through a design sprint, which involved a week of exercises like setting up a problem statement; interviewing employees and users alike to deeply understand Houseparty, its business, and its users; listing out our assumptions and how we might test them; user journeying; How Might Weing; and so on and so forth.
             </p>
+            <img
+              className="detail-one-planning-sprint-bottom-img-2"
+              src="http://placekitten.com/2000/1500"
+            />
           </div>
         </div>
       </section>

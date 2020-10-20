@@ -195,6 +195,56 @@
   }
 }
 
+.detail-one-planning-sprint-bottom {
+  @include padding(null $sp-unit-4);
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    gap: $sp-unit-2 ($sp-unit-4 * 2);
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b b ."
+      ". a a a a a a . . . . ."
+      ". a a a a a a c c c . ."
+      ". . . . . . . c c c . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a . b b b ."
+      ". a a a a a a . . . . ."
+      ". a a a a a a c c c . ."
+      ". . . . . . . c c c . .";
+  }
+}
+
+.detail-one-planning-sprint-bottom-img-1 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-planning-sprint-bottom-img-2 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-planning-sprint-bottom-text {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
 .detail-one-planning-sprint-top {
   @include padding(null $sp-unit-4);
   display: grid;
@@ -244,5 +294,14 @@
 .detail-one-planning-sprint-top-text-2 {
   @include respond-above(medium) {
     grid-area: b;
+  }
+}
+
+.detail-one-planning-sprints {
+  display: grid;
+  row-gap: $sp-unit-4 * 3;
+
+  @include respond-above(medium) {
+    row-gap: $sp-unit-4 * 4;
   }
 }
