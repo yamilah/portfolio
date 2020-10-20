@@ -52,7 +52,7 @@ export default class DetailOneDescription extends React.Component {
         </div>
         <div className="detail-one-text-wrapper">
           <p className="detail-one-text">
-            Houseparty is a face-to-face social network focuses on instant video chats of up to 8 people. I really loved working on this one—it was a short timeline, but I had a ton of fun working with the problems synchronous communication tends to require. Check it out at app.houseparty.com!
+            Houseparty is a face-to-face social network focuses on instant video chats of up to 8 people. I really loved working on this one—it was a short timeline, but I had a ton of fun working with the problems synchronous communication tends to require. Check it out at <a href="https://app.houseparty.com">app.houseparty.com</a>!
           </p>
           <p className="detail-one-text">
             I was the only designer and front-end developer on the team, but there were two other devs, a CTO, and the lead PM at the company. We had a little over three months.

@@ -1,9 +1,11 @@
 .detail-one-planning {
+  @include padding(null $sp-unit-4);
   border-top: $border-unit-2 solid $woodsmoke-black;
   display: grid;
   row-gap: $sp-unit-2 * 10;
 
   @include respond-above(medium) {
+    @include padding(unset);
     row-gap: $sp-unit-3 * 10;
   }
 }
@@ -55,14 +57,12 @@
 }
 
 .detail-one-planning-figures {
-  @include padding(null $sp-unit-4);
   display: grid;
   gap: $sp-unit-4 * 2;
   grid-auto-rows: min-content;
   grid-template-columns: repeat(2, 1fr);
 
   @include respond-above(medium) {
-    @include padding(unset);
     grid-template-areas:
       ". . a a a b b b c c c .";
     grid-template-columns: repeat(12, 1fr);
@@ -77,15 +77,10 @@
 }
 
 .detail-one-planning-separator {
-  @include padding(null $sp-unit-4);
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(12, 1fr);
-
-  @include respond-above(medium) {
-    @include padding(unset);
-  }
 }
 
 .detail-one-planning-separator-number,
@@ -139,12 +134,10 @@
 }
 
 .detail-one-planning-solution {
-  @include padding(null $sp-unit-4);
   display: grid;
   row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
-    @include padding(unset);
     row-gap: $sp-unit-4 * 3;
   }
 }
@@ -196,12 +189,10 @@
 }
 
 .detail-one-planning-sprint-bottom {
-  @include padding(null $sp-unit-4);
   display: grid;
   row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
-    @include padding(unset);
     gap: $sp-unit-2 ($sp-unit-4 * 2);
     grid-template-areas:
       ". a a a a a a . . . . ."
@@ -246,12 +237,10 @@
 }
 
 .detail-one-planning-sprint-top {
-  @include padding(null $sp-unit-4);
   display: grid;
   row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
-    @include padding(unset);
     gap: $sp-unit-2 ($sp-unit-4 * 2);
     grid-template-areas:
       ". . . . . c c c c c c ."

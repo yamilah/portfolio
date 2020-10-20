@@ -2,6 +2,9 @@ import * as React from "react"
 import vidOne from "../images/houseparty/houseparty-prototype.mp4"
 import vidOneFallback from "../images/houseparty/houseparty-prototype.webm"
 import vidOnePoster from "../images/houseparty/houseparty-prototype-poster.jpg"
+import vidTwo from "../images/houseparty/houseparty-progress.mp4"
+import vidTwoFallback from "../images/houseparty/houseparty-progress.webm"
+import vidTwoPoster from "../images/houseparty/houseparty-progress-poster.jpg"
 
 export default class DetailOneImplementation extends React.Component {
   render() {
@@ -69,6 +72,30 @@ export default class DetailOneImplementation extends React.Component {
               participants understood the wave feature
             </p>
           </figure>
+        </div>
+        <div className="detail-one-implementation-progress">
+          <video
+            autoPlay
+            className="detail-one-implementation-progress-video dropshadow"
+            loop
+            muted
+            poster={vidTwoPoster}
+          >
+            <source
+              src={vidTwo}
+              type="video/mp4"
+            />
+            <source
+              src={vidTwoFallback}
+              type="video/webm"
+            />
+          </video>
+          <p className="detail-one-implementation-progress-text-1">
+            With these results in mind, we felt good about the scope we selected for our MVP and got started. Being the sole designer, I focused on bringing the agreed upon feature set from sketches, to lofi prototypes, testing those with users, and bringing them to hifi.
+          </p>
+          <p className="detail-one-implementation-progress-text-2">
+            While doing this, I was also implementing designs and components on the front-end in storybook, and then having devs pick up those storybook components up, hooking those up to data from Houseparty’s API. I certainly had my hands full! We all did.
+          </p>
         </div>
       </section>
     )

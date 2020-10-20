@@ -1,9 +1,11 @@
 .detail-one-implementation {
+  @include padding(null $sp-unit-4);
   border-top: $border-unit-2 solid $woodsmoke-black;
   display: grid;
   row-gap: $sp-unit-2 * 10;
 
   @include respond-above(medium) {
+    @include padding(unset);
     row-gap: $sp-unit-3 * 10;
   }
 }
@@ -61,14 +63,12 @@
 }
 
 .detail-one-implementation-figures {
-  @include padding(null $sp-unit-4);
   display: grid;
   gap: $sp-unit-4 * 2;
   grid-auto-rows: min-content;
   grid-template-columns: repeat(2, 1fr);
 
   @include respond-above(medium) {
-    @include padding(unset);
     grid-template-areas:
       ". a . b ."
       ". c . d .";
@@ -76,20 +76,57 @@
   }
 
   @include respond-above(large) {
-    @include padding(unset);
     grid-template-areas:
       ". a . b . c . d .";
     grid-template-columns: repeat(9, 1fr);
   }
 }
 
+.detail-one-implementation-progress {
+  display: grid;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b . ."
+      ". a a a a a a . c c c ."
+      ". a a a a a a . . . . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.detail-one-implementation-progress-text-1,
+.detail-one-implementation-progress-text-2 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+}
+
+.detail-one-implementation-progress-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-implementation-progress-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-implementation-progress-video {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
 .detail-one-implementation-prototype {
-  @include padding(null $sp-unit-4);
   display: grid;
   row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
-    @include padding(unset);
     grid-template-areas:
       ". a a a a a a a a a a ."
       ". . . . . . b b b . . .";
@@ -118,15 +155,10 @@
 }
 
 .detail-one-implementation-separator {
-  @include padding(null $sp-unit-4);
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(12, 1fr);
-
-  @include respond-above(medium) {
-    @include padding(unset);
-  }
 }
 
 .detail-one-implementation-separator-number,
