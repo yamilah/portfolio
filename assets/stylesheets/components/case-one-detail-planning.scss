@@ -1,0 +1,125 @@
+.detail-one-planning {
+  border-top: $border-unit-2 solid $woodsmoke-black;
+  display: grid;
+}
+
+.detail-one-planning-figure-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-planning-figure-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-planning-figure-3 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-planning-figure-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-one-planning-figure-text {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+}
+
+.detail-one-planning-figures {
+  align-self: center;
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: $sp-unit-5 * 2;
+
+  @include respond-below(medium) {
+    @include padding(null $sp-unit-4 * 3);
+  }
+
+  @include respond-above(medium) {
+    row-gap: unset;
+    grid-template-areas:
+      ". . a a . b b . c c . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.detail-one-planning-separator {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.detail-one-planning-separator-number,
+.detail-one-planning-separator-text {
+  user-select: none;
+}
+
+.detail-one-planning-separator-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(medium) {
+    grid-column: 2;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-one-planning-separator-text {
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  padding-top: $sp-unit-4;
+  grid-column: span 4;
+
+  @include respond-above(small) {
+    grid-column: span 3;
+  }
+
+  @include respond-above(medium) {
+    font-size: $font-body-4;
+    grid-column: 3/span 2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+  }
+}
