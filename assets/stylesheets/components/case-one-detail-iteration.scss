@@ -1,4 +1,4 @@
-.detail-one-implementation {
+.detail-one-iteration {
   @include padding(null $sp-unit-4);
   border-top: $border-unit-2 solid $woodsmoke-black;
   display: grid;
@@ -10,31 +10,31 @@
   }
 }
 
-.detail-one-implementation-figure-1 {
+.detail-one-iteration-figure-1 {
   @include respond-above(medium) {
     grid-area: a;
   }
 }
 
-.detail-one-implementation-figure-2 {
+.detail-one-iteration-figure-2 {
   @include respond-above(medium) {
     grid-area: b;
   }
 }
 
-.detail-one-implementation-figure-3 {
+.detail-one-iteration-figure-3 {
   @include respond-above(medium) {
     grid-area: c;
   }
 }
 
-.detail-one-implementation-figure-4 {
+.detail-one-iteration-figure-4 {
   @include respond-above(medium) {
     grid-area: d;
   }
 }
 
-.detail-one-implementation-figure-number {
+.detail-one-iteration-figure-number {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
   line-height: $leading-unit-1;
@@ -56,13 +56,13 @@
   }
 }
 
-.detail-one-implementation-figure-text {
+.detail-one-iteration-figure-text {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
 }
 
-.detail-one-implementation-figures {
+.detail-one-iteration-figures {
   display: grid;
   gap: $sp-unit-4 * 2;
   grid-auto-rows: min-content;
@@ -82,35 +82,35 @@
   }
 }
 
-.detail-one-implementation-idea-1,
-.detail-one-implementation-idea-2,
-.detail-one-implementation-idea-3,
-.detail-one-implementation-idea-4,
-.detail-one-implementation-idea-5 {
+.detail-one-iteration-idea-1,
+.detail-one-iteration-idea-2,
+.detail-one-iteration-idea-3,
+.detail-one-iteration-idea-4,
+.detail-one-iteration-idea-5 {
   width: 100%;
 }
 
-.detail-one-implementation-idea-1 {
+.detail-one-iteration-idea-1 {
   grid-area: a;
 }
 
-.detail-one-implementation-idea-2 {
+.detail-one-iteration-idea-2 {
   grid-area: b;
 }
 
-.detail-one-implementation-idea-3 {
+.detail-one-iteration-idea-3 {
   grid-area: c;
 }
 
-.detail-one-implementation-idea-4 {
+.detail-one-iteration-idea-4 {
   grid-area: d;
 }
 
-.detail-one-implementation-idea-5 {
+.detail-one-iteration-idea-5 {
   grid-area: e;
 }
 
-.detail-one-implementation-idea-text {
+.detail-one-iteration-idea-text {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   grid-area: f;
@@ -118,7 +118,7 @@
   text-align: justify;
 }
 
-.detail-one-implementation-ideas {
+.detail-one-iteration-ideas {
   display: grid;
   gap: $sp-unit-4;
   grid-template-areas:
@@ -156,7 +156,7 @@
   }
 }
 
-.detail-one-implementation-progress {
+.detail-one-iteration-progress {
   display: grid;
   row-gap: $sp-unit-4;
 
@@ -179,27 +179,27 @@
   }
 }
 
-.detail-one-implementation-progress-text-1,
-.detail-one-implementation-progress-text-2 {
+.detail-one-iteration-progress-text-1,
+.detail-one-iteration-progress-text-2 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
   text-align: justify;
 }
 
-.detail-one-implementation-progress-text-1 {
+.detail-one-iteration-progress-text-1 {
   @include respond-above(medium) {
     grid-area: b;
   }
 }
 
-.detail-one-implementation-progress-text-2 {
+.detail-one-iteration-progress-text-2 {
   @include respond-above(medium) {
     grid-area: c;
   }
 }
 
-.detail-one-implementation-progress-video {
+.detail-one-iteration-progress-video {
   width: 100%;
 
   @include respond-above(medium) {
@@ -207,7 +207,7 @@
   }
 }
 
-.detail-one-implementation-prototype {
+.detail-one-iteration-prototype {
   display: grid;
   row-gap: $sp-unit-4;
 
@@ -220,7 +220,7 @@
   }
 }
 
-.detail-one-implementation-prototype-text {
+.detail-one-iteration-prototype-text {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -231,7 +231,7 @@
   }
 }
 
-.detail-one-implementation-prototype-video {
+.detail-one-iteration-prototype-video {
   width: 100%;
 
   @include respond-above(medium) {
@@ -239,19 +239,19 @@
   }
 }
 
-.detail-one-implementation-separator {
+.detail-one-iteration-separator {
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.detail-one-implementation-separator-number,
-.detail-one-implementation-separator-text {
+.detail-one-iteration-separator-number,
+.detail-one-iteration-separator-text {
   user-select: none;
 }
 
-.detail-one-implementation-separator-number {
+.detail-one-iteration-separator-number {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
 
@@ -276,11 +276,12 @@
   }
 }
 
-.detail-one-implementation-separator-text {
+.detail-one-iteration-separator-text {
   font-size: $font-body-3;
   font-weight: $font-weight-regular;
-  padding-top: $sp-unit-4;
   grid-column: span 4;
+  padding-top: $sp-unit-4;
+  text-transform: capitalize;
 
   @include respond-above(small) {
     grid-column: span 3;
@@ -293,5 +294,6 @@
 
   @include respond-above(xlarge) {
     font-size: $font-body-6;
+    grid-column: 3/span 1;
   }
 }
