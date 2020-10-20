@@ -1,0 +1,180 @@
+.detail-one-implementation {
+  border-top: $border-unit-2 solid $woodsmoke-black;
+  display: grid;
+  row-gap: $sp-unit-2 * 10;
+
+  @include respond-above(medium) {
+    row-gap: $sp-unit-3 * 10;
+  }
+}
+
+.detail-one-implementation-figure-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-implementation-figure-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-implementation-figure-3 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-implementation-figure-4 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
+.detail-one-implementation-figure-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-one-implementation-figure-text {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+}
+
+.detail-one-implementation-figures {
+  @include padding(null $sp-unit-4);
+  display: grid;
+  gap: $sp-unit-4 * 2;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    grid-template-areas:
+      ". a . b ."
+      ". c . d .";
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @include respond-above(large) {
+    @include padding(unset);
+    grid-template-areas:
+      ". a . b . c . d .";
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+.detail-one-implementation-prototype {
+  @include padding(null $sp-unit-4);
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . . . . . b b b . . .";
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: $sp-unit-4 * 3;
+  }
+}
+
+.detail-one-implementation-prototype-text {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-implementation-prototype-video {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-implementation-separator {
+  @include padding(null $sp-unit-4);
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, 1fr);
+
+  @include respond-above(medium) {
+    @include padding(unset);
+  }
+}
+
+.detail-one-implementation-separator-number,
+.detail-one-implementation-separator-text {
+  user-select: none;
+}
+
+.detail-one-implementation-separator-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(medium) {
+    grid-column: 2;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-one-implementation-separator-text {
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  padding-top: $sp-unit-4;
+  grid-column: span 4;
+
+  @include respond-above(small) {
+    grid-column: span 3;
+  }
+
+  @include respond-above(medium) {
+    font-size: $font-body-4;
+    grid-column: 3/span 2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+  }
+}
