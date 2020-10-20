@@ -1,5 +1,9 @@
 import * as React from "react"
 import imgOne from "../images/houseparty/houseparty-idea-1.jpg"
+import imgTwo from "../images/houseparty/houseparty-idea-2.jpg"
+import imgThree from "../images/houseparty/houseparty-idea-3.jpg"
+import imgFour from "../images/houseparty/houseparty-idea-4.jpg"
+import imgFive from "../images/houseparty/houseparty-idea-5.jpg"
 import vidOne from "../images/houseparty/houseparty-prototype.mp4"
 import vidOneFallback from "../images/houseparty/houseparty-prototype.webm"
 import vidOnePoster from "../images/houseparty/houseparty-prototype-poster.jpg"
@@ -100,27 +104,27 @@ export default class DetailOneImplementation extends React.Component {
         </div>
         <div className="detail-one-implementation-ideas">
           <img
-            alt="A starter sketch"
+            alt="A product concept drawing"
             className="detail-one-implementation-idea-1 dropshadow"
-            src={imgOne}
+            src={imgFive}
           />
           <img
-            alt="A starter sketch"
+            alt="A product concept drawing"
             className="detail-one-implementation-idea-2 dropshadow"
-            src={imgOne}
+            src={imgFour}
           />
           <img
-            alt="A starter sketch"
+            alt="A product concept drawing"
             className="detail-one-implementation-idea-3 dropshadow"
-            src={imgOne}
+            src={imgThree}
           />
           <img
-            alt="A starter sketch"
+            alt="A product concept drawing"
             className="detail-one-implementation-idea-4 dropshadow"
-            src={imgOne}
+            src={imgTwo}
           />
           <img
-            alt="A starter sketch"
+            alt="A product concept drawing"
             className="detail-one-implementation-idea-5 dropshadow"
             src={imgOne}
           />
