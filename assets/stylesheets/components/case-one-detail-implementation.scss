@@ -84,6 +84,7 @@
 
 .detail-one-implementation-progress {
   display: grid;
+  row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
     grid-template-areas:
@@ -92,6 +93,7 @@
       ". a a a a a a . c c c ."
       ". a a a a a a . . . . .";
     grid-template-columns: repeat(12, 1fr);
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
   }
 }
 
@@ -100,6 +102,7 @@
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
+  text-align: justify;
 }
 
 .detail-one-implementation-progress-text-1 {
