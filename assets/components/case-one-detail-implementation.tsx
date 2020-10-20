@@ -16,7 +16,7 @@ export default class DetailOneImplementation extends React.Component {
         <div className="detail-one-implementation-prototype">
           <video
             autoPlay
-            className="detail-one-implementation-prototype-video"
+            className="detail-one-implementation-prototype-video dropshadow"
             loop
             muted
           >
