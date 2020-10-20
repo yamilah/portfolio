@@ -1,4 +1,5 @@
 import * as React from "react"
+import imgOne from "../images/houseparty/houseparty-idea-1.jpg"
 import vidOne from "../images/houseparty/houseparty-prototype.mp4"
 import vidOneFallback from "../images/houseparty/houseparty-prototype.webm"
 import vidOnePoster from "../images/houseparty/houseparty-prototype-poster.jpg"
@@ -95,6 +96,36 @@ export default class DetailOneImplementation extends React.Component {
           </p>
           <p className="detail-one-implementation-progress-text-2">
             While doing this, I was also implementing designs and components on the front-end in storybook, and then having devs pick up those storybook components up, hooking those up to data from Houseparty’s API. I certainly had my hands full! We all did.
+          </p>
+        </div>
+        <div className="detail-one-implementation-ideas">
+          <img
+            alt="A starter sketch"
+            className="detail-one-implementation-idea-1 dropshadow"
+            src={imgOne}
+          />
+          <img
+            alt="A starter sketch"
+            className="detail-one-implementation-idea-2 dropshadow"
+            src={imgOne}
+          />
+          <img
+            alt="A starter sketch"
+            className="detail-one-implementation-idea-3 dropshadow"
+            src={imgOne}
+          />
+          <img
+            alt="A starter sketch"
+            className="detail-one-implementation-idea-4 dropshadow"
+            src={imgOne}
+          />
+          <img
+            alt="A starter sketch"
+            className="detail-one-implementation-idea-5 dropshadow"
+            src={imgOne}
+          />
+          <p className="detail-one-implementation-idea-text">
+            As it happens, what you see on production, <a href="https://app.houseparty.com">app.houseparty.com</a>, is really just a small slice of the many iterations of designs I put together and tried out. I felt like we really did our due diligence when working on where to put all the controls and interactions. What you’re seeing here are some examples that we looked into.
           </p>
         </div>
       </section>
