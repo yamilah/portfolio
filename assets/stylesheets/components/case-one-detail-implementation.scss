@@ -10,6 +10,113 @@
   }
 }
 
+.detail-one-implementation-device-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-implementation-device-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-implementation-device-text,
+.detail-one-implementation-focus-text-1,
+.detail-one-implementation-focus-text-2,
+.detail-one-implementation-focus-text-3,
+.detail-one-implementation-prototype-text-1,
+.detail-one-implementation-prototype-text-2 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-one-implementation-device-text {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-implementation-devices {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    gap: $sp-unit-4 * 3;
+    grid-template-areas:
+      ". . a a a a . . . . . ."
+      ". . a a a a b b b b b b"
+      ". . . . . . b b b b b b"
+      ". c c c c . b b b b b b"
+      ". . . . . . b b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+
+      "a a a a a . . . . . . ."
+      "a a a a a b b b b b b b"
+      ". . . . . b b b b b b b"
+      ". c c c . b b b b b b b"
+      ". . . . . b b b b b b b";
+  }
+}
+
+.detail-one-implementation-focus {
+  display: grid;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". a a a a a a a a a a ."
+      ". b b b b . . . . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . . . . d d d d .";
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: $sp-unit-4 * 3;
+  }
+
+  @include respond-above(large) {
+    @include padding(unset);
+    gap: $sp-unit-1 $sp-unit-4 * 3;
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b . ."
+      ". a a a a a a . c c c ."
+      ". a a a a a a d d d . ."
+      ". a a a a a a . . . . .";
+  }
+}
+
+.detail-one-implementation-focus-img {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-implementation-focus-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-one-implementation-focus-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-implementation-focus-text-3 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
 .detail-one-implementation-prototype {
   display: grid;
   gap: $sp-unit-4;
@@ -38,14 +145,6 @@
       ". . c c c d d d . . . ."
       ". . . . . d d d . . . .";
   }
-}
-
-.detail-one-implementation-prototype-text-1,
-.detail-one-implementation-prototype-text-2 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
 }
 
 .detail-one-implementation-prototype-text-1 {
