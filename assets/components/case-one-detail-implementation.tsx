@@ -16,13 +16,14 @@ export default class DetailOneImplementation extends React.Component {
             Implementation & shipping
           </p>
         </div>
-        <div className="detail-one-implementation-performance">
+        <div className="detail-one-implementation-prototype">
           <video
             autoPlay
-            className="detail-one-implementation-performance-video-1 dropshadow"
+            className="detail-one-implementation-prototype-video-1 dropshadow"
             loop
             muted
-            >
+            poster={vidOnePoster}
+          >
             <source
               src={vidOne}
               type="video/mp4"
@@ -31,17 +32,23 @@ export default class DetailOneImplementation extends React.Component {
           </video>
           <video
             autoPlay
-            className="detail-one-implementation-performance-video-2 dropshadow"
+            className="detail-one-implementation-prototype-video-2 dropshadow"
             loop
             muted
             poster={vidTwoPoster}
-            >
+          >
             <source
               src={vidTwo}
               type="video/mp4"
             />
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
+          <p className="detail-one-implementation-prototype-text-1">
+            We were all moving really quickly, so we didn't expect what we learned next: users struggled a ton with prototype issues that came with all the video reordering—this was because we were using JavaScript heavily to handle all that.
+          </p>
+          <p className="detail-one-implementation-prototype-text-2">
+            What you’re seeing here are some actual prototypes I made to explore these pain points around timing, ordering, responsiveness—and all of this at different screen sizes and orientations.
+          </p>
         </div>
       </section>
     )
