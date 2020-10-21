@@ -33,9 +33,11 @@ export default class DetailOneFinale extends React.Component {
             </p>
           </div>
         </div>
-        <p className="detail-one-finale-outro">
-          Thank you!
-        </p>
+        <div className="detail-one-finale-outro">
+          <p className="detail-one-finale-outro-text">
+            Thank you!
+          </p>
+        </div>
       </section>
     )
   }

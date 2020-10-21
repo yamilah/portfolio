@@ -54,7 +54,7 @@
 }
 
 .detail-one-finale-conclusion-heading,
-.detail-one-finale-outro,
+.detail-one-finale-outro-text,
 .detail-one-finale-separator-number {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
@@ -95,7 +95,12 @@
 }
 
 .detail-one-finale-outro {
-  text-align: center;
+  display: grid;
+  height: 50vh;
+}
+
+.detail-one-finale-outro-text {
+  place-self: center;
 }
 
 .detail-one-finale-separator {
