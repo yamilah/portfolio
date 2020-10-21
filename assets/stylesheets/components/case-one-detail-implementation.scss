@@ -71,6 +71,7 @@
 
 .detail-one-implementation-focus {
   display: grid;
+  row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
     grid-template-areas:
@@ -104,7 +105,12 @@
 
 .detail-one-implementation-focus-text-1 {
   @include respond-above(medium) {
+    padding-top: $sp-unit-4 * 3;
     grid-area: b;
+  }
+
+  @include respond-above(large) {
+    @include padding(unset);
   }
 }
 

@@ -56,7 +56,10 @@
   }
 }
 
-.detail-one-iteration-figure-text {
+.detail-one-iteration-figure-text,
+.detail-one-iteration-idea-text,
+.detail-one-iteration-progress-text-1,
+.detail-one-iteration-progress-text-2 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -111,10 +114,7 @@
 }
 
 .detail-one-iteration-idea-text {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
   grid-area: f;
-  line-height: $leading-unit-5;
   text-align: justify;
 }
 
@@ -221,9 +221,6 @@
 }
 
 .detail-one-iteration-prototype-text {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
   text-align: justify;
 
   @include respond-above(medium) {
