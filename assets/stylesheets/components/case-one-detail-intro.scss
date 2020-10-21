@@ -114,6 +114,7 @@
   font-weight: $font-weight-regular;
   grid-area: e;
   grid-auto-rows: min-content;
+  text-transform: capitalize;
   user-select: none;
 
   @include respond-above(medium) {
