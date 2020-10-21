@@ -17,7 +17,7 @@ export default class DetailOneImplementation extends React.Component {
             03
           </p>
           <p className="detail-one-implementation-separator-text">
-            Implementation & shipping
+            Implementation & debugging
           </p>
         </div>
         <div className="detail-one-implementation-prototype">

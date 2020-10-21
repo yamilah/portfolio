@@ -1,5 +1,6 @@
 import * as React from "react"
 import DetailOneDescription from "../case-one-detail-description"
+import DetailOneFinale from "../case-one-detail-one-finale"
 import DetailOneImplementation from "../case-one-detail-implementation"
 import DetailOneIntro from "../case-one-detail-intro"
 import DetailOneIteration from "../case-one-detail-iteration"
@@ -14,6 +15,7 @@ export default class CaseDetailOne extends React.Component {
         <DetailOnePlanning />
         <DetailOneIteration />
         <DetailOneImplementation />
+        <DetailOneFinale />
       </section>
     )
   }
