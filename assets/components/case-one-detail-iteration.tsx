@@ -39,6 +39,7 @@ export default class DetailOneIteration extends React.Component {
               src={vidOneFallback}
               type="video/webm"
             />
+            Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
           <p className="detail-one-iteration-prototype-text">
             From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing above. Here were some key findings from this testing:
@@ -94,6 +95,7 @@ export default class DetailOneIteration extends React.Component {
               src={vidTwoFallback}
               type="video/webm"
             />
+            Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
           <p className="detail-one-iteration-progress-text-1">
             With these results in mind, we felt good about the scope we selected for our MVP and got started. Being the sole designer, I focused on bringing the agreed upon feature set from sketches, to lofi prototypes, testing those with users, and bringing them to hifi—which is what you’re seeing here.
