@@ -56,7 +56,7 @@ export default class DetailOnePlanning extends React.Component {
           <img
             alt="A video showing someone using Houseparty"
             className="detail-one-planning-solution-img"
-            src="http://placekitten.com/2000/1000"
+            src="https://via.placeholder.com/2000x1000"
           />
         </div>
         <div className="detail-one-planning-sprints">
