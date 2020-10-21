@@ -4,8 +4,8 @@ export default class CaseDetailTwo extends React.Component {
   render() {
     return (
       <section className="case-detail-two">
-        <p>
-          hofr
+        <p className="case-detail-two-text">
+          Coming soon!
         </p>
       </section>
     )
