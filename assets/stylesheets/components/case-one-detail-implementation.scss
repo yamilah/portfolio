@@ -1,0 +1,94 @@
+.detail-one-implementation {
+  @include padding(null $sp-unit-4);
+  border-top: $border-unit-2 solid $woodsmoke-black;
+  display: grid;
+  row-gap: $sp-unit-2 * 10;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    row-gap: $sp-unit-3 * 10;
+  }
+}
+
+.detail-one-implementation-performance {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-template-areas:
+    "a b b b";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a . b b b b b b .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.detail-one-implementation-performance-video-1 {
+  grid-area: a;
+  height: 100%;
+}
+
+.detail-one-implementation-performance-video-2 {
+  grid-area: b;
+  width: 100%;
+}
+
+.detail-one-implementation-separator {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.detail-one-implementation-separator-number,
+.detail-one-implementation-separator-text {
+  user-select: none;
+}
+
+.detail-one-implementation-separator-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(medium) {
+    grid-column: 2;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-one-implementation-separator-text {
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  grid-column: span 4;
+  padding-top: $sp-unit-4;
+  text-transform: capitalize;
+
+  @include respond-above(small) {
+    grid-column: span 3;
+  }
+
+  @include respond-above(medium) {
+    font-size: $font-body-4;
+    grid-column: 3/span 2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+    grid-column: 3/span 1;
+  }
+}
