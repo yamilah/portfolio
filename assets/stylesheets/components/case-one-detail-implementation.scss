@@ -27,7 +27,10 @@
 .detail-one-implementation-focus-text-2,
 .detail-one-implementation-focus-text-3,
 .detail-one-implementation-prototype-text-1,
-.detail-one-implementation-prototype-text-2 {
+.detail-one-implementation-prototype-text-2,
+.detail-one-implementation-snippet-text-1,
+.detail-one-implementation-snippet-text-2,
+.detail-one-implementation-snippet-text-3 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -223,5 +226,55 @@
   @include respond-above(xlarge) {
     font-size: $font-body-6;
     grid-column: 3/span 1;
+  }
+}
+
+.detail-one-implementation-snippet {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . b b b b . . . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . . . d d d d . .";
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: $sp-unit-1;
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . b b b . . . . . . ."
+      ". . . . c c c . . . . ."
+      ". . . . . . d d d . . .";
+  }
+}
+
+.detail-one-implementation-snippet-img {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-one-implementation-snippet-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+    padding-top: $sp-unit-4 * 3;
+  }
+}
+
+.detail-one-implementation-snippet-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-one-implementation-snippet-text-3 {
+  @include respond-above(medium) {
+    grid-area: d;
   }
 }

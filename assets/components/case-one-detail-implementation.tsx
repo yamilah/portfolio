@@ -2,6 +2,7 @@ import * as React from "react"
 import imgOne from "../images/houseparty/houseparty-device-1.jpg"
 import imgTwo from "../images/houseparty/houseparty-device-2.jpg"
 import imgThree from "../images/houseparty/houseparty-focus.jpg"
+import imgFour from "../images/houseparty/houseparty-snippet.jpg"
 import vidOne from "../images/houseparty/houseparty-performance-1.mp4"
 import vidOnePoster from "../images/houseparty/houseparty-performance-poster-1.jpg"
 import vidTwo from "../images/houseparty/houseparty-performance-2.mp4"
@@ -65,7 +66,7 @@ export default class DetailOneImplementation extends React.Component {
             src={imgTwo}
           />
           <p className="detail-one-implementation-device-text">
-            This is because Chromebooks, our target OS and devices, have dramatic differences in their performance levels and screen sizes, and gyroscope support (landscape and portrait). Getting this feedback from our users about the chat latency and responsiveness, I took on the design and technical challenge of figuring out this very complex part of the product. And here’s how I did that:
+            It was important to considre this as, Chromebooks,—our target OS and device type—have dramatic differences in performance levels and screen sizes, gyroscope support (landscape and portrait), etc. Getting this feedback from our users about the chat latency and responsiveness, I took on the design and technical challenge of figuring out this very complex part of the product. And here’s how I did that:
           </p>
         </div>
         <div className="detail-one-implementation-focus">
@@ -82,6 +83,22 @@ export default class DetailOneImplementation extends React.Component {
           </p>
           <p className="detail-one-implementation-focus-text-3">
             This was much to the CTO’s chagrin, who felt very strongly that JavaScript should do the heavy lifting.
+          </p>
+        </div>
+        <div className="detail-one-implementation-snippet">
+          <img
+            alt="A verbose code snippet"
+            className="detail-one-implementation-snippet-img dropshadow"
+            src={imgFour}
+          />
+          <p className="detail-one-implementation-snippet-text-1">
+            But I have a different philosophy: I see styling as design and, when design doesn’t live in Figma, it should live in its web analog—CSS.
+          </p>
+          <p className="detail-one-implementation-snippet-text-2">
+            Risky choice but, luckily, one that panned out; it enabled an experience that was responsive, performant, way more maintainable, contrasted to the JavaScript route.
+          </p>
+          <p className="detail-one-implementation-snippet-text-3">
+            These buttery-smooth transitions added polish but, more importantly, they closed that feedback loop users were struggling with, making it way easier to see everyone while chatting—we received feedback that immersion was way improved.
           </p>
         </div>
       </section>
