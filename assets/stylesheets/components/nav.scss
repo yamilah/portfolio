@@ -1,42 +1,34 @@
 .nav {
-  @include position(sticky, 0 null null null);
   background-color: $hint-of-red;
-  padding: $sp-unit-5;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: $sp-unit-2;
   z-index: $z-nav;
-  border-bottom: $border-unit-2 solid $woodsmoke-black;
 }
 
 .nav-link {
-  font-size: $font-body-4;
-  font-weight: $font-weight-regular;
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
   text-decoration: none;
   user-select: none;
-}
 
-.nav-link--first {
-  align-items: baseline;
-  column-gap: $sp-unit-3;
-  display: grid;
-  grid-auto-columns: max-content;
-  grid-auto-flow: column;
-}
-
-.nav-link-subtext {
-  font-size: $font-body-2;
-  font-style: italic;
-  white-space: nowrap;
+  @include respond-above(medium) {
+    font-size: $font-heading-3;
+  }
 }
 
 .nav-list {
-  column-gap: $sp-unit-5;
+  column-gap: $sp-unit-5 * 2;
   display: grid;
-  grid-template-columns: 1fr repeat(2,max-content);
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  justify-self: end;
 }
 
-.nav-list-link {
+.nav-list-item {
   display: none;
 
-  @include respond-above(small) {
+  @include respond-above(medium) {
     display: list-item;
   }
 }
@@ -44,7 +36,22 @@
 .nav-list-menu {
   display: none;
 
-  @include respond-below(small) {
+  @include respond-below(medium) {
     display: list-item;
   }
+}
+
+.nav-marquee {
+  background-color: $woodsmoke-black;
+  padding: $sp-unit-1;
+}
+
+.nav-marquee-text {
+  color: $hint-of-red;
+  font-style: italic;
+  font-weight: $font-weight-regular;
+}
+
+.nav-wrapper {
+  @include position(sticky, 0 null null null);
 }
