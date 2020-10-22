@@ -1,11 +1,13 @@
 import * as React from "react"
-import imgOne from "../images/houseparty/houseparty-device-1.jpg"
-import imgTwo from "../images/houseparty/houseparty-device-2.jpg"
-import imgThree from "../images/houseparty/houseparty-focus.jpg"
 import imgFour from "../images/houseparty/houseparty-snippet.jpg"
+import imgOne from "../images/houseparty/houseparty-device-1.jpg"
+import imgThree from "../images/houseparty/houseparty-focus.jpg"
+import imgTwo from "../images/houseparty/houseparty-device-2.jpg"
 import vidOne from "../images/houseparty/houseparty-performance-1.mp4"
+import vidOneFallback from "../images/houseparty/houseparty-performance-1.webm"
 import vidOnePoster from "../images/houseparty/houseparty-performance-poster-1.jpg"
 import vidTwo from "../images/houseparty/houseparty-performance-2.mp4"
+import vidTwoFallback from "../images/houseparty/houseparty-performance-2.webm"
 import vidTwoPoster from "../images/houseparty/houseparty-performance-poster-2.jpg"
 
 export default class DetailOneImplementation extends React.Component {
@@ -32,6 +34,10 @@ export default class DetailOneImplementation extends React.Component {
               src={vidOne}
               type="video/mp4"
             />
+            <source
+              src={vidOneFallback}
+              type="video/webm"
+            />
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
           <video
@@ -44,6 +50,10 @@ export default class DetailOneImplementation extends React.Component {
             <source
               src={vidTwo}
               type="video/mp4"
+            />
+            <source
+              src={vidTwoFallback}
+              type="video/webm"
             />
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
