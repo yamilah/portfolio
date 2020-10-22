@@ -1,7 +1,10 @@
 import * as React from "react"
 import imgOne from "../images/houseparty/houseparty-planning-1.jpg"
-import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
 import imgThree from "../images/houseparty/houseparty-planning-3.jpg"
+import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
+import vidOne from "../images/houseparty/houseparty-planning-video.mp4"
+import vidOneFallback from "../images/houseparty/houseparty-planning-video.webm"
+import vidOnePoster from "../images/houseparty/houseparty-planning-poster.jpg"
 
 export default class DetailOnePlanning extends React.Component {
   render() {
@@ -53,11 +56,23 @@ export default class DetailOnePlanning extends React.Component {
               So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
             </p>
           </div>
-          <img
-            alt="A video showing someone using Houseparty"
-            className="detail-one-planning-solution-img"
-            src="https://via.placeholder.com/2000x1000"
-          />
+          <video
+            autoPlay
+            className="detail-one-planning-solution-video dropshadow"
+            loop
+            muted
+            poster={vidOnePoster}
+          >
+            <source
+              src={vidOne}
+              type="video/mp4"
+            />
+            <source
+              src={vidOneFallback}
+              type="video/webm"
+            />
+            Sorry, but your browser doesn't support HTML5 videos. Try on another!
+          </video>
         </div>
         <div className="detail-one-planning-sprints">
           <div className="detail-one-planning-sprint-top">
