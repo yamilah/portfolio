@@ -44,6 +44,9 @@ export default class Footer extends React.Component {
           <span>
             with love
           </span>
+          <span>
+            (& ReactJS)
+          </span>
         </p>
       </footer>
     )
