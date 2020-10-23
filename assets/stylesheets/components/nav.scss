@@ -3,12 +3,12 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   padding: $sp-unit-2;
-  z-index: $z-nav;
 }
 
 .nav-link {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
+  line-height: $leading-unit-2;
   text-decoration: none;
   user-select: none;
 
@@ -43,15 +43,43 @@
 
 .nav-marquee {
   background-color: $woodsmoke-black;
+  overflow-x: hidden;
   padding: $sp-unit-1;
 }
 
 .nav-marquee-text {
   color: $hint-of-red;
+  font-size: $font-body-3;
   font-style: italic;
   font-weight: $font-weight-regular;
 }
 
+.nav-marquee-text-wrapper {
+  animation-duration: $timing-unit-2 * 110;
+  animation-iteration-count: infinite;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  column-gap: $sp-unit-5 * 2;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  user-select: none;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
 .nav-wrapper {
   @include position(sticky, 0 null null null);
+  z-index: $z-nav;
 }

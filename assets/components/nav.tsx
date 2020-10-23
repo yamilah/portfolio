@@ -38,9 +38,26 @@ export default class Nav extends React.Component {
           className="nav-marquee"
           role="banner"
         >
-          <p className="nav-marquee-text">
-            It’s jah • mee • lah btw
-          </p>
+          <div className="nav-marquee-text-wrapper">
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+            <p className="nav-marquee-text">
+              It’s jah • mee • lah btw
+            </p>
+          </div>
         </div>
       </div>
     )
