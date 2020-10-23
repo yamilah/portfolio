@@ -1,6 +1,7 @@
 import * as React from "react"
 import {Link} from "react-router-dom"
 
+
 export default class Nav extends React.Component {
   render() {
     return (
@@ -29,10 +30,17 @@ export default class Nav extends React.Component {
                 About
               </Link>
             </li>
-            <li className="nav-list-item nav-list-menu">
-              menu
-            </li>
           </ul>
+          <button
+            aria-controls="navigation"
+            aria-label="Menu"
+            className="hamburger hamburger--slider nav-menu"
+            type="button"
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
         </nav>
         <div
           className="nav-marquee"

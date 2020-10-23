@@ -1,8 +1,14 @@
 .nav {
+  align-items: center;
   background-color: $hint-of-red;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
   padding: $sp-unit-2;
+
+  @include respond-above(medium) {
+    grid-template-columns: max-content 1fr;
+  }
 }
 
 .nav-link {
@@ -18,26 +24,20 @@
 }
 
 .nav-list {
-  column-gap: $sp-unit-5 * 2;
+  @include position(fixed, 0);
+  background-color: $hint-of-red;
   display: grid;
-  grid-auto-columns: max-content;
-  grid-auto-flow: column;
-  justify-self: end;
-}
-
-.nav-list-item {
-  display: none;
+  grid-auto-flow: row;
+  place-content: center;
+  row-gap: $sp-unit-4;
 
   @include respond-above(medium) {
-    display: list-item;
-  }
-}
-
-.nav-list-menu {
-  display: none;
-
-  @include respond-below(medium) {
-    display: list-item;
+    @include position(unset, auto);
+    gap: 0 ($sp-unit-5 * 2);
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-self: end;
+    place-content: unset;
   }
 }
 
@@ -76,6 +76,14 @@
 
   &:hover {
     animation-play-state: paused;
+  }
+}
+
+.nav-menu {
+  display: none;
+
+  @include respond-below(medium) {
+    display: grid;
   }
 }
 
