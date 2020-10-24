@@ -1,8 +1,23 @@
 import * as React from "react"
 import {Link} from "react-router-dom"
 
+interface NavState {
+  menuEnabled: boolean
+}
 
-export default class Nav extends React.Component {
+export default class Nav extends React.Component<{}, NavState> {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      menuEnabled: false
+    }
+  }
+
+  onHamburger() {
+    this.setState({menuEnabled: !this.state.menuEnabled})
+  }
+
   render() {
     return (
       <div className="nav-wrapper">
@@ -13,7 +28,7 @@ export default class Nav extends React.Component {
           >
             Yamilah Atallah
           </Link>
-          <ul className="nav-list">
+          <ul className={`nav-list ${this.state.menuEnabled ? "nav-list--active" : ""}`}>
             <li className="nav-list-item">
               <a
                 className="nav-link"
@@ -34,8 +49,9 @@ export default class Nav extends React.Component {
           <button
             aria-controls="navigation"
             aria-label="Menu"
-            className="hamburger hamburger--slider nav-menu"
+            className={`hamburger hamburger--slider nav-menu ${this.state.menuEnabled ? "is-active" : ""}`}
             type="button"
+            onClick={this.onHamburger.bind(this)}
           >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
