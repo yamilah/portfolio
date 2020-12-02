@@ -1,0 +1,296 @@
+.detail-two-iteration {
+  @include padding(null $sp-unit-4);
+  border-top: $border-unit-2 solid $woodsmoke-black;
+  display: grid;
+  row-gap: $sp-unit-2 * 10;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    row-gap: $sp-unit-3 * 10;
+  }
+}
+
+.detail-two-iteration-figure-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-iteration-figure-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-two-iteration-figure-3 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-iteration-figure-4 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
+.detail-two-iteration-figure-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+  line-height: $leading-unit-1;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-two-iteration-figure-text,
+.detail-two-iteration-idea-text,
+.detail-two-iteration-progress-text-1,
+.detail-two-iteration-progress-text-2 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+}
+
+.detail-two-iteration-figures {
+  display: grid;
+  gap: $sp-unit-4 * 2;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a . b ."
+      ". c . d .";
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a . b . c . d .";
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+.detail-two-iteration-idea-1,
+.detail-two-iteration-idea-2,
+.detail-two-iteration-idea-3,
+.detail-two-iteration-idea-4,
+.detail-two-iteration-idea-5 {
+  width: 100%;
+}
+
+.detail-two-iteration-idea-1 {
+  grid-area: a;
+}
+
+.detail-two-iteration-idea-2 {
+  grid-area: b;
+}
+
+.detail-two-iteration-idea-3 {
+  grid-area: c;
+}
+
+.detail-two-iteration-idea-4 {
+  grid-area: d;
+}
+
+.detail-two-iteration-idea-5 {
+  grid-area: e;
+}
+
+.detail-two-iteration-idea-text {
+  grid-area: f;
+  text-align: justify;
+}
+
+.detail-two-iteration-ideas {
+  display: grid;
+  gap: $sp-unit-4;
+  grid-template-areas:
+    "a a b b"
+    "e e e e"
+    "c c d d"
+    "f f f f";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(medium) {
+    gap: ($sp-unit-4 * 3) 0;
+    grid-template-areas:
+      ". . . . . c c c c c c c"
+      ". a a a . c c c c c c c"
+      ". . . . . c c c c c c c"
+      ". . b b b b . . . . . ."
+      ". . b b b b . . d d d ."
+      ". f f f f . . . d d d ."
+      "e e e e e e e . d d d ."
+      "e e e e e e e . . . . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". . . . . c c c c c c c"
+      ". a a a . c c c c c c c"
+      ". . . . . c c c c c c c"
+      ". . b b b b . . . . . ."
+      ". . b b b b . . f f . ."
+      ". . b b b b . . . . . ."
+      "e e e e e e e . . . . ."
+      "e e e e e e e . d d d ."
+      "e e e e e e e . . . . .";
+  }
+}
+
+.detail-two-iteration-progress {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b b ."
+      ". a a a a a a c c c c ."
+      ". a a a a a a . . . . .";
+    grid-template-columns: repeat(12, 1fr);
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b . ."
+      ". a a a a a a . c c c ."
+      ". a a a a a a . . . . .";
+  }
+}
+
+.detail-two-iteration-progress-text-1,
+.detail-two-iteration-progress-text-2 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-two-iteration-progress-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-two-iteration-progress-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-iteration-progress-video {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-iteration-prototype {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . . . . . b b b . . .";
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: $sp-unit-4 * 3;
+  }
+}
+
+.detail-two-iteration-prototype-text {
+  text-align: justify;
+
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-two-iteration-prototype-video {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-iteration-separator {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.detail-two-iteration-separator-number,
+.detail-two-iteration-separator-text {
+  user-select: none;
+}
+
+.detail-two-iteration-separator-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(medium) {
+    grid-column: 2;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-two-iteration-separator-text {
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  grid-column: span 4;
+  padding-top: $sp-unit-4;
+  text-transform: capitalize;
+
+  @include respond-above(small) {
+    grid-column: span 3;
+  }
+
+  @include respond-above(medium) {
+    font-size: $font-body-4;
+    grid-column: 3/span 2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+    grid-column: 3/span 1;
+  }
+}

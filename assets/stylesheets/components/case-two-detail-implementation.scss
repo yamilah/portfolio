@@ -1,0 +1,286 @@
+.detail-two-implementation {
+  @include padding(null $sp-unit-4);
+  border-top: $border-unit-2 solid $woodsmoke-black;
+  display: grid;
+  row-gap: $sp-unit-2 * 10;
+
+  @include respond-above(medium) {
+    @include padding(unset);
+    row-gap: $sp-unit-3 * 10;
+  }
+}
+
+.detail-two-implementation-device-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-implementation-device-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-two-implementation-device-text,
+.detail-two-implementation-focus-text-1,
+.detail-two-implementation-focus-text-2,
+.detail-two-implementation-focus-text-3,
+.detail-two-implementation-prototype-text-1,
+.detail-two-implementation-prototype-text-2,
+.detail-two-implementation-snippet-text-1,
+.detail-two-implementation-snippet-text-2,
+.detail-two-implementation-snippet-text-3 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-two-implementation-device-text {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-implementation-devices {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    gap: $sp-unit-4 * 3;
+    grid-template-areas:
+      ". . a a a a . . . . . ."
+      ". . a a a a b b b b b b"
+      ". . . . . . b b b b b b"
+      ". c c c c . b b b b b b"
+      ". . . . . . b b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+
+      "a a a a a . . . . . . ."
+      "a a a a a b b b b b b b"
+      ". . . . . b b b b b b b"
+      ". c c c . b b b b b b b"
+      ". . . . . b b b b b b b";
+  }
+}
+
+.detail-two-implementation-focus {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". a a a a a a a a a a ."
+      ". b b b b . . . . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . . . . d d d d .";
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: $sp-unit-4 * 3;
+  }
+
+  @include respond-above(large) {
+    @include padding(unset);
+    gap: $sp-unit-1 $sp-unit-4 * 3;
+    grid-template-areas:
+      ". a a a a a a . . . . ."
+      ". a a a a a a . . . . ."
+      ". a a a a a a b b b . ."
+      ". a a a a a a . c c c ."
+      ". a a a a a a d d d . ."
+      ". a a a a a a . . . . .";
+  }
+}
+
+.detail-two-implementation-focus-img {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-implementation-focus-text-1 {
+  @include respond-above(medium) {
+    padding-top: $sp-unit-4 * 3;
+    grid-area: b;
+  }
+
+  @include respond-above(large) {
+    @include padding(unset);
+  }
+}
+
+.detail-two-implementation-focus-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-implementation-focus-text-3 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
+.detail-two-implementation-prototype {
+  display: grid;
+  gap: $sp-unit-4;
+  grid-template-areas:
+    "a a b b"
+    "c c c c"
+    "d d d d";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(medium) {
+    gap: ($sp-unit-4 * 3) $sp-unit-4;
+    grid-template-areas:
+      ". a a a b b b b b b b ."
+      ". . c c c c . . . . . ."
+      ". . c c c c d d d d . ."
+      ". . c c c c d d d d . ."
+      ". . . . . . d d d d . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a b b b b b b b ."
+      ". . c c c . . . . . . ."
+      ". . c c c d d d . . . ."
+      ". . c c c d d d . . . ."
+      ". . . . . d d d . . . .";
+  }
+}
+
+.detail-two-implementation-prototype-text-1 {
+  grid-area: c;
+}
+
+.detail-two-implementation-prototype-text-2 {
+  grid-area: d;
+}
+
+.detail-two-implementation-prototype-video-1,
+.detail-two-implementation-prototype-video-2 {
+  width: 100%;
+}
+
+.detail-two-implementation-prototype-video-1 {
+  grid-area: a;
+}
+
+.detail-two-implementation-prototype-video-2 {
+  grid-area: b;
+}
+
+.detail-two-implementation-separator {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.detail-two-implementation-separator-number,
+.detail-two-implementation-separator-text {
+  user-select: none;
+}
+
+.detail-two-implementation-separator-number {
+  font-size: $font-heading-1;
+  font-weight: $font-weight-light;
+
+  @include respond-above(small) {
+  font-size: $font-heading-7;
+  }
+
+  @include respond-above(medium) {
+    grid-column: 2;
+  }
+
+  @include respond-above(large) {
+    font-size: $font-heading-9;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-heading-12;
+  }
+
+  @include respond-above(xxlarge) {
+    font-size: $font-heading-15;
+  }
+}
+
+.detail-two-implementation-separator-text {
+  font-size: $font-body-3;
+  font-weight: $font-weight-regular;
+  grid-column: span 4;
+  padding-top: $sp-unit-4;
+  text-transform: capitalize;
+
+  @include respond-above(small) {
+    grid-column: span 3;
+  }
+
+  @include respond-above(medium) {
+    font-size: $font-body-4;
+    grid-column: 3/span 2;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: $font-body-6;
+    grid-column: 3/span 1;
+  }
+}
+
+.detail-two-implementation-snippet {
+  display: grid;
+  row-gap: $sp-unit-4;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . b b b b . . . . . ."
+      ". . . . c c c c . . . ."
+      ". . . . . . d d d d . .";
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: $sp-unit-1;
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a a a a a a a a ."
+      ". . b b b . . . . . . ."
+      ". . . . c c c . . . . ."
+      ". . . . . . d d d . . .";
+  }
+}
+
+.detail-two-implementation-snippet-img {
+  width: 100%;
+
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.detail-two-implementation-snippet-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+    padding-top: $sp-unit-4 * 3;
+  }
+}
+
+.detail-two-implementation-snippet-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-implementation-snippet-text-3 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}

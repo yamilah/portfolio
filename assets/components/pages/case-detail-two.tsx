@@ -1,22 +1,22 @@
 import * as React from "react"
-import DetailOneDescription from "../case-one-detail-description"
-import DetailOneFinale from "../case-one-detail-one-finale"
-import DetailOneImplementation from "../case-one-detail-implementation"
-import DetailOneIntro from "../case-one-detail-intro"
-import DetailOneIteration from "../case-one-detail-iteration"
-import DetailOnePlanning from "../case-one-detail-planning"
+import DetailTwoDescription from "../case-two-detail-description"
+import DetailTwoFinale from "../case-two-detail-finale"
+import DetailTwoImplementation from "../case-two-detail-implementation"
+import DetailTwoIntro from "../case-two-detail-intro"
+import DetailTwoIteration from "../case-two-detail-iteration"
+import DetailTwoPlanning from "../case-two-detail-planning"
 import Footer from "../footer"
 
 export default class CaseDetailTwo extends React.Component {
   render() {
     return (
       <section className="case-detail-one">
-        <DetailOneIntro />
-        <DetailOneDescription />
-        <DetailOnePlanning />
-        <DetailOneIteration />
-        <DetailOneImplementation />
-        <DetailOneFinale />
+        <DetailTwoIntro />
+        <DetailTwoDescription />
+        <DetailTwoPlanning />
+        <DetailTwoIteration />
+        <DetailTwoImplementation />
+        <DetailTwoFinale />
         <Footer />
       </section>
     )
