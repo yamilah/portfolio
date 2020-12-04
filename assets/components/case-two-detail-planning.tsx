@@ -18,6 +18,22 @@ export default class DetailTwoPlanning extends React.Component {
             Initial validation & planning
           </p>
         </div>
+        <div className="detail-two-planning-context">
+          <img
+            className="detail-two-planning-context-video dropshadow"
+            src="https://via.placeholder.com/375x667"
+            alt="Placeholder image for prototype"
+          />
+          <p className="detail-two-planning-context-text-1">
+            So, to start things off, I'd like to provide a little context into how the product works:
+          </p>
+          <p className="detail-two-planning-context-text-2">
+            You sign up, log in, join the game while watching the game on your TV, get prompted to make specific predictions based on what’s going on in the game, see how your predictions stacked up against the real thing, and, depending on how you’ve done, potentially make some cash!
+          </p>
+          <p className="detail-two-planning-context-text-3">
+            But it didn’t start with this idea.
+          </p>
+        </div>
         <div className="detail-two-planning-figures">
           <figure className="detail-two-planning-figure-1">
             <p className="detail-two-planning-figure-number">

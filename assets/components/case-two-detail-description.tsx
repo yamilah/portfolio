@@ -61,7 +61,7 @@ export default class DetailTwoDescription extends React.Component {
             I was one of 2 designers and front-end developers on the team, and it was about 5 months long.
           </p>
           <p className="detail-two-text">
-            To start things off, I'd like to provide a little context into how the product works. You can check it out on the <a href="https://apps.apple.com/us/app/hofr/id1400605641">App Store</a> or the <a href="https://play.google.com/store/apps/details?id=com.hofr">Play Store</a>—or just read on!
+            You can check it out on the <a href="https://apps.apple.com/us/app/hofr/id1400605641">App Store</a> or the <a href="https://play.google.com/store/apps/details?id=com.hofr">Play Store</a>—or just read on!
           </p>
         </div>
       </section>
