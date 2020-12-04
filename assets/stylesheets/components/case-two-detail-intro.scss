@@ -11,8 +11,7 @@
     ". . d d"
     "f g g e"
     ". i i e"
-    ". j j j"
-    "h h h h";
+    ". j j j";
   grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(small) {
@@ -26,7 +25,7 @@
       "b b b b b b b b e e a a"
       ". c c c c d d d d d d d"
       ". . . . f f g g g g g g"
-      "h h . i i . . j j j j j";
+      "h h . . . . . i i i i i";
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -148,9 +147,4 @@
 
 .detail-two-intro-text-6 {
   grid-area: i;
-}
-
-.detail-two-intro-text-7 {
-  grid-area: j;
-  text-align: right;
 }

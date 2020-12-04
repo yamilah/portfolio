@@ -13,32 +13,29 @@ export default class DetailTwoIntro extends React.Component {
           </span>
         </p>
         <p className="detail-two-intro-text-1">
-          Houseparty
+          Pick
         </p>
         <p className="detail-two-intro-text-2">
-          Be
+          Watch
         </p>
         <p className="detail-two-intro-text-3">
-          You
+          Win
         </p>
         <p className="detail-two-intro-text-4">
-          Be
+          Hall
         </p>
         <p className="detail-two-intro-text-5">
-          There
+          Of
         </p>
         <p className="detail-two-intro-text-6">
-          Be
-        </p>
-        <p className="detail-two-intro-text-7">
-          Together
+          Famer
         </p>
         <p className="detail-two-intro-subtext">
           <span>
-            Where the
+            Predict
           </span>
           <span>
-            party at?
+            & win
           </span>
         </p>
         <p className="detail-two-intro-date-2">
