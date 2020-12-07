@@ -15,12 +15,22 @@
 
   @include respond-above(medium) {
     grid-template-areas:
+      ". a a a a . . . . . . . ."
+      ". a a a a . b b b b . . ."
+      ". a a a a . c c c c . . ."
+      ". a a a a . d d d d . . ."
+      ". a a a a . . . . . . . .";
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: $sp-unit-2;
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
       ". a a a . . . . . . . . ."
       ". a a a . b b b . . . . ."
       ". a a a . . . c c c . . ."
       ". a a a . . . . . d d d ."
       ". a a a . . . . . . . . .";
-    grid-template-columns: repeat(12, 1fr);
   }
 }
 
