@@ -2,8 +2,8 @@ import * as React from "react"
 import imgOne from "../images/houseparty/houseparty-planning-1.jpg"
 import imgThree from "../images/houseparty/houseparty-planning-3.jpg"
 import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
-import vidOne from "../images/houseparty/houseparty-planning-video.mp4"
-import vidOneFallback from "../images/houseparty/houseparty-planning-video.webm"
+import vidOne from "../images/hofr/hofr-planning-2.mp4"
+import vidOneFallback from "../images/hofr/hofr-planning-2.webm"
 import vidOnePoster from "../images/houseparty/houseparty-planning-poster.jpg"
 
 export default class DetailTwoPlanning extends React.Component {
@@ -19,11 +19,23 @@ export default class DetailTwoPlanning extends React.Component {
           </p>
         </div>
         <div className="detail-two-planning-context">
-          <img
+          <video
+            autoPlay
             className="detail-two-planning-context-video dropshadow"
-            src="https://via.placeholder.com/375x667"
-            alt="Placeholder image for prototype"
-          />
+            loop
+            muted
+            poster={vidOnePoster}
+          >
+            <source
+              src={vidOne}
+              type="video/mp4"
+            />
+            <source
+              src={vidOneFallback}
+              type="video/webm"
+            />
+            Sorry, but your browser doesn't support HTML5 videos. Try on another!
+          </video>
           <p className="detail-two-planning-context-text-1">
             So, to start things off, I'd like to provide a little context into how the product works:
           </p>

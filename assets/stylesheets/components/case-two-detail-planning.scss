@@ -62,6 +62,8 @@
 }
 
 .detail-two-planning-context-video {
+  border-radius: $border-unit-4 * 10;
+
   @include respond-above(medium) {
     grid-area: a;
   }
