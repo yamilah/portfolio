@@ -1,13 +1,11 @@
 import * as React from "react"
 import imgOne from "../images/hofr/hofr-request.jpg"
-import imgThree from "../images/houseparty/houseparty-planning-3.jpg"
-import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
+import imgTwo from "../images/hofr/hofr-planning-2.jpg"
+import imgThree from "../images/hofr/hofr-planning-3.jpg"
+import imgFour from "../images/hofr/hofr-planning-4.jpg"
 import vidOne from "../images/hofr/hofr-planning-1.mp4"
 import vidOneFallback from "../images/hofr/hofr-planning-1.webm"
 import vidOnePoster from "../images/hofr/hofr-planning-1.jpg"
-import vidTwo from "../images/hofr/hofr-planning-2.mp4"
-import vidTwoFallback from "../images/hofr/hofr-planning-2.webm"
-import vidTwoPoster from "../images/hofr/hofr-planning-2.png"
 
 export default class DetailTwoPlanning extends React.Component {
   render() {
@@ -107,25 +105,25 @@ export default class DetailTwoPlanning extends React.Component {
         <div className="detail-two-planning-sprints">
           <div className="detail-two-planning-sprint-top">
             <p className="detail-two-planning-sprint-top-text-1">
-              Anything but! Making this translate to the web was a huge challenge. We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch.
+              So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here.
             </p>
             <p className="detail-two-planning-sprint-top-text-2">
-              To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
+              This involved trying to understand where the original idea really came from—and why.
             </p>
             <img
               alt="Members of the Houseparty web team together in a room, running a design sprint"
               className="detail-two-planning-sprint-top-img dropshadow"
-              src={imgOne}
+              src={imgTwo}
             />
           </div>
           <div className="detail-two-planning-sprint-bottom">
             <img
               alt="Stickies on a board with How Might Wes on them"
               className="detail-two-planning-sprint-bottom-img-1 dropshadow"
-              src={imgTwo}
+              src={imgFour}
             />
             <p className="detail-two-planning-sprint-bottom-text">
-              So what you’re seeing here are the pictures I took while leading the team through a design sprint, which involved a week of exercises like setting up a problem statement; interviewing employees and users alike to deeply understand Houseparty, its business, and its users; listing out our assumptions and how we might test them; user journeying; How Might Weing; and so on and so forth.
+            Learning more about our potential users, listing out our assumptions about this potential product and how we might test them; once again, How Might Weing; user journeying; and so on.
             </p>
             <img
               alt="Two members of the Houseparty team contemplating the product"
