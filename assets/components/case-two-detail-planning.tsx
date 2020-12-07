@@ -1,10 +1,13 @@
 import * as React from "react"
-import imgOne from "../images/houseparty/houseparty-planning-1.jpg"
+import imgOne from "../images/hofr/hofr-request.jpg"
 import imgThree from "../images/houseparty/houseparty-planning-3.jpg"
 import imgTwo from "../images/houseparty/houseparty-planning-2.jpg"
-import vidOne from "../images/hofr/hofr-planning-2.mp4"
-import vidOneFallback from "../images/hofr/hofr-planning-2.webm"
-import vidOnePoster from "../images/houseparty/houseparty-planning-poster.jpg"
+import vidOne from "../images/hofr/hofr-planning-1.mp4"
+import vidOneFallback from "../images/hofr/hofr-planning-1.webm"
+import vidOnePoster from "../images/hofr/hofr-planning-1.jpg"
+import vidTwo from "../images/hofr/hofr-planning-2.mp4"
+import vidTwoFallback from "../images/hofr/hofr-planning-2.webm"
+import vidTwoPoster from "../images/hofr/hofr-planning-2.png"
 
 export default class DetailTwoPlanning extends React.Component {
   render() {
@@ -46,6 +49,22 @@ export default class DetailTwoPlanning extends React.Component {
             But it didn’t start with this idea.
           </p>
         </div>
+        <div className="detail-two-planning-request">
+          <img
+            alt="An image showing a few screen excerpts from HQ, a trivia app"
+            className="detail-two-planning-request-img dropshadow"
+            src={imgOne}
+          />
+          <p className="detail-two-planning-request-text-1">
+            The initial idea was a clone of HQ, pictured here—if you’re not familiar with what that is: it’s a 12-question live video trivia game.
+          </p>
+          <p className="detail-two-planning-request-text-2">
+            Users could win real money by answering all the questions and not being eliminated in multiple daily games.
+          </p>
+          <p className="detail-two-planning-request-text-3">
+            So that was the problem they were wanting us to solve, that was the ask. To build that. For sports.
+          </p>
+        </div>
         <div className="detail-two-planning-figures">
           <figure className="detail-two-planning-figure-1">
             <p className="detail-two-planning-figure-number">
@@ -84,23 +103,6 @@ export default class DetailTwoPlanning extends React.Component {
               So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
             </p>
           </div>
-          <video
-            autoPlay
-            className="detail-two-planning-solution-video dropshadow"
-            loop
-            muted
-            poster={vidOnePoster}
-          >
-            <source
-              src={vidOne}
-              type="video/mp4"
-            />
-            <source
-              src={vidOneFallback}
-              type="video/webm"
-            />
-            Sorry, but your browser doesn't support HTML5 videos. Try on another!
-          </video>
         </div>
         <div className="detail-two-planning-sprints">
           <div className="detail-two-planning-sprint-top">
