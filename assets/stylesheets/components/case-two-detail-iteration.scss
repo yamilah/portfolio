@@ -61,7 +61,8 @@
 .detail-two-iteration-progress-text-1,
 .detail-two-iteration-progress-text-2,
 .detail-two-iteration-prototype-text-1,
-.detail-two-iteration-prototype-text-2 {
+.detail-two-iteration-prototype-text-2,
+.detail-two-iteration-prototype-text-3 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -160,30 +161,62 @@
 }
 
 .detail-two-iteration-progress {
+  gap: $sp-unit-2;
   display: grid;
-  row-gap: $sp-unit-4;
+  grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "d d d d"
+    "e e e e"
+    "f f f f";
+  grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(medium) {
+    gap: $sp-unit-2 $sp-unit-4;
     grid-template-areas:
-      ". a a a a a a . . . . ."
-      ". a a a a a a b b b b ."
-      ". a a a a a a c c c c ."
-      ". a a a a a a . . . . .";
+      ". a a a b b b c c c . ."
+      ". . . . . d d d d . . ."
+      ". . . . . f f f f . . ."
+      ". . . . . e e e e . . .";
     grid-template-columns: repeat(12, 1fr);
-    gap: $sp-unit-2 ($sp-unit-4 * 3);
   }
 
-  @include respond-above(large) {
+  @include respond-above(xlarge) {
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
     grid-template-areas:
-      ". a a a a a a . . . . ."
-      ". a a a a a a b b b . ."
-      ". a a a a a a . c c c ."
-      ". a a a a a a . . . . .";
+      ". a a b b c c . . . . ."
+      ". a a b b c c d d d . ."
+      ". a a b b c c e e e . ."
+      ". a a b b c c f f f . ."
+      ". a a b b c c . . . . .";
   }
 }
 
+.detail-two-iteration-progress-img-1,
+.detail-two-iteration-progress-img-2,
+.detail-two-iteration-progress-img-3 {
+  align-self: center;
+}
+
+.detail-two-iteration-progress-img-1 {
+  border-radius: $sp-unit-3 * 2;
+}
+
+.detail-two-iteration-progress-img-1 {
+  grid-area: a;
+}
+
+.detail-two-iteration-progress-img-2 {
+  grid-area: b;
+}
+
+.detail-two-iteration-progress-img-3 {
+  grid-area: c;
+}
+
 .detail-two-iteration-progress-text-1,
-.detail-two-iteration-progress-text-2 {
+.detail-two-iteration-progress-text-2,
+.detail-two-iteration-progress-text-3 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -191,15 +224,15 @@
 }
 
 .detail-two-iteration-progress-text-1 {
-  @include respond-above(medium) {
-    grid-area: b;
-  }
+  grid-area: d;
 }
 
 .detail-two-iteration-progress-text-2 {
-  @include respond-above(medium) {
-    grid-area: c;
-  }
+  grid-area: e;
+}
+
+.detail-two-iteration-progress-text-3 {
+  grid-area: f;
 }
 
 .detail-two-iteration-progress-video {
@@ -219,6 +252,7 @@
       ". a a a a . . . . . . . ."
       ". a a a a . b b b b . . ."
       ". a a a a . . c c c c . ."
+      ". a a a a . . . d d d d ."
       ". a a a a . . . . . . . .";
     grid-template-columns: repeat(12, 1fr);
   }
@@ -228,6 +262,7 @@
       ". a a a . . . . . . . . ."
       ". a a a . b b b . . . . ."
       ". a a a . . . c c c . . ."
+      ". a a a . . . . d d d . ."
       ". a a a . . . . . . . . .";
   }
 }
@@ -253,7 +288,11 @@
   }
 }
 
-.detail-two-iteration-prototype-text-2
+.detail-two-iteration-prototype-text-3 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
 
 .detail-two-iteration-separator {
   column-gap: $sp-unit-4;

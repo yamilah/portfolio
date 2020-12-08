@@ -1,15 +1,12 @@
 import * as React from "react"
-import imgOne from "../images/houseparty/houseparty-idea-1.jpg"
-import imgTwo from "../images/houseparty/houseparty-idea-2.jpg"
-import imgThree from "../images/houseparty/houseparty-idea-3.jpg"
+import imgOne from "../images/hofr/hofr-iteration-2.png"
+import imgTwo from "../images/hofr/hofr-iteration-3.png"
+import imgThree from "../images/hofr/hofr-iteration-4.png"
 import imgFour from "../images/houseparty/houseparty-idea-4.jpg"
 import imgFive from "../images/houseparty/houseparty-idea-5.jpg"
 import vidOne from "../images/hofr/hofr-iteration-1.mp4"
 import vidOneFallback from "../images/hofr/hofr-iteration-1.webm"
 import vidOnePoster from "../images/hofr/hofr-iteration-1.png"
-import vidTwo from "../images/houseparty/houseparty-progress.mp4"
-import vidTwoFallback from "../images/houseparty/houseparty-progress.webm"
-import vidTwoPoster from "../images/houseparty/houseparty-progress-poster.jpg"
 
 export default class DetailTwoIteration extends React.Component {
   render() {
@@ -42,9 +39,12 @@ export default class DetailTwoIteration extends React.Component {
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
           <p className="detail-two-iteration-prototype-text-1">
-            From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing here.
+            …a companion app to sports fans’ watching experience. So I mocked it up and prototyped it: which is what you’re seeing here.
           </p>
           <p className="detail-two-iteration-prototype-text-2">
+            Much to almost the entire team’s surprise, our recruited participants loved competing with each others’ predictions while watching the game.
+          </p>
+          <p className="detail-two-iteration-prototype-text-3">
             Here were some key findings from this testing:
           </p>
         </div>
@@ -83,28 +83,29 @@ export default class DetailTwoIteration extends React.Component {
           </figure>
         </div>
         <div className="detail-two-iteration-progress">
-          <video
-            autoPlay
-            className="detail-two-iteration-progress-video dropshadow"
-            loop
-            muted
-            poster={vidTwoPoster}
-          >
-            <source
-              src={vidTwo}
-              type="video/mp4"
-            />
-            <source
-              src={vidTwoFallback}
-              type="video/webm"
-            />
-            Sorry, but your browser doesn't support HTML5 videos. Try on another!
-          </video>
+          <img
+            alt="An excerpted screen from the app showing it's game time"
+            className="detail-two-iteration-progress-img-1 dropshadow"
+            src={imgOne}
+          />
+          <img
+            alt="An excerpted screen from the app showing the host speaking"
+            className="detail-two-iteration-progress-img-2 dropshadow"
+            src={imgTwo}
+          />
+          <img
+            alt="An excerpted screen from the app showing you placed 982nd"
+            className="detail-two-iteration-progress-img-3 dropshadow"
+            src={imgThree}
+          />
           <p className="detail-two-iteration-progress-text-1">
-            With these results in mind, we felt good about the scope we selected for our MVP and got started. Being the sole designer, I focused on bringing the agreed upon feature set from sketches, to lofi prototypes, testing those with users, and bringing them to hifi—which is what you’re seeing here.
+            With these results, we felt that there was strong enough evidence for a pivot from an HQ clone to a unique sports prediction and companion experience that stands on its own two legs.
           </p>
           <p className="detail-two-iteration-progress-text-2">
-            While doing this, I was also implementing designs and components on the front-end in storybook, and then having devs pick up those storybook components up, hooking those up to data from Houseparty’s API. I certainly had my hands full! We all did.
+            So that’s what we did. We pivoted. We agreed on our MVP feature set and got started.
+          </p>
+          <p className="detail-two-iteration-progress-text-3">
+            As the only other designer and front-end dev on the team, what this meant for me was that I got to work bringing ideas to lofi wireframes, and those to user tests, and those to hifi. And then to the codebase, of course.
           </p>
         </div>
         <div className="detail-two-iteration-ideas">
