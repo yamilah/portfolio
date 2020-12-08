@@ -63,6 +63,7 @@
 .detail-two-iteration-launch-text-3,
 .detail-two-iteration-progress-text-1,
 .detail-two-iteration-progress-text-2,
+.detail-two-iteration-progress-text-3,
 .detail-two-iteration-prototype-text-1,
 .detail-two-iteration-prototype-text-2,
 .detail-two-iteration-prototype-text-3,
@@ -146,18 +147,17 @@
 }
 
 .detail-two-iteration-progress {
-  gap: $sp-unit-2;
+  gap: $sp-unit-2 $sp-unit-4;
   display: grid;
   grid-template-areas:
-    "a a a a"
-    "b b c c"
-    "d d d d"
-    "e e e e"
-    "f f f f";
-  grid-template-columns: repeat(4, 1fr);
+    "a a b b c c"
+    "d d d d d d"
+    "e e e e e e"
+    "f f f f f f";
+  grid-template-columns: repeat(6, 1fr);
 
   @include respond-above(medium) {
-    gap: $sp-unit-2 $sp-unit-4;
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
     grid-template-areas:
       ". a a a b b b c c c . ."
       ". . . . . d d d d . . ."
@@ -167,7 +167,6 @@
   }
 
   @include respond-above(xlarge) {
-    gap: $sp-unit-2 ($sp-unit-4 * 3);
     grid-template-areas:
       ". a a b b c c . . . . ."
       ". a a b b c c d d d . ."
@@ -181,10 +180,15 @@
 .detail-two-iteration-progress-img-2,
 .detail-two-iteration-progress-img-3 {
   align-self: center;
+  width: 100%;
 }
 
 .detail-two-iteration-progress-img-1 {
-  border-radius: $sp-unit-3 * 2;
+  border-radius: $sp-unit-5;
+
+  @include respond-above(medium) {
+    border-radius: $sp-unit-3 * 2;
+  }
 }
 
 .detail-two-iteration-progress-img-1 {
@@ -199,17 +203,12 @@
   grid-area: c;
 }
 
-.detail-two-iteration-progress-text-1,
-.detail-two-iteration-progress-text-2,
-.detail-two-iteration-progress-text-3 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
-}
-
 .detail-two-iteration-progress-text-1 {
   grid-area: d;
+
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
+  }
 }
 
 .detail-two-iteration-progress-text-2 {
