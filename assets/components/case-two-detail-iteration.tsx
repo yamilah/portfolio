@@ -2,11 +2,14 @@ import * as React from "react"
 import imgOne from "../images/hofr/hofr-iteration-2.png"
 import imgTwo from "../images/hofr/hofr-iteration-3.png"
 import imgThree from "../images/hofr/hofr-iteration-4.png"
-import imgFour from "../images/houseparty/houseparty-idea-4.jpg"
-import imgFive from "../images/houseparty/houseparty-idea-5.jpg"
+import imgFour from "../images/hofr/hofr-iteration-6.png"
+import imgFive from "../images/hofr/hofr-iteration-7.jpg"
 import vidOne from "../images/hofr/hofr-iteration-1.mp4"
 import vidOneFallback from "../images/hofr/hofr-iteration-1.webm"
 import vidOnePoster from "../images/hofr/hofr-iteration-1.png"
+import vidTwo from "../images/hofr/hofr-iteration-5.mp4"
+import vidTwoFallback from "../images/hofr/hofr-iteration-5.webm"
+import vidTwoPoster from "../images/hofr/hofr-iteration-5.png"
 
 export default class DetailTwoIteration extends React.Component {
   render() {
@@ -108,34 +111,47 @@ export default class DetailTwoIteration extends React.Component {
             As the only other designer and front-end dev on the team, what this meant for me was that I got to work bringing ideas to lofi wireframes, and those to user tests, and those to hifi. And then to the codebase, of course.
           </p>
         </div>
-        <div className="detail-two-iteration-ideas">
+        <div className="detail-two-iteration-visuals">
+          <video
+            autoPlay
+            className="detail-two-iteration-visuals-video dropshadow"
+            loop
+            muted
+            poster={vidTwoPoster}
+          >
+            <source
+              src={vidTwo}
+              type="video/mp4"
+            />
+            <source
+              src={vidTwoFallback}
+              type="video/webm"
+            />
+            Sorry, but your browser doesn't support HTML5 videos. Try on another!
+          </video>
           <img
-            alt="A product concept drawing"
-            className="detail-two-iteration-idea-1 dropshadow"
-            src={imgFive}
-          />
-          <img
-            alt="A product concept drawing"
-            className="detail-two-iteration-idea-2 dropshadow"
+            alt="An excerpted screen from the app showing a global leaderboard"
+            className="detail-two-iteration-visuals-img dropshadow"
             src={imgFour}
           />
+          <p className="detail-two-iteration-visuals-text">
+            But, also, visual explorations, I wanted to talk about that. I would’ve wanted to build something like what's on the left, which is styling I made. But, instead, we settled for what's on the right, which was a compromise I lead.
+          </p>
+        </div>
+        <div className="detail-two-iteration-launch">
           <img
-            alt="A product concept drawing"
-            className="detail-two-iteration-idea-3 dropshadow"
-            src={imgThree}
+            alt="A HOFR teammate helping produce our first show with host Patrice Evra"
+            className="detail-two-iteration-launch-img dropshadow"
+            src={imgFive}
           />
-          <img
-            alt="A product concept drawing"
-            className="detail-two-iteration-idea-4 dropshadow"
-            src={imgTwo}
-          />
-          <img
-            alt="A product concept drawing"
-            className="detail-two-iteration-idea-5 dropshadow"
-            src={imgOne}
-          />
-          <p className="detail-two-iteration-idea-text">
-            As it happens, what you see on production, <a href="https://app.houseparty.com">app.houseparty.com</a>, is really just a small slice of the many iterations of designs I put together and tried out. I felt like we really did our due diligence when working on where to put all the controls and interactions. What you’re seeing here are some examples that we looked into.
+          <p className="detail-two-iteration-launch-text-1">
+            On the day of our MVP’s launch, the reality is that our production work was volatile, our code was extremely untested and fragile, among other compromises to meet our deadline, but we actually did launch.
+          </p>
+          <p className="detail-two-iteration-launch-text-2">
+            The team managed to sign Patrice Evra, a world-renowned French football coach and former professional player; when we launched our first iteration, we got thousands of users in our first week, which is what we were looking for, so that was awesome!
+          </p>
+          <p className="detail-two-iteration-launch-text-3">
+            But, also, everything was on fire.
           </p>
         </div>
       </section>
