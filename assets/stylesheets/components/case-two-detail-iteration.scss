@@ -229,52 +229,66 @@
 
 .detail-two-iteration-prototype {
   display: grid;
-  row-gap: $sp-unit-1;
+  row-gap: $sp-unit-2;
+  grid-template-areas:
+    "a a . ."
+    "b b b b"
+    "c c c c"
+    "d d d d";
+  grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(medium) {
+    column-gap: $sp-unit-4 * 3;
     grid-template-areas:
-      ". a a a a . . . . . . . ."
-      ". a a a a . b b b b . . ."
-      ". a a a a . . c c c c . ."
-      ". a a a a . . . d d d d ."
-      ". a a a a . . . . . . . .";
+      ". . a a a a . . . . . . ."
+      ". . a a a a b b b b . . ."
+      ". . a a a a c c c c . . ."
+      ". . a a a a d d d d . . ."
+      ". . a a a a . . . . . . .";
     grid-template-columns: repeat(12, 1fr);
   }
 
-  @include respond-above(large) {
+  @include respond-above(xlarge) {
     grid-template-areas:
-      ". a a a . . . . . . . . ."
-      ". a a a . b b b . . . . ."
-      ". a a a . . . c c c . . ."
-      ". a a a . . . . d d d . ."
-      ". a a a . . . . . . . . .";
-  }
-}
-
-.detail-two-iteration-prototype-video {
-  border-radius: $border-unit-3 * 20;
-  width: 100%;
-
-  @include respond-above(medium) {
-    grid-area: a;
+      ". a a a a . . . . . . . ."
+      ". a a a a b b b . . . . ."
+      ". a a a a . . c c c . . ."
+      ". a a a a . . . . d d d ."
+      ". a a a a . . . . . . . .";
   }
 }
 
 .detail-two-iteration-prototype-text-1 {
-  @include respond-above(medium) {
-    grid-area: b;
+  grid-area: b;
+
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
   }
 }
 
 .detail-two-iteration-prototype-text-2 {
-  @include respond-above(medium) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
 
 .detail-two-iteration-prototype-text-3 {
+  grid-area: d;
+}
+
+.detail-two-iteration-prototype-video {
+  border-radius: $border-unit-5 * 9;
+  grid-area: a;
+  width: 100%;
+
   @include respond-above(medium) {
-    grid-area: d;
+    border-radius: $border-unit-5 * 7;
+  }
+
+  @include respond-above(large) {
+    border-radius: $border-unit-5 * 10;
+  }
+
+  @include respond-above(xlarge) {
+    border-radius: $border-unit-5 * 14;
   }
 }
 
