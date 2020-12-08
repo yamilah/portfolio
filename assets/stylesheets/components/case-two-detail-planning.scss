@@ -12,25 +12,32 @@
 
 .detail-two-planning-context {
   display: grid;
-  row-gap: $sp-unit-1;
+  row-gap: $sp-unit-2;
+  grid-template-areas:
+    "a a . ."
+    "b b b b"
+    "c c c c"
+    "d d d d";
+  grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(medium) {
+    column-gap: $sp-unit-4 * 3;
     grid-template-areas:
-      ". a a a a . . . . . . . ."
-      ". a a a a . b b b b . . ."
-      ". a a a a . c c c c . . ."
-      ". a a a a . d d d d . . ."
-      ". a a a a . . . . . . . .";
+      ". . a a a a . . . . . . ."
+      ". . a a a a b b b b . . ."
+      ". . a a a a c c c c . . ."
+      ". . a a a a d d d d . . ."
+      ". . a a a a . . . . . . .";
     grid-template-columns: repeat(12, 1fr);
   }
 
-  @include respond-above(large) {
+  @include respond-above(xlarge) {
     grid-template-areas:
-      ". a a a . . . . . . . . ."
-      ". a a a . b b b . . . . ."
-      ". a a a . . . c c c . . ."
-      ". a a a . . . . . d d d ."
-      ". a a a . . . . . . . . .";
+      ". a a a a . . . . . . . ."
+      ". a a a a b b b . . . . ."
+      ". a a a a . . c c c . . ."
+      ". a a a a . . . . d d d ."
+      ". a a a a . . . . . . . .";
   }
 }
 
@@ -39,7 +46,12 @@
 .detail-two-planning-context-text-3,
 .detail-two-planning-request-text-1,
 .detail-two-planning-request-text-2,
-.detail-two-planning-request-text-3 {
+.detail-two-planning-request-text-3,
+.detail-two-planning-sprint-bottom-text-1,
+.detail-two-planning-sprint-bottom-text-2,
+.detail-two-planning-sprint-bottom-text-3,
+.detail-two-planning-sprint-top-text-1,
+.detail-two-planning-sprint-top-text-2 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
@@ -47,32 +59,36 @@
 }
 
 .detail-two-planning-context-text-1 {
-  padding-top: $sp-unit-5;
+  grid-area: b;
 
-  @include respond-above(medium) {
-    grid-area: b;
-    padding-top: 0;
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
   }
 }
 
 .detail-two-planning-context-text-2 {
-  @include respond-above(medium) {
-    grid-area: c;
-  }
+  grid-area: c;
 }
 
 .detail-two-planning-context-text-3 {
-  @include respond-above(medium) {
-    grid-area: d;
-  }
+  grid-area: d;
 }
 
 .detail-two-planning-context-video {
-  border-radius: $border-unit-3 * 20;
+  border-radius: $border-unit-5 * 9;
+  grid-area: a;
   width: 100%;
 
   @include respond-above(medium) {
-    grid-area: a;
+    border-radius: $border-unit-5 * 7;
+  }
+
+  @include respond-above(large) {
+    border-radius: $border-unit-5 * 10;
+  }
+
+  @include respond-above(xlarge) {
+    border-radius: $border-unit-5 * 14;
   }
 }
 
@@ -215,15 +231,6 @@
   }
 }
 
-.detail-two-planning-sprint-bottom-text-1,
-.detail-two-planning-sprint-bottom-text-2,
-.detail-two-planning-sprint-bottom-text-3 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
-}
-
 .detail-two-planning-sprint-bottom-text-1 {
   @include respond-above(medium) {
     grid-area: b;
@@ -270,14 +277,6 @@
   @include respond-above(medium) {
     grid-area: c;
   }
-}
-
-.detail-two-planning-sprint-top-text-1,
-.detail-two-planning-sprint-top-text-2 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
 }
 
 .detail-two-planning-sprint-top-text-1 {
