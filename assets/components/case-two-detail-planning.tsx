@@ -63,52 +63,13 @@ export default class DetailTwoPlanning extends React.Component {
             So that was the problem they were wanting us to solve, that was the ask. To build that. For sports.
           </p>
         </div>
-        <div className="detail-two-planning-figures">
-          <figure className="detail-two-planning-figure-1">
-            <p className="detail-two-planning-figure-number">
-              53%
-            </p>
-            <p className="detail-two-planning-figure-text">
-              of their users are in the 16-24 age group, who are primarily school-aged
-            </p>
-          </figure>
-          <figure className="detail-two-planning-figure-2">
-            <p className="detail-two-planning-figure-number">
-              58%
-            </p>
-            <p className="detail-two-planning-figure-text">
-              of all devices purchased for US classrooms were Google devices
-            </p>
-          </figure>
-          <figure className="detail-two-planning-figure-3">
-            <p className="detail-two-planning-figure-number">
-              17%
-            </p>
-            <p className="detail-two-planning-figure-text">
-              of product requests were communicating a desire for cross platform experiences
-            </p>
-          </figure>
-        </div>
-        <div className="detail-two-planning-solution">
-          <div className="detail-two-planning-solution-text-wrapper">
-            <p className="detail-two-planning-solution-text-1">
-              From this, we learned that there could be an opportunity for a web experience for Houseparty.
-            </p>
-            <p className="detail-two-planning-solution-text-2">
-              I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards.
-            </p>
-            <p className="detail-two-planning-solution-text-3">
-              So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
-            </p>
-          </div>
-        </div>
         <div className="detail-two-planning-sprints">
           <div className="detail-two-planning-sprint-top">
             <p className="detail-two-planning-sprint-top-text-1">
-              So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here.
+              The team seemed super excited about this idea, but I was hoping we could slow down a bit and spend more time thinking about the problem before the solution.
             </p>
             <p className="detail-two-planning-sprint-top-text-2">
-              This involved trying to understand where the original idea really came from—and why.
+              Part of my hesitance was also because I felt it would be really hard to compete with HQ if they did release a sports offering. I made a case for a design sprint to explore some more options with the team to see what we would find—they said yes!
             </p>
             <img
               alt="Members of the Houseparty web team together in a room, running a design sprint"
@@ -122,8 +83,14 @@ export default class DetailTwoPlanning extends React.Component {
               className="detail-two-planning-sprint-bottom-img-1 dropshadow"
               src={imgFour}
             />
-            <p className="detail-two-planning-sprint-bottom-text">
-            Learning more about our potential users, listing out our assumptions about this potential product and how we might test them; once again, How Might Weing; user journeying; and so on.
+            <p className="detail-two-planning-sprint-bottom-text-1">
+              So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here. A lot of exercises were run, as the team wanted to understand where the original idea came from, and why.
+            </p>
+            <p className="detail-two-planning-sprint-bottom-text-2">
+              Through this process, we learned more about our potential users, listing out our assumptions along the way about this potential product and how we might test them; once again, How Might Weing; user journeying; and so on.
+            </p>
+            <p className="detail-two-planning-sprint-bottom-text-3">
+              So, to re-iterate, we started with an HQ clone. But, by the middle of the week, we had a real breadth of ideas to explore. Through those exercises I mentioned, I facilitated the team’s inclination towards one idea in particular…
             </p>
             <img
               alt="Two members of the Houseparty team contemplating the product"

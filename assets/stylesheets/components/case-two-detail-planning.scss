@@ -83,7 +83,7 @@
   @include respond-above(medium) {
     column-gap: $sp-unit-4;
     grid-template-areas:
-      "a a a a a a a a a a a a"
+      ". a a a a a a a a . . ."
       ". . . . . b b b d d d ."
       ". . . . . c c c d d d .";
     grid-template-columns: repeat(12, 1fr);
@@ -114,72 +114,6 @@
 .detail-two-planning-request-text-3 {
   @include respond-above(medium) {
     grid-area: d;
-  }
-}
-
-.detail-two-planning-figure-1 {
-  @include respond-above(medium) {
-    grid-area: a;
-  }
-}
-
-.detail-two-planning-figure-2 {
-  @include respond-above(medium) {
-    grid-area: b;
-  }
-}
-
-.detail-two-planning-figure-3 {
-  @include respond-above(medium) {
-    grid-area: c;
-  }
-}
-
-.detail-two-planning-figure-number {
-  font-size: $font-heading-1;
-  font-weight: $font-weight-light;
-  line-height: $leading-unit-1;
-
-  @include respond-above(small) {
-  font-size: $font-heading-7;
-  }
-
-  @include respond-above(large) {
-    font-size: $font-heading-9;
-  }
-
-  @include respond-above(xlarge) {
-    font-size: $font-heading-12;
-  }
-
-  @include respond-above(xxlarge) {
-    font-size: $font-heading-15;
-  }
-}
-
-.detail-two-planning-figure-text {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-}
-
-.detail-two-planning-figures {
-  display: grid;
-  gap: $sp-unit-4 * 2;
-  grid-auto-rows: min-content;
-  grid-template-columns: repeat(2, 1fr);
-
-  @include respond-above(medium) {
-    grid-template-areas:
-      ". . a a a b b b c c c .";
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  @include respond-above(large) {
-    gap: unset;
-    grid-template-areas:
-      ". . a a . b b . c c . .";
-    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -240,65 +174,6 @@
   }
 }
 
-.detail-two-planning-solution {
-  display: grid;
-  row-gap: $sp-unit-4;
-
-  @include respond-above(medium) {
-    row-gap: $sp-unit-4 * 3;
-  }
-}
-
-.detail-two-planning-solution-text-1,
-.detail-two-planning-solution-text-2,
-.detail-two-planning-solution-text-3 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
-}
-
-.detail-two-planning-solution-text-1 {
-  @include respond-above(medium) {
-    grid-area: a;
-  }
-}
-
-.detail-two-planning-solution-text-2 {
-  @include respond-above(medium) {
-    grid-area: b;
-  }
-}
-
-.detail-two-planning-solution-text-3 {
-  @include respond-above(medium) {
-    grid-area: c;
-  }
-}
-
-.detail-two-planning-solution-text-wrapper {
-  display: grid;
-
-  @include respond-above(medium) {
-    grid-template-areas:
-      ". . a a a a . . . . . ."
-      ". . . . b b b b . . . ."
-      ". . . . . . . c c c c .";
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  @include respond-above(large) {
-    grid-template-areas:
-      ". . a a a . . . . . . ."
-      ". . . . b b b . . . . ."
-      ". . . . . . . c c c . .";
-  }
-}
-
-.detail-two-planning-solution-video {
-  width: 100%;
-}
-
 .detail-two-planning-sprint-bottom {
   display: grid;
   row-gap: $sp-unit-4;
@@ -308,9 +183,11 @@
     grid-template-areas:
       ". a a a a a a . . . . ."
       ". a a a a a a b b b b ."
+      ". a a a a a a d d d d ."
       ". a a a a a a . . . . ."
       ". a a a a a a c c c . ."
-      ". . . . . . . c c c . .";
+      ". . . . . . . c c c . ."
+      ". . . e e e . c c c . .";
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -318,9 +195,11 @@
     grid-template-areas:
       ". a a a a a a . . . . ."
       ". a a a a a a . b b b ."
+      ". a a a a a a . d d d ."
       ". a a a a a a . . . . ."
       ". a a a a a a c c c . ."
-      ". . . . . . . c c c . .";
+      ". . . . . . . c c c . ."
+      ". . . e e e . c c c . .";
   }
 }
 
@@ -336,14 +215,30 @@
   }
 }
 
-.detail-two-planning-sprint-bottom-text {
+.detail-two-planning-sprint-bottom-text-1,
+.detail-two-planning-sprint-bottom-text-2,
+.detail-two-planning-sprint-bottom-text-3 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
   text-align: justify;
+}
 
+.detail-two-planning-sprint-bottom-text-1 {
   @include respond-above(medium) {
     grid-area: b;
+  }
+}
+
+.detail-two-planning-sprint-bottom-text-2 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
+.detail-two-planning-sprint-bottom-text-3 {
+  @include respond-above(medium) {
+    grid-area: e;
   }
 }
 
@@ -366,7 +261,7 @@
     grid-template-areas:
       ". . . . . . c c c c c ."
       ". . a a a . c c c c c ."
-      ". . . b b b c c c c c ."
+      ". . b b b . c c c c c ."
       ". . . . . . c c c c c .";
   }
 }
