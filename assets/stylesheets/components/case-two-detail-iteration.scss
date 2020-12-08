@@ -339,19 +339,24 @@
 }
 
 .detail-two-iteration-visuals {
-  column-gap: $sp-unit-4;
+  align-items: center;
   display: grid;
+  gap: $sp-unit-2 $sp-unit-4;
   grid-template-areas:
     "a a b b"
     "c c c c";
   grid-template-columns: repeat(4, 1fr);
 
   @include respond-above(medium) {
-    align-items: center;
-    gap: $sp-unit-2 ($sp-unit-4 * 3);
+    column-gap: $sp-unit-4 * 3;
     grid-template-areas:
       ". a a a b b b c c c . .";
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a b b b c c c c .";
   }
 }
 
@@ -366,4 +371,8 @@
 
 .detail-two-iteration-visuals-text {
   grid-area: c;
+
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
+  }
 }
