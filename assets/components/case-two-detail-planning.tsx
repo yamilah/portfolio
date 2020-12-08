@@ -1,5 +1,5 @@
 import * as React from "react"
-import imgOne from "../images/hofr/hofr-request.jpg"
+import imgOne from "../images/hofr/hofr-planning-request.jpg"
 import imgTwo from "../images/hofr/hofr-planning-2.jpg"
 import imgThree from "../images/hofr/hofr-planning-3.jpg"
 import imgFour from "../images/hofr/hofr-planning-4.jpg"

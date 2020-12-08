@@ -59,10 +59,13 @@
 .detail-two-iteration-figure-text,
 .detail-two-iteration-idea-text,
 .detail-two-iteration-progress-text-1,
-.detail-two-iteration-progress-text-2 {
+.detail-two-iteration-progress-text-2,
+.detail-two-iteration-prototype-text-1,
+.detail-two-iteration-prototype-text-2 {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   line-height: $leading-unit-5;
+  text-align: justify;
 }
 
 .detail-two-iteration-figures {
@@ -209,32 +212,48 @@
 
 .detail-two-iteration-prototype {
   display: grid;
-  row-gap: $sp-unit-4;
+  row-gap: $sp-unit-1;
 
   @include respond-above(medium) {
     grid-template-areas:
-      ". a a a a a a a a a a ."
-      ". . . . . . b b b . . .";
+      ". a a a a . . . . . . . ."
+      ". a a a a . b b b b . . ."
+      ". a a a a . . c c c c . ."
+      ". a a a a . . . . . . . .";
     grid-template-columns: repeat(12, 1fr);
-    row-gap: $sp-unit-4 * 3;
   }
-}
 
-.detail-two-iteration-prototype-text {
-  text-align: justify;
-
-  @include respond-above(medium) {
-    grid-area: b;
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a . . . . . . . . ."
+      ". a a a . b b b . . . . ."
+      ". a a a . . . c c c . . ."
+      ". a a a . . . . . . . . .";
   }
 }
 
 .detail-two-iteration-prototype-video {
+  border-radius: $border-unit-3 * 20;
   width: 100%;
 
   @include respond-above(medium) {
     grid-area: a;
   }
 }
+
+.detail-two-iteration-prototype-text-1 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.detail-two-iteration-prototype-text-2 {
+  @include respond-above(medium) {
+    grid-area: c;
+  }
+}
+
+.detail-two-iteration-prototype-text-2
 
 .detail-two-iteration-separator {
   column-gap: $sp-unit-4;

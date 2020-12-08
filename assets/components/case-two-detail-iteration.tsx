@@ -4,9 +4,9 @@ import imgTwo from "../images/houseparty/houseparty-idea-2.jpg"
 import imgThree from "../images/houseparty/houseparty-idea-3.jpg"
 import imgFour from "../images/houseparty/houseparty-idea-4.jpg"
 import imgFive from "../images/houseparty/houseparty-idea-5.jpg"
-import vidOne from "../images/houseparty/houseparty-prototype.mp4"
-import vidOneFallback from "../images/houseparty/houseparty-prototype.webm"
-import vidOnePoster from "../images/houseparty/houseparty-prototype-poster.jpg"
+import vidOne from "../images/hofr/hofr-iteration-1.mp4"
+import vidOneFallback from "../images/hofr/hofr-iteration-1.webm"
+import vidOnePoster from "../images/hofr/hofr-iteration-1.png"
 import vidTwo from "../images/houseparty/houseparty-progress.mp4"
 import vidTwoFallback from "../images/houseparty/houseparty-progress.webm"
 import vidTwoPoster from "../images/houseparty/houseparty-progress-poster.jpg"
@@ -41,41 +41,44 @@ export default class DetailTwoIteration extends React.Component {
             />
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
-          <p className="detail-two-iteration-prototype-text">
-            From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing above. Here were some key findings from this testing:
+          <p className="detail-two-iteration-prototype-text-1">
+            From this work over that week, I was able to lead the conversation to the ultimate goal of the week: a prototype to test against users, an excerpt from which you’re seeing here.
+          </p>
+          <p className="detail-two-iteration-prototype-text-2">
+            Here were some key findings from this testing:
           </p>
         </div>
         <div className="detail-two-iteration-figures">
           <figure className="detail-two-iteration-figure-1">
             <p className="detail-two-iteration-figure-number">
-              3/5
+              3/4
             </p>
             <p className="detail-two-iteration-figure-text">
-              participants could not figure out where notifications were
+              participants described this experience as “very fun”
             </p>
           </figure>
           <figure className="detail-two-iteration-figure-2">
             <p className="detail-two-iteration-figure-number">
-              5/5
+              4/4
             </p>
             <p className="detail-two-iteration-figure-text">
-              participants could figure out how to start a chat
+              participants were “satisfied” with the fact that this was skill-based
             </p>
           </figure>
           <figure className="detail-two-iteration-figure-3">
             <p className="detail-two-iteration-figure-number">
-              4/5
+              2/4
             </p>
             <p className="detail-two-iteration-figure-text">
-              participants could figure out how to add a friend
+              could figure out how to start playing
             </p>
           </figure>
           <figure className="detail-two-iteration-figure-4">
             <p className="detail-two-iteration-figure-number">
-              5/5
+              3/4
             </p>
             <p className="detail-two-iteration-figure-text">
-              participants understood the wave feature
+              said they would be “likely” to play this game again
             </p>
           </figure>
         </div>
