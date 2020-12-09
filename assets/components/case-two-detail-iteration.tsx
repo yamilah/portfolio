@@ -4,6 +4,12 @@ import imgTwo from "../images/hofr/hofr-iteration-3.png"
 import imgThree from "../images/hofr/hofr-iteration-4.png"
 import imgFour from "../images/hofr/hofr-iteration-6.png"
 import imgFive from "../images/hofr/hofr-iteration-7.jpg"
+import imgSix from "../images/hofr/hofr-iteration-8.png"
+import imgSeven from "../images/hofr/hofr-iteration-9.png"
+import imgEight from "../images/hofr/hofr-iteration-10.png"
+import imgNine from "../images/hofr/hofr-iteration-11.png"
+import imgTen from "../images/hofr/hofr-iteration-12.png"
+import imgEleven from "../images/hofr/hofr-iteration-13.png"
 import vidOne from "../images/hofr/hofr-iteration-1.mp4"
 import vidOneFallback from "../images/hofr/hofr-iteration-1.webm"
 import vidOnePoster from "../images/hofr/hofr-iteration-1.png"
@@ -152,6 +158,41 @@ export default class DetailTwoIteration extends React.Component {
           </p>
           <p className="detail-two-iteration-launch-text-3">
             But, also, everything was on fire.
+          </p>
+        </div>
+        <div className="detail-two-iteration-feedback">
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-1 dropshadow"
+            src={imgSix}
+          />
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-2 dropshadow"
+            src={imgSeven}
+          />
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-3 dropshadow"
+            src={imgEight}
+          />
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-4 dropshadow"
+            src={imgNine}
+          />
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-5 dropshadow"
+            src={imgTen}
+          />
+          <img
+            alt="A screenshot of HOFR in the Play Store"
+            className="detail-two-iteration-feedback-img-6 dropshadow"
+            src={imgEleven}
+          />
+          <p className="detail-two-iteration-feedback-text">
+            All the attention was a good thing, though, as we got a ton of feedback really quickly. Which was a blessing—because we wanted to go for a V2.
           </p>
         </div>
       </section>

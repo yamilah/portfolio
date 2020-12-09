@@ -19,7 +19,7 @@ export default class DetailTwoImplementation extends React.Component {
             03
           </p>
           <p className="detail-two-implementation-separator-text">
-            Implementation & debugging
+            A second version
           </p>
         </div>
         <div className="detail-two-implementation-prototype">
