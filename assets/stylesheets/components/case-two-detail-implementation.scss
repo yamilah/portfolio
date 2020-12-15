@@ -63,17 +63,149 @@
   grid-template-columns: repeat(2, 1fr);
 
   @include respond-above(medium) {
-    grid-template-areas:
-      ". . a a a b b b c c c .";
+    grid-template-areas: ". . a a a b b b c c c .";
     grid-template-columns: repeat(12, 1fr);
   }
 
   @include respond-above(large) {
     gap: unset;
-    grid-template-areas:
-      ". . a a . b b . c c . .";
+    grid-template-areas: ". . a a . b b . c c . .";
     grid-template-columns: repeat(12, 1fr);
   }
+}
+
+.detail-two-implementation-improvement {
+  display: grid;
+  row-gap: $sp-unit-4 * 3;
+}
+
+.detail-two-implementation-improvement-middle {
+  display: grid;
+  gap: $sp-unit-2 $sp-unit-4;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e";
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". d d d c c c b b b a a a ."
+      ". . . . . . . . e e e e . .";
+    grid-template-columns: repeat(14, 1fr);
+  }
+
+  @include respond-above(large) {
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
+    grid-template-areas:
+      ". . . . d d c c b b a a ."
+      ". e e e d d c c b b a a ."
+      ". . . . d d c c b b a a .";
+    grid-template-columns: repeat(13, 1fr);
+  }
+}
+
+.detail-two-implementation-improvement-middle-img-1,
+.detail-two-implementation-improvement-middle-img-2,
+.detail-two-implementation-improvement-middle-img-3,
+.detail-two-implementation-improvement-middle-img-4,
+.detail-two-implementation-improvement-top-img-1,
+.detail-two-implementation-improvement-top-img-2,
+.detail-two-implementation-improvement-top-img-3,
+.detail-two-implementation-improvement-top-img-4 {
+  width: 100%;
+}
+
+.detail-two-implementation-improvement-middle-img-1 {
+  grid-area: a;
+}
+
+.detail-two-implementation-improvement-middle-img-2 {
+  grid-area: b;
+}
+
+.detail-two-implementation-improvement-middle-img-3 {
+  grid-area: c;
+}
+
+.detail-two-implementation-improvement-middle-img-4 {
+  grid-area: d;
+}
+
+.detail-two-implementation-improvement-middle-text,
+.detail-two-implementation-improvement-top-text-1,
+.detail-two-implementation-improvement-top-text-2,
+.detail-two-implementation-solution-text-1,
+.detail-two-implementation-solution-text-2,
+.detail-two-implementation-solution-text-3 {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  line-height: $leading-unit-5;
+  text-align: justify;
+}
+
+.detail-two-implementation-improvement-middle-text {
+  grid-area: e;
+
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
+  }
+}
+
+.detail-two-implementation-improvement-top {
+  display: grid;
+  gap: $sp-unit-2 $sp-unit-4;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f f";
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a b b b c c c d d d ."
+      ". . . e e e e f f f f . . .";
+    grid-template-columns: repeat(14, 1fr);
+  }
+
+  @include respond-above(large) {
+    gap: $sp-unit-2 ($sp-unit-4 * 3);
+    grid-template-areas:
+      ". a a b b c c d d . . . ."
+      ". a a b b c c d d e e e ."
+      ". a a b b c c d d f f f ."
+      ". a a b b c c d d . . . .";
+    grid-template-columns: repeat(13, 1fr);
+  }
+}
+
+.detail-two-implementation-improvement-top-img-1 {
+  grid-area: a;
+}
+
+.detail-two-implementation-improvement-top-img-2 {
+  grid-area: b;
+}
+
+.detail-two-implementation-improvement-top-img-3 {
+  grid-area: c;
+}
+
+.detail-two-implementation-improvement-top-img-4 {
+  grid-area: d;
+}
+
+.detail-two-implementation-improvement-top-text-1 {
+  grid-area: e;
+
+  @include respond-below(medium) {
+    padding-top: $sp-unit-2;
+  }
+}
+
+.detail-two-implementation-improvement-top-text-2 {
+  grid-area: f;
 }
 
 .detail-two-implementation-separator {
@@ -142,15 +274,6 @@
   @include respond-above(medium) {
     row-gap: $sp-unit-4 * 3;
   }
-}
-
-.detail-two-implementation-solution-text-1,
-.detail-two-implementation-solution-text-2,
-.detail-two-implementation-solution-text-3 {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  line-height: $leading-unit-5;
-  text-align: justify;
 }
 
 .detail-two-implementation-solution-text-1 {
