@@ -20,8 +20,8 @@
       ". a a a a . . . . . . ."
       ". b b b b b . . . . . ."
       ". b b b b b c c c c c ."
-      ". . . . . . c c c c c .";
-
+      ". d d d d d c c c c c ."
+      ". d d d d d . . . . . .";
     grid-template-columns: repeat(12, 1fr);
   }
 
@@ -30,7 +30,8 @@
       ". a a a . . . . . . . ."
       ". . . b b b b . . . . ."
       ". . . b b b b c c c c ."
-      ". . . . . . . c c c c .";
+      ". . . d d d d c c c c ."
+      ". . . d d d d . . . . .";
   }
 }
 
@@ -50,6 +51,12 @@
 .detail-two-finale-conclusion-2 {
   @include respond-above(medium) {
     grid-area: c;
+  }
+}
+
+.detail-two-finale-conclusion-3 {
+  @include respond-above(medium) {
+    grid-area: d;
   }
 }
 

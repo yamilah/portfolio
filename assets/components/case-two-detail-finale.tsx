@@ -14,22 +14,30 @@ export default class DetailTwoFinale extends React.Component {
         </div>
         <div className="detail-two-finale-conclusion">
           <p className="detail-two-finale-conclusion-intro">
-            We launched! We got thousands of users in the first week, which is exactly what we were tracking for. But we also got a temperature check from user feedback and behavior on what a V2 could be.
+            As we closed the book on this iteration, I did some reflecting on how things could have been different.
           </p>
           <div className="detail-two-finale-conclusion-1">
             <h1 className="detail-two-finale-conclusion-heading">
-              Gamers—in the house
+              Hardly testing?
             </h1>
             <p className="detail-two-finale-conclusion-text">
-              Firstly, EPIC games—the company behind Fortnite—acquired Houseparty after we finished this. Fortnite’s popular in the age group that uses Houseparty—why not do some research around this platform being another way for them to play together, and what that could mean for new design opportunities on Houseparty?
+              One thought was that we validated the product upfront, but didn’t do a ton of user testing as we released features—imagine how many opportunities could have surfaced if we had!
             </p>
           </div>
           <div className="detail-two-finale-conclusion-2">
             <h1 className="detail-two-finale-conclusion-heading">
-              Testing easily
+              TV, meet phone
             </h1>
             <p className="detail-two-finale-conclusion-text">
-              Also, I sacrificed convenience of testing for rigor—what I mean by this is that I often tested with people who were accessible to me, like friends and family and, while I could go pretty fast, I had to accept that they weren’t always our representative users, and I’d have to take my learnings with a grain of salt.
+              Also, I noticed that people reported that looking between their TVs and their phones while playing caused some cognitive overload, and that there was some confusion around when to start/stop playing.
+            </p>
+          </div>
+          <div className="detail-two-finale-conclusion-3">
+            <h1 className="detail-two-finale-conclusion-heading">
+              X marks success
+            </h1>
+            <p className="detail-two-finale-conclusion-text">
+              Perhaps some way that could have guided us was if we had a very clear definition of our success metrics.
             </p>
           </div>
         </div>
