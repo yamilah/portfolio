@@ -6,7 +6,7 @@ export default class AboutBody extends React.Component {
       <section className="about-body">
         <div className="about-body-top">
           <p className="about-body-top-text-1">
-            Yamilah Atallah <span className="about-body-top-text-emphasis">(jah•MEE•lah ah•tah•LAH)</span> is a designer and front-end developer based in Redwood City, CA, currently working at Disney+. She studied at Massachusetts College of Art and Design, graduating summa cum laude in 2015. Previously, she worked with <a href="https://thoughtbot.com">thoughtbot</a>, an SF-based design consultancy. Her clients have included Houseparty, True Botanicals, Bulletproof Coffee, and The County of San Mateo.
+            Yamilah Atallah <span className="about-body-top-text-emphasis">(jah•MEE•lah ah•tah•LAH)</span> is a designer and front-end developer based in Redwood City, CA, currently working at Abstract. She studied at Massachusetts College of Art and Design, graduating summa cum laude in 2015. Previously, she worked with Disney+, the streaming service; before that, she worked at thoughtbot, an SF-based design consultancy. Her clients have included Houseparty, True Botanicals, Bulletproof Coffee, and The County of San Mateo.
           </p>
           <p className="about-body-top-text-2">
             Her work lies at the intersection of product, fine arts, business, and engineering; it encompasses a wide-range of areas, including visual design, illustration, user experience, front-end development, product strategy, and product validation. Often described as a “full stack designer,” she focuses on finding the right process for the right problem at the right time.

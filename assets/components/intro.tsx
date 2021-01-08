@@ -6,13 +6,13 @@ export default class Intro extends React.Component {
       <section className="intro">
         <p className="intro-date-1">
           <span>
-            08
+            01
           </span>
           <span>
-            09
+            07
           </span>
           <span>
-            20
+            21
           </span>
         </p>
         <p className="intro-subtext">
@@ -23,7 +23,7 @@ export default class Intro extends React.Component {
             designer,
           </span>
           <span>
-            Disney+
+            Abstract
           </span>
         </p>
         <p className="intro-text-1">
@@ -45,17 +45,17 @@ export default class Intro extends React.Component {
           Bay Area
         </p>
         <p className="intro-text-7">
-          2015—2020
+          2015—2021
         </p>
         <p className="intro-date-2">
           <span>
-            08
+            01
           </span>
           <span>
-            09
+            07
           </span>
           <span>
-            20
+            21
           </span>
         </p>
       </section>
