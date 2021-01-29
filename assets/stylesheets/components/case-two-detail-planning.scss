@@ -148,6 +148,7 @@
 .detail-two-planning-separator-number {
   font-size: $font-heading-1;
   font-weight: $font-weight-light;
+  font-weight: $font-weight-thin;
 
   @include respond-above(small) {
   font-size: $font-heading-7;

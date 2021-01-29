@@ -72,6 +72,7 @@
 
   @include respond-above(small) {
   font-size: $font-heading-7;
+  font-weight: $font-weight-thin;
   }
 
   @include respond-above(large) {
