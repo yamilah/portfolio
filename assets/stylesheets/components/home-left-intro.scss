@@ -1,4 +1,8 @@
 .home-left-intro {
+  display: grid;
+}
+
+.home-left-intro-content {
   align-content: center;
   background-color: $woodsmoke-black;
   column-gap: $sp-unit-4;
