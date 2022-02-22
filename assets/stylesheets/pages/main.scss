@@ -1,11 +1,4 @@
 .main {
-  @include contain(xxlarge);
-  @include margin(null auto);
   display: grid;
-  padding-top: $sp-unit-2;
-  row-gap: $sp-unit-5 * 4;
-
-  @include respond-above(small) {
-    row-gap: $sp-unit-3 * 10;
-  }
+  grid-template-columns: repeat(2, 1fr);
 }

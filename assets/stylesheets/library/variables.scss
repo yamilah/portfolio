@@ -1,5 +1,6 @@
 // Typefaces
-$font-stack-primary: "NN Forever Grotesk", $font-stack-helvetica;
+$font-stack-primary: "Pleasure Variable", $font-stack-helvetica;
+$font-stack-secondary: "NN Forever Grotesk", $font-stack-helvetica;
 
 // Font weights
 $font-weight-light: 300;
@@ -8,11 +9,10 @@ $font-weight-thin: 100;
 
 // Colors
 $hint-of-red: #f8f5f4;
-$pure-black: #000000;
-$pure-black-10: rgba($pure-black, 0.1);
 $pure-white: #ffffff;
 $pure-yellow: #ffff00;
-$woodsmoke-black: #121316;
+$woodsmoke-black: #232323;
+$woodsmoke-black-10: rgba($woodsmoke-black, 0.1);
 
 // Spacings
 $sp-base-unit: 1rem;
@@ -22,6 +22,13 @@ $sp-unit-2: $sp-base-unit * ($sp-base-ratio * 2);
 $sp-unit-3: $sp-base-unit * ($sp-base-ratio * 3);
 $sp-unit-4: $sp-base-unit * ($sp-base-ratio * 4);
 $sp-unit-5: $sp-base-unit * ($sp-base-ratio * 5);
+$sp-unit-6: $sp-base-unit * ($sp-base-ratio * 6);
+$sp-unit-7: $sp-base-unit * ($sp-base-ratio * 7);
+$sp-unit-8: $sp-base-unit * ($sp-base-ratio * 8);
+$sp-unit-9: $sp-base-unit * ($sp-base-ratio * 9);
+$sp-unit-10: $sp-base-unit * ($sp-base-ratio * 10);
+$sp-unit-11: $sp-base-unit * ($sp-base-ratio * 11);
+$sp-unit-12: $sp-base-unit * ($sp-base-ratio * 12);
 
 // Font body sizes
 $font-body-unit: 1rem;

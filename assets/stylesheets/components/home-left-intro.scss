@@ -1,0 +1,29 @@
+.home-left-intro {
+  background-color: $woodsmoke-black;
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    ". a a a a a"
+    "b b b . . .";
+  grid-template-columns: repeat(6, 1fr);
+  height: 100vh;
+}
+
+.home-left-intro-first {
+  color: $hint-of-red;
+  font-family: $font-stack-primary;
+  font-size: $font-heading-15;
+  font-variation-settings: "TRAP" 100, "wght" 400;
+  grid-area: a;
+  transform: rotate(-6deg);
+}
+
+.home-left-intro-last {
+  color: $hint-of-red;
+  font-family: $font-stack-primary;
+  font-size: $font-heading-7;
+  font-variation-settings: "TRAP" 100, "wght" 400;
+  grid-area: b;
+  transform: rotate(2deg);
+}

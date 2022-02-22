@@ -5,7 +5,6 @@ import DetailOneImplementation from "../case-one-detail-implementation"
 import DetailOneIntro from "../case-one-detail-intro"
 import DetailOneIteration from "../case-one-detail-iteration"
 import DetailOnePlanning from "../case-one-detail-planning"
-import Footer from "../footer"
 
 export default class CaseDetailOne extends React.Component {
   render() {
@@ -17,7 +16,6 @@ export default class CaseDetailOne extends React.Component {
         <DetailOneIteration />
         <DetailOneImplementation />
         <DetailOneFinale />
-        <Footer />
       </section>
     )
   }

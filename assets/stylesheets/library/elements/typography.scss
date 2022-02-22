@@ -1,9 +1,5 @@
-::selection {
-  background-color: $pure-yellow;
-}
-
 html {
-  font-family: $font-stack-primary;
+  font-family: $font-stack-secondary;
   font-size: 62.5%;
 }
 
@@ -20,5 +16,6 @@ h5,
 h6,
 p {
   color: $woodsmoke-black;
+  font-weight: unset;
   margin: 0;
 }
