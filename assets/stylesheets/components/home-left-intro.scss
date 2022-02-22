@@ -1,17 +1,28 @@
 .home-left-intro {
+  align-content: center;
   background-color: $woodsmoke-black;
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-rows: min-content;
   grid-template-areas:
     ". a a a a a"
-    "b b b . . .";
+    "b b b . . ."
+    "b b b . c c"
+    "b b b . c c"
+    ". d d . c c"
+    ". d d . . .";
   grid-template-columns: repeat(6, 1fr);
   height: 100vh;
 }
 
-.home-left-intro-first {
+.home-left-intro-first,
+.home-left-intro-last,
+.home-left-intro-phonetic,
+.home-left-intro-text {
   color: $hint-of-red;
+}
+
+.home-left-intro-first {
   font-family: $font-stack-primary;
   font-size: $font-heading-15;
   font-variation-settings: "TRAP" 100, "wght" 400;
@@ -20,10 +31,39 @@
 }
 
 .home-left-intro-last {
-  color: $hint-of-red;
   font-family: $font-stack-primary;
   font-size: $font-heading-7;
   font-variation-settings: "TRAP" 100, "wght" 400;
   grid-area: b;
   transform: rotate(2deg);
+}
+
+.home-left-intro-phonetic {
+  display: grid;
+  font-size: $font-body-16;
+  font-weight: $font-weight-regular;
+  grid-area: c;
+  grid-auto-rows: min-content;
+}
+
+.home-left-intro-phonetic-1 {
+  padding-left: $sp-unit-2;
+  transform: rotate(-3deg);
+}
+
+.home-left-intro-phonetic-2 {
+  transform: rotate(5deg);
+}
+
+.home-left-intro-phonetic-3 {
+  padding-left: $sp-unit-5;
+  transform: rotate(2deg);
+}
+
+.home-left-intro-text {
+  font-size: $font-body-2;
+  font-weight: $font-weight-regular;
+  grid-area: d;
+  line-height: $leading-unit-5;
+  padding-left: $sp-unit-4;
 }
