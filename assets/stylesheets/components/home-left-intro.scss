@@ -1,6 +1,8 @@
 .home-left-intro {
   align-items: center;
+  background-color: $woodsmoke-black;
   display: grid;
+  height: 100vh;
 }
 
 .home-left-intro-content,
@@ -11,7 +13,6 @@
 
 .home-left-intro-content {
   align-content: center;
-  background-color: $woodsmoke-black;
   column-gap: $sp-unit-4;
   display: grid;
   grid-auto-rows: min-content;
@@ -23,7 +24,8 @@
     ". d d . c c"
     ". d d . . .";
   grid-template-columns: repeat(6, 1fr);
-  height: 100vh;
+  padding-left: $sp-unit-12;
+  padding-right: $sp-unit-12;
 }
 
 .home-left-intro-first,

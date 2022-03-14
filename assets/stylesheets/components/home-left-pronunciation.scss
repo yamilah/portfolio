@@ -1,0 +1,49 @@
+.home-left-pronunciation {
+  background: linear-gradient(180deg, $woodsmoke-black 0%, $hint-of-red 8.78%);
+  display: grid;
+  height: 100vh;
+  padding-top: 13rem;
+}
+
+.home-left-pronunciation-content-1,
+.home-left-pronunciation-line {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.home-left-pronunciation-content-1 {
+  column-gap: $sp-unit-4;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    ". . a a a a"
+    ". b b b b ."
+    "c c c c c c";
+  grid-template-columns: repeat(6, 1fr);
+  padding-left: $sp-unit-12;
+  padding-right: $sp-unit-12;
+}
+
+.home-left-pronunciation-heading-1,
+.home-left-pronunciation-heading-2,
+.home-left-pronunciation-heading-3 {
+  font-family: $font-stack-primary;
+  font-size: $font-heading-15;
+  font-variation-settings: "TRAP" 100, "wght" 900;
+}
+
+.home-left-pronunciation-heading-1 {
+  grid-area: a;
+}
+
+.home-left-pronunciation-heading-2 {
+  grid-area: b;
+}
+
+.home-left-pronunciation-heading-3 {
+  grid-area: c;
+}
+
+.home-left-pronunciation-line {
+  padding-top: $sp-unit-10;
+}
