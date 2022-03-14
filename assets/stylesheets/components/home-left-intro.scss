@@ -1,5 +1,12 @@
 .home-left-intro {
+  align-items: center;
   display: grid;
+}
+
+.home-left-intro-content,
+.home-left-intro-line {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .home-left-intro-content {
@@ -40,6 +47,11 @@
   font-variation-settings: "TRAP" 100, "wght" 400;
   grid-area: b;
   transform: rotate(2deg);
+}
+
+.home-left-intro-line {
+  z-index: 1;
+  pointer-events: none;
 }
 
 .home-left-intro-phonetic {
