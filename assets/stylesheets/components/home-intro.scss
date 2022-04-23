@@ -1,71 +1,72 @@
 .home-intro {
-  align-items: center;
   background-color: $woodsmoke-black;
-  display: grid;
-  height: 100vh;
-}
-
-.home-intro-content,
-.home-intro-line {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.home-intro-content {
-  align-content: center;
-  column-gap: $sp-unit-4;
-  display: grid;
   grid-auto-rows: min-content;
-  grid-template-areas:
-    ". a a a a a"
-    "b b b . . ."
-    "b b b . c c"
-    "b b b . c c"
-    ". d d . c c"
-    ". d d . . .";
-  grid-template-columns: repeat(6, 1fr);
-  padding: $sp-unit-12;
-  padding-right: $sp-unit-12;
+
+  @include respond-above(large) {
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+      ". a a a a a"
+      "b b b . . ."
+      "b b b . c c"
+      "b b b . c c"
+      ". d d . c c"
+      ". d d . . .";
+    grid-template-columns: repeat(6, 1fr);
+    height: 100vh;
+    padding-left: $sp-unit-12;
+    padding-right: $sp-unit-12;
+  }
 }
 
 .home-intro-first,
 .home-intro-last,
-.home-intro-phonetic,
+.home-intro-phonetic-1,
+.home-intro-phonetic-2,
+.home-intro-phonetic-3,
 .home-intro-text {
   color: $hint-of-red;
 }
 
-.home-intro-first {
+.home-intro-first,
+.home-intro-last {
   font-family: $font-stack-primary;
-  font-size: $font-heading-15;
-  font-variation-settings: "TRAP" 100, "wght" 400;
-  grid-area: a;
-  transform: rotate(-6deg);
+}
+
+.home-intro-first {
+  @include respond-above(large) {
+    font-size: 9vw;
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 400;
+    grid-area: a;
+    transform: rotate(-6deg);
+  }
 }
 
 .home-intro-last {
-  font-family: $font-stack-primary;
-  font-size: $font-heading-7;
-  font-variation-settings: "TRAP" 100, "wght" 400;
-  grid-area: b;
-  transform: rotate(2deg);
+  @include respond-above(large) {
+    font-size: 5.5vw;
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 400;
+    grid-area: b;
+    transform: rotate(2deg);
+  }
 }
 
-.home-intro-line {
-  z-index: 1;
-  pointer-events: none;
+.home-intro-phonetic,
+.home-intro-text {
+  font-feature-settings: 'salt' on;
 }
 
 .home-intro-phonetic {
   display: grid;
-  font-size: $font-body-16;
-  font-weight: $font-weight-regular;
-  grid-area: c;
   grid-auto-rows: min-content;
+
+  @include respond-above(large) {
+    font-size: 2.4vw;
+    grid-area: c;
+  }
 }
 
 .home-intro-phonetic-1 {
-  padding: $sp-unit-2;
   transform: rotate(-3deg);
 }
 
@@ -74,14 +75,13 @@
 }
 
 .home-intro-phonetic-3 {
-  padding: $sp-unit-5;
   transform: rotate(2deg);
 }
 
 .home-intro-text {
-  font-size: $font-body-2;
-  font-weight: $font-weight-regular;
-  grid-area: d;
-  line-height: $leading-unit-5;
-  padding: $sp-unit-4;
+  @include respond-above(large) {
+    font-size: 1.1vw;
+    grid-area: d;
+    line-height: $leading-unit-4;
+  }
 }
