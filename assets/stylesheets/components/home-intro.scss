@@ -1,17 +1,17 @@
-.home-left-intro {
+.home-intro {
   align-items: center;
   background-color: $woodsmoke-black;
   display: grid;
   height: 100vh;
 }
 
-.home-left-intro-content,
-.home-left-intro-line {
+.home-intro-content,
+.home-intro-line {
   grid-column: 1;
   grid-row: 1;
 }
 
-.home-left-intro-content {
+.home-intro-content {
   align-content: center;
   column-gap: $sp-unit-4;
   display: grid;
@@ -24,18 +24,18 @@
     ". d d . c c"
     ". d d . . .";
   grid-template-columns: repeat(6, 1fr);
-  padding-left: $sp-unit-12;
+  padding: $sp-unit-12;
   padding-right: $sp-unit-12;
 }
 
-.home-left-intro-first,
-.home-left-intro-last,
-.home-left-intro-phonetic,
-.home-left-intro-text {
+.home-intro-first,
+.home-intro-last,
+.home-intro-phonetic,
+.home-intro-text {
   color: $hint-of-red;
 }
 
-.home-left-intro-first {
+.home-intro-first {
   font-family: $font-stack-primary;
   font-size: $font-heading-15;
   font-variation-settings: "TRAP" 100, "wght" 400;
@@ -43,7 +43,7 @@
   transform: rotate(-6deg);
 }
 
-.home-left-intro-last {
+.home-intro-last {
   font-family: $font-stack-primary;
   font-size: $font-heading-7;
   font-variation-settings: "TRAP" 100, "wght" 400;
@@ -51,12 +51,12 @@
   transform: rotate(2deg);
 }
 
-.home-left-intro-line {
+.home-intro-line {
   z-index: 1;
   pointer-events: none;
 }
 
-.home-left-intro-phonetic {
+.home-intro-phonetic {
   display: grid;
   font-size: $font-body-16;
   font-weight: $font-weight-regular;
@@ -64,24 +64,24 @@
   grid-auto-rows: min-content;
 }
 
-.home-left-intro-phonetic-1 {
-  padding-left: $sp-unit-2;
+.home-intro-phonetic-1 {
+  padding: $sp-unit-2;
   transform: rotate(-3deg);
 }
 
-.home-left-intro-phonetic-2 {
+.home-intro-phonetic-2 {
   transform: rotate(5deg);
 }
 
-.home-left-intro-phonetic-3 {
-  padding-left: $sp-unit-5;
+.home-intro-phonetic-3 {
+  padding: $sp-unit-5;
   transform: rotate(2deg);
 }
 
-.home-left-intro-text {
+.home-intro-text {
   font-size: $font-body-2;
   font-weight: $font-weight-regular;
   grid-area: d;
   line-height: $leading-unit-5;
-  padding-left: $sp-unit-4;
+  padding: $sp-unit-4;
 }
