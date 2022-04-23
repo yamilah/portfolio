@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default class HomeLIntro extends React.Component {
+export default class HomeIntro extends React.Component {
   render() {
     return (
       <div className="home-intro">

@@ -1,0 +1,64 @@
+.home-detail-one {
+  align-content: center;
+  background:
+    radial-gradient(165% 202.44% at 15.42% 8.5%, #232323 0%, rgba(248, 245, 244, 0) 42.07%),
+    radial-gradient(58.66% 61.63% at 94.93% 95.78%, #232323 0%, rgba(248, 245, 244, 0) 100%);
+  display: grid;
+  height: 100vh;
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". a a a ."
+      ". b b b ."
+      ". . c c .";
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: $sp-unit-12;
+    padding-right: $sp-unit-12;
+  }
+}
+
+.home-detail-one-heading {
+  display: grid;
+  font-family: $font-stack-primary;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
+  grid-auto-rows: min-content;
+
+  @include respond-above(large) {
+    font-size: 8rem;
+    grid-area: a;
+  }
+}
+
+.home-detail-one-heading-1 {
+  transform: rotate(2deg);
+}
+
+.home-detail-one-heading-2 {
+  transform: rotate(-1deg);
+  padding-left: $sp-unit-6;
+
+  @include respond-above(large) {
+    margin-top: calc($sp-unit-9 * -1);
+  }
+}
+
+.home-detail-one-text {
+  font-feature-settings: 'salt' on;
+  font-size: 3vw;
+  line-height: $leading-unit-5;
+  padding-top: $sp-unit-4;
+
+  @include respond-above(small) {
+    font-size: 2vw;
+    padding-top: unset;
+  }
+
+  @include respond-above(large) {
+    font-size: 1.1vw;
+    grid-area: c;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: 0.9vw;
+  }
+}
