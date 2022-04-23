@@ -5,17 +5,28 @@
   @include respond-above(large) {
     align-content: center;
     display: grid;
+    column-gap: $sp-unit-4;
     grid-template-areas:
       ". a a a a a"
-      "b b b . . ."
-      "b b b . c c"
-      "b b b . c c"
-      ". d d . c c"
-      ". d d . . .";
+      "b b b b . ."
+      "b b b b c c"
+      "b b b b c c"
+      ". d d d c c"
+      ". d d d . .";
     grid-template-columns: repeat(6, 1fr);
     height: 100vh;
     padding-left: $sp-unit-12;
     padding-right: $sp-unit-12;
+  }
+
+  @include respond-above(xlarge) {
+    grid-template-areas:
+      ". a a a a a"
+      "b b b b . ."
+      "b b b b c c"
+      "b b b b c c"
+      ". d d . c c"
+      ". d d . . .";
   }
 }
 
@@ -44,7 +55,7 @@
 
 .home-intro-last {
   @include respond-above(large) {
-    font-size: 5.5vw;
+    font-size: 6.3vw;
     font-variation-settings: "TRAP" 100, "ital" 0, "wght" 400;
     grid-area: b;
     transform: rotate(2deg);
@@ -67,21 +78,34 @@
 }
 
 .home-intro-phonetic-1 {
-  transform: rotate(-3deg);
+  @include respond-above(large) {
+    padding-left: $sp-unit-1;
+    transform: rotate(-3deg);
+  }
 }
 
 .home-intro-phonetic-2 {
-  transform: rotate(5deg);
+  @include respond-above(large) {
+    transform: rotate(5deg);
+  }
 }
 
 .home-intro-phonetic-3 {
-  transform: rotate(2deg);
+  @include respond-above(large) {
+    margin-top: calc($sp-unit-1 * -1);
+    padding-left: $sp-unit-2;
+    transform: rotate(2deg);
+  }
 }
 
 .home-intro-text {
   @include respond-above(large) {
     font-size: 1.1vw;
     grid-area: d;
-    line-height: $leading-unit-4;
+    line-height: $leading-unit-5;
+  }
+
+  @include respond-above(xlarge) {
+    font-size: 0.9vw;
   }
 }
