@@ -1,0 +1,37 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Pleasure Variable';
+  src: url('../fonts/Pleasure-Variable.ttf') format('ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url("../fonts/NNForeverGrotesk-Normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: url("../fonts/NNForeverGrotesk-NormalDiagonal.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: url("../fonts/NNForeverGrotesk-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NN Forever Grotesk";
+  font-style: normal;
+  font-weight: $font-weight-thin;
+  src: url("../fonts/NNForeverGrotesk-Thin.woff2") format("woff2");
+}
