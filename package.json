@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel assets/index.html",
+    "build": "parcel build --dist-dir build/prod assets/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/yamilah/portfolio/issues"
   },
-  "homepage": "https://github.com/yamilah/portfolio#readme"
+  "homepage": "https://github.com/yamilah/portfolio#readme",
+  "dependencies": {
+    "parcel": "^2.5.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.50.1",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.5.0"
+  }
 }
