@@ -85,11 +85,6 @@
   }
 }
 
-.home-intro-phonetic,
-.home-intro-text {
-  font-feature-settings: 'salt' on;
-}
-
 .home-intro-phonetic {
   display: grid;
   font-size: 5vw;
@@ -134,6 +129,7 @@
 }
 
 .home-intro-text {
+  font-feature-settings: 'salt' on;
   font-size: 3vw;
   line-height: $leading-unit-5;
   padding-top: $sp-unit-4;

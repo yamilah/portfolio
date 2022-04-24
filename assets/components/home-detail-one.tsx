@@ -15,6 +15,12 @@ export default class HomeDetailOne extends React.Component {
         <p className="home-detail-one-text">
           A social media app used to text and video chat with friends
         </p>
+        <a href="">
+          <span>
+            ↗
+          </span>
+          View case study
+        </a>
       </div>
     )
   }
