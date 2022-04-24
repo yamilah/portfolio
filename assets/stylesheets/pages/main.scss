@@ -1,7 +1,0 @@
-.main {
-  display: grid;
-
-  @include respond-above(large) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

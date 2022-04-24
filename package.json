@@ -1,46 +1,19 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "A repo for all my portfolio iterations.",
-  "main": "assets/index.html",
+  "description": "A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).",
+  "main": "index.js",
   "scripts": {
-    "build": "parcel build -d build/prod assets/index.html",
-    "staging": "bash scripts/deploy_staging.sh",
-    "start": "parcel serve -d build/dev assets/index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yamilah/portfolio.git"
   },
-  "author": "Yamilah Atallah",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/yamilah/portfolio/issues"
   },
-  "homepage": "https://github.com/yamilah/portfolio#readme",
-  "dependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
-    "@types/react-router-dom": "^5.3.3",
-    "bourbon": "^7.0.0",
-    "components": "^0.1.0",
-    "css-what": "^6.0.1",
-    "hamburgers": "^1.1.3",
-    "intro": "^1.0.0",
-    "lodash": "^4.17.21",
-    "node-forge": "^1.2.1",
-    "normalize-url": "^7.0.3",
-    "parcel-bundler": "^1.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1",
-    "react-router-scroll-memory": "^2.0.7",
-    "set-value": "^4.1.0",
-    "simple-line-icons": "^2.5.5",
-    "update": "^0.7.4"
-  },
-  "devDependencies": {
-    "sass": "^1.49.8",
-    "typescript": "^4.5.5"
-  }
+  "homepage": "https://github.com/yamilah/portfolio#readme"
 }

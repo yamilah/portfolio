@@ -1,5 +1,0 @@
-@mixin contain($width: map-get($breakpoints, medium)) {
-  $width: map-get($breakpoints, $width);
-
-  max-width: $width;
-}
