@@ -1,5 +1,6 @@
 import * as React from "react"
 import imgOne from "../../images/home-intro-line-1.svg"
+import imgThree from "../../images/home-intro-line-3.svg"
 
 export default class HomeIntro extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class HomeIntro extends React.Component {
         </h1>
         <img
           alt="A decorative line"
-          className="home-intro-line"
+          className="home-intro-line-1"
           src={imgOne}
         />
         <div className="home-intro-role">
@@ -82,6 +83,11 @@ export default class HomeIntro extends React.Component {
             </span>
           </p>
         </div>
+        <img
+          alt="A speech bubble indicating pronunciation"
+          className="home-intro-pronunciation-image"
+          src={imgThree}
+        />
       </div>
     )
   }

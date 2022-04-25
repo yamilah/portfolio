@@ -5,17 +5,17 @@
   padding-left: 2rem;
   padding-right: 2rem;
   grid-template-areas:
-    "e e a a a a"
-    "d d b b b b"
-    "d d c c c f";
-  grid-template-columns: repeat(6, 1fr);
+    "e e a a a a a a"
+    "d d b b b b g g"
+    "d d c c c f f f";
+  grid-template-columns: repeat(8, 1fr);
 
   @include respond-above(large) {
     grid-template-areas:
       ". . a a a a a a a a a a"
       "d d . e e e b b b b b b"
       "d d . . . . b b b b b b"
-      "d d c c c c c f f . . .";
+      "d d c c c c c f f g g g";
     padding-left: 6rem;
     padding-right: 6rem;
     grid-template-columns: repeat(12, 1fr);
@@ -47,6 +47,10 @@
   @include respond-above(large) {
     margin-top: -18vw;
   }
+}
+
+.home-intro-line-1 {
+  grid-area: d;
 }
 
 .home-intro-location,
@@ -101,6 +105,10 @@
   transform: rotate(2.26deg);
 }
 
+.home-intro-pronunciation-image {
+  grid-area: g;
+}
+
 .home-intro-location-bottom,
 .home-intro-location-top,
 .home-intro-role-designer,
@@ -108,10 +116,6 @@
   display: grid;
   grid-auto-columns: min-content;
   grid-auto-flow: column;
-}
-
-.home-intro-line {
-  grid-area: d;
 }
 
 .home-intro-role {
