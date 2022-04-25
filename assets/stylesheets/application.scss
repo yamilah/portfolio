@@ -1,4 +1,7 @@
 @import "library/variables";
+@import "library/breakpoints.scss";
 @import "library/fonts.scss";
 @import "library/reset.scss";
 @import "library/defaults.scss";
+
+@import "components/home-intro.scss"

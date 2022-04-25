@@ -1,10 +1,11 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
+import Home from "./js/pages/home"
 
 class Root extends React.Component {
   render() {
     return (
-      <div>hello</div>
+      <Home></Home>
     )
   }
 }
