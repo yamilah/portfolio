@@ -80,17 +80,14 @@
   transform: rotate(22.69deg);
 }
 
-.home-intro-location-3 {
-  margin-left: 1vw;
-  transform: rotate(7.17deg);
-}
-
-.home-intro-location-4 {
-  transform: rotate(7.17deg);
-}
-
+.home-intro-location-3,
+.home-intro-location-4,
 .home-intro-location-5 {
   transform: rotate(7.17deg);
+}
+
+.home-intro-location-3 {
+  margin-left: 1vw;
 }
 
 .home-intro-location-6 {
@@ -154,15 +151,18 @@
   transform: rotate(-10.69deg);
 }
 
+.home-intro-role-developer-2,
+.home-intro-role-developer-3 {
+  transform: rotate(20.18deg);
+}
+
 .home-intro-role-developer-2 {
   margin-left: -0.5vw;
   margin-top: -0.8vw;
-  transform: rotate(20.18deg);
 }
 
 .home-intro-role-developer-3 {
   margin-top: 0.9vw;
-  transform: rotate(20.18deg);
 }
 
 .home-intro-role-developer-4 {
