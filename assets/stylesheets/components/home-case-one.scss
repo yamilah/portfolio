@@ -4,13 +4,18 @@
   grid-template-areas:
     ". . a a a a a a a a a a"
     ". . . b b b b b b d d d"
-    ". . . . c c c c c e . .";
+    ". . . . c c c c c e e e";
   grid-template-columns: repeat(12, 1fr);
 }
 
 .home-case-one-heading-1,
-.home-case-one-heading-2 {
+.home-case-one-heading-2,
+.home-case-one-text {
   color: $trinidad-orange;
+}
+
+.home-case-one-heading-1,
+.home-case-one-heading-2 {
   font-family: $font-pleasure;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
   font-size: 13vw;
@@ -49,36 +54,7 @@
 }
 
 .home-case-one-link {
-  color: $trinidad-orange;
-  display: grid;
-  font-family: $font-forever;
-  font-feature-settings: 'salt' on;
   grid-area: e;
-  grid-auto-columns: min-content;
-  text-decoration: none;
-}
-
-.home-case-one-link-text-1,
-.home-case-one-link-text-2 {
-  font-size: 2vw;
-}
-
-.home-case-one-link-text-1 {
-  padding-left: 5vw;
-  transform: rotate(-12.05deg);
-}
-
-.home-case-one-link-text-2 {
-  margin-top: -1.5vw;
-  padding-left: 4vw;
-  transform: rotate(0.55deg);
-}
-
-.home-case-one-link-text-3 {
-  font-size: 10vw;
-  font-weight: $font-weight-thin;
-  margin-top: -2.3vw;
-  transform: rotate(3deg);
 }
 
 .home-case-one-text {

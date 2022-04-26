@@ -1,5 +1,6 @@
 import * as React from "react"
 import imgOne from "../../images/home-case-one-line-1.svg"
+import imgThree from "../../images/home-case-one-line-3.svg"
 
 export default class HomeCaseOne extends React.Component {
   render() {
@@ -35,19 +36,20 @@ export default class HomeCaseOne extends React.Component {
             </span>
           </p>
           <p>
-            video chatting
+            <span>
+              video
+            </span>
+            <span>
+              chatting
+            </span>
           </p>
         </div>
         <a href="" className="home-case-one-link">
-          <span className="home-case-one-link-text-1">
-            Check
-          </span>
-          <span className="home-case-one-link-text-2">
-            it out
-          </span>
-          <span className="home-case-one-link-text-3">
-            ↗
-          </span>
+          <img
+            alt="A decorative image link that reads: Check it out"
+            className="home-case-one-line-3"
+            src={imgThree}
+          />
         </a>
       </div>
     )
