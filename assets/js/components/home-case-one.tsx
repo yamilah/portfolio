@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Link} from "react-router-dom"
 import imgOne from "../../images/home-case-one-line-1.svg"
 import imgThree from "../../images/home-case-one-line-3.svg"
 
@@ -44,13 +45,16 @@ export default class HomeCaseOne extends React.Component {
             </span>
           </p>
         </div>
-        <a href="" className="home-case-one-link">
+        <Link
+          className="home-case-one-link"
+          to="/houseparty"
+        >
           <img
             alt="A decorative image link that reads: Check it out"
             className="home-case-one-line-3"
             src={imgThree}
           />
-        </a>
+        </Link>
       </div>
     )
   }
