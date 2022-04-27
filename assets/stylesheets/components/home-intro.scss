@@ -1,24 +1,46 @@
 .home-intro {
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   column-gap: 2rem;
   display: grid;
-  grid-auto-rows: min-content;
   padding-left: 2rem;
   padding-right: 2rem;
+  grid-auto-rows: min-content;
   grid-template-areas:
+    ". a a a a ."
+    "f f b b b b"
+    ". c c c e e";
+  grid-template-columns: repeat(6,1fr);
+  height: 100vh;
+
+  @include respond-below (small) {
+    background-image: url("../images/home-intro-line-4.svg");
+  }
+
+  @include respond-above(small) {
+    align-content: unset;
+    grid-template-areas:
     "e e a a a a a a"
     "d d b b b b g g"
     "d d c c c f f f";
-  grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    height: unset;
+  }
 
   @include respond-above(large) {
+    background-image: url("../images/home-intro-line-2.svg");
+    background-position: top center;
+    background-size: 90%;
     grid-template-areas:
       ". . a a a a a a a a a a"
       "d d . e e e b b b b b b"
       "d d . . . . b b b b b b"
       "d d c c c c c f f g g g";
+    grid-template-columns: repeat(12, 1fr);
     padding-left: 6rem;
     padding-right: 6rem;
-    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -28,7 +50,11 @@
   color: $trinidad-orange;
   font-family: $font-pleasure;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
-  font-size: 27vw;
+  font-size: 29vw;
+
+  @include respond-above(small) {
+    font-size: 27vw;
+  }
 }
 
 .home-intro-heading-1 {
@@ -50,7 +76,12 @@
 }
 
 .home-intro-line-1 {
+  display: none;
   grid-area: d;
+
+  @include respond-above(small) {
+    display: unset;
+  }
 }
 
 .home-intro-location,
@@ -60,10 +91,18 @@
   display: grid;
   font-family: $font-pleasure;
   font-feature-settings: 'salt' on;
-  font-size: 2vw;
+  font-size: 4vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
   text-transform: uppercase;
   grid-auto-rows: min-content;
+
+  @include respond-above(small) {
+    font-size: 3vw;
+  }
+
+  @include respond-above(large) {
+    font-size: 2vw;
+  }
 }
 
 .home-intro-location {
@@ -103,7 +142,12 @@
 }
 
 .home-intro-pronunciation-image {
+  display: none;
   grid-area: g;
+
+  @include respond-above(small) {
+    display: unset;
+  }
 }
 
 .home-intro-location-bottom,
