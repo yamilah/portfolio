@@ -7,7 +7,6 @@ import CaseOne from "./js/pages/case-one"
 class Root extends React.Component {
   render() {
     return <Router>
-      <Home></Home>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/houseparty" element={<CaseOne />}></Route>
