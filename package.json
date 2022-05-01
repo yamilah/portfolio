@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).",
   "scripts": {
-    "start": "parcel assets/index.html",
+    "start": "parcel --dist-dir build/dev assets/index.html",
     "build": "parcel build --dist-dir build/prod assets/index.html"
   },
   "repository": {
