@@ -95,10 +95,19 @@
   margin-bottom: 1vw;
   margin-left: 1vw;
   transform: rotate(-11.13deg);
+
+  @include respond-above(large) {
+    margin-bottom: 0.5vw;
+    margin-left: 0.5vw;
+  }
 }
 
 .home-case-one-text-3 {
   margin-left: 2vw;
+
+  @include respond-above(large) {
+    margin-left: 1vw;
+  }
 }
 
 .home-case-one-text-4 {
@@ -108,6 +117,10 @@
 .home-case-one-text-5 {
   transform: rotate(9.19deg);
   margin-top: 2vw;
+
+  @include respond-above(large) {
+    margin-top: 1vw;
+  }
 }
 
 .home-case-one-text-paragraph {
