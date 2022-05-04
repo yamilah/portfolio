@@ -1,24 +1,49 @@
 .home-case-one {
+  align-content: center;
   display: grid;
   grid-auto-rows: min-content;
   grid-template-areas:
-    ". . a a a a a a a a a a"
-    ". . . b b b b b b d d d"
-    ". . . . c c c c c e e e";
-  grid-template-columns: repeat(12, 1fr);
+    "a a a a"
+    ". b b ."
+    ". c c ."
+    ". . d d"
+    ". e e e";
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+
+  @include respond-above(medium) {
+    align-content: unset;
+    grid-template-areas:
+      "a a a a a a a a a a a a"
+      ". . . b b b b b b d d d"
+      ". . . . c c c c c e e e";
+    grid-template-columns: repeat(12, 1fr);
+    height: unset;
+  }
+
+  @include respond-above(large) {
+    grid-template-areas:
+      ". . a a a a a a a a a a"
+      ". . . b b b b b b d d d"
+      ". . . . c c c c c e e e";
+  }
 }
 
 .home-case-one-heading-1,
 .home-case-one-heading-2,
-.home-case-one-text {
+.home-case-one-text-wrapper {
   color: $trinidad-orange;
 }
 
 .home-case-one-heading-1,
 .home-case-one-heading-2 {
   font-family: $font-pleasure;
+  font-size: 20vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
-  font-size: 13vw;
+
+  @include respond-above(medium) {
+    font-size: 13vw;
+  }
 }
 
 .home-case-one-heading-1 {
@@ -49,15 +74,58 @@
   transform: rotate(13.01deg);
 }
 
-.home-case-one-line-1 {
+.home-case-one-line {
+  width: 100%;
   grid-area: a;
 }
 
 .home-case-one-link {
   grid-area: e;
+
+  @include respond-below(medium) {
+    margin-top: 3vw;
+  }
 }
 
-.home-case-one-text {
-  font-size: 2vw;
+.home-case-one-text-1 {
+  transform: rotate(5.11deg);
+}
+
+.home-case-one-text-2 {
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  transform: rotate(-11.13deg);
+}
+
+.home-case-one-text-3 {
+  margin-left: 2vw;
+}
+
+.home-case-one-text-4 {
+  transform: rotate(-0.95deg);
+}
+
+.home-case-one-text-5 {
+  transform: rotate(9.19deg);
+  margin-top: 2vw;
+}
+
+.home-case-one-text-paragraph {
+  display: grid;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+}
+
+.home-case-one-text-wrapper {
+  font-feature-settings: 'salt' on;
+  font-size: 4vw;
   grid-area: d;
+  
+  @include respond-above(small) {
+    font-size: 3vw;
+  }
+
+  @include respond-above(large) {
+    font-size: 2vw;
+  }
 }

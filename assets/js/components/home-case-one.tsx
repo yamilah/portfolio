@@ -9,7 +9,7 @@ export default class HomeCaseOne extends React.Component {
       <div className="home-case-one">
         <img
           alt="A decorative line"
-          className="home-case-one-line-1"
+          className="home-case-one-line"
           src={imgOne}
         />
         <h1 className="home-case-one-heading-1">
@@ -24,23 +24,23 @@ export default class HomeCaseOne extends React.Component {
             y
           </span>
         </h1>
-        <div className="home-case-one-text">
-          <p>
-            <span>
+        <div className="home-case-one-text-wrapper">
+          <p className="home-case-one-text-paragraph">
+            <span className="home-case-one-text-1">
               social
             </span>
-            <span>
+            <span className="home-case-one-text-2">
               media
             </span>
-            <span>
+            <span className="home-case-one-text-3">
               &
             </span>
           </p>
-          <p>
-            <span>
+          <p className="home-case-one-text-paragraph">
+            <span className="home-case-one-text-4">
               video
             </span>
-            <span>
+            <span className="home-case-one-text-5">
               chatting
             </span>
           </p>
