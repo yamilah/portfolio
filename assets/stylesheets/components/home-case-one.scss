@@ -1,5 +1,4 @@
 .home-case-one {
-  align-content: center;
   display: grid;
   grid-auto-rows: min-content;
   grid-template-areas:
@@ -9,7 +8,6 @@
     ". . d d"
     ". e e e";
   grid-template-columns: repeat(4, 1fr);
-  height: 100vh;
 
   @include respond-above(medium) {
     align-content: unset;
@@ -52,6 +50,11 @@
   grid-auto-columns: min-content;
   grid-auto-flow: column;
   transform: rotate(4.62deg);
+  padding-top: 10vw;
+
+  @include respond-above(medium) {
+    padding-top: unset;
+  }
 }
 
 .home-case-one-heading-1-detail {
@@ -74,9 +77,24 @@
   transform: rotate(13.01deg);
 }
 
-.home-case-one-line {
-  width: 100%;
+.home-case-one-line-1 {
+  display: none;
+
+  @include respond-above(medium) {
+    display: unset;
+    grid-area: a;
+    width: 100%;
+  }
+}
+
+.home-case-one-line-2 {
+  display: unset;
   grid-area: a;
+  width: 100%;
+
+  @include respond-above(medium) {
+    display: none;
+  }
 }
 
 .home-case-one-link {

@@ -2,16 +2,16 @@
   align-content: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: 100%;
   column-gap: 2rem;
   display: grid;
   padding-left: 2rem;
   padding-right: 2rem;
   grid-auto-rows: min-content;
   grid-template-areas:
-    ". a a a a ."
+    "a a a a a a"
     "f f b b b b"
-    ". c c c e e";
+    ". c c e e e";
   grid-template-columns: repeat(6,1fr);
   height: 100vh;
 
@@ -91,14 +91,10 @@
   display: grid;
   font-family: $font-pleasure;
   font-feature-settings: 'salt' on;
-  font-size: 4vw;
+  font-size: 3vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
   text-transform: uppercase;
   grid-auto-rows: min-content;
-
-  @include respond-above(small) {
-    font-size: 3vw;
-  }
 
   @include respond-above(large) {
     font-size: 2vw;

@@ -2,6 +2,7 @@ import * as React from "react"
 import {Link} from "react-router-dom"
 import imgOne from "../../images/home-case-one-line-1.svg"
 import imgThree from "../../images/home-case-one-line-3.svg"
+import imgFour from "../../images/home-case-one-line-4.svg"
 
 export default class HomeCaseOne extends React.Component {
   render() {
@@ -9,8 +10,13 @@ export default class HomeCaseOne extends React.Component {
       <div className="home-case-one">
         <img
           alt="A decorative line"
-          className="home-case-one-line"
+          className="home-case-one-line-1"
           src={imgOne}
+        />
+        <img
+          alt="A decorative line"
+          className="home-case-one-line-2"
+          src={imgFour}
         />
         <h1 className="home-case-one-heading-1">
           hous

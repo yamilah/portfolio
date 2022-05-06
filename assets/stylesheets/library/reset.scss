@@ -41,4 +41,8 @@ figure {
 img {
   height: auto;
   max-width: 100%;
+
+  @include respond-above(xxlarge) {
+    width: 100%;
+  }
 }

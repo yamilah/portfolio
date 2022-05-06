@@ -9,35 +9,59 @@
   }
 }
 
-.footer-link {
+.footer-line {
+  padding-left: 2vw;
+  width: 60vw;
+
+  @include respond-above(medium) {
+    padding-left: 3vw;
+    width: 40vw;
+  }
+
+  @include respond-above(large) {
+    width: 30vw;
+  }
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4,
+.footer-text {
+  color: $trinidad-orange;
+}
+
+.footer-link-1,
+.footer-link-2,
+.footer-link-3,
+.footer-link-4 {
   color: $trinidad-orange;
   display: grid;
   grid-auto-columns: min-content;
   grid-auto-flow: column;
 }
 
-.footer-link-text-1 {
-  transform: rotate(-2deg);
+.footer-link-2 {
+  padding-left: 6vw;
 }
 
-.footer-link-text-2 {
-  transform: rotate(3deg);
-}
-
-.footer-link-text-3 {
-  transform: rotate(-2deg);
-}
-
-.footer-link-text-4 {
-  transform: rotate(5deg);
+.footer-link-4 {
+  padding-left: 16vw;
 }
 
 .footer-link-arrow-1,
 .footer-link-arrow-2,
 .footer-link-arrow-3,
 .footer-link-arrow-4 {
-  font-family: $font-forever;
   font-size: 7vw;
+}
+
+.footer-link-arrow-1,
+.footer-link-arrow-2,
+.footer-link-arrow-3,
+.footer-link-arrow-4,
+.footer-text {
+  font-family: $font-forever;
   font-weight: $font-weight-bold;
 }
 
@@ -57,11 +81,55 @@
   transform: rotate(20.03deg);
 }
 
+.footer-link-arrow-1,
+.footer-link-arrow-2,
+.footer-link-arrow-3,
+.footer-link-arrow-4 {
+  font-size: 12vw;
+}
+
 .footer-link-text-1,
 .footer-link-text-2,
 .footer-link-text-3,
 .footer-link-text-4 {
   font-family: $font-pleasure;
-  font-size: 12vw;
+  font-size: 17vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+
+  @include respond-above(medium) {
+    font-size: 12vw;
+  }
+}
+
+.footer-link-text-1 {
+  transform: rotate(-2deg);
+}
+
+.footer-link-text-2 {
+  transform: rotate(3deg);
+}
+
+.footer-link-text-3 {
+  transform: rotate(-2deg);
+}
+
+.footer-link-text-4 {
+  transform: rotate(5deg);
+}
+
+.footer-text-wrapper {
+  padding-left: 16vw;
+}
+
+.footer-text {
+  font-feature-settings: 'salt' on;
+  font-size: 4vw;
+  
+  @include respond-above(small) {
+    font-size: 3vw;
+  }
+
+  @include respond-above(large) {
+    font-size: 2vw;
+  }
 }
