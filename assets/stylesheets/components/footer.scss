@@ -1,0 +1,67 @@
+.footer {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-auto-columns: min-content;
+  padding: 2rem;
+
+  @include respond-above(small) {
+    padding: 6rem;
+  }
+}
+
+.footer-link {
+  color: $trinidad-orange;
+  display: grid;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+}
+
+.footer-link-text-1 {
+  transform: rotate(-2deg);
+}
+
+.footer-link-text-2 {
+  transform: rotate(3deg);
+}
+
+.footer-link-text-3 {
+  transform: rotate(-2deg);
+}
+
+.footer-link-text-4 {
+  transform: rotate(5deg);
+}
+
+.footer-link-arrow-1,
+.footer-link-arrow-2,
+.footer-link-arrow-3,
+.footer-link-arrow-4 {
+  font-family: $font-forever;
+  font-size: 7vw;
+  font-weight: $font-weight-bold;
+}
+
+.footer-link-arrow-1 {
+  transform: rotate(-15deg);
+}
+
+.footer-link-arrow-2 {
+  transform: rotate(16.65deg);
+}
+
+.footer-link-arrow-3 {
+  transform: rotate(-12.13deg);
+}
+
+.footer-link-arrow-4 {
+  transform: rotate(20.03deg);
+}
+
+.footer-link-text-1,
+.footer-link-text-2,
+.footer-link-text-3,
+.footer-link-text-4 {
+  font-family: $font-pleasure;
+  font-size: 12vw;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+}

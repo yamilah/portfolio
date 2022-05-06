@@ -49,8 +49,8 @@
 .home-intro-heading-3 {
   color: $trinidad-orange;
   font-family: $font-pleasure;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
   font-size: 29vw;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
 
   @include respond-above(small) {
     font-size: 27vw;

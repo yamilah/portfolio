@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { createRoot } from 'react-dom/client'
 import Home from "./js/pages/home"
 import CaseOne from "./js/pages/case-one"
+import CaseTwo from "./js/pages/case-two"
+import Footer from "./js/components/footer"
 
 class Root extends React.Component {
   render() {
@@ -11,7 +13,9 @@ class Root extends React.Component {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/houseparty" element={<CaseOne />}></Route>
+          <Route path="/hofr" element={<CaseTwo />}></Route>
         </Routes>
+        <Footer></Footer>
       </Router>
     )
   }
