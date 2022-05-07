@@ -8,6 +8,8 @@
     ". . d d"
     ". e e e";
   grid-template-columns: repeat(4, 1fr);
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   @include respond-above(medium) {
     align-content: unset;
@@ -24,6 +26,8 @@
       ". . a a a a a a a a a ."
       ". . . b b b b b b d d d"
       ". . . . c c c c c e e e";
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 

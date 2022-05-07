@@ -144,6 +144,10 @@
   @include respond-above(small) {
     display: unset;
   }
+
+  @include respond-above(xxlarge) {
+    width: 12vw;
+  }
 }
 
 .home-intro-location-bottom,
