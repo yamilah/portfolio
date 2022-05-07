@@ -7,7 +7,7 @@ import imgFour from "../../images/home-case-one-line-4.svg"
 export default class HomeCaseOne extends React.Component {
   render() {
     return (
-      <div className="home-case-one">
+      <section className="home-case-one">
         <img
           alt="A decorative line"
           className="home-case-one-line-1"
@@ -61,7 +61,7 @@ export default class HomeCaseOne extends React.Component {
             src={imgThree}
           />
         </Link>
-      </div>
+      </section>
     )
   }
 }

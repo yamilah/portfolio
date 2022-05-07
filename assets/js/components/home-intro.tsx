@@ -5,7 +5,7 @@ import imgThree from "../../images/home-intro-line-3.svg"
 export default class HomeIntro extends React.Component {
   render() {
     return (
-      <div className="home-intro">
+      <section className="home-intro">
         <h1 className="home-intro-heading-1">
           yam
         </h1>
@@ -88,7 +88,7 @@ export default class HomeIntro extends React.Component {
           className="home-intro-pronunciation-image"
           src={imgThree}
         />
-      </div>
+      </section>
     )
   }
 }
