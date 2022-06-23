@@ -1,47 +1,12 @@
 .home-intro {
-  align-content: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  column-gap: 2rem;
   display: grid;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  grid-auto-rows: min-content;
   grid-template-areas:
-    "a a a a a a"
-    "f f b b b b"
-    ". c c e e e";
-  grid-template-columns: repeat(6,1fr);
-  height: 100vh;
-
-  @include respond-below (small) {
-    background-image: url("../images/home-intro-line-4.svg");
-  }
-
-  @include respond-above(small) {
-    align-content: unset;
-    grid-template-areas:
-    "e e a a a a a a"
-    "d d b b b b g g"
-    "d d c c c f f f";
-    grid-template-columns: repeat(8, 1fr);
-    height: unset;
-  }
-
-  @include respond-above(large) {
-    background-image: url("../images/home-intro-line-2.svg");
-    background-position: top center;
-    background-size: 90%;
-    grid-template-areas:
-      ". . a a a a a a a a a a"
-      "d d . e e e b b b b b b"
-      "d d . . . . b b b b b b"
-      "d d c c c c c f f g g g";
-    grid-template-columns: repeat(12, 1fr);
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
+    ". . a a a a a a a a a a"
+    ". . b b b b b b b b b ."
+    "d d c c c c c c c c c c";
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .home-intro-heading-1,
@@ -49,12 +14,8 @@
 .home-intro-heading-3 {
   color: $trinidad-orange;
   font-family: $font-pleasure;
-  font-size: 29vw;
+  font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
-
-  @include respond-above(small) {
-    font-size: 27vw;
-  }
 }
 
 .home-intro-heading-1 {
@@ -64,151 +25,15 @@
 .home-intro-heading-2 {
   grid-area: b;
   margin-top: -8vw;
+  text-align: end;
 }
 
 .home-intro-heading-3 {
   grid-area: c;
-  margin-top: -10vw;
-
-  @include respond-above(large) {
-    margin-top: -18vw;
-  }
+  margin-top: -16vw;
 }
 
 .home-intro-line-1 {
-  display: none;
   grid-area: d;
-
-  @include respond-above(small) {
-    display: unset;
-  }
-}
-
-.home-intro-location,
-.home-intro-role-designer,
-.home-intro-role-developer {
-  color: $trinidad-orange;
-  display: grid;
-  font-family: $font-pleasure;
-  font-feature-settings: 'salt' on;
-  font-size: 3vw;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
-  text-transform: uppercase;
-  grid-auto-rows: min-content;
-
-  @include respond-above(large) {
-    font-size: 2vw;
-  }
-}
-
-.home-intro-location {
-  display: grid;
-  grid-area: f;
-  grid-auto-flow: row;
-}
-
-.home-intro-location-1 {
-  transform: rotate(-7.09deg);
-}
-
-.home-intro-location-2 {
-  transform: rotate(22.69deg);
-}
-
-.home-intro-location-3,
-.home-intro-location-4,
-.home-intro-location-5 {
-  transform: rotate(7.17deg);
-}
-
-.home-intro-location-3 {
-  margin-left: 1vw;
-}
-
-.home-intro-location-6 {
-  transform: rotate(5.3deg);
-}
-
-.home-intro-location-7 {
-  transform: rotate(-16.72deg);
-}
-
-.home-intro-location-8 {
-  transform: rotate(2.26deg);
-}
-
-.home-intro-pronunciation-image {
-  display: none;
-  grid-area: g;
-
-  @include respond-above(small) {
-    display: unset;
-  }
-
-  @include respond-above(xxlarge) {
-    width: 12vw;
-  }
-}
-
-.home-intro-location-bottom,
-.home-intro-location-top,
-.home-intro-role-designer,
-.home-intro-role-developer {
-  display: grid;
-  grid-auto-columns: min-content;
-  grid-auto-flow: column;
-}
-
-.home-intro-role {
-  display: grid;
-  grid-area: e;
-  grid-auto-rows: min-content;
-  place-content: center;
-}
-
-.home-intro-role-designer-2 {
-  margin-top: -0.5vw;
-  transform: rotate(-26.59deg);
-}
-
-.home-intro-role-designer-3 {
-  margin-left: -0.9vw;
-  margin-top: 0.5vw;
-}
-
-.home-intro-role-designer-4 {
-  margin-top: 0.9vw;
-  transform: rotate(9.64deg);
-}
-
-.home-intro-role-designer-5 {
-  transform: rotate(-21.58deg);
-}
-
-.home-intro-role-developer {
-  @include respond-above(large) {
-    padding-left: 2vw;
-  }
-}
-
-.home-intro-role-developer-1 {
-  transform: rotate(-10.69deg);
-}
-
-.home-intro-role-developer-2,
-.home-intro-role-developer-3 {
-  transform: rotate(20.18deg);
-}
-
-.home-intro-role-developer-2 {
-  margin-left: -0.5vw;
-  margin-top: -0.8vw;
-}
-
-.home-intro-role-developer-3 {
-  margin-top: 0.9vw;
-}
-
-.home-intro-role-developer-4 {
-  transform: rotate(-22.71deg);
+  margin-top: -22vw;
 }
