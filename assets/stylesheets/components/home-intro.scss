@@ -5,6 +5,7 @@
     ". . b b b b b b b b b ."
     "d d c c c c c c c c c c";
   grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 10rem;
   margin-left: 4vw;
   margin-right: 4vw;
 }
@@ -16,6 +17,7 @@
   font-family: $font-pleasure;
   font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+  user-select: none;
 }
 
 .home-intro-heading-1 {

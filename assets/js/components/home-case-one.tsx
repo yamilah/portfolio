@@ -11,12 +11,25 @@ export default class HomeCaseOne extends React.Component {
         <h1 className="home-case-one-heading-2">
           party
         </h1>
-        <Link
-          className="home-case-one-link"
-          to="/houseparty"
-        >
-          View this study
-        </Link>
+        <div className="home-case-one-link-wrapper">
+          <Link
+            className="home-case-one-link"
+            to="/houseparty"
+          >
+            <span className="home-case-one-link-text-1">
+              view
+            </span>
+            <span className="home-case-one-link-text-2">
+              this
+            </span>
+            <span className="home-case-one-link-text-3">
+              study
+            </span>
+            <span className="home-case-one-link-arrow">
+              →
+            </span>
+          </Link>
+        </div>
       </section>
     )
   }

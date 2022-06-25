@@ -9,8 +9,17 @@
 }
 
 .home-case-one-heading-1,
-.home-case-one-heading-2 {
+.home-case-one-heading-2,
+.home-case-one-link-arrow,
+.home-case-one-link-text-1,
+.home-case-one-link-text-2,
+.home-case-one-link-text-3 {
   color: $trinidad-orange;
+  user-select: none;
+}
+
+.home-case-one-heading-1,
+.home-case-one-heading-2 {
   font-family: $font-pleasure;
   font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
@@ -28,5 +37,47 @@
 }
 
 .home-case-one-link {
+  position: relative;
+}
+
+.home-case-one-link-arrow {
+  font-size: 12.1vw;
+  font-weight: $font-weight-thin;
+  left: 4vw;
+  position: absolute;
+  top: -6vw;
+  transform: rotate(-17.31deg);
+}
+
+.home-case-one-link-text-1,
+.home-case-one-link-text-2,
+.home-case-one-link-text-3 {
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 2.2vw;
+  font-weight: $font-weight-medium;
+}
+
+.home-case-one-link-text-1 {
+  left: 1vw;
+  position: absolute;
+  top: 0;
+  transform: rotate(-9.03deg);
+}
+
+.home-case-one-link-text-2 {
+  left: 0;
+  position: absolute;
+  top: 3vw;
+  transform: rotate(17.66deg);
+}
+
+.home-case-one-link-text-3 {
+  left: 3.6vw;
+  position: absolute;
+  top: 3vw;
+  transform: rotate(-4.97deg);
+}
+
+.home-case-one-link-wrapper {
   grid-area: c;
 }
