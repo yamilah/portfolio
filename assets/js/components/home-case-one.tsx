@@ -15,6 +15,7 @@ export default class HomeCaseOne extends React.Component {
           <Link
             className="home-case-one-link"
             to="/houseparty"
+            alt="This link takes you to my case study on Houseparty, a video chatting and social media web app"
           >
             <span className="home-case-one-link-text-1">
               view

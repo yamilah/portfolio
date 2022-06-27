@@ -46,10 +46,17 @@
   transform: rotate(6.89deg);
 }
 
+.home-case-two-link {
+  position: relative;
+}
+
 .home-case-two-link-arrow {
   font-size: 12.1vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
   font-weight: $font-weight-thin;
+  left: 8vw;
+  position: absolute;
+  top: -6.5vw;
   transform: rotate(-17.31deg);
 }
 
@@ -60,6 +67,34 @@
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 2.2vw;
   font-weight: $font-weight-bold;
+}
+
+.home-case-two-link-text-1 {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(14.22deg);
+}
+
+.home-case-two-link-text-2 {
+  left: 5.5vw;
+  position: absolute;
+  top: 0.5vw;
+  transform: rotate(-16.2deg);
+}
+
+.home-case-two-link-text-3 {
+  left: 1vw;
+  position: absolute;
+  top: 2.5vw;
+  transform: rotate(-16.2deg);
+}
+
+.home-case-two-link-text-4 {
+  left: 4.8vw;
+  position: absolute;
+  top: 2.5vw;
+  transform: rotate(3.44deg);
 }
 
 .home-case-two-link-wrapper {

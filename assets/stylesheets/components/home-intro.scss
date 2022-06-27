@@ -1,4 +1,8 @@
 .home-intro {
+  background-image: url("../images/home-intro-line-2.svg");
+  background-position: 77% 36%;
+  background-repeat: no-repeat;
+  background-size: 50%;
   display: grid;
   grid-template-areas:
     ". . a a a a a a a a a a"

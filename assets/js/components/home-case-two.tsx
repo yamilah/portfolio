@@ -18,6 +18,7 @@ export default class HomeCaseTwo extends React.Component {
           <Link
             className="home-case-two-link"
             to="/hofr"
+            alt="This link takes you to my case study on HOFR, or Hall of Famer, a sports game based on predictions"
           >
             <span className="home-case-two-link-text-1">
               check

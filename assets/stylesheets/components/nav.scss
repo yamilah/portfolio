@@ -13,6 +13,13 @@
 
 .nav-link-cv,
 .nav-link-home-text-1,
+.nav-link-home-text-2,
+.nav-link-home-logo {
+  user-select: none;
+}
+
+.nav-link-cv,
+.nav-link-home-text-1,
 .nav-link-home-text-2 {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;

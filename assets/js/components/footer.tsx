@@ -18,6 +18,7 @@ export default class Footer extends React.Component {
         <a
           className="footer-link-1"
           href="https://linkedin.com/in/yamilah"
+          alt="This link takes you to my LinkedIn profile"
         >
           <span className="footer-link-text-1">
             linkedin
@@ -29,6 +30,7 @@ export default class Footer extends React.Component {
         <a
           className="footer-link-2"
           href="https://dribbble.com/yamilah"
+          alt="This link takes you to my Dribbble profile"
         >
           <span className="footer-link-text-2">
             dribbble
@@ -40,6 +42,7 @@ export default class Footer extends React.Component {
         <a
           className="footer-link-3"
           href="https://github.com/yamilah"
+          alt="This link takes you to my Github profile"
         >
           <span className="footer-link-text-3">
             github
@@ -51,6 +54,7 @@ export default class Footer extends React.Component {
         <a
           className="footer-link-4"
           href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@yamilah.com"
+          alt="This link opens up your gmail client in browser and prefills info so you can send me an email"
         >
           <span className="footer-link-text-4">
             mail
