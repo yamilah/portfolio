@@ -6,11 +6,13 @@ import CaseOne from "./js/pages/case-one"
 import CaseTwo from "./js/pages/case-two"
 import Footer from "./js/components/footer"
 import Nav from "./js/components/nav"
+import ScrollToTop from "./js/scripts/scrollToTop"
 
 class Root extends React.Component {
   render() {
     return (
       <Router>
+        <ScrollToTop></ScrollToTop>
         <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
