@@ -17,7 +17,6 @@ export default class CaseOne extends React.Component {
         <CaseOneImplementation></CaseOneImplementation>
         <CaseOneFinale></CaseOneFinale>
       </div>
-
     )
   }
 }
