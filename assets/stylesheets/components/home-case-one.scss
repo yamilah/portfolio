@@ -1,19 +1,20 @@
 .home-case-one {
   display: grid;
   grid-template-areas:
-    "a a a a a a a a a a a a"
-    "c c b b b b b b b b b b";
-  grid-template-columns: repeat(12, 1fr);
+    "a a a a"
+    "b b b b"
+    ". c c c";
+  grid-template-columns: repeat(4, 1fr);
   margin-left: 4vw;
   margin-right: 4vw;
+  margin-top: 15vw;
 
-  @include respond-below(medium) {
+  @include respond-above(medium) {
     grid-template-areas:
-      "a a a a"
-      "b b b b"
-      ". c c c";
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 15vw;
+      "a a a a a a a a a a a a"
+      "c c b b b b b b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: unset;
   }
 }
 
@@ -50,17 +51,17 @@
 }
 
 .home-case-one-link-arrow {
-  font-size: 12.1vw;
+  font-size: 24vw;
   font-weight: $font-weight-thin;
-  left: 4vw;
+  left: 11vw;
   position: absolute;
-  top: -6vw;
+  top: -11vw;
   transform: rotate(-17.31deg);
 
-  @include respond-below(medium) {
-    font-size: 28vw;
-    left: 12vw;
-    top: -14vw;
+  @include respond-above(medium) {
+    font-size: 12.1vw;
+    left: 4vw;
+    top: -6vw;
   }
 }
 
@@ -68,11 +69,11 @@
 .home-case-one-link-text-2,
 .home-case-one-link-text-3 {
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 2.2vw;
+  font-size: 6vw;
   font-weight: $font-weight-bold;
 
-  @include respond-below(medium) {
-    font-size: 6vw;
+  @include respond-above(medium) {
+    font-size: 2.2vw;
   }
 }
 
@@ -86,23 +87,23 @@
 .home-case-one-link-text-2 {
   left: 0;
   position: absolute;
-  top: 3vw;
+  top: 7vw;
   transform: rotate(17.66deg);
 
-  @include respond-below(medium) {
-    top: 7vw;
+  @include respond-above(medium) {
+    top: 3vw;
   }
 }
 
 .home-case-one-link-text-3 {
-  left: 3.6vw;
+  left: 9.8vw;
   position: absolute;
-  top: 3vw;
+  top: 7.2vw;
   transform: rotate(-4.97deg);
 
-  @include respond-below(medium) {
-    left: 9.8vw;
-    top: 7.2vw;
+  @include respond-above(medium) {
+    left: 3.6vw;
+    top: 3vw;
   }
 }
 

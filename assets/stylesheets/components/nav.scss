@@ -5,13 +5,13 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  padding: 1.3vw 4vw;
+  padding: 3vw 4vw;
   position: sticky;
   top: 0;
   z-index: 1;
 
-  @include respond-below(medium) {
-    padding: 3vw 4vw;
+  @include respond-above(medium) {
+    padding: 1.3vw 4vw;
   }
 }
 
@@ -27,28 +27,28 @@
 .nav-link-home-text-2 {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 5vw;
+  font-size: 8vw;
 
-  @include respond-below(medium) {
-    font-size: 8vw;
+  @include respond-above(medium) {
+    font-size: 5vw;
   }
 }
 
 .nav-link-home {
   align-items: center;
   display: grid;
-  gap: 0.5vw;
+  gap: 1.5vw;
   grid-auto-flow: column;
 
-  @include respond-below(medium) {
-    gap: 1.5vw;
+  @include respond-above(medium) {
+    gap: 0.5vw;
   }
 }
 
 .nav-link-home-logo {
-  width: 3vw;
+  width: 5vw;
 
-  @include respond-below(medium) {
-    width: 5vw;
+  @include respond-above(medium) {
+    width: 3vw;
   }
 }

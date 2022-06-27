@@ -1,25 +1,24 @@
 .home-intro {
-  background-image: url("../images/home-intro-line-2.svg");
-  background-position: 77% 36%;
-  background-repeat: no-repeat;
-  background-size: 50%;
   display: grid;
   grid-template-areas:
-    ". . a a a a a a a a a a"
-    ". . . e e b b b b b b ."
-    "d d c c c c c f f f f f";
-  grid-template-columns: repeat(12, 1fr);
+    "a a a a a"
+    ". . b b b"
+    ". c c c c"
+    "e e . f f";
+  grid-template-columns: repeat(5, 1fr);
   margin-left: 4vw;
   margin-right: 4vw;
 
-  @include respond-below(medium) {
-    background-image: none;
+  @include respond-above(medium) {
+    background-image: url("../images/home-intro-line-2.svg");
+    background-position: 77% 36%;
+    background-repeat: no-repeat;
+    background-size: 50%;
     grid-template-areas:
-      "a a a a a"
-      ". . b b b"
-      ". c c c c"
-      "e e . f f";
-  grid-template-columns: repeat(5, 1fr);
+      ". . a a a a a a a a a a"
+      ". . . e e b b b b b b ."
+      "d d c c c c c f f f f f";
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -56,11 +55,12 @@
 }
 
 .home-intro-line-1 {
-  grid-area: d;
-  margin-top: -22vw;
+  display: none;
 
-  @include respond-below(medium) {
-    display: none;
+  @include respond-above(medium) {
+    display: unset;
+    grid-area: d;
+    margin-top: -22vw;
   }
 }
 
@@ -132,22 +132,22 @@
 .home-intro-line-2-text-wrapper,
 .home-intro-line-3-text-wrapper {
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 2.2vw;
+  font-size: 6vw;
   font-weight: $font-weight-bold;
 
-  @include respond-below(medium) {
-    font-size: 6vw;
+  @include respond-above(medium) {
+    font-size: 2.2vw;
   }
 }
 
 .home-intro-line-2-text-wrapper {
-  left: 2vw;
+  left: 5vw;
   position: absolute;
-  top: 1.5vw;
+  top: 3.5vw;
 
-  @include respond-below(medium) {
-    left: 5vw;
-    top: 3.5vw;
+  @include respond-above(medium) {
+    left: 2vw;
+    top: 1.5vw;
   }
 }
 
@@ -159,10 +159,10 @@
 }
 
 .home-intro-line-3 {
-  width: 5vw;
+  width: 12vw;
 
-  @include respond-below(medium) {
-    width: 12vw;
+  @include respond-above(medium) {
+    width: 5vw;
   }
 }
 
@@ -234,12 +234,12 @@
 .home-intro-line-3-text-wrapper {
   display: grid;
   grid-auto-rows: min-content;
-  margin-left: -1vw;
-  margin-top: 3vw;
+  margin-left: -3vw;
+  margin-top: 7vw;
 
-  @include respond-below(medium) {
-    margin-left: -3vw;
-    margin-top: 7vw;
+  @include respond-above(medium) {
+    margin-left: -1vw;
+    margin-top: 3vw;
   }
 }
 

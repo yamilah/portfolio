@@ -1,21 +1,23 @@
 .home-case-two {
   display: grid;
   grid-template-areas:
-    ". a a a a a a a d d d d"
-    ". . . . . . b b b b b b"
-    "c c c c c c c c c c c c";
-  grid-template-columns: repeat(12, 1fr);
+    ". a a a a"
+    ". . . b b"
+    "c c c c c"
+    ". d d d d";
+  grid-template-columns: repeat(5, 1fr);
   margin-left: 4vw;
   margin-right: 4vw;
+  margin-top: 30vw;
+
   
-  @include respond-below(medium) {
+  @include respond-above(medium) {
     grid-template-areas:
-      ". a a a a"
-      ". . . b b"
-      "c c c c c"
-      ". d d d d";
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 30vw;
+      ". a a a a a a a d d d d"
+      ". . . . . . b b b b b b"
+      "c c c c c c c c c c c c";
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: unset;
   }
 }
 
@@ -47,11 +49,11 @@
 .home-case-two-heading-2 {
   grid-area: b;
   margin-bottom: -15vw;
-  margin-top: -17vw;
+  margin-top: -13vw;
   transform: rotate(3.06deg);
   
-  @include respond-below(medium) {
-    margin-top: -13vw;
+  @include respond-above(medium) {
+    margin-top: -17vw;
   }
 }
 
@@ -65,17 +67,17 @@
 }
 
 .home-case-two-link-arrow {
-  font-size: 12.1vw;
+  font-size: 24vw;
   font-weight: $font-weight-thin;
-  left: 8vw;
+  left: 21vw;
   position: absolute;
-  top: -6.5vw;
+  top: -10.5vw;
   transform: rotate(-17.31deg);
 
-  @include respond-below(medium) {
-    font-size: 28vw;
-    left: 21vw;
-    top: -13.5vw;
+  @include respond-above(medium) {
+    font-size: 12.1vw;
+    left: 8vw;
+    top: -6.5vw;
   }
 }
 
@@ -84,11 +86,11 @@
 .home-case-two-link-text-3,
 .home-case-two-link-text-4 {
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 2.2vw;
+  font-size: 6vw;
   font-weight: $font-weight-bold;
 
-  @include respond-below(medium) {
-    font-size: 6vw;
+  @include respond-above(medium) {
+    font-size: 2.2vw;
   }
 }
 
@@ -100,44 +102,43 @@
 }
 
 .home-case-two-link-text-2 {
-  left: 5.5vw;
+  left: 15.5vw;
   position: absolute;
   top: 0.5vw;
   transform: rotate(-16.2deg);
 
-  @include respond-below(medium) {
-    left: 15.5vw;
+  @include respond-above(medium) {
+    left: 5.5vw;
   }
 }
 
 .home-case-two-link-text-3 {
   left: 1vw;
   position: absolute;
-  top: 2.5vw;
+  top: 5.5vw;
   transform: rotate(-16.2deg);
 
-  @include respond-below(medium) {
-    top: 5.5vw;
+  @include respond-above(medium) {
+    top: 2.5vw;
   }
 }
 
 .home-case-two-link-text-4 {
-  left: 4.8vw;
+  left: 10.8vw;
   position: absolute;
-  top: 2.5vw;
+  top: 6.5vw;
   transform: rotate(3.44deg);
 
-  @include respond-below(medium) {
-    top: 6.5vw;
-    left: 10.8vw;
+  @include respond-above(medium) {
+    left: 4.8vw;
+    top: 2.5vw;
   }
 }
 
 .home-case-two-link-wrapper {
   grid-area: d;
-  padding-top: 8vw;
 
-  @include respond-below(medium) {
-    padding-top: unset;
+  @include respond-above(medium) {
+    padding-top: 8vw;
   }
 }

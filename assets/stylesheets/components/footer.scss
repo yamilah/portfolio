@@ -4,9 +4,10 @@
   grid-auto-rows: min-content;
   margin-left: 4vw;
   margin-right: 4vw;
+  margin-top: 30vw;
 
-  @include respond-below(medium) {
-    margin-top: 30vw;
+  @include respond-above(medium) {
+    margin-top: unset;
   }
 }
 
@@ -34,6 +35,7 @@
 .footer-link-4,
 .footer-text {
   color: $trinidad-orange;
+  user-select: none;
 }
 
 .footer-link-1,
@@ -59,12 +61,11 @@
 .footer-link-arrow-4 {
   align-self: center;
   font-size: 12.1vw;
-  font-weight: $font-weight-thin;
-}
+  font-weight: $font-weight-medium;
 
-.footer-text {
-  font-family: $font-forever;
-  font-weight: $font-weight-bold;
+  @include respond-above(medium) {
+    font-weight: $font-weight-thin;
+  }
 }
 
 .footer-link-arrow-1 {
@@ -90,14 +91,6 @@
   font-family: $font-pleasure;
   font-size: 17vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
-
-  @include respond-above(small) {
-    font-size: 15vw;
-  }
-
-  @include respond-above(medium) {
-    font-size: 18vw;
-  }
 }
 
 .footer-link-text-1 {
@@ -116,16 +109,28 @@
   transform: rotate(5deg);
 }
 
-.footer-text-wrapper {
-  padding-left: 16vw;
+.footer-text {
+  display: grid;
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 6vw;
+  font-weight: $font-weight-bold;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+
+  @include respond-above(medium) {
+    font-size: 2.2vw;
+  }
 }
 
-.footer-text {
-  font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 2.2vw;
-  font-weight: $font-weight-bold;
+.footer-text-1 {
+  transform: rotate(-15.89deg);
+}
 
-  @include respond-below(medium) {
-    font-size: 6vw;
-  }
+.footer-text-2 {
+  padding-left: 0.5vw;
+  transform: rotate(9.19deg);
+}
+
+.footer-text-wrapper {
+  padding-left: 16vw;
 }

@@ -7,7 +7,12 @@ export default class Footer extends React.Component {
       <footer className="footer">
         <div className="footer-text-wrapper">
           <p className="footer-text">
-            let’s talk
+            <span className="footer-text-1">
+              let’s
+            </span>
+            <span className="footer-text-2">
+              talk
+            </span>
           </p>
           <img
             alt="A decorative line"
