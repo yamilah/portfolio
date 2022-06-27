@@ -6,7 +6,7 @@
   display: grid;
   grid-template-areas:
     ". . a a a a a a a a a a"
-    ". . b b b b b b b b b ."
+    ". . . e e b b b b b b ."
     "d d c c c c c c c c c c";
   grid-template-columns: repeat(12, 1fr);
   margin-left: 4vw;
@@ -41,4 +41,63 @@
 .home-intro-line-1 {
   grid-area: d;
   margin-top: -22vw;
+}
+
+.home-intro-line-2 {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.home-intro-line-2-text-1,
+.home-intro-line-2-text-2,
+.home-intro-line-2-text-3 {
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 2.2vw;
+  font-weight: $font-weight-bold;
+}
+
+.home-intro-line-2-text-1 {
+  display: grid;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+  left: 1vw;
+  position: absolute;
+  top: 1vw;
+}
+
+.home-intro-line-2-text-2 {
+  left: 10vw;
+  position: absolute;
+  top: 1vw;
+  transform: rotate(16.06deg);
+}
+
+.home-intro-line-2-text-3 {
+  left: 2vw;
+  position: absolute;
+  top: 6vw;
+}
+
+.home-intro-line-2-wrapper {
+  grid-area: e;
+  position: relative;
+}
+
+.home-intro-line-character-1 {
+  transform: rotate(-17.33deg);
+}
+
+.home-intro-line-character-2 {
+  margin-left: -0.1vw;
+  margin-top: 0.5vw;
+  transform: rotate(14.62deg);
+}
+
+.home-intro-line-character-3 {
+  transform: rotate(16.06deg);
+}
+
+.home-intro-line-character-4 {
+  transform: rotate(-4.65deg);
 }
