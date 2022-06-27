@@ -4,8 +4,7 @@
     "a a a a a a a a a a a a"
     "c c b b b b b b b b b b";
   grid-template-columns: repeat(12, 1fr);
-  margin-left: 4vw;
-  margin-right: 4vw;
+  margin: 15vw 4vw;
 }
 
 .home-case-one-heading-1,
@@ -19,8 +18,13 @@
 }
 
 .home-case-one-heading-1,
-.home-case-one-heading-2 {
+.home-case-one-heading-2,
+.home-case-one-link-arrow {
   font-family: $font-pleasure;
+}
+
+.home-case-one-heading-1,
+.home-case-one-heading-2 {
   font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
 }
@@ -42,7 +46,7 @@
 
 .home-case-one-link-arrow {
   font-size: 12.1vw;
-  font-weight: $font-weight-thin;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
   left: 4vw;
   position: absolute;
   top: -6vw;
@@ -54,7 +58,7 @@
 .home-case-one-link-text-3 {
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 2.2vw;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
 }
 
 .home-case-one-link-text-1 {

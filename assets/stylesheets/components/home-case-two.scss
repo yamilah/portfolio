@@ -1,0 +1,72 @@
+.home-case-two {
+  display: grid;
+  grid-template-areas:
+    ". a a a a a a a d d d d"
+    ". . . . . . b b b b b b"
+    "c c c c c c c c c c c c";
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.home-case-two-heading-1,
+.home-case-two-heading-2,
+.home-case-two-heading-3,
+.home-case-two-link-arrow,
+.home-case-two-link-text-1,
+.home-case-two-link-text-2,
+.home-case-two-link-text-3,
+.home-case-two-link-text-4 {
+  color: $trinidad-orange;
+  user-select: none;
+}
+
+.home-case-two-heading-1,
+.home-case-two-heading-2,
+.home-case-two-heading-3,
+.home-case-two-link-arrow {
+  font-family: $font-pleasure;
+}
+
+.home-case-two-heading-1,
+.home-case-two-heading-2,
+.home-case-two-heading-3 {
+  font-size: 26vw;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+}
+
+.home-case-two-heading-1 {
+  grid-area: a;
+  transform: rotate(-12.56deg);
+}
+
+.home-case-two-heading-2 {
+  grid-area: b;
+  margin-bottom: -15vw;
+  margin-top: -17vw;
+  transform: rotate(3.06deg);
+}
+
+.home-case-two-heading-3 {
+  grid-area: c;
+  transform: rotate(6.89deg);
+}
+
+.home-case-two-link-arrow {
+  font-size: 12.1vw;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
+  transform: rotate(-17.31deg);
+}
+
+.home-case-two-link-text-1,
+.home-case-two-link-text-2,
+.home-case-two-link-text-3,
+.home-case-two-link-text-4 {
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 2.2vw;
+  font-weight: $font-weight-bold;
+}
+
+.home-case-two-link-wrapper {
+  grid-area: d;
+}
