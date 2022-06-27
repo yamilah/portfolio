@@ -1,7 +1,7 @@
 .nav {
   align-items: center;
   background-color: $pampas-white;
-  border-bottom: 0.5vw solid $trinidad-orange;
+  border-bottom: 0.4rem solid $trinidad-orange;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -9,6 +9,10 @@
   position: sticky;
   top: 0;
   z-index: 1;
+
+  @include respond-below(medium) {
+    padding: 3vw 4vw;
+  }
 }
 
 .nav-link-cv,
@@ -24,6 +28,10 @@
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 5vw;
+
+  @include respond-below(medium) {
+    font-size: 8vw;
+  }
 }
 
 .nav-link-home {
@@ -31,8 +39,16 @@
   display: grid;
   gap: 0.5vw;
   grid-auto-flow: column;
+
+  @include respond-below(medium) {
+    gap: 1.5vw;
+  }
 }
 
 .nav-link-home-logo {
   width: 3vw;
+
+  @include respond-below(medium) {
+    width: 5vw;
+  }
 }

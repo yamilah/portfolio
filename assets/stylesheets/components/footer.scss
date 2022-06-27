@@ -1,11 +1,12 @@
 .footer {
   display: grid;
-  grid-auto-rows: min-content;
   grid-auto-columns: min-content;
-  padding: 2rem;
+  grid-auto-rows: min-content;
+  margin-left: 4vw;
+  margin-right: 4vw;
 
-  @include respond-above(small) {
-    padding: 6rem;
+  @include respond-below(medium) {
+    margin-top: 30vw;
   }
 }
 
@@ -39,7 +40,6 @@
 .footer-link-2,
 .footer-link-3,
 .footer-link-4 {
-  color: $trinidad-orange;
   display: grid;
   grid-auto-columns: min-content;
   grid-auto-flow: column;
@@ -58,17 +58,10 @@
 .footer-link-arrow-3,
 .footer-link-arrow-4 {
   align-self: center;
-  font-size: 9vw;
-
-  @include respond-above(medium) {
-    font-size: 7vw;
-  }
+  font-size: 12.1vw;
+  font-weight: $font-weight-thin;
 }
 
-.footer-link-arrow-1,
-.footer-link-arrow-2,
-.footer-link-arrow-3,
-.footer-link-arrow-4,
 .footer-text {
   font-family: $font-forever;
   font-weight: $font-weight-bold;
@@ -103,7 +96,7 @@
   }
 
   @include respond-above(medium) {
-    font-size: 12vw;
+    font-size: 18vw;
   }
 }
 
@@ -128,14 +121,11 @@
 }
 
 .footer-text {
-  font-feature-settings: 'salt' on;
-  font-size: 4vw;
-  
-  @include respond-above(small) {
-    font-size: 3vw;
-  }
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 2.2vw;
+  font-weight: $font-weight-bold;
 
-  @include respond-above(large) {
-    font-size: 2vw;
+  @include respond-below(medium) {
+    font-size: 6vw;
   }
 }

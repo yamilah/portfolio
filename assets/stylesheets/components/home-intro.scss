@@ -11,6 +11,16 @@
   grid-template-columns: repeat(12, 1fr);
   margin-left: 4vw;
   margin-right: 4vw;
+
+  @include respond-below(medium) {
+    background-image: none;
+    grid-template-areas:
+      "a a a a a"
+      ". . b b b"
+      ". c c c c"
+      "e e . f f";
+  grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .home-intro-heading-1,
@@ -48,6 +58,10 @@
 .home-intro-line-1 {
   grid-area: d;
   margin-top: -22vw;
+
+  @include respond-below(medium) {
+    display: none;
+  }
 }
 
 .home-intro-line-2 {
@@ -120,12 +134,21 @@
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 2.2vw;
   font-weight: $font-weight-bold;
+
+  @include respond-below(medium) {
+    font-size: 6vw;
+  }
 }
 
 .home-intro-line-2-text-wrapper {
   left: 2vw;
   position: absolute;
   top: 1.5vw;
+
+  @include respond-below(medium) {
+    left: 5vw;
+    top: 3.5vw;
+  }
 }
 
 .home-intro-line-2-wrapper {
@@ -137,6 +160,10 @@
 
 .home-intro-line-3 {
   width: 5vw;
+
+  @include respond-below(medium) {
+    width: 12vw;
+  }
 }
 
 .home-intro-line-3-character-1 {
@@ -209,6 +236,11 @@
   grid-auto-rows: min-content;
   margin-left: -1vw;
   margin-top: 3vw;
+
+  @include respond-below(medium) {
+    margin-left: -3vw;
+    margin-top: 7vw;
+  }
 }
 
 .home-intro-line-3-wrapper {

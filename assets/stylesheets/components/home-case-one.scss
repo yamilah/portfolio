@@ -4,7 +4,17 @@
     "a a a a a a a a a a a a"
     "c c b b b b b b b b b b";
   grid-template-columns: repeat(12, 1fr);
-  margin: 15vw 4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+
+  @include respond-below(medium) {
+    grid-template-areas:
+      "a a a a"
+      "b b b b"
+      ". c c c";
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15vw;
+  }
 }
 
 .home-case-one-heading-1,
@@ -41,12 +51,17 @@
 
 .home-case-one-link-arrow {
   font-size: 12.1vw;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
   font-weight: $font-weight-thin;
   left: 4vw;
   position: absolute;
   top: -6vw;
   transform: rotate(-17.31deg);
+
+  @include respond-below(medium) {
+    font-size: 28vw;
+    left: 12vw;
+    top: -14vw;
+  }
 }
 
 .home-case-one-link-text-1,
@@ -55,6 +70,10 @@
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 2.2vw;
   font-weight: $font-weight-bold;
+
+  @include respond-below(medium) {
+    font-size: 6vw;
+  }
 }
 
 .home-case-one-link-text-1 {
@@ -69,6 +88,10 @@
   position: absolute;
   top: 3vw;
   transform: rotate(17.66deg);
+
+  @include respond-below(medium) {
+    top: 7vw;
+  }
 }
 
 .home-case-one-link-text-3 {
@@ -76,6 +99,11 @@
   position: absolute;
   top: 3vw;
   transform: rotate(-4.97deg);
+
+  @include respond-below(medium) {
+    left: 9.8vw;
+    top: 7.2vw;
+  }
 }
 
 .home-case-one-link-wrapper {
