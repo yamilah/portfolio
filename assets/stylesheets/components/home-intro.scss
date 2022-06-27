@@ -56,6 +56,7 @@
 
 .home-intro-line-1 {
   display: none;
+  width: 100%;
 
   @include respond-above(medium) {
     display: unset;
