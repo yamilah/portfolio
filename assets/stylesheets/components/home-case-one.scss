@@ -18,13 +18,8 @@
 }
 
 .home-case-one-heading-1,
-.home-case-one-heading-2,
-.home-case-one-link-arrow {
-  font-family: $font-pleasure;
-}
-
-.home-case-one-heading-1,
 .home-case-one-heading-2 {
+  font-family: $font-pleasure;
   font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
 }
@@ -47,6 +42,7 @@
 .home-case-one-link-arrow {
   font-size: 12.1vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
+  font-weight: $font-weight-thin;
   left: 4vw;
   position: absolute;
   top: -6vw;

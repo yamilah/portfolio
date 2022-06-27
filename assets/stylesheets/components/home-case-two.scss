@@ -23,14 +23,8 @@
 
 .home-case-two-heading-1,
 .home-case-two-heading-2,
-.home-case-two-heading-3,
-.home-case-two-link-arrow {
-  font-family: $font-pleasure;
-}
-
-.home-case-two-heading-1,
-.home-case-two-heading-2,
 .home-case-two-heading-3 {
+  font-family: $font-pleasure;
   font-size: 26vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
 }
@@ -55,6 +49,7 @@
 .home-case-two-link-arrow {
   font-size: 12.1vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 300;
+  font-weight: $font-weight-thin;
   transform: rotate(-17.31deg);
 }
 

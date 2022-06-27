@@ -60,7 +60,6 @@ export default class Footer extends React.Component {
           </span>
         </a>
       </footer>
-
     )
   }
 }

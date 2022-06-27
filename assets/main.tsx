@@ -5,11 +5,13 @@ import Home from "./js/pages/home"
 import CaseOne from "./js/pages/case-one"
 import CaseTwo from "./js/pages/case-two"
 import Footer from "./js/components/footer"
+import Nav from "./js/components/nav"
 
 class Root extends React.Component {
   render() {
     return (
       <Router>
+        <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/houseparty" element={<CaseOne />}></Route>
