@@ -1,0 +1,56 @@
+.case-one-desc,
+.case-one-desc-highlights {
+  gap: 2vw;
+}
+
+.case-one-desc {
+  display: grid;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.case-one-desc-highlight-heading,
+.case-one-desc-highlight-text,
+.case-one-desc-text {
+  color: $trinidad-orange;
+  font-size: 4.6vw;
+  line-height: 1.4;
+
+  @include respond-above(medium) {
+    font-size: 2.4vw;
+  }
+}
+
+.case-one-desc-highlight-heading {
+  font-family: $font-pleasure;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
+}
+
+.case-one-desc-highlight-text,
+.case-one-desc-text {
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-one-desc-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
+
+.case-one-desc-text {
+  text-align: justify;
+}
+
+.case-one-desc-text-link {
+  text-decoration: underline;
+}
+
+.case-one-desc-texts {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 0.5vw;
+}
