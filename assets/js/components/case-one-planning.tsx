@@ -27,7 +27,7 @@ export default class CaseOnePlanning extends React.Component {
           </figure>
         </div>
         <p className="case-one-planning-text">
-        53% of their users are school aged (16-24). 58% of all 2019 classroom devices were Google devices, as Chromebooks are very cost effective, and many classes rely on Google Class. 17% of product feedback mentioned wanting to be able to have richer experiences across multiple platformsFrom this, we learned that there could be an opportunity for a web experience. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
+          53% of their users are school aged (16-24). 58% of all 2019 classroom devices were Google devices, as Chromebooks are very cost effective, and many classes rely on Google Class. 17% of product feedback mentioned wanting to be able to have richer experiences across multiple platformsFrom this, we learned that there could be an opportunity for a web experience. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat.
         </p>
         <video
           autoPlay
@@ -47,7 +47,7 @@ export default class CaseOnePlanning extends React.Component {
           Sorry, but your browser doesn't support HTML5 videos. Try on another!
         </video>
         <p className="case-one-planning-text">
-          Anything but! We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch. To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
+          Seem simple? Anything but! We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch. To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
         </p>
         <div className="case-one-planning-imgs">
           <img
