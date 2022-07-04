@@ -14,18 +14,16 @@ export default class CaseOneImplementation extends React.Component {
   render() {
     return (
       <section className="case-one-implementation">
-        <div className="case-one-implementation-separator">
-          <p className="case-one-implementation-separator-number">
-            03
-          </p>
-          <p className="case-one-implementation-separator-text">
-            Implementation & debugging
-          </p>
-        </div>
-        <div className="case-one-implementation-prototype">
+        <h1>
+          How did this get built?
+        </h1>
+        <p className="case-one-implementation-text">
+          Well, it didn't quite unfold like a dream, actually. There were a number of gotchas—users saw this one, and so did we: issues with responsiveness and performance with respect to video reordering—there were a few reasons for this, but a big one was that we were JavaScript heavily to handle all that. What you’re seeing here are some actual prototypes I made with Invision Studio to explore these pain points around timing, ordering, responsiveness—and all of this at different screen sizes and orientations.
+        </p>
+        <div className="case-one-implementation-prototypes">
           <video
             autoPlay
-            className="case-one-implementation-prototype-video-1 dropshadow"
+            className="case-one-implementation-prototype-1"
             loop
             muted
             poster={vidOnePoster}
@@ -42,7 +40,7 @@ export default class CaseOneImplementation extends React.Component {
           </video>
           <video
             autoPlay
-            className="case-one-implementation-prototype-video-2 dropshadow"
+            className="case-one-implementation-prototype-2"
             loop
             muted
             poster={vidTwoPoster}
@@ -57,60 +55,38 @@ export default class CaseOneImplementation extends React.Component {
             />
             Sorry, but your browser doesn't support HTML5 videos. Try on another!
           </video>
-          <p className="case-one-implementation-prototype-text-1">
-            We were all moving really quickly, so we didn't expect what we learned next: users struggled a ton with prototype issues that came with all the video reordering—this was because we were using JavaScript heavily to handle all that.
-          </p>
-          <p className="case-one-implementation-prototype-text-2">
-            What you’re seeing here are some actual prototypes I made to explore these pain points around timing, ordering, responsiveness—and all of this at different screen sizes and orientations.
-          </p>
         </div>
+        <p className="case-one-implementation-text">
+          This is because Chromebooks, our target OS and devices, have dramatic differences in their performance levels and screen sizes, and gyroscope support (landscape v. portrait). Okay, so I took this on, which made sense since it lives in design and dev world.
+        </p>
         <div className="case-one-implementation-devices">
           <img
             alt="A small Chromebook"
-            className="case-one-implementation-device-1 dropshadow"
+            className="case-one-implementation-device-1"
             src={imgOne}
           />
           <img
             alt="A luxury Chromebook"
-            className="case-one-implementation-device-2 dropshadow"
+            className="case-one-implementation-device-2"
             src={imgTwo}
           />
-          <p className="case-one-implementation-device-text">
-            It was important to considre this as, Chromebooks,—our target OS and device type—have dramatic differences in performance levels and screen sizes, gyroscope support (landscape and portrait), etc. Getting this feedback from our users about the chat latency and responsiveness, I took on the design and technical challenge of figuring out this very complex part of the product. And here’s how I did that:
-          </p>
         </div>
-        <div className="case-one-implementation-focus">
-          <img
-            alt="An error page showing that this app can only be used on Chrome"
-            className="case-one-implementation-focus-img dropshadow"
-            src={imgThree}
-          />
-          <p className="case-one-implementation-focus-text-1">
-            From the beginning, we agreed we wouldn’t support browsers like Internet Explorer, some messaging around this you’re seeing here. But the upshot to this choice is focus:
-          </p>
-          <p className="case-one-implementation-focus-text-2">
-            I could leverage cutting edge browser standards, such as CSS Grid, which wasn’t available on Internet Explorer.
-          </p>
-          <p className="case-one-implementation-focus-text-3">
-            This was much to the CTO’s chagrin, who felt very strongly that JavaScript should do the heavy lifting.
-          </p>
-        </div>
-        <div className="case-one-implementation-snippet">
-          <img
-            alt="A verbose code snippet"
-            className="case-one-implementation-snippet-img dropshadow"
-            src={imgFour}
-          />
-          <p className="case-one-implementation-snippet-text-1">
-            But I have a different philosophy: I see styling as design and, when design doesn’t live in Figma, it should live in its web analog—CSS.
-          </p>
-          <p className="case-one-implementation-snippet-text-2">
-            Risky choice but, luckily, one that panned out; it enabled an experience that was responsive, performant, way more maintainable, contrasted to the JavaScript route.
-          </p>
-          <p className="case-one-implementation-snippet-text-3">
-            These buttery-smooth transitions added polish but, more importantly, they closed that feedback loop users were struggling with, making it way easier to see everyone while chatting—we received feedback that immersion was way improved.
-          </p>
-        </div>
+        <p className="case-one-implementation-text">
+          And here was how I did that: from the beginning, we agreed we wouldn’t support browsers like Internet Explorer, which is why you’re seeing the screen I designed that lets you know about that. But the upshot to this choice is focus: I could leverage cutting edge browser standards, such as CSS Grid, which wasn’t available on Internet Explorer.
+        </p>
+        <img
+          alt="An error page showing that this app can only be used on Chrome"
+          className="case-one-implementation-focus-img dropshadow"
+          src={imgThree}
+        />
+        <p className="case-one-implementation-text">
+          At the time, this was a risky choice, but a good one. Going CSS heavy instead of JS meant that we got responsiveness and performance improvements basically for free. Which added polish but, maybe more importantly, it closed that feedback loop users were struggling with, making it way easier to see everyone while chatting, quickly see who was coming in and out, so immersion in the chatting experience was way better.
+        </p>
+        <img
+          alt="A verbose code snippet"
+          className="case-one-implementation-snippet-img dropshadow"
+          src={imgFour}
+        />
       </section>
     )
   }
