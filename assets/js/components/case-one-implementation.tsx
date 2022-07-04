@@ -14,7 +14,7 @@ export default class CaseOneImplementation extends React.Component {
   render() {
     return (
       <section className="case-one-implementation">
-        <h1>
+        <h1 className="case-one-implementation-heading">
           How did this get built?
         </h1>
         <p className="case-one-implementation-text">
@@ -23,7 +23,7 @@ export default class CaseOneImplementation extends React.Component {
         <div className="case-one-implementation-prototypes">
           <video
             autoPlay
-            className="case-one-implementation-prototype-1"
+            className="case-one-implementation-video case-one-implementation-prototype-1"
             loop
             muted
             poster={vidOnePoster}
@@ -40,7 +40,7 @@ export default class CaseOneImplementation extends React.Component {
           </video>
           <video
             autoPlay
-            className="case-one-implementation-prototype-2"
+            className="case-one-implementation-video case-one-implementation-prototype-2"
             loop
             muted
             poster={vidTwoPoster}
@@ -76,7 +76,7 @@ export default class CaseOneImplementation extends React.Component {
         </p>
         <img
           alt="An error page showing that this app can only be used on Chrome"
-          className="case-one-implementation-focus-img dropshadow"
+          className="case-one-implementation-img"
           src={imgThree}
         />
         <p className="case-one-implementation-text">
@@ -84,7 +84,7 @@ export default class CaseOneImplementation extends React.Component {
         </p>
         <img
           alt="A verbose code snippet"
-          className="case-one-implementation-snippet-img dropshadow"
+          className="case-one-implementation-img"
           src={imgFour}
         />
       </section>

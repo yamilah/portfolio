@@ -4,3 +4,39 @@
   margin-right: 4vw;
   row-gap: 2vw;
 }
+
+.case-one-implementation-heading,
+.case-one-implementation-text {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-one-implementation-heading {
+  font-size: 13vw;
+  font-weight: $font-weight-medium;
+  line-height: 0.9;
+
+  @include respond-above(medium) {
+    font-size: 10vw;
+  }
+}
+
+.case-one-implementation-prototypes {
+  display: grid;
+  gap: 4vw;
+  grid-template-columns: 1fr 2fr;
+}
+
+.case-one-implementation-text {
+  font-size: 4.6vw;
+  line-height: 1.4;
+  text-align: justify;
+
+  @include respond-above(medium) {
+    font-size: 2.4vw;
+  }
+}
+
+.case-one-implementation-video {
+  border-radius: 0.8vw;
+}
