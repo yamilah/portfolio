@@ -27,7 +27,7 @@ export default class CaseOnePlanning extends React.Component {
           </figure>
         </div>
         <p className="case-one-planning-text">
-          From this, we learned that there could be an opportunity for a web experience. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
+        53% of their users are school aged (16-24). 58% of all 2019 classroom devices were Google devices, as Chromebooks are very cost effective, and many classes rely on Google Class. 17% of product feedback mentioned wanting to be able to have richer experiences across multiple platformsFrom this, we learned that there could be an opportunity for a web experience. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
         </p>
         <video
           autoPlay

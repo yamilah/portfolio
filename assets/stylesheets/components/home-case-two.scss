@@ -60,6 +60,10 @@
 .home-case-two-heading-3 {
   grid-area: c;
   transform: rotate(6.89deg);
+
+  @include respond-above(medium) {
+    margin-top: -6vw;
+  }
 }
 
 .home-case-two-link {
@@ -67,8 +71,9 @@
 }
 
 .home-case-two-link-arrow {
+  font-family: $font-pleasure;
   font-size: 24vw;
-  font-weight: $font-weight-thin;
+  font-variation-settings: "TRAP" 0, "ital" 0, "wght" 100;
   left: 21vw;
   position: absolute;
   top: -10.5vw;

@@ -23,10 +23,22 @@
 
 .case-one-planning-figure-2 {
   grid-area: b;
+  margin-bottom: -15vw;
+  margin-top: -15vw;
+
+  @include respond-above(medium) {
+    margin-bottom: unset;
+    margin-top: unset;
+  }
 }
 
 .case-one-planning-figure-3 {
   grid-area: c;
+  margin-top: unset;
+
+  @include respond-above(medium) {
+    margin-top: -6vw;
+  }
 }
 
 .case-one-planning-figures,
@@ -38,8 +50,8 @@
 .case-one-planning-figures {
   display: grid;
   grid-template-areas:
-    "a a . ."
-    ". b b ."
+    "a a a a"
+    ". b b b"
     ". . c c";
   grid-template-columns: repeat(4, 1fr);
 
