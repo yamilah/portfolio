@@ -1,7 +1,6 @@
 import * as React from "react"
 import imgOne from "../../images/houseparty/houseparty-planning-1.jpg"
-import imgThree from "../../images/houseparty/houseparty-planning-3.jpg"
-import imgTwo from "../../images/houseparty/houseparty-planning-2.jpg"
+import imgTwo from "../../images/houseparty/houseparty-planning-3.jpg"
 import vidOne from "url:../../images/houseparty/houseparty-planning-video.mp4"
 import vidOneFallback from "url:../../images/houseparty/houseparty-planning-video.webm"
 import vidOnePoster from "../../images/houseparty/houseparty-planning-poster.jpg"
@@ -10,14 +9,12 @@ export default class CaseOnePlanning extends React.Component {
   render() {
     return (
       <section className="case-one-planning">
-        <div className="case-one-planning-separator">
-          <p className="case-one-planning-separator-number">
-            01
-          </p>
-          <p className="case-one-planning-separator-text">
-            Initial validation & planning
-          </p>
-        </div>
+        <h1 className="case-one-planning-heading">
+          How did this start?
+        </h1>
+        <p className="case-one-planning-text">
+          I briefly began by explaining what Houseparty is and what direction we went in, but I want to elaborate more on the problem—and why we wanted to make this in the first place. Working with the team, I was able to tap into some research to see about why they were interested in this problem area. Below are some key excerpts:
+        </p>
         <div className="case-one-planning-figures">
           <figure className="case-one-planning-figure-1">
             <p className="case-one-planning-figure-number">
@@ -44,66 +41,44 @@ export default class CaseOnePlanning extends React.Component {
             </p>
           </figure>
         </div>
-        <div className="case-one-planning-solution">
-          <div className="case-one-planning-solution-text-wrapper">
-            <p className="case-one-planning-solution-text-1">
-              From this, we learned that there could be an opportunity for a web experience for Houseparty.
-            </p>
-            <p className="case-one-planning-solution-text-2">
-              I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards.
-            </p>
-            <p className="case-one-planning-solution-text-3">
-              So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
-            </p>
-          </div>
-          <video
-            autoPlay
-            className="case-one-planning-solution-video dropshadow"
-            loop
-            muted
-            poster={vidOnePoster}
-          >
-            <source
-              src={vidOne}
-              type="video/mp4"
-            />
-            <source
-              src={vidOneFallback}
-              type="video/webm"
-            />
-            Sorry, but your browser doesn't support HTML5 videos. Try on another!
-          </video>
+        <p className="case-one-planning-text">
+          From this, we learned that there could be an opportunity for a web experience for Houseparty. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
+        </p>
+        <video
+          autoPlay
+          className="case-one-planning-video"
+          loop
+          muted
+          poster={vidOnePoster}
+        >
+          <source
+            src={vidOne}
+            type="video/mp4"
+          />
+          <source
+            src={vidOneFallback}
+            type="video/webm"
+          />
+          Sorry, but your browser doesn't support HTML5 videos. Try on another!
+        </video>
+        <p className="case-one-planning-text">
+          Anything but! We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch. To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
+        </p>
+        <div className="case-one-planning-imgs">
+          <img
+            alt="Members of the Houseparty web team together in a room, running a design sprint"
+            className="case-one-planning-img case-one-planning-img-1"
+            src={imgOne}
+          />
+          <img
+            alt="Stickies on a board with How Might Wes on them"
+            className="case-one-planning-img case-one-planning-img-2"
+            src={imgTwo}
+          />
         </div>
-        <div className="case-one-planning-sprints">
-          <div className="case-one-planning-sprint-top">
-            <p className="case-one-planning-sprint-top-text-1">
-              Anything but! Making this translate to the web was a huge challenge. We didn’t have very much time, so we had to get serious about scoping this down, creating an MVP, and sticking to it to get to a meaningful launch.
-            </p>
-            <p className="case-one-planning-sprint-top-text-2">
-              To get to that MVP, the first thing I decided to do was have the team come together for a design sprint—allowing us to determine exactly what that MVP would look like in just a week.
-            </p>
-            <img
-              alt="Members of the Houseparty web team together in a room, running a design sprint"
-              className="case-one-planning-sprint-top-img dropshadow"
-              src={imgOne}
-            />
-          </div>
-          <div className="case-one-planning-sprint-bottom">
-            <img
-              alt="Stickies on a board with How Might Wes on them"
-              className="case-one-planning-sprint-bottom-img-1 dropshadow"
-              src={imgTwo}
-            />
-            <p className="case-one-planning-sprint-bottom-text">
-              So what you’re seeing here are the pictures I took while leading the team through a design sprint, which involved a week of exercises like setting up a problem statement; interviewing employees and users alike to deeply understand Houseparty, its business, and its users; listing out our assumptions and how we might test them; user journeying; How Might Weing; and so on and so forth.
-            </p>
-            <img
-              alt="Two members of the Houseparty team contemplating the product"
-              className="case-one-planning-sprint-bottom-img-2 dropshadow"
-              src={imgThree}
-            />
-          </div>
-        </div>
+        <p className="case-one-planning-text">
+          So what you’re seeing here are the pictures I took while leading the team through a design sprint, which involved a week of exercises like setting up a problem statement; interviewing employees and users alike to deeply understand Houseparty, its business, and its users; listing out our assumptions and how we might test them; user journeying; How Might Weing; and so on and so forth.
+        </p>
       </section>
     )
   }

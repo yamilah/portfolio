@@ -9,10 +9,27 @@
   margin-right: 4vw;
 }
 
+.case-one-desc-heading,
 .case-one-desc-highlight-heading,
 .case-one-desc-highlight-text,
 .case-one-desc-text {
   color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-one-desc-heading {
+  font-size: 13vw;
+  font-weight: $font-weight-medium;
+  line-height: 0.9;
+
+  @include respond-above(medium) {
+    font-size: 10vw;
+  }
+}
+
+.case-one-desc-highlight-heading,
+.case-one-desc-highlight-text,
+.case-one-desc-text {
   font-size: 4.6vw;
   line-height: 1.4;
 
@@ -22,13 +39,7 @@
 }
 
 .case-one-desc-highlight-heading {
-  font-family: $font-pleasure;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 700;
-}
-
-.case-one-desc-highlight-text,
-.case-one-desc-text {
-  font-feature-settings: 'salt' on, 'ss02' on;
+  font-weight: $font-weight-bold;
 }
 
 .case-one-desc-highlights {

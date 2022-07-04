@@ -9,7 +9,7 @@ import CaseOnePlanning from "../components/case-one-planning"
 export default class CaseOne extends React.Component {
   render() {
     return (
-      <div>
+      <div className="case-one">
         <CaseOneIntro></CaseOneIntro>
         <CaseOneDescription></CaseOneDescription>
         <CaseOnePlanning></CaseOnePlanning>

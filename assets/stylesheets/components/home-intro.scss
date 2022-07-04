@@ -134,7 +134,7 @@
 .home-intro-line-3-text-wrapper {
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 6vw;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-medium;
 
   @include respond-above(medium) {
     font-size: 2.2vw;

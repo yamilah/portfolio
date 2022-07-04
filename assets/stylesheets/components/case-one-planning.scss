@@ -1,0 +1,69 @@
+.case-one-planning {
+  display: grid;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  row-gap: 2vw;
+}
+
+.case-one-planning-figures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.case-one-planning-heading,
+.case-one-planning-text {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-one-planning-heading {
+  font-size: 13vw;
+  font-weight: $font-weight-medium;
+  line-height: 0.9;
+
+  @include respond-above(medium) {
+    font-size: 10vw;
+  }
+}
+
+.case-one-planning-img,
+.case-one-planning-video {
+  border-radius: 0.8vw;
+}
+
+.case-one-planning-img-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.case-one-planning-img-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.case-one-planning-imgs {
+  display: grid;
+  row-gap: 4vw;
+
+  @include respond-above(medium) {
+    column-gap: 4vw;
+    grid-template-areas:
+      "a a a a a a a . . . . ."
+      "a a a a a a a . . . . ."
+      "a a a a a a a b b b b b"
+      ". . . . . . . b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.case-one-planning-text {
+  font-size: 4.6vw;
+  line-height: 1.4;
+  text-align: justify;
+
+  @include respond-above(medium) {
+    font-size: 2.4vw;
+  }
+}
