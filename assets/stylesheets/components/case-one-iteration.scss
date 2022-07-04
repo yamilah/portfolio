@@ -1,0 +1,41 @@
+.case-one-iteration {
+  display: grid;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  row-gap: 2vw;
+}
+
+.case-one-iteration-figures,
+.case-one-iteration-heading,
+.case-one-iteration-text {
+  color: $trinidad-orange;
+}
+
+.case-one-iteration-heading,
+.case-one-iteration-text {
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-one-iteration-heading {
+  font-size: 13vw;
+  font-weight: $font-weight-medium;
+  line-height: 0.9;
+
+  @include respond-above(medium) {
+    font-size: 10vw;
+  }
+}
+
+.case-one-iteration-video {
+  border-radius: 0.8vw;
+}
+
+.case-one-iteration-text {
+  font-size: 4.6vw;
+  line-height: 1.4;
+  text-align: justify;
+
+  @include respond-above(medium) {
+    font-size: 2.4vw;
+  }
+}

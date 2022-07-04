@@ -67,7 +67,6 @@
 
 .case-one-planning-heading,
 .case-one-planning-text {
-  color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
 }
 
@@ -78,6 +77,52 @@
 
   @include respond-above(medium) {
     font-size: 10vw;
+  }
+}
+
+.case-one-planning-idea-1 {
+  @include respond-above(medium) {
+    grid-area: d;
+  }
+}
+
+.case-one-planning-idea-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.case-one-planning-idea-3 {
+  @include respond-above(medium) {
+    align-self: end;
+    grid-area: c;
+  }
+}
+
+.case-one-planning-idea-4 {
+  @include respond-above(medium) {
+    align-self: end;
+    grid-area: a;
+  }
+}
+
+.case-one-planning-idea-5 {
+  @include respond-above(medium) {
+    grid-area: e;
+  }
+}
+
+.case-one-planning-ideas {
+  display: grid;
+  gap: 4vw;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". a a a a a b b b b b b"
+      "d d d d d d d e e e e ."
+      "d d d d d d d c c c c c"
+      ". . . . . . . c c c c c";
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -121,4 +166,8 @@
   @include respond-above(medium) {
     font-size: 2.4vw;
   }
+}
+
+.case-one-planning-text-link {
+  text-decoration: underline;
 }
