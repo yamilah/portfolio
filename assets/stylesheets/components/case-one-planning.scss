@@ -5,9 +5,52 @@
   row-gap: 2vw;
 }
 
+.case-one-planning-figure-1,
+.case-one-planning-figure-2,
+.case-one-planning-figure-3 {
+  font-family: $font-pleasure;
+  font-size: 40vw;
+  font-variation-settings: "TRAP" 100, "ital" 100, "wght" 900;
+
+  @include respond-above(medium) {
+    font-size: 16vw;
+  }
+}
+
+.case-one-planning-figure-1 {
+  grid-area: a;
+}
+
+.case-one-planning-figure-2 {
+  grid-area: b;
+}
+
+.case-one-planning-figure-3 {
+  grid-area: c;
+}
+
+.case-one-planning-figures,
+.case-one-planning-heading,
+.case-one-planning-text {
+  color: $trinidad-orange;
+}
+
 .case-one-planning-figures {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a a . ."
+    ". b b ."
+    ". . c c";
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      ". . . . . b b b . . . ."
+      ". . a a a b b b . . . ."
+      ". . a a a c c c . . . ."
+      ". . . . . c c c . . . .";
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 .case-one-planning-heading,

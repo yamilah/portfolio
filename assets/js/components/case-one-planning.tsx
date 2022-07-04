@@ -17,32 +17,17 @@ export default class CaseOnePlanning extends React.Component {
         </p>
         <div className="case-one-planning-figures">
           <figure className="case-one-planning-figure-1">
-            <p className="case-one-planning-figure-number">
-              53%
-            </p>
-            <p className="case-one-planning-figure-text">
-              of their users are in the 16-24 age group, who are primarily school-aged
-            </p>
+            53
           </figure>
           <figure className="case-one-planning-figure-2">
-            <p className="case-one-planning-figure-number">
-              58%
-            </p>
-            <p className="case-one-planning-figure-text">
-              of all devices purchased for US classrooms were Google devices
-            </p>
+            58
           </figure>
           <figure className="case-one-planning-figure-3">
-            <p className="case-one-planning-figure-number">
-              17%
-            </p>
-            <p className="case-one-planning-figure-text">
-              of product requests were communicating a desire for cross platform experiences
-            </p>
+            17
           </figure>
         </div>
         <p className="case-one-planning-text">
-          From this, we learned that there could be an opportunity for a web experience for Houseparty. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
+          From this, we learned that there could be an opportunity for a web experience. I began at the problem, but I want to zoom out and show the solution I designed to give you a better idea of what we were working towards. So here’s how you use Houseparty: you sign up, log in, add a friend, jump in their “room,” and have a chat. Seem simple?
         </p>
         <video
           autoPlay
