@@ -62,12 +62,12 @@ export default class CaseOneImplementation extends React.Component {
         <div className="case-one-implementation-devices">
           <img
             alt="A small Chromebook"
-            className="case-one-implementation-device-1"
+            className="case-one-implementation-img case-one-implementation-device-1"
             src={imgOne}
           />
           <img
             alt="A luxury Chromebook"
-            className="case-one-implementation-device-2"
+            className="case-one-implementation-img case-one-implementation-device-2"
             src={imgTwo}
           />
         </div>

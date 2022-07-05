@@ -60,10 +60,6 @@
 .home-case-two-heading-3 {
   grid-area: c;
   transform: rotate(6.89deg);
-
-  @include respond-above(medium) {
-    margin-top: -6vw;
-  }
 }
 
 .home-case-two-link {
