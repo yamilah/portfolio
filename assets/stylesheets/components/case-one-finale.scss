@@ -1,22 +1,17 @@
-.case-one-iteration {
+.case-one-finale {
   display: grid;
   margin-left: 4vw;
   margin-right: 4vw;
   row-gap: 2vw;
 }
 
-.case-one-iteration-figures,
-.case-one-iteration-heading,
-.case-one-iteration-text {
+.case-one-finale-heading,
+.case-one-finale-text {
   color: $trinidad-orange;
-}
-
-.case-one-iteration-heading,
-.case-one-iteration-text {
   font-feature-settings: 'salt' on, 'ss02' on;
 }
 
-.case-one-iteration-heading {
+.case-one-finale-heading {
   font-size: 13vw;
   font-weight: $font-weight-medium;
   line-height: 1;
@@ -26,11 +21,7 @@
   }
 }
 
-.case-one-iteration-video {
-  border-radius: 0.8vw;
-}
-
-.case-one-iteration-text {
+.case-one-finale-text {
   font-size: 4.6vw;
   line-height: 1.4;
   text-align: justify;
