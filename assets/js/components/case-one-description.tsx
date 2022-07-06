@@ -5,7 +5,7 @@ export default class CaseOneDescription extends React.Component {
     return (
       <section className="case-one-desc">
         <h1 className="case-one-desc-heading">
-          What is all this?
+          What’s Houseparty?
         </h1>
         <div className="case-one-desc-highlights">
           <div className="case-one-desc-highlight">

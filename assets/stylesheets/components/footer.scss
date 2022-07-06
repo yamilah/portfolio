@@ -4,11 +4,6 @@
   grid-auto-rows: min-content;
   margin-left: 4vw;
   margin-right: 4vw;
-  margin-top: 30vw;
-
-  @include respond-above(medium) {
-    margin-top: unset;
-  }
 }
 
 .footer-line {
