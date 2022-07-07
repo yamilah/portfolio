@@ -1,0 +1,68 @@
+.case-two-desc,
+.case-two-desc-highlights {
+  gap: 2vw;
+}
+
+.case-two-desc {
+  display: grid;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 4vw;
+}
+
+.case-two-desc-heading,
+.case-two-desc-highlight-heading,
+.case-two-desc-highlight-text,
+.case-two-desc-text {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+}
+
+.case-two-desc-heading {
+  font-size: 13vw;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+
+  @include respond-above(medium) {
+    font-size: 10vw;
+  }
+}
+
+.case-two-desc-highlight-heading,
+.case-two-desc-highlight-text,
+.case-two-desc-text {
+  font-size: 4.6vw;
+  line-height: 1.4;
+
+  @include respond-above(medium) {
+    font-size: 2.4vw;
+  }
+}
+
+.case-two-desc-highlight-heading {
+  font-weight: $font-weight-bold;
+}
+
+.case-two-desc-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-above(medium) {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
+
+.case-two-desc-text {
+  text-align: justify;
+}
+
+.case-two-desc-text-link {
+  text-decoration: underline;
+}
+
+.case-two-desc-texts {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 0.5vw;
+}
