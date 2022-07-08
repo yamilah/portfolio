@@ -5,7 +5,7 @@ export default class CaseTwoDescription extends React.Component {
     return (
       <section className="case-two-desc">
         <h1 className="case-two-desc-heading">
-          What's HOFR?
+          What’s HOFR?
         </h1>
         <div className="case-two-desc-highlights">
           <div className="case-two-desc-highlight">
