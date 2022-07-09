@@ -44,40 +44,9 @@ export default class CaseTwoIteration extends React.Component {
           />
           Sorry, but your browser doesn't support HTML5 videos. Try on another!
         </video>
-        <div className="case-two-iteration-figures">
-          <figure className="case-two-iteration-figure-1">
-            <p className="case-two-iteration-figure-number">
-              3/4
-            </p>
-            <p className="case-two-iteration-figure-text">
-              participants described this experience as “very fun”
-            </p>
-          </figure>
-          <figure className="case-two-iteration-figure-2">
-            <p className="case-two-iteration-figure-number">
-              4/4
-            </p>
-            <p className="case-two-iteration-figure-text">
-              participants were “satisfied” with the fact that this was skill-based
-            </p>
-          </figure>
-          <figure className="case-two-iteration-figure-3">
-            <p className="case-two-iteration-figure-number">
-              2/4
-            </p>
-            <p className="case-two-iteration-figure-text">
-              could figure out how to start playing
-            </p>
-          </figure>
-          <figure className="case-two-iteration-figure-4">
-            <p className="case-two-iteration-figure-number">
-              3/4
-            </p>
-            <p className="case-two-iteration-figure-text">
-              said they would be “likely” to play this game again
-            </p>
-          </figure>
-        </div>
+        <p className="case-two-iteration-text">
+          Three of four participants described this experience as “very fun”; four of four participants were “satisfied” with the fact that this was skill-based; two of four could figure out how to start playing; three of four said they would be “likely” to play this game again.
+        </p>
         <div className="case-two-iteration-imgs">
           <img
             alt="An excerpted screen from the app showing it's game time"

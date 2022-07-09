@@ -12,27 +12,12 @@ export default class CaseTwoImplementation extends React.Component {
   render() {
     return (
       <section className="case-two-implementation">
-        <div className="case-two-implementation-separator">
-          <p className="case-two-implementation-separator-number">
-            03
+        <h1 className="case-two-implementation-heading">
+          How did this get built?
+        </h1>
+          <p className="case-two-implementation-text">
+            After agreeing to pick back up for a second rendition, we also agreed that we needed to settle on what our priorities for that second iteration would be. For me, what would mostly decide that would be what our users were talking about the most. So, to get some insight into that, I did some data analysis on the reviews in the App Store and the Play Store. Here were some key takeaways:
           </p>
-          <p className="case-two-implementation-separator-text">
-            A second version
-          </p>
-        </div>
-        <div className="case-two-implementation-solution">
-          <div className="case-two-implementation-solution-text-wrapper">
-            <p className="case-two-implementation-solution-text-1">
-              So, we agreed on picking back up for a V2; we also needed to agree on what the priorities would be on it.
-            </p>
-            <p className="case-two-implementation-solution-text-2">
-              For me, what would mostly decide that would be what our users were talking about the most. So, to get some insight into that, I did some data analysis on the reviews in the App Store and the Play Store.
-            </p>
-            <p className="case-two-implementation-solution-text-3">
-              Here were some key takeaways:
-            </p>
-          </div>
-        </div>
         <div className="case-two-implementation-figures">
           <figure className="case-two-implementation-figure-1">
             <p className="case-two-implementation-figure-number">
