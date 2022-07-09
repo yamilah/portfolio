@@ -123,7 +123,7 @@ export default class CaseTwoIteration extends React.Component {
           />
         </div>
         <p className="case-two-iteration-text">
-          But, also, visual explorations, I wanted to talk about that. I would’ve wanted to build something like what's on the left, which is styling I made. But, instead, we settled for what's on the right, which was a compromise I lead.
+          When it comes to visual design, I made both of these, but I would've wanted to build that first one. Notice the motion, change in color palette, etc. But, instead, we settled into the second. Changing the direction of the visual design becomes more difficult as time goes on.
         </p>
         <img
           alt="A HOFR teammate helping produce our first show with host Patrice Evra"
@@ -166,7 +166,7 @@ export default class CaseTwoIteration extends React.Component {
           />
         </div>
         <p className="case-two-iteration-text">
-          All the attention was a good thing, though, as we got a ton of feedback really quickly. Which was a blessing—because we wanted to go for a V2.
+          All the attention was a good thing, though, as we got a ton of feedback really quickly. Which was to our advantage, because we wanted to go for a V2.
         </p>
       </section>
     )
