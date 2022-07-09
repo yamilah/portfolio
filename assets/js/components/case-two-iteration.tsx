@@ -21,42 +21,32 @@ export default class CaseTwoIteration extends React.Component {
   render() {
     return (
       <section className="case-two-iteration">
-        <div className="case-two-iteration-separator">
-          <p className="case-two-iteration-separator-number">
-            02
-          </p>
-          <p className="case-two-iteration-separator-text">
-            Iterations & testing
-          </p>
-        </div>
-        <div className="case-two-iteration-prototype">
-          <video
-            autoPlay
-            className="case-two-iteration-prototype-video dropshadow"
-            loop
-            muted
-            poster={vidOnePoster}
-          >
-            <source
-              src={vidOne}
-              type="video/mp4"
-            />
-            <source
-              src={vidOneFallback}
-              type="video/webm"
-            />
-            Sorry, but your browser doesn't support HTML5 videos. Try on another!
-          </video>
-          <p className="case-two-iteration-prototype-text-1">
-            …a companion app to sports fans’ watching experience. So I mocked it up and prototyped it: which is what you’re seeing here.
-          </p>
-          <p className="case-two-iteration-prototype-text-2">
-            Much to almost the entire team’s surprise, our recruited participants loved competing with each others’ predictions while watching the game.
-          </p>
-          <p className="case-two-iteration-prototype-text-3">
-            Here were some key findings from this testing:
-          </p>
-        </div>
+        <h1 className="case-two-iteration-heading">
+          How did this test?
+        </h1>
+        <p className="case-two-iteration-text">
+          So I mocked it up and prototyped it: which is what you’re seeing here.
+        </p>
+        <video
+          autoPlay
+          className="case-two-iteration-video"
+          loop
+          muted
+          poster={vidOnePoster}
+        >
+          <source
+            src={vidOne}
+            type="video/mp4"
+          />
+          <source
+            src={vidOneFallback}
+            type="video/webm"
+          />
+          Sorry, but your browser doesn't support HTML5 videos. Try on another!
+        </video>
+        <p className="case-two-iteration-text">
+          Much to almost the entire team’s surprise, our recruited participants loved competing with each others’ predictions while watching the game. Here were some key findings from our focus group:
+        </p>
         <div className="case-two-iteration-figures">
           <figure className="case-two-iteration-figure-1">
             <p className="case-two-iteration-figure-number">
@@ -91,32 +81,24 @@ export default class CaseTwoIteration extends React.Component {
             </p>
           </figure>
         </div>
-        <div className="case-two-iteration-progress">
-          <img
-            alt="An excerpted screen from the app showing it's game time"
-            className="case-two-iteration-progress-img-1 dropshadow"
-            src={imgOne}
-          />
-          <img
-            alt="An excerpted screen from the app showing the host speaking"
-            className="case-two-iteration-progress-img-2 dropshadow"
-            src={imgTwo}
-          />
-          <img
-            alt="An excerpted screen from the app showing you placed 982nd"
-            className="case-two-iteration-progress-img-3 dropshadow"
-            src={imgThree}
-          />
-          <p className="case-two-iteration-progress-text-1">
-            With these results, we felt that there was strong enough evidence for a pivot from an HQ clone to a unique sports prediction and companion experience that stands on its own two legs.
-          </p>
-          <p className="case-two-iteration-progress-text-2">
-            So that’s what we did. We pivoted. We agreed on our MVP feature set and got started.
-          </p>
-          <p className="case-two-iteration-progress-text-3">
-            As the only other designer and front-end dev on the team, what this meant for me was that I got to work bringing ideas to lofi wireframes, and those to user tests, and those to hifi. And then to the codebase, of course.
-          </p>
-        </div>
+        <img
+          alt="An excerpted screen from the app showing it's game time"
+          className="case-two-iteration-img"
+          src={imgOne}
+        />
+        <img
+          alt="An excerpted screen from the app showing the host speaking"
+          className="case-two-iteration-img"
+          src={imgTwo}
+        />
+        <img
+          alt="An excerpted screen from the app showing you placed 982nd"
+          className="case-two-iteration-img"
+          src={imgThree}
+        />
+        <p className="case-two-iteration-text">
+          With these results, we felt that there was strong enough evidence for a pivot from an HQ clone to a unique sports prediction and companion experience that stands on its own two legs. So that’s what we did. We pivoted. We agreed on our MVP feature set and got started. As the only other designer and front-end dev on the team, what this meant for me was that I got to work bringing ideas to lofi wireframes, and those to user tests, and those to hifi. And then to the codebase, of course.
+        </p>
         <div className="case-two-iteration-visuals">
           <video
             autoPlay
