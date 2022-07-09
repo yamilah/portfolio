@@ -61,7 +61,7 @@ export default class CaseTwoPlanning extends React.Component {
           So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here. A lot of exercises were run, as I wanted to understand where the original idea came from, and why it came to be. Through this process, we learned more about our potential users, listed out our assumptions, and ideas about how we might test them: How Might Weing; user journeying; and so on.
         </p>
         <p className="case-two-planning-text">
-          To re-iterate, we started with an HQ clone. But, by the middle of the week, we had a real breadth of ideas to explore. Through those exercises I mentioned, I facilitated the team’s inclination towards one idea in particular: a companion app to sports fans’ watching experience.
+          To re-iterate, we started with an HQ clone. But, by the middle of the week, we had a real breadth of ideas to explore. Through those exercises I mentioned, I facilitated the team’s inclination towards one idea in particular: a companion app to sports fans’ watching experience. So I mocked it up and prototyped it.
         </p>
       </section>
     )

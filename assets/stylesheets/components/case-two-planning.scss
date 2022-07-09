@@ -55,9 +55,14 @@
 }
 
 .case-two-planning-phone {
-  border-radius: 2.8vw;
+  border-radius: 9vw;
   justify-self: center;
-  width: 18vw;
+  width: 58vw;
+
+  @include respond-above(medium) {
+    border-radius: 2.8vw;
+    width: 18vw;
+  }
 }
 
 .case-two-planning-text {
