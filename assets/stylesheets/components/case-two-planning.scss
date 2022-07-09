@@ -1,7 +1,5 @@
 .case-two-planning {
   display: grid;
-  margin-left: 4vw;
-  margin-right: 4vw;
   row-gap: 2vw;
 }
 
@@ -28,6 +26,38 @@
 .case-two-planning-img,
 .case-two-planning-video {
   border-radius: 0.8vw;
+}
+
+.case-two-planning-img-1 {
+  @include respond-above(medium) {
+    grid-area: a;
+  }
+}
+
+.case-two-planning-img-2 {
+  @include respond-above(medium) {
+    grid-area: b;
+  }
+}
+
+.case-two-planning-imgs {
+  display: grid;
+  gap: 4vw;
+
+  @include respond-above(medium) {
+    grid-template-areas:
+      "a a a a a a a . . . . ."
+      "a a a a a a a . . . . ."
+      "a a a a a a a b b b b b"
+      ". . . . . . . b b b b b";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.case-two-planning-phone {
+  border-radius: 2.8vw;
+  justify-self: center;
+  width: 18vw;
 }
 
 .case-two-planning-text {

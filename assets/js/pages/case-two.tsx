@@ -8,7 +8,7 @@ import CaseTwoPlanning from "../components/case-two-planning"
 export default class CaseTwo extends React.Component {
   render() {
     return (
-      <div>
+      <div className="case-two">
         <CaseTwoDescription></CaseTwoDescription>
         <CaseTwoPlanning></CaseTwoPlanning>
         <CaseTwoIteration></CaseTwoIteration>

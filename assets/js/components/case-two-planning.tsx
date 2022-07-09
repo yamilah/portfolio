@@ -19,7 +19,7 @@ export default class CaseTwoPlanning extends React.Component {
         </p>
         <video
           autoPlay
-          className="case-two-planning-video"
+          className="case-two-planning-video case-two-planning-phone"
           loop
           muted
           poster={vidOnePoster}
@@ -43,26 +43,26 @@ export default class CaseTwoPlanning extends React.Component {
           src={imgOne}
         />
         <p className="case-two-planning-text">
-          The team seemed super excited about this idea, but I was hoping we could slow down a bit and spend more time thinking about the problem before the solution. Part of my hesitance was also because I felt it would be really hard to compete with HQ if they did release a sports offering. I made a case for a design sprint to explore some more options with the team to see what we would find—they said yes!
+          The team seemed super excited about this idea, but I was hoping we could slow down a bit and spend more time thinking about the problem before the solution. Part of my hesitance was also because I felt it would be really hard to compete with HQ if they did release a sports offering. I made a case for a design sprint to explore some more options with the team to see what we would find—they agreed!
         </p>
-        <img
-          alt="Members of the Houseparty web team together in a room, running a design sprint"
-          className="case-two-planning-sprint-top-img dropshadow"
-          src={imgTwo}
-        />
-        <img
-          alt="Stickies on a board with How Might Wes on them"
-          className="case-two-planning-sprint-bottom-img-1 dropshadow"
-          src={imgFour}
-        />
+        <div className="case-two-planning-imgs">
+          <img
+            alt="Members of the Houseparty web team together in a room, running a design sprint"
+            className="case-two-planning-img case-two-planning-img-1"
+            src={imgTwo}
+          />
+          <img
+            alt="Two members of the Houseparty team contemplating the product"
+            className="case-two-planning-img case-two-planning-img-2"
+            src={imgThree}
+          />
+        </div>
         <p className="case-two-planning-text">
-          So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here. A lot of exercises were run, as the team wanted to understand where the original idea came from, and why. Through this process, we learned more about our potential users, listing out our assumptions along the way about this potential product and how we might test them; once again, How Might Weing; user journeying; and so on. So, to re-iterate, we started with an HQ clone. But, by the middle of the week, we had a real breadth of ideas to explore. Through those exercises I mentioned, I facilitated the team’s inclination towards one idea in particular…
+          So that’s what I did. I set up that sprint, and we all got to ideating—the actual sprint is what you’re seeing here. A lot of exercises were run, as I wanted to understand where the original idea came from, and why it came to be. Through this process, we learned more about our potential users, listed out our assumptions, and ideas about how we might test them: How Might Weing; user journeying; and so on.
         </p>
-        <img
-          alt="Two members of the Houseparty team contemplating the product"
-          className="case-two-planning-img"
-          src={imgThree}
-        />
+        <p className="case-two-planning-text">
+          To re-iterate, we started with an HQ clone. But, by the middle of the week, we had a real breadth of ideas to explore. Through those exercises I mentioned, I facilitated the team’s inclination towards one idea in particular…
+        </p>
       </section>
     )
   }

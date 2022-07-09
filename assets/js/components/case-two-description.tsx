@@ -48,7 +48,7 @@ export default class CaseTwoDescription extends React.Component {
           </div>
         </div>
         <p className="case-two-desc-text">
-          HOFR, or Hall of Famer, is a sports prediction mobile app, and you use it while watching a game. There were so many unexpected twists and turns on this project! I was one of two designers and front-end developers on the team, along with two developers and one PM. It was about five months long. You can check it out on the <a href="https://apps.apple.com/us/app/hofr/id1400605641">App Store</a> or the <a href="https://play.google.com/store/apps/details?id=com.hofr">Play Store</a>—or just read on!
+          HOFR, or Hall of Famer, is a sports prediction mobile app, and you use it while watching a game. There were so many unexpected twists and turns on this project! I was one of two designers and front-end developers on the team, along with two developers and one PM. It was about five months long. You can check it out on the <a href="https://apps.apple.com/us/app/hofr/id1400605641" className="case-two-desc-text-link">App Store</a> or the <a href="https://play.google.com/store/apps/details?id=com.hofr" className="case-two-desc-text-link">Play Store</a>—or just read on!
         </p>
       </section>
     )
