@@ -4,48 +4,18 @@ export default class CaseTwoFinale extends React.Component {
   render() {
     return (
       <section className="case-two-finale">
-        <div className="case-two-finale-separator">
-          <p className="case-two-finale-separator-number">
-            04
-          </p>
-          <p className="case-two-finale-separator-text">
-            Final thoughts
-          </p>
-        </div>
-        <div className="case-two-finale-conclusion">
-          <p className="case-two-finale-conclusion-intro">
-            As we closed the book on this iteration, I did some reflecting on how things could have been different.
-          </p>
-          <div className="case-two-finale-conclusion-1">
-            <h1 className="case-two-finale-conclusion-heading">
-              Hardly testing?
-            </h1>
-            <p className="case-two-finale-conclusion-text">
-              One thought was that we validated the product upfront, but didn’t do a ton of user testing as we released features—imagine how many opportunities could have surfaced if we had!
-            </p>
-          </div>
-          <div className="case-two-finale-conclusion-2">
-            <h1 className="case-two-finale-conclusion-heading">
-              TV, meet phone
-            </h1>
-            <p className="case-two-finale-conclusion-text">
-              Also, I noticed that people reported that looking between their TVs and their phones while playing caused some cognitive overload, and that there was some confusion around when to start/stop playing.
-            </p>
-          </div>
-          <div className="case-two-finale-conclusion-3">
-            <h1 className="case-two-finale-conclusion-heading">
-              X marks success
-            </h1>
-            <p className="case-two-finale-conclusion-text">
-              Perhaps some way that could have guided us was if we had a very clear definition of our success metrics.
-            </p>
-          </div>
-        </div>
-        <div className="case-two-finale-outro">
-          <p className="case-two-finale-outro-text">
-            Thank you!
-          </p>
-        </div>
+        <h1 className="case-two-finale-heading">
+          Any takeaways?
+        </h1>
+        <p className="case-two-finale-text">
+          As we closed the book on this iteration, I did some reflecting on how things could have been different.
+        </p>
+        <p className="case-two-finale-text">
+          One thought was that we validated the product upfront, as mentioned earlier, but didn’t do a ton of user testing as we released features. This is somewhat expected in such a short turnaround, but is also concerning, especially because so many participants remarked that having their phones as a companion experience to their TVs is not extremely pleasant. Could we overcome this by looking into other solutions (e.g., streaming in app, etc.)? What kind of opportunities could we unconver by simply digging into this more?
+        </p>
+        <p className="case-two-finale-text">
+          Another thought was around deciding on priority and scope, which was a pain point on this project, in particular. One way to get around this was if, for instance, we had a very clear definition of our success metrics. We did not install a ton of tracking to determine clearly whether there was sticky behavior, for instance—it's important to get people to the top of the funnel (e.g., installing the app, signing up, etc.), but it's also equally important to make sure people are returning and getting consistent value. Using tracking could give us more clarity on this, and help us determine what parts of the product need the most work, and the level of priority.
+        </p>
       </section>
     )
   }
