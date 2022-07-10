@@ -107,6 +107,7 @@
 .case-two-iteration-visuals {
   display: grid;
   gap: 4vw;
+  grid-template-columns: 1fr 1.22fr;
 
   @include respond-above(medium) {
     grid-template-columns: 18vw 22vw;

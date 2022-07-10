@@ -7,6 +7,7 @@
 .case-two-implementation-improvements {
   display: grid;
   gap: 4vw;
+  grid-template-columns: repeat(2, 1fr);
 
   @include respond-above(medium) {
     grid-template-columns: repeat(4, 1fr);
