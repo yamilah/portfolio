@@ -6,9 +6,7 @@
     "c c c c c"
     ". d d d d";
   grid-template-columns: repeat(5, 1fr);
-  margin-left: 4vw;
-  margin-right: 4vw;
-  margin-top: 30vw;
+  margin: 30vw 4vw 36vw 4vw;
 
   
   @include respond-above(medium) {
@@ -17,6 +15,7 @@
       ". . . . . . b b b b b b"
       "c c c c c c c c c c c c";
     grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 4vw;
     margin-top: 10vw;
   }
 }
