@@ -1,15 +1,13 @@
 import * as React from "react"
-import HomeCaseOne from "../components/home-case-one"
-import HomeCaseTwo from "../components/home-case-two"
-import HomeIntro from "../components/home-intro"
+import {Link} from "react-router-dom"
 
 export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <HomeIntro></HomeIntro>
-        <HomeCaseOne></HomeCaseOne>
-        <HomeCaseTwo></HomeCaseTwo>
+        <p className="home-text">
+          Hello. I'm <span className="home-text-emphasis">Yamilah</span>, a <span className="home-text-emphasis">designer & dev</span> in California. I work on <a href="https://blog.twitter.com/en_us/topics/company/2021/introducing-twitter-blue" className="home-text-emphasis">Twitter Blue↗</a> right now. You can view my case studies on <Link to="/houseparty" className="home-text-emphasis">Houseparty↗</Link>, a video chatting social media app, and <Link to="/hofr" className="home-text-emphasis">HOFR↗</Link>, a viewing companion app for sports fans.
+        </p>
       </div>
     )
   }

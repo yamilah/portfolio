@@ -19,7 +19,6 @@ class Root extends React.Component {
           <Route path="/houseparty" element={<CaseOne />}></Route>
           <Route path="/hofr" element={<CaseTwo />}></Route>
         </Routes>
-        <Footer></Footer>
       </Router>
     )
   }

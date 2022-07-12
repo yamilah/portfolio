@@ -1,0 +1,18 @@
+.home {
+  margin: 4vw;
+}
+
+.home-text {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 10vw;
+  hyphens: auto;
+  line-height: 1;
+  text-align: justify;
+}
+
+.home-text-emphasis {
+  font-family: $font-pleasure;
+  font-size: 9.6vw;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+}
