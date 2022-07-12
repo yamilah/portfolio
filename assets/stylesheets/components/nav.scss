@@ -1,7 +1,7 @@
 .nav {
   align-items: center;
   background-color: $pampas-white;
-  border-bottom: 0.4rem solid $trinidad-orange;
+  border-bottom: 0.6vw solid $trinidad-orange;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -11,6 +11,7 @@
   z-index: 1;
 
   @include respond-above(medium) {
+    border-bottom: 0.3vw solid $trinidad-orange;
     padding: 1.3vw 4vw;
   }
 }

@@ -4,9 +4,9 @@ import { createRoot } from 'react-dom/client'
 import Home from "./js/pages/home"
 import CaseOne from "./js/pages/case-one"
 import CaseTwo from "./js/pages/case-two"
-import Footer from "./js/components/footer"
 import Nav from "./js/components/nav"
 import ScrollToTop from "./js/scripts/scrollToTop"
+import Socials from "./js/components/socials"
 
 class Root extends React.Component {
   render() {

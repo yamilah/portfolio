@@ -1,26 +1,12 @@
-@keyframes link {
-  from {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
-  }
-  to {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
-  }
-}
-
-@keyframes link-reverse {
-  from {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
-  }
-  to {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
-  }
-}
-
 .home {
+  display: grid;
+  grid-auto-rows: min-content;
   margin: 10vw;
+  row-gap: 10vw;
 
   @include respond-above(medium) {
     margin: 8vw;
+    row-gap: unset;
   }
 
   @include respond-above(large) {
@@ -68,5 +54,23 @@
 
   @include respond-above(medium) {
     font-size: 11vw;
+  }
+}
+
+@keyframes link {
+  from {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+}
+
+@keyframes link-reverse {
+  from {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
   }
 }

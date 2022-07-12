@@ -1,0 +1,42 @@
+.social-link {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 4vw;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.07vw;
+
+  @include respond-above(medium) {
+    font-size: 1.5vw;
+    font-weight: $font-weight-bold;
+  }
+
+  @include respond-above(large) {
+    font-size: 1.3vw;
+  }
+}
+
+.socials {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  column-gap: 3vw;
+
+  @include respond-above(medium) {
+    align-content: end;
+    grid-auto-flow: row;
+    grid-auto-rows: min-content;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    position: fixed;
+    row-gap: 0.3vw;
+    top: 0;
+  }
+
+  @include respond-above(large) {
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+  }
+}
