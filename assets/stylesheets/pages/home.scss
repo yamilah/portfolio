@@ -1,3 +1,21 @@
+@keyframes link {
+  from {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+}
+
+@keyframes link-reverse {
+  from {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  }
+}
+
 .home {
   margin: 10vw;
 
@@ -10,6 +28,23 @@
   }
 }
 
+.home-link {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: link-reverse;
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: link;
+  }
+}
+
+.home-link-arrow {
+  font-size: 8vw;
+  font-weight: $font-weight-light;
+}
+
 .home-text {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
@@ -18,6 +53,7 @@
   letter-spacing: -0.5vw;
   line-height: 1;
   text-align: justify;
+  user-select: none;
 
 
   @include respond-above(medium) {
