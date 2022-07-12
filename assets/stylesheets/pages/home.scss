@@ -1,18 +1,36 @@
 .home {
-  margin: 4vw;
+  margin: 10vw;
+
+  @include respond-above(medium) {
+    margin: 8vw;
+  }
+
+  @include respond-above(large) {
+    margin: 4vw;
+  }
 }
 
 .home-text {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 10vw;
+  font-size: 10.9vw;
   hyphens: auto;
+  letter-spacing: -0.5vw;
   line-height: 1;
   text-align: justify;
+
+
+  @include respond-above(medium) {
+    font-size: 11.3vw;
+  }
 }
 
 .home-text-emphasis {
   font-family: $font-pleasure;
-  font-size: 9.6vw;
+  font-size: 10.6vw;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+
+  @include respond-above(medium) {
+    font-size: 11vw;
+  }
 }
