@@ -26,6 +26,7 @@ export default class Nav extends React.Component {
         <a
           href="https://bit.ly/atallah-cv"
           className="nav-link-cv"
+          target="_blank"
           alt="This link takes you to my CV, also called a resume"
         >
           CV↗
