@@ -13,7 +13,6 @@ class Root extends React.Component {
     return (
       <Router>
         <ScrollToTop></ScrollToTop>
-        <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/houseparty" element={<CaseOne />}></Route>
