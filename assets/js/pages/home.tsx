@@ -1,7 +1,9 @@
 import * as React from "react"
 import {Link} from "react-router-dom"
-import imgOne from "../../images/home/line-2.svg"
-import imgTwo from "../../images/home/line-3.svg"
+import imgOne from "../../images/home/line-1.svg"
+import imgTwo from "../../images/home/line-2.svg"
+import imgThree from "../../images/home/line-3.svg"
+import imgFour from "../../images/home/drawing.svg"
 
 export default class Home extends React.Component {
   render() {
@@ -21,7 +23,16 @@ export default class Home extends React.Component {
             </a>
           </div>
           <div className="home-intro-center">
-            idk
+            <img
+              alt="A decorative line"
+              className="home-intro-center-line"
+              src={imgOne}
+            />
+            <img
+              alt="A decorative image"
+              className="home-intro-center-drawing"
+              src={imgFour}
+            />
           </div>
           <div className="home-intro-bottom">
             <p className="home-intro-bottom-text">
@@ -68,15 +79,15 @@ export default class Home extends React.Component {
           <img
             alt="A decorative line"
             className="home-work-line-1"
-            src={imgOne}
+            src={imgTwo}
           />
           <p className="home-work-text">
-            I worked as the only designer on Twitter’s Professional Publishers↗, a team that builds tailored features and experiences for our pro pubs (NYT, Buzzfeed, Disney, etc.). But I also worked on Twitter Communities↗, a feature that brings “group” functionality to Twitter (think Facebook Groups, or subreddits).
+            I worked as the only designer on Twitter’s Professional Publishers, a team that builds tailored features and experiences for our our enterprise customers. But I also worked on Twitter Communities, a feature that brings “group” functionality to Twitter (think Facebook Groups, or subreddits).
           </p>
           <img
             alt="A decorative line"
             className="home-work-line-2"
-            src={imgTwo}
+            src={imgThree}
           />
         </section>
       </div>

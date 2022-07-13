@@ -9,20 +9,21 @@
 .home-intro {
   display: grid;
   grid-auto-rows: min-content 1fr min-content;
-  padding: 4vw;
+  padding: 5rem;
+  row-gap: 5rem;
 }
 
 .home-intro-bottom {
   display: grid;
-  grid-auto-columns: 18vw 18vw;
+  grid-auto-columns: 24rem;
   grid-auto-flow: column;
   justify-content: end;
-  column-gap: 4vw;
+  column-gap: 5rem;
 }
 
 .home-intro-bottom-link {
   font-family: $font-pleasure;
-  font-size: 0.9vw;
+  font-size: 1.2rem;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 660;
 }
 
@@ -30,9 +31,27 @@
 .home-intro-top-text {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 1vw;
+  font-size: 1.4rem;
   font-weight: 500;
+  text-align: justify;
   user-select: none;
+}
+
+.home-intro-center {
+  position: relative;
+}
+
+.home-intro-center-drawing {
+  left: 71rem;
+  max-width: 20rem;
+  position: absolute;
+  top: 7rem;
+}
+
+.home-intro-center-line {
+  height: 100%;
+  left: -13rem;
+  position: absolute;
 }
 
 .home-intro-top {
@@ -42,7 +61,7 @@
 }
 
 .home-work {
-  column-gap: 4vw;
+  column-gap: 5rem;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -57,8 +76,8 @@
   bottom: 0;
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 4.7vw;
-  left: 7vw;
+  font-size: 6.8rem;
+  left: 10rem;
   letter-spacing: -0.2vw;
   line-height: 1;
   margin-top: 15.5vw;
