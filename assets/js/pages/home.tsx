@@ -82,7 +82,7 @@ export default class Home extends React.Component {
             src={imgTwo}
           />
           <p className="home-work-text">
-            I worked as the only designer on Twitter’s Professional Publishers, a team that builds tailored features and experiences for our our enterprise customers. But I also worked on Twitter Communities, a feature that brings “group” functionality to Twitter (think Facebook Groups, or subreddits).
+            Currently working on Twitter Blue. I also worked as the only designer on Twitter’s Professional Publishers, a team that builds tailored features and experiences for enterprise customers. Before that, I worked on Twitter Communities, a feature that brings “group” functionality to Twitter.
           </p>
           <img
             alt="A decorative line"
