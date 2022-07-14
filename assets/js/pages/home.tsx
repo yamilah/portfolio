@@ -108,40 +108,43 @@ export default class Home extends React.Component {
             src={imgThree}
           />
         </section>
-        <section className="home-socials">
+        <section className="home-contact">
+          <p className="home-contact-marquee">It's pronounced jah mee lah btw</p>
           <img
             alt="A decorative image"
-            className="home-social-drawing"
+            className="home-contact-drawing-1"
             src={imgEight}
           />
-          <a
-            className="home-social-1"
-            href="https://www.linkedin.com/in/yamilah/"
-            target="_blank"
-          >
-            linkedin↗
-          </a>
-          <a
-            className="home-social-2"
-            href="https://www.dribbble.com/yamilah"
-            target="_blank"
-          >
-            dribbble↗
-          </a>
-          <a
-            className="home-social-3"
-            href="https://www.github.com/yamilah"
-            target="_blank"
-          >
-            github↗
-          </a>
-          <a
-            className="home-social-4"
-            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hello@yamilah.com"
-            target="_blank"
-          >
-            mail↗
-          </a>
+          <div className="home-contact-links">
+            <a
+              className="home-contact-link-1"
+              href="https://www.linkedin.com/in/yamilah/"
+              target="_blank"
+            >
+              linkedin↗
+            </a>
+            <a
+              className="home-contact-link-2"
+              href="https://www.dribbble.com/yamilah"
+              target="_blank"
+            >
+              dribbble↗
+            </a>
+            <a
+              className="home-contact-link-3"
+              href="https://www.github.com/yamilah"
+              target="_blank"
+            >
+              github↗
+            </a>
+            <a
+              className="home-contact-link-4"
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hello@yamilah.com"
+              target="_blank"
+            >
+              mail↗
+            </a>
+          </div>
         </section>
       </div>
     )

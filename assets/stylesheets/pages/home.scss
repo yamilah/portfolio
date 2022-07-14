@@ -124,24 +124,25 @@
   justify-content: space-between;
 }
 
-.home-social-1,
-.home-social-2,
-.home-social-3,
-.home-social-4 {
+.home-contact-link-1,
+.home-contact-link-2,
+.home-contact-link-3,
+.home-contact-link-4 {
   color: $trinidad-orange;
   font-family: $font-pleasure;
   font-size: 18vh;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 400;
+  text-transform: uppercase;
 }
 
-.home-social-drawing {
+.home-contact-drawing-1 {
   left: 35vh;
   position: absolute;
   top: 36vh;
   width: 17vh;
 }
 
-.home-social-1 {
+.home-contact-link-1 {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-name: socialout;
@@ -154,7 +155,7 @@
   }
 }
 
-.home-social-2 {
+.home-contact-link-2 {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-name: socialout;
@@ -169,7 +170,7 @@
   }
 }
 
-.home-social-3 {
+.home-contact-link-3 {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-name: socialout;
@@ -183,7 +184,7 @@
   }
 }
 
-.home-social-4 {
+.home-contact-link-4 {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-name: socialout;
