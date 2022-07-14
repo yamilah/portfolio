@@ -7,6 +7,7 @@ import imgFive from "../../images/home/drawing-2.svg"
 import imgSix from "../../images/home/drawing-3.svg"
 import imgSeven from "../../images/home/drawing-4.svg"
 import imgEight from "../../images/home/drawing-5.svg"
+import imgNine from "../../images/home/drawing-6.svg"
 
 export default class Home extends React.Component {
   render() {
@@ -114,6 +115,11 @@ export default class Home extends React.Component {
             alt="A decorative image"
             className="home-contact-drawing-1"
             src={imgEight}
+          />
+          <img
+            alt="A decorative image"
+            className="home-contact-drawing-2"
+            src={imgNine}
           />
           <div className="home-contact-links">
             <a

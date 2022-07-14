@@ -1,36 +1,18 @@
-@keyframes introin {
-  from {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
-  }
-  to {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 620;
-  }
-}
-
-@keyframes introout {
-  from {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 620;
-  }
-  to {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
-  }
-}
-
 @keyframes socialin {
   from {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
   }
   to {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 900;
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
   }
 }
 
 @keyframes socialout {
   from {
-    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 900;
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
   }
   to {
-    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
   }
 }
 
@@ -57,7 +39,89 @@
   grid-template-columns: repeat(3, 1fr);
   height: 100vh;
   overflow-y: hidden;
+  position: relative;
+  user-select: none;
   width: 608vh;
+}
+
+.home-contact {
+  display: grid;
+  position: relative;
+}
+
+.home-contact-drawing-1 {
+  left: 123vh;
+  position: absolute;
+  top: 10vh;
+  width: 17vh;
+}
+
+.home-contact-drawing-2 {
+  bottom: -13vh;
+  left: 58vh;
+  position: absolute;
+  width: 45vh;
+}
+
+.home-contact-link-1,
+.home-contact-link-2,
+.home-contact-link-3,
+.home-contact-link-4 {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: socialout;
+  color: $trinidad-orange;
+  font-family: $font-pleasure;
+  font-feature-settings: 'salt' on, 'ss02' on, 'ss01' on, 'ss04' on;
+  font-size: 18vh;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  text-transform: uppercase;
+
+  &:hover {
+    animation-name: socialin;
+  }
+}
+
+.home-contact-link-1 {
+  justify-self: start;
+  margin-left: 25vh;
+}
+
+.home-contact-link-2 {
+  justify-self: end;
+  margin-right: 26vh;
+  margin-top: -6vh;
+}
+
+.home-contact-link-3 {
+  justify-self: center;
+  margin-top: -6vh;
+}
+
+.home-contact-link-4 {
+  justify-self: end;
+  margin-right: 19vh;
+  margin-top: -6vh;
+}
+
+.home-contact-links {
+  align-content: center;
+  display: grid;
+  grid-auto-rows: min-content;
+  margin-top: 9vh;
+}
+
+.home-contact-marquee {
+  color: $trinidad-orange;
+  font-feature-settings: 'salt' on, 'ss02' on;
+  font-size: 6vh;
+  left: 7vh;
+  letter-spacing: 0.2vh;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  transform-origin: left top;
+  transform: rotate(90deg);
 }
 
 .home-intro {
@@ -76,18 +140,9 @@
 }
 
 .home-intro-bottom-link {
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-name: introout;
   font-family: $font-pleasure;
   font-size: 2vh;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
-
-  &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-name: introin;
-  }
 }
 
 .home-intro-bottom-text,
@@ -97,7 +152,6 @@
   font-size: 2.2vh;
   font-weight: 500;
   text-align: justify;
-  user-select: none;
 }
 
 .home-intro-center {
@@ -122,88 +176,6 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-}
-
-.home-contact-link-1,
-.home-contact-link-2,
-.home-contact-link-3,
-.home-contact-link-4 {
-  color: $trinidad-orange;
-  font-family: $font-pleasure;
-  font-size: 18vh;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 400;
-  text-transform: uppercase;
-}
-
-.home-contact-drawing-1 {
-  left: 35vh;
-  position: absolute;
-  top: 36vh;
-  width: 17vh;
-}
-
-.home-contact-link-1 {
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-name: socialout;
-  transform: rotate(-2deg);
-
-  &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-name: socialin;
-  }
-}
-
-.home-contact-link-2 {
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-name: socialout;
-  margin-left: 4vh;
-  margin-top: -4vh;
-  transform: rotate(3deg);
-
-  &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-name: socialin;
-  }
-}
-
-.home-contact-link-3 {
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-name: socialout;
-  margin-top: -4vh;
-  transform: rotate(-2deg);
-
-  &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-name: socialin;
-  }
-}
-
-.home-contact-link-4 {
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-name: socialout;
-  margin-left: 18vh;
-  margin-top: -4vh;
-  transform: rotate(5deg);
-
-  &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-name: socialin;
-  }
-}
-
-.home-socials {
-  display: grid;
-  grid-auto-rows: min-content;
-  place-content: center;
-  position: relative;
 }
 
 .home-work {
@@ -264,8 +236,6 @@
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
 
   &:hover {
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
     animation-name: workin;
   }
 }
