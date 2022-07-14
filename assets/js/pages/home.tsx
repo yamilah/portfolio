@@ -3,7 +3,10 @@ import {Link} from "react-router-dom"
 import imgOne from "../../images/home/line-1.svg"
 import imgTwo from "../../images/home/line-2.svg"
 import imgThree from "../../images/home/line-3.svg"
-import imgFour from "../../images/home/drawing.svg"
+import imgFour from "../../images/home/drawing-1.svg"
+import imgFive from "../../images/home/drawing-2.svg"
+import imgSix from "../../images/home/drawing-3.svg"
+import imgSeven from "../../images/home/drawing-4.svg"
 
 export default class Home extends React.Component {
   render() {
@@ -81,8 +84,23 @@ export default class Home extends React.Component {
             className="home-work-line-1"
             src={imgTwo}
           />
+          <img
+            alt="A decorative image"
+            className="home-work-drawing-1"
+            src={imgFive}
+          />
+          <img
+            alt="A decorative image"
+            className="home-work-drawing-2"
+            src={imgSix}
+          />
+          <img
+            alt="A decorative image"
+            className="home-work-drawing-3"
+            src={imgSeven}
+          />
           <p className="home-work-text">
-            Currently working on Twitter Blue. I also worked as the only designer on Twitter’s Professional Publishers, a team that builds tailored features and experiences for enterprise customers. Before that, I worked on Twitter Communities, a feature that brings “group” functionality to Twitter.
+            Currently working on Twitter Blue. I <span className="home-work-text-transform">also worked as the only</span> designer on Twitter’s Professional Publishers, a team that builds tailored features for enterprise customers. Before that, I worked on Twitter Communities, a feature that brings “groups” to Twitter.
           </p>
           <img
             alt="A decorative line"

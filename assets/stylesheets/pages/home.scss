@@ -3,27 +3,27 @@
   grid-template-columns: repeat(3, 1fr);
   height: 100vh;
   overflow-y: hidden;
-  width: 300vw;
+  width: 608vh;
 }
 
 .home-intro {
   display: grid;
   grid-auto-rows: min-content 1fr min-content;
-  padding: 5rem;
-  row-gap: 5rem;
+  padding: 7.5vh;
+  row-gap: 7.5vh;
 }
 
 .home-intro-bottom {
   display: grid;
-  grid-auto-columns: 24rem;
+  grid-auto-columns: 40vh;
   grid-auto-flow: column;
   justify-content: end;
-  column-gap: 5rem;
+  column-gap: 7.5vh;
 }
 
 .home-intro-bottom-link {
   font-family: $font-pleasure;
-  font-size: 1.2rem;
+  font-size: 2vh;
   font-variation-settings: "TRAP" 100, "ital" 0, "wght" 660;
 }
 
@@ -31,7 +31,7 @@
 .home-intro-top-text {
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 1.4rem;
+  font-size: 2.2vh;
   font-weight: 500;
   text-align: justify;
   user-select: none;
@@ -42,16 +42,17 @@
 }
 
 .home-intro-center-drawing {
-  left: 71rem;
-  max-width: 20rem;
+  left: 94vh;
   position: absolute;
-  top: 7rem;
+  top: 14vh;
+  width: 20vh;
 }
 
 .home-intro-center-line {
   height: 100%;
-  left: -13rem;
+  left: -23vh;
   position: absolute;
+  top: 2vh;
 }
 
 .home-intro-top {
@@ -61,10 +62,35 @@
 }
 
 .home-work {
-  column-gap: 5rem;
+  column-gap: 7.5vh;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.home-work-drawing-1,
+.home-work-drawing-2,
+.home-work-drawing-3 {
+  position: absolute;
+}
+
+.home-work-drawing-1 {
+  width: 14vh;
+  left: 17vh;
+  top: 5vh;
+}
+
+.home-work-drawing-2 {
+  bottom: -12vh;
+  right: 33vh;
+  width: 27vh;
+}
+
+.home-work-drawing-3 {
+  left: 91vh;
+  top: 4vh;
+  width: 31vh;
 }
 
 .home-work-line-1,
@@ -73,15 +99,18 @@
 }
 
 .home-work-text {
-  bottom: 0;
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
-  font-size: 7.4rem;
-  left: 10rem;
-  letter-spacing: -0.3vw;
+  font-size: 10.4vh;
+  letter-spacing: -0.3vh;
   line-height: 1;
-  margin-top: 11.5rem;
+  margin-top: 21vh;
   text-align: justify;
   transform: rotate(-3deg);
   user-select: none;
+  width: 100%;
+}
+
+.home-work-text-transform {
+  transform: rotate(2.91deg);
 }
