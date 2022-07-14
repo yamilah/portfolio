@@ -1,5 +1,5 @@
 import * as React from "react"
-import imgOne from "../../images/home/line-1.svg"
+import imgOne from "../../images/home/gradient.png"
 import imgTwo from "../../images/home/line-2.svg"
 import imgThree from "../../images/home/line-3.svg"
 import imgFour from "../../images/home/drawing-1.svg"
