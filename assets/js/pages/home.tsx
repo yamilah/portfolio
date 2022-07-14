@@ -1,5 +1,4 @@
 import * as React from "react"
-import {Link} from "react-router-dom"
 import imgOne from "../../images/home/line-1.svg"
 import imgTwo from "../../images/home/line-2.svg"
 import imgThree from "../../images/home/line-3.svg"
@@ -7,6 +6,7 @@ import imgFour from "../../images/home/drawing-1.svg"
 import imgFive from "../../images/home/drawing-2.svg"
 import imgSix from "../../images/home/drawing-3.svg"
 import imgSeven from "../../images/home/drawing-4.svg"
+import imgEight from "../../images/home/drawing-5.svg"
 
 export default class Home extends React.Component {
   render() {
@@ -107,6 +107,41 @@ export default class Home extends React.Component {
             className="home-work-line-2"
             src={imgThree}
           />
+        </section>
+        <section className="home-socials">
+          <img
+            alt="A decorative image"
+            className="home-social-drawing"
+            src={imgEight}
+          />
+          <a
+            className="home-social-1"
+            href="https://www.linkedin.com/in/yamilah/"
+            target="_blank"
+          >
+            linkedin
+          </a>
+          <a
+            className="home-social-2"
+            href="https://www.dribbble.com/yamilah"
+            target="_blank"
+          >
+            dribbble
+          </a>
+          <a
+            className="home-social-3"
+            href="https://www.github.com/yamilah"
+            target="_blank"
+          >
+            github
+          </a>
+          <a
+            className="home-social-4"
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hello@yamilah.com"
+            target="_blank"
+          >
+            mail
+          </a>
         </section>
       </div>
     )
