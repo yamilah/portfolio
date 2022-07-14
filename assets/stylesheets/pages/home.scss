@@ -1,3 +1,57 @@
+@keyframes introin {
+  from {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
+  }
+  to {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 620;
+  }
+}
+
+@keyframes introout {
+  from {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 620;
+  }
+  to {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
+  }
+}
+
+@keyframes socialin {
+  from {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+  }
+  to {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 900;
+  }
+}
+
+@keyframes socialout {
+  from {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 900;
+  }
+  to {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 900;
+  }
+}
+
+@keyframes workin {
+  from {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+}
+
+@keyframes workout {
+  from {
+    font-variation-settings: "TRAP" 0, "ital" 0, "wght" 500;
+  }
+  to {
+    font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+  }
+}
+
 .home {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,9 +76,18 @@
 }
 
 .home-intro-bottom-link {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: introout;
   font-family: $font-pleasure;
   font-size: 2vh;
-  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 660;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 620;
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: introin;
+  }
 }
 
 .home-intro-bottom-text,
@@ -79,24 +142,60 @@
 }
 
 .home-social-1 {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: socialout;
   transform: rotate(-2deg);
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: socialin;
+  }
 }
 
 .home-social-2 {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: socialout;
   margin-left: 4vh;
   margin-top: -4vh;
   transform: rotate(3deg);
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: socialin;
+  }
 }
 
 .home-social-3 {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: socialout;
   margin-top: -4vh;
   transform: rotate(-2deg);
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: socialin;
+  }
 }
 
 .home-social-4 {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: socialout;
   margin-left: 18vh;
   margin-top: -4vh;
   transform: rotate(5deg);
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: socialin;
+  }
 }
 
 .home-socials {
@@ -127,9 +226,9 @@
 }
 
 .home-work-drawing-2 {
-  bottom: -12vh;
-  right: 33vh;
-  width: 27vh;
+  bottom: -11vh;
+  right: 2vh;
+  width: 22vh;
 }
 
 .home-work-drawing-3 {
@@ -154,6 +253,20 @@
   transform: rotate(-3deg);
   user-select: none;
   width: 100%;
+}
+
+.home-work-text-link {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: workout;
+  font-family: $font-pleasure;
+  font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
+
+  &:hover {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: workin;
+  }
 }
 
 .home-work-text-transform {

@@ -100,7 +100,7 @@ export default class Home extends React.Component {
             src={imgSeven}
           />
           <p className="home-work-text">
-            Currently working on Twitter Blue. I <span className="home-work-text-transform">also worked as the only</span> designer on Twitter’s Professional Publishers, a team that builds tailored features for enterprise customers. Before that, I worked on Twitter Communities, a feature that brings “groups” to Twitter.
+            Currently working on <a href="https://blog.twitter.com/en_us/topics/company/2021/introducing-twitter-blue" target="_blank" className="home-work-text-link">Twitter Blue↗</a>. I also worked as the only designer on Twitter’s Professional Publishers, a team that builds tailored features for enterprise customers. Before that, I worked on Twitter Communities, a feature that brings “groups” to Twitter.
           </p>
           <img
             alt="A decorative line"
@@ -119,28 +119,28 @@ export default class Home extends React.Component {
             href="https://www.linkedin.com/in/yamilah/"
             target="_blank"
           >
-            linkedin
+            linkedin↗
           </a>
           <a
             className="home-social-2"
             href="https://www.dribbble.com/yamilah"
             target="_blank"
           >
-            dribbble
+            dribbble↗
           </a>
           <a
             className="home-social-3"
             href="https://www.github.com/yamilah"
             target="_blank"
           >
-            github
+            github↗
           </a>
           <a
             className="home-social-4"
             href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hello@yamilah.com"
             target="_blank"
           >
-            mail
+            mail↗
           </a>
         </section>
       </div>
