@@ -1,3 +1,12 @@
+@keyframes marquee {
+  from {
+    transform: rotate(90deg) translateX(-100%);
+  }
+  to {
+    transform: rotate(90deg) translateX(100%);
+  }
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -133,6 +142,10 @@
 }
 
 .home-contact-marquee {
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: marquee;
+  animation-timing-function: linear;
   color: $trinidad-orange;
   font-feature-settings: 'salt' on, 'ss02' on;
   font-size: 6vh;
@@ -142,7 +155,6 @@
   text-transform: uppercase;
   top: 0;
   transform-origin: left top;
-  transform: rotate(90deg);
 }
 
 .home-intro {

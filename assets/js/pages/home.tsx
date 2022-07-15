@@ -17,7 +17,7 @@ export default class Home extends React.Component {
         <section className="home-intro">
           <div className="home-intro-top">
             <p className="home-intro-top-text">
-              (think "Camila" with a J)
+              It's pronounced jah mee lah btw
             </p>
             <a
               className="home-intro-top-text"
