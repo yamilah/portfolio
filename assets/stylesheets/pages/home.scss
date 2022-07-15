@@ -1,3 +1,12 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes socialin {
   from {
     font-variation-settings: "TRAP" 100, "ital" 0, "wght" 500;
@@ -56,9 +65,21 @@
   width: 17vh;
 }
 
+.home-contact-drawing-2,
+.home-intro-center-drawing-1,
+.home-intro-center-drawing-2,
+.home-work-drawing-1,
+.home-work-drawing-2 {
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
 .home-contact-drawing-2 {
+  animation-direction: reverse;
+  animation-duration: 30s;
   bottom: -13vh;
-  left: 58vh;
+  left: 41vh;
   position: absolute;
   width: 45vh;
 }
@@ -158,10 +179,19 @@
   position: relative;
 }
 
-.home-intro-center-drawing {
+.home-intro-center-drawing-1 {
+  animation-duration: 15s;
   left: 94vh;
   position: absolute;
   top: 14vh;
+  width: 20vh;
+}
+
+.home-intro-center-drawing-2 {
+  animation-duration: 15s;
+  left: 94vh;
+  position: absolute;
+  top: 15vh;
   width: 20vh;
 }
 
@@ -193,12 +223,15 @@
 }
 
 .home-work-drawing-1 {
+  animation-direction: reverse;
+  animation-duration: 7s;
   width: 14vh;
   left: 17vh;
   top: 5vh;
 }
 
 .home-work-drawing-2 {
+  animation-duration: 20s;
   bottom: -11vh;
   right: 2vh;
   width: 22vh;

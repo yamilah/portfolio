@@ -8,6 +8,7 @@ import imgSix from "../../images/home/drawing-3.svg"
 import imgSeven from "../../images/home/drawing-4.svg"
 import imgEight from "../../images/home/drawing-5.svg"
 import imgNine from "../../images/home/drawing-6.svg"
+import imgTen from "../../images/home/drawing-7.svg"
 
 export default class Home extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class Home extends React.Component {
         <section className="home-intro">
           <div className="home-intro-top">
             <p className="home-intro-top-text">
-              It’s prounounced jah mee lah btw
+              (think "Camila" with a J)
             </p>
             <a
               className="home-intro-top-text"
@@ -33,8 +34,13 @@ export default class Home extends React.Component {
               src={imgOne}
             />
             <img
+              alt="A decorative line"
+              className="home-intro-center-drawing-2"
+              src={imgTen}
+            />
+            <img
               alt="A decorative image"
-              className="home-intro-center-drawing"
+              className="home-intro-center-drawing-1"
               src={imgFour}
             />
           </div>
