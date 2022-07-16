@@ -116,7 +116,8 @@ export default class Home extends React.Component {
           />
         </section>
         <section className="home-contact">
-          <p className="home-contact-marquee">It's pronounced jah mee lah btw</p>
+          <p className="home-contact-marquee-1">It's pronounced jah mee lah btw</p>
+          <p className="home-contact-marquee-2">It's pronounced jah mee lah btw</p>
           <img
             alt="A decorative image"
             className="home-contact-drawing-1"
