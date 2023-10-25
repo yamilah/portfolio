@@ -15,11 +15,15 @@
 .intro-name-1 {
   transform: rotate(-90deg);
   transform-origin: 0 0;
+  font-family: $archivo-condensed;
+  color: $harvest-brown;
+  font-size: 1.5vw;
 }
 
 .intro-name-2 {
-  font-size: 12vw;
+  font-size: 6vw;
   font-family: $editorial;
+  line-height: 1.2;
 }
 
 .intro-nickname {
@@ -27,36 +31,49 @@
   grid-auto-flow: column;
   grid-template-columns: max-content;
   justify-content: center;
+  margin-top: -1vw;
+  margin-bottom: -1.5vw;
 }
 
 .intro-nickname-1 {
   font-family: $ft88;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 1.5vw;
 }
 
 .intro-nickname-2 {
   font-family: $archivo-condensed;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 1.5vw;
   color: $harvest-brown;
 }
 
 .intro-line-1 {
-  font-size: 3vw;
+  font-size: 1.5vw;
   font-family: "FT88";
   text-transform: uppercase;
   justify-self: end;
-  width: 26vw;
+  width: 13vw;
 }
 
 .intro-chachara-wrapper {
   display: grid;
   grid-auto-flow: column;
+  grid-template-columns: repeat(3, min-content);
+}
+
+.intro-chachara-number {
+  font-family: $editorial;
+  font-weight: $weight-ultralight;
+  font-size: 4vw;
+}
+
+.intro-chachara-number-305 {
+  font-weight: $weight-regular;
 }
 
 .intro-place {
-  font-size: 10vw;
+  font-size: 5vw;
   font-family: $forever;
   font-feature-settings: 'ss02' on, 'salt' on;
   -webkit-text-stroke-color: $cola-black;

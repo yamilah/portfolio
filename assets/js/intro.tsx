@@ -27,9 +27,9 @@ export default class Intro extends React.Component {
           California
         </h1>
         <div className="intro-chachara-wrapper">
-          <p>
+          <p className="intro-chachara-number">
             #
-            <span>
+            <span className="intro-chachara-number-305">
               305
             </span>
           </p>
@@ -40,6 +40,9 @@ export default class Intro extends React.Component {
             HEY
           </p>
         </div>
+        <h1>
+          Instagram
+        </h1>
       </section>
     )
   }
