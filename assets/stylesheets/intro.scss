@@ -1,0 +1,30 @@
+.intro {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.intro-name-wrapper {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content max-content;
+}
+
+.intro-name-wrapper-1 {
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+
+.intro-name-wrapper-2 {
+  font-size: 10vw;
+}
+
+.intro-nickname {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.intro-line-1 {
+  font-size: 2vw;
+}

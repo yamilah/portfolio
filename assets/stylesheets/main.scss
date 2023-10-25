@@ -1,17 +1,11 @@
 @import "reset.scss";
+@import "variables.scss";
+@import "defaults.scss";
+@import "intro.scss";
+@import "list.scss";
 
-html {
-  background-color: red;
-  font-size: 62.5%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-weight: unset;
-  margin: 0;
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
