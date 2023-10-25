@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/yamilah/portfolio#readme",
   "dependencies": {
-    "parcel": "^2.10.1"
+    "parcel": "^2.10.1",
+    "typescript": "^5.2.2"
   }
 }
