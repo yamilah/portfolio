@@ -1,0 +1,50 @@
+.list {
+  padding-left: 3vw;
+  user-select: none;
+}
+
+.list-items {
+  position: fixed;
+  display: grid;
+  row-gap: 4vw;
+  position: sticky;
+  top: 8vw;
+}
+
+.list-item {
+  display: grid;
+  row-gap: 0.4vw;
+}
+
+.list-item-detail {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.6vw;
+  font-variant-numeric: slashed-zero;
+  font-family: $archivo-condensed;
+  font-size: 1.5vw;
+}
+
+.list-item-detail-logo {
+  width: 1.2vw;
+}
+
+.list-item-label {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-auto-flow: column;
+  font-size: 3vw;
+  font-family: $archivo-condensed;
+}
+
+.list-item-label-emphasis-a {
+  font-family: $editorial;
+  font-size: 2.9vw;
+}
+
+.list-item-label-emphasis-b {
+  font-family: $editorial;
+  font-size: 2.6vw;
+  line-height: 1.4;
+}
