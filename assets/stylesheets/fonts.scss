@@ -53,3 +53,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: $handwriting;
+  src: url("../fonts/Handwriting.woff2") format("woff2");
+  font-weight: $weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
