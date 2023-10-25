@@ -20,6 +20,12 @@
   "homepage": "https://github.com/yamilah/portfolio#readme",
   "dependencies": {
     "parcel": "^2.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.1",
+    "process": "^0.11.10"
   }
 }
