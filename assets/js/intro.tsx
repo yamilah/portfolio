@@ -1,47 +1,68 @@
 import * as React from "react"
+import Smile from "../images/Smile.svg"
+import Star from "../images/Star.svg"
 
 export default class Intro extends React.Component {
   render() {
     return (
       <section className="intro">
-        <p className="intro-line-1">
+        <p className="intro-a">
           To whom it may concern:
         </p>
-        <div className="intro-name-wrapper">
-          <p className="intro-name-1">
+        <p className="intro-b">
+          <p className="intro-b-text">
             ???
           </p>
-          <h1 className="intro-name-2">
-            Yamilah
-          </h1>
-        </div>
-        <div className="intro-nickname">
-          <p className="intro-nickname-1">
-            AKA "Yam"
-          </p>
-          <p className="intro-nickname-2">
-            (Nickname OK)
-          </p>
-        </div>
-        <h1 className="intro-place">
+        </p>
+        <h1 className="intro-c">
+          Yamilah
+        </h1>
+        <p className="intro-d">
+          AKA "Yam"
+        </p>
+        <p className="intro-e">
+          (Nickname OK)
+        </p>
+        <h1 className="intro-f">
           California
         </h1>
-        <div className="intro-chachara-wrapper">
-          <p className="intro-chachara-number">
+        <p className="intro-g">
+          <span className="intro-g-sharp">
             #
-            <span className="intro-chachara-number-305">
-              305
-            </span>
-          </p>
-          <p>
-            :)
-          </p>
-          <p>
-            HEY
-          </p>
-        </div>
-        <h1>
-          Instagram
+          </span>
+          305
+        </p>
+        <img
+          className="intro-h"
+          src={Smile}
+        />
+        <p className="intro-i">
+          ME
+        </p>
+        <img
+          className="intro-j"
+          src={Star}
+        />
+        <p className="intro-k">
+          PD & Dev
+        </p>
+        <h1 className="intro-l">
+          Insta
+          <span className="intro-l-gram">
+            gram
+          </span>
+        </h1>
+        <p className="intro-m">
+          “X”
+        </p>
+        <p className="intro-n">
+          Prev.
+        </p>
+        <p className="intro-o">
+          1.0
+        </p>
+        <h1 className="intro-p">
+          Twitter
         </h1>
       </section>
     )

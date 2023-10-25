@@ -1,82 +1,170 @@
 .intro {
   display: grid;
-  align-content: center;
-  justify-content: center;
-  height: 100%;
+  grid-template-areas:
+    ". . . a a a"
+    "b c c c c c"
+    "d d d e e e"
+    "f f f f f f"
+    "g g g h i ."
+    "j j j j k k"
+    "l l l l l l"
+    ". m n n n o"
+    ". p p p p o";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: min-content;
+  user-select: none;
 }
 
-.intro-name-wrapper {
-  align-items: center;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: min-content max-content;
-}
-
-.intro-name-1 {
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-  font-family: $archivo-condensed;
-  color: $harvest-brown;
-  font-size: 1.5vw;
-}
-
-.intro-name-2 {
-  font-size: 6vw;
-  font-family: $editorial;
-  line-height: 1.2;
-}
-
-.intro-nickname {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: max-content;
-  justify-content: center;
-  margin-top: -1vw;
-  margin-bottom: -1.5vw;
-}
-
-.intro-nickname-1 {
+.intro-a {
+  grid-area: a;
+  font-size: 3vw;
   font-family: $ft88;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  width: 27vw;
 }
 
-.intro-nickname-2 {
+.intro-b {
+  grid-area: b;
+  font-family: $archivo-condensed;
+}
+
+.intro-b-text {
+  transform: rotate(-90deg);
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: $harvest-brown;
+  margin-right: -7vw;
+}
+
+.intro-c {
+  grid-area: c;
+  font-family: $editorial;
+  font-size: 13vw;
+  margin-bottom: -3vw;
+}
+
+.intro-d {
+  grid-area: d;
+  font-size: 3vw;
+  font-family: $ft88;
+  text-transform: uppercase;
+  text-align: right;
+  align-self: center;
+}
+
+.intro-e {
+  grid-area: e;
+  font-size: 3vw;
   font-family: $archivo-condensed;
   text-transform: uppercase;
-  font-size: 1.5vw;
   color: $harvest-brown;
+  align-self: center;
+  padding-left: 2vw;
 }
 
-.intro-line-1 {
-  font-size: 1.5vw;
-  font-family: "FT88";
-  text-transform: uppercase;
-  justify-self: end;
-  width: 13vw;
-}
-
-.intro-chachara-wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, min-content);
-}
-
-.intro-chachara-number {
-  font-family: $editorial;
-  font-weight: $weight-ultralight;
-  font-size: 4vw;
-}
-
-.intro-chachara-number-305 {
-  font-weight: $weight-regular;
-}
-
-.intro-place {
-  font-size: 5vw;
+.intro-f {
+  grid-area: f;
+  font-size: 12vw;
   font-family: $forever;
   font-feature-settings: 'ss02' on, 'salt' on;
-  -webkit-text-stroke-color: $cola-black;
-  -webkit-text-stroke-width: 0.14vw;
+  margin-top: -1.5vw;
   color: transparent;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: $cola-black;
+  margin-bottom: -4vw;
+}
+
+.intro-g {
+  grid-area: g;
+  font-size: 9vw;
+  font-family: $editorial;
+  text-transform: uppercase;
+  text-align: right;
+  align-self: end;
+}
+
+.intro-g-sharp {
+  font-weight: $weight-ultralight;
+}
+
+.intro-h {
+  grid-area: h;
+  align-self: center;
+}
+
+.intro-i {
+  grid-area: i;
+  font-size: 11vw;
+  font-family: $forever;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: $cola-black;
+}
+
+.intro-j {
+  grid-area: j;
+  font-size: 11vw;
+  font-family: $forever;
+  padding-left: 2vw;
+}
+
+.intro-k {
+  grid-area: k;
+  font-size: 3vw;
+  font-family: $archivo-condensed;
+  text-transform: uppercase;
+  color: $harvest-brown;
+  align-self: center;
+  padding-left: 2vw;
+}
+
+.intro-l {
+  grid-area: l;
+  text-transform: uppercase;
+  font-family: $forever;
+  font-size: 8vw;
+  justify-self: center;
+}
+
+.intro-l-gram {
+  font-family: $archivo-wide;
+}
+
+.intro-m {
+  grid-area: m;
+  font-size: 3vw;
+  font-family: $archivo-condensed;
+  text-transform: uppercase;
+  color: $harvest-brown;
+  place-self: center;
+}
+
+.intro-n {
+  grid-area: n;
+  font-size: 11vw;
+  font-family: $forever;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: $cola-black;
+  font-feature-settings: 'ss02' on, 'salt' on;
+  margin-top: -3vw;
+  margin-bottom: -2.5vw;
+}
+
+.intro-o {
+  grid-area: o;
+  font-size: 3vw;
+  font-family: $archivo-condensed;
+  text-transform: uppercase;
+  color: $harvest-brown;
+  font-variant-numeric: slashed-zero;
+}
+
+.intro-p {
+  grid-area: p;
+  text-transform: uppercase;
+  font-family: $editorial;
+  font-size: 7.5vw;
 }
