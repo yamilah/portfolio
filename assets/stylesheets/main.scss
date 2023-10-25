@@ -8,9 +8,14 @@
 
 .main {
   display: grid;
-  padding: 8vw;
+  padding: 4vw;
 
   @include respond-above(large) {
     grid-template-columns: 2fr 1fr;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-right: unset;
+    padding-bottom: unset;
+
   }
 }

@@ -6,10 +6,10 @@ import List from "./js/list"
 class Root extends React.Component {
   render() {
     return (
-      <section className="main">
+      <div className="main">
         <Intro />
         <List />
-      </section>
+      </div>
     )
   }
 }

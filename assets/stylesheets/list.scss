@@ -1,14 +1,15 @@
 .list {
-  padding-left: 3vw;
   user-select: none;
 }
 
 .list-items {
-  position: fixed;
   display: grid;
   row-gap: 4vw;
-  position: sticky;
-  top: 8vw;
+
+  @include respond-above(large) {
+    position: sticky;
+    top: 2vw;
+  }
 }
 
 .list-item {
