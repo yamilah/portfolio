@@ -1,4 +1,5 @@
 @import "reset.scss";
+@import "breakpoints.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "defaults.scss";
@@ -7,6 +8,9 @@
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   padding: 8vw;
+
+  @include respond-above(large) {
+    grid-template-columns: 2fr 1fr;
+  }
 }
