@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "defaults.scss";
 @import "intro.scss";
 @import "list.scss";
@@ -7,5 +8,6 @@
 .main {
   height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1.5fr;
+  overflow: hidden;
 }
