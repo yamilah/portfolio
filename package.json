@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --dist-dir build/dev assets/index.html",
+    "build": "parcel build --dist-dir build/prod assets/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamilah/portfolio.git"
+  },
+  "author": "yamz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamilah/portfolio/issues"
+  },
+  "homepage": "https://github.com/yamilah/portfolio#readme",
+  "dependencies": {
+    "parcel": "^2.10.1"
+  }
+}
