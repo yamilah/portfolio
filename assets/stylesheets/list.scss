@@ -17,6 +17,14 @@
   row-gap: 0.4vw;
 }
 
+.list-item-description {
+  font-family: $forever;
+  line-height: 1.5;
+  margin-top: -0.5vw;
+  font-size: 1.2vw;
+  text-align: justify;
+}
+
 .list-item-detail {
   display: grid;
   grid-template-columns: auto 1fr;

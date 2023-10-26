@@ -1,3 +1,12 @@
+@keyframes smile {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .intro {
   display: grid;
   grid-template-areas:
@@ -90,6 +99,9 @@
 .intro-h {
   grid-area: h;
   align-self: center;
+  animation: smile 10s linear infinite;
+  animation-direction: normal;
+  z-index: -1;
 }
 
 .intro-i {
@@ -167,4 +179,16 @@
   text-transform: uppercase;
   font-family: $editorial;
   font-size: 7.5vw;
+}
+
+.intro-prototype {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+
+  @include respond-above(large) {
+    left: 35%;
+  }
 }
