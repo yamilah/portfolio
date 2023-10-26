@@ -17,8 +17,8 @@
     "g g g h i ."
     "j j j j k k"
     "l l l l l l"
-    ". m n n n o"
-    ". p p p p o";
+    "o o n n n ."
+    ". p p p p .";
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: min-content;
   user-select: none;
@@ -143,15 +143,6 @@
   font-family: $archivo-wide;
 }
 
-.intro-m {
-  grid-area: m;
-  font-size: 3vw;
-  font-family: $archivo-condensed;
-  text-transform: uppercase;
-  color: $harvest-brown;
-  place-self: center;
-}
-
 .intro-n {
   grid-area: n;
   font-size: 11vw;
@@ -167,28 +158,20 @@
 
 .intro-o {
   grid-area: o;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: $archivo-condensed;
+  font-feature-settings: 'ss02' on, 'salt' on;
+  align-self: center;
+  display: grid;
+  line-height: 1.1;
   text-transform: uppercase;
   color: $harvest-brown;
-  font-variant-numeric: slashed-zero;
+  justify-self: end;
 }
 
 .intro-p {
   grid-area: p;
   text-transform: uppercase;
   font-family: $editorial;
-  font-size: 7.5vw;
-}
-
-.intro-prototype {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-
-  @include respond-above(large) {
-    left: 35%;
-  }
+  font-size: 9vw;
 }

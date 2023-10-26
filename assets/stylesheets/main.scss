@@ -5,23 +5,28 @@
 @import "defaults.scss";
 @import "intro.scss";
 @import "list.scss";
+@import "video.scss";
 
 @keyframes pageload {
-  from {
+  0% {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
-  to {
+
+  50% {
     opacity: 1;
+  }
+
+  100% {
     transform: scale(1);
   }
 }
 
-.main {
+.main-grid {
   display: grid;
   padding: 4vw;
   animation-name: pageload;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
 
   @include respond-above(large) {
     grid-template-columns: 2fr 1fr;

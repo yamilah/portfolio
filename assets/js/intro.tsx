@@ -2,17 +2,9 @@ import React from "react"
 import Smile from "../images/Smile.svg"
 import Star from "../images/Star.svg"
 
-export default function Intro(props) {
-  const PrototypeVideo = props.videoURL == "" ? <div /> : <video
-    className="intro-prototype"
-    src={props.videoURL}
-    autoPlay
-    muted
-    loop
-  />
+export default function Intro() {
   return (
     <section className="intro">
-      {PrototypeVideo}
       <p className="intro-a">
         To whom it may concern:
       </p>
@@ -59,18 +51,23 @@ export default function Intro(props) {
           gram
         </span>
       </h1>
-      <p className="intro-m">
-        “X”
-      </p>
       <p className="intro-n">
         Prev.
-      </p>
-      <p className="intro-o">
-        1.0
       </p>
       <h1 className="intro-p">
         Twitter
       </h1>
+      <footer className="intro-o">
+        <a href="https://bit.ly/atallah-cv" target="_blank">
+          Resume↗
+        </a>
+        <a href="https://linkedin.com/in/yamilah" target="_blank">
+          LinkedIn↗
+        </a>
+        <a href="https://dribbble.com/yamilah" target="_blank">
+          Dribbble↗
+        </a>
+      </footer>
     </section>
   )
 }

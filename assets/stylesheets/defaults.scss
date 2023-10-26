@@ -11,3 +11,11 @@ h6,
 p {
   color: $cola-black;
 }
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
