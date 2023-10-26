@@ -5,6 +5,7 @@
   transform: translate(-50%, -50%);
   height: 100%;
   pointer-events: none;
+  z-index: 1;
 
   @include respond-above(large) {
     left: 35%;

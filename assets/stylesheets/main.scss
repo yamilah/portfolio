@@ -22,11 +22,16 @@
   }
 }
 
+body {
+  overflow: hidden;
+}
+
 .main-grid {
   display: grid;
   padding: 4vw;
   animation-name: pageload;
   animation-duration: 0.3s;
+  transform-origin: top center;
 
   @include respond-above(large) {
     grid-template-columns: 2fr 1fr;
