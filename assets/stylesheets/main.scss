@@ -10,14 +10,11 @@
 @keyframes pageload {
   0% {
     opacity: 0;
-    transform: scale(0.95);
-  }
-
-  50% {
-    opacity: 1;
+    transform: scale(0.99);
   }
 
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -30,8 +27,8 @@ body {
   display: grid;
   padding: 4vw;
   animation-name: pageload;
-  animation-duration: 0.3s;
-  transform-origin: top center;
+  animation-duration: 0.6s;
+  transform-origin: bottom center;
 
   @include respond-above(large) {
     grid-template-columns: 2fr 1fr;
