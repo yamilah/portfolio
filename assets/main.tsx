@@ -66,6 +66,10 @@ function Root() {
   const [videoURL, setVideoURL] = useState("")
   const [scrollOffset, setScrollOffset] = useState(0)
 
+  const requestNewVideoURL = (video) => {
+    setVideoURL(video)
+  }
+
   const stateRef = useRef();
   stateRef.scrollOffset = scrollOffset
 
@@ -80,13 +84,13 @@ function Root() {
 
   return (
     <div className="main">
-      <Video className="video" videoURL={videoURL} />
+      <Video videoURL={videoURL} />
       <div className="main-grid">
         <InfiniteScroller scroll={scrollOffset}>
           <Intro />
         </InfiniteScroller>
         <InfiniteScroller scroll={-scrollOffset}>
-          <List setVideoURL={setVideoURL} />
+          <List setVideoURL={requestNewVideoURL} />
         </InfiniteScroller>
       </div>
     </div>

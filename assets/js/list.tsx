@@ -1,8 +1,8 @@
 import React from "react"
 import IGLogo from "../images/Logo-IG.svg"
-import ViewerList from "../images/viewerlist.mov"
+import ViewerList from "../images/Viewer List.mov"
 import Instarazzi from "../images/Instarazzi.mov"
-import VerticalScroll from "../images/Verticalscroll.mov"
+import VerticalStories from "../images/Vertical Stories.mov"
 import Astrology from "../images/Astrology.mov"
 
 export default function List(props) {
@@ -51,7 +51,7 @@ export default function List(props) {
             Be your friend's paparazzi! This new sharing mechanic in stories gives you the ability to create a story to contribute directly to your friend’s story.
           </p>
         </li>
-        <li className="list-item" onMouseEnter={updateVideoURL(VerticalScroll)} onMouseLeave={updateVideoURL("")}>
+        <li className="list-item" onMouseEnter={updateVideoURL(VerticalStories)} onMouseLeave={updateVideoURL("")}>
           <div className="list-item-detail">
             <img
               className="list-item-detail-logo"
