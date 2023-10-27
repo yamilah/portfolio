@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "2.0.0",
   "description": "A 👌 repo for 💥😩 all my 🅱👨 portfolio 📊📊 iterations. Check 👀👆 it 💯 out 😢 at 👀👅 [yamilah.com](http://yamilah.com).",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel --dist-dir build/dev assets/index.html",
