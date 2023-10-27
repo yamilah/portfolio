@@ -8,7 +8,6 @@ import Astrology from "../images/Astrology.mov"
 export default function List(props) {
   const updateVideoURL = (videoURL) => {
     return () => {
-      console.log(videoURL)
       props.setVideoURL(videoURL)
     }
   }

@@ -4,39 +4,60 @@ import Intro from "./js/intro"
 import List from "./js/list"
 import Video from "./js/video"
 
-const kNumCopies = 2;
+const kNumCopies = 3;
 
 function InfiniteScroller(props) {
   const childRef = useRef()
-  const [initialHeight, setInitialHeight] = useState(1000)
+  const [elementHeight, setElementHeight] = useState(1000)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
   const resizeHandler = (_) => {
     setWindowHeight(window.innerHeight)
+    updateElementHeight()
+  }
+
+  const updateElementHeight = () => {
+    if (!childRef.current && childRef.current.children.length > 0) {
+      return
+    }
+    const child = childRef.current.children[0]
+    setElementHeight(child.offsetHeight)
   }
 
   useEffect(() => {
     if (childRef.current) {
-      setInitialHeight(childRef.current.getBoundingClientRect().height / kNumCopies)
+      updateElementHeight()
     }
     window.addEventListener('resize', resizeHandler)
     return _ => window.removeEventListener('resize', resizeHandler)
   }, [])
 
   // Euclidean modulo
-  const offset = ((props.scroll % initialHeight) + initialHeight) % initialHeight
+  const offset = ((props.scroll % elementHeight) + elementHeight) % elementHeight
 
   let children: any[] = []
   for (let i = 0; i < kNumCopies; i++) {
-    children.push(props.children)
+    children.push(
+      <div
+        key={`child${i}`}
+        style={{
+          position: "absolute",
+          top: `${elementHeight * i - offset}px`,
+        }}>
+        {props.children}
+      </div>
+    )
   }
 
   return (
-    <div
-      ref={childRef}
-      style={{
-        transform: `translateY(${-offset}px)`,
-      }}>
-      {children}
+    <div>
+      <div
+        ref={childRef}
+        style={{
+          position: "relative",
+          boxSizing: "content-box",
+        }}>
+        {children}
+      </div>
     </div>
   )
 }
@@ -61,10 +82,10 @@ function Root() {
     <div className="main">
       <Video className="video" videoURL={videoURL} />
       <div className="main-grid">
-        <InfiniteScroller scroll={-scrollOffset}>
+        <InfiniteScroller scroll={scrollOffset}>
           <Intro />
         </InfiniteScroller>
-        <InfiniteScroller scroll={scrollOffset}>
+        <InfiniteScroller scroll={-scrollOffset}>
           <List setVideoURL={setVideoURL} />
         </InfiniteScroller>
       </div>
