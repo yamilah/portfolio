@@ -1,9 +1,9 @@
 import React from "react"
 import IGLogo from "../images/Logo-IG.svg"
-import ViewerList from "../images/Viewer List.mov"
-import Instarazzi from "../images/Instarazzi.mov"
-import VerticalStories from "../images/Vertical Stories.mov"
-import Astrology from "../images/Astrology.mov"
+import ViewerList from "../images/Viewer List.webm"
+import Instarazzi from "../images/Instarazzi.webm"
+import VerticalStories from "../images/Vertical Stories.webm"
+import Astrology from "../images/Astrology.webm"
 
 export default function List(props) {
   const updateVideoURL = (videoURL) => {

@@ -78,8 +78,8 @@ function Root() {
   }
 
   useEffect(() => {
-    window.addEventListener('mousewheel', mousewheelHandler)
-    return _ => window.removeEventListener('mousewheel', mousewheelHandler)
+    window.addEventListener('wheel', mousewheelHandler)
+    return _ => window.removeEventListener('wheel', mousewheelHandler)
   }, [])
 
   return (
