@@ -7,26 +7,12 @@ import Video from "./js/video"
 const kNumCopies = 3;
 
 function InfiniteScroller(props) {
-  const childRef = useRef()
-  const [elementHeight, setElementHeight] = useState(1000)
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight)
+  const [elementHeight, setElementHeight] = useState(props.childHeight * window.innerWidth)
   const resizeHandler = (_) => {
-    setWindowHeight(window.innerHeight)
-    updateElementHeight()
-  }
-
-  const updateElementHeight = () => {
-    if (!childRef.current && childRef.current.children.length > 0) {
-      return
-    }
-    const child = childRef.current.children[0]
-    setElementHeight(child.offsetHeight)
+    setElementHeight(props.childHeight * window.innerWidth)
   }
 
   useEffect(() => {
-    if (childRef.current) {
-      updateElementHeight()
-    }
     window.addEventListener('resize', resizeHandler)
     return _ => window.removeEventListener('resize', resizeHandler)
   }, [])
@@ -51,7 +37,6 @@ function InfiniteScroller(props) {
   return (
     <div>
       <div
-        ref={childRef}
         style={{
           position: "relative",
           boxSizing: "content-box",
@@ -86,10 +71,10 @@ function Root() {
     <div className="main">
       <Video videoURL={videoURL} />
       <div className="main-grid">
-        <InfiniteScroller scroll={scrollOffset}>
+        <InfiniteScroller scroll={scrollOffset} childHeight={0.82}>
           <Intro />
         </InfiniteScroller>
-        <InfiniteScroller scroll={-scrollOffset}>
+        <InfiniteScroller scroll={-scrollOffset} childHeight={0.68}>
           <List setVideoURL={requestNewVideoURL} />
         </InfiniteScroller>
       </div>
