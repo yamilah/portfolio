@@ -2,12 +2,12 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
   height: 100%;
   pointer-events: none;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 
   @include respond-above(large) {
     left: 35%;
@@ -16,4 +16,5 @@
 
 .video-done {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }

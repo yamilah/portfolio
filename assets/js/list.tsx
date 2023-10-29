@@ -30,7 +30,7 @@ export default function List(props) {
             </span>
           </p>
           <p className="list-item-description">
-            The stories viewer list is a super high traffic surface, but it hasn't been given the love it deserves in many years. I've gone ahead and redesigned it, and made it easier to kick off a story from here, too. :)
+            The stories viewer list is a super high traffic surface, but it hasn’t been given the love it deserves in many years. I’ve gone ahead and redesigned it; with a new CTA, it’s also easier to post a story from here.
           </p>
         </li>
         <li className="list-item" onMouseEnter={updateVideoURL(Instarazzi)} onMouseLeave={updateVideoURL("")}>
@@ -48,7 +48,7 @@ export default function List(props) {
             razzi
           </p>
           <p className="list-item-description">
-            Be your friend's paparazzi! This new sharing mechanic in stories gives you the ability to create a story to contribute directly to your friend’s story.
+            Be your friend’s paparazzi! This new sharing mechanic in stories gives you the ability to create a story to contribute directly to your friend’s story.
           </p>
         </li>
         <li className="list-item" onMouseEnter={updateVideoURL(VerticalStories)} onMouseLeave={updateVideoURL("")}>
